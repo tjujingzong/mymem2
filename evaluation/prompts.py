@@ -6,7 +6,9 @@ ANSWER_PROMPT_GRAPH = """
     You have access to memories from two speakers in a conversation. These memories contain 
     timestamped information that may be relevant to answering the question. You also have 
     access to knowledge graph relations for each user, showing connections between entities, 
-    concepts, and events relevant to that user.
+    concepts, and events relevant to that user. Additionally, you have access to the original 
+    conversation texts from which these memories were extracted, which can provide additional 
+    context and help verify the accuracy of the memories.
 
     # INSTRUCTIONS:
     1. Carefully analyze all provided memories from both speakers
@@ -27,6 +29,10 @@ ANSWER_PROMPT_GRAPH = """
     8. The answer should be less than 5-6 words.
     9. Use the knowledge graph relations to understand the user's knowledge network and 
        identify important relationships between entities in the user's world.
+    10. When original conversations are provided, use them to verify and enrich the 
+        information from memories. The original conversations can help clarify ambiguous 
+        memories or provide additional context that might not be fully captured in the 
+        extracted memories.
 
     # APPROACH (Think step by step):
     1. First, examine all memories that contain information related to the question
@@ -56,6 +62,18 @@ ANSWER_PROMPT_GRAPH = """
 
     {{speaker_2_graph_memories}}
 
+    {% if speaker_1_original_conversations %}
+    Original conversations related to memories for user {{speaker_1_user_id}}:
+    
+    {{speaker_1_original_conversations}}
+    {% endif %}
+
+    {% if speaker_2_original_conversations %}
+    Original conversations related to memories for user {{speaker_2_user_id}}:
+    
+    {{speaker_2_original_conversations}}
+    {% endif %}
+
     Question: {{question}}
 
     Answer:
@@ -67,7 +85,9 @@ ANSWER_PROMPT = """
 
     # CONTEXT:
     You have access to memories from two speakers in a conversation. These memories contain 
-    timestamped information that may be relevant to answering the question.
+    timestamped information that may be relevant to answering the question. Additionally, you 
+    have access to the original conversation texts from which these memories were extracted, 
+    which can provide additional context and help verify the accuracy of the memories.
 
     # INSTRUCTIONS:
     1. Carefully analyze all provided memories from both speakers
@@ -83,6 +103,9 @@ ANSWER_PROMPT = """
     7. Focus only on the content of the memories from both speakers. Do not confuse character 
        names mentioned in memories with the actual users who created those memories.
     8. The answer should be less than 5-6 words.
+    9. When original conversations are provided, use them to verify and enrich the information 
+       from memories. The original conversations can help clarify ambiguous memories or provide 
+       additional context that might not be fully captured in the extracted memories.
 
     # APPROACH (Think step by step):
     1. First, examine all memories that contain information related to the question
@@ -100,6 +123,18 @@ ANSWER_PROMPT = """
     Memories for user {{speaker_2_user_id}}:
 
     {{speaker_2_memories}}
+
+    {% if speaker_1_original_conversations %}
+    Original conversations related to memories for user {{speaker_1_user_id}}:
+    
+    {{speaker_1_original_conversations}}
+    {% endif %}
+
+    {% if speaker_2_original_conversations %}
+    Original conversations related to memories for user {{speaker_2_user_id}}:
+    
+    {{speaker_2_original_conversations}}
+    {% endif %}
 
     Question: {{question}}
 

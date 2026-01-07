@@ -81,6 +81,17 @@ class FAISS(VectorStoreBase):
             docstore_path = f"{self.path}/{collection_name}.pkl"
             if os.path.exists(index_path) and os.path.exists(docstore_path):
                 self._load(index_path, docstore_path)
+                # If loading failed, delete corrupted files and create a new collection
+                if self.index is None:
+                    logger.warning("Failed to load existing index, deleting corrupted files and creating new collection")
+                    try:
+                        if os.path.exists(index_path):
+                            os.remove(index_path)
+                        if os.path.exists(docstore_path):
+                            os.remove(docstore_path)
+                    except Exception as e:
+                        logger.warning(f"Failed to delete corrupted files: {e}")
+                    self.create_col(collection_name)
             else:
                 self.create_col(collection_name)
 
@@ -99,7 +110,8 @@ class FAISS(VectorStoreBase):
             logger.info(f"Loaded FAISS index from {index_path} with {self.index.ntotal} vectors")
         except Exception as e:
             logger.warning(f"Failed to load FAISS index: {e}")
-
+            # 确保在加载失败时，将index设置为None，以便后续创建新集合
+            self.index = None
             self.docstore = {}
             self.index_to_id = {}
 

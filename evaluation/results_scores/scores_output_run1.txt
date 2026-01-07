@@ -1,0 +1,13 @@
+Mean Scores Per Category:
+          bleu_score  f1_score  llm_score  count
+category                                        
+1             0.0090    0.0287     0.7128    282
+2             0.0047    0.0288     0.6262    321
+3             0.0075    0.0351     0.6146     96
+4             0.0071    0.0370     0.7004    841
+
+Overall Mean Scores:
+bleu_score    0.0069
+f1_score      0.0337
+llm_score     0.6818
+dtype: float64

@@ -27,9 +27,9 @@ from mem0.vector_stores.configs import VectorStoreConfig
 
 # 构建 Memory 实例（与 add/search 使用相同的配置）
 vector_provider = os.getenv("MEM0_VECTOR_PROVIDER", "faiss")
-vector_path = os.getenv("MEM0_VECTOR_PATH", "/root/ljz/mymem/evaluation/local_mem0/faiss")
+vector_path = os.getenv("MEM0_VECTOR_PATH", "/root/ljz/mymem2/evaluation/local_mem2/faiss1")
 vector_collection = os.getenv("MEM0_VECTOR_COLLECTION", "mem0")
-vector_dim = int(os.getenv("MEM0_VECTOR_DIM", os.getenv("MEM0_EMBED_DIM", "384")))
+vector_dim = int(os.getenv("MEM0_VECTOR_DIM", os.getenv("MEM0_EMBED_DIM", "1024")))
 
 embed_provider = os.getenv("MEM0_EMBED_PROVIDER", "huggingface")
 embed_model = os.getenv("MEM0_EMBED_MODEL", "multi-qa-MiniLM-L6-cos-v1")
@@ -76,7 +76,7 @@ memory_cfg = MemoryConfig(
 mem0_client = Memory(config=memory_cfg)
 
 # 测试 user_id
-test_user_ids = ["Calvin_0", "Dave_0"]
+test_user_ids = ["Calvin_9", "Dave_9"]
 
 for user_id in test_user_ids:
     print(f"\n{'=' * 80}")

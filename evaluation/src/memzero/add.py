@@ -151,15 +151,30 @@ class MemoryADD:
         self.data_path = data_path
         self.data = None
         self.is_graph = is_graph
+        
         if data_path:
             self.load_data()
 
     def load_data(self):
-        with open(self.data_path, "r") as f:
+        with open(self.data_path, "r", encoding="utf-8") as f:
             self.data = json.load(f)
         return self.data
+    
+    def _extract_dia_ids_from_chats(self, chats, start_idx, end_idx):
+        """从chats的指定范围内提取dia_id列表"""
+        dia_ids = []
+        for chat in chats[start_idx:end_idx]:
+            if "dia_id" in chat:
+                dia_ids.append(chat["dia_id"])
+        return dia_ids
 
-    def add_memory(self, user_id, message, metadata, retries=3):
+    def add_memory(self, user_id, message, metadata, dia_ids=None, retries=3):
+        # 如果有dia_id列表，将其添加到metadata中
+        if dia_ids:
+            if metadata is None:
+                metadata = {}
+            metadata["dia_ids"] = dia_ids
+        
         for attempt in range(retries):
             try:
                 if self.use_local:
@@ -176,7 +191,7 @@ class MemoryADD:
                 else:
                     raise e
 
-    def add_memories_for_speaker(self, speaker, messages, timestamp, desc):
+    def add_memories_for_speaker(self, speaker, messages, timestamp, desc, chats=None):
         # 进度条：使用 `leave=False` 避免在异常时残留大量进度条输出占满控制台
         for batch_idx, i in enumerate(
             tqdm(
@@ -187,7 +202,18 @@ class MemoryADD:
             )
         ):
             batch_messages = messages[i : i + self.batch_size]
-            result = self.add_memory(speaker, batch_messages, metadata={"timestamp": timestamp})
+            # 提取对应的dia_ids（messages和chats是一一对应的）
+            dia_ids = None
+            if chats:
+                end_idx = min(i + self.batch_size, len(chats))
+                dia_ids = self._extract_dia_ids_from_chats(chats, i, end_idx)
+            
+            result = self.add_memory(
+                speaker, 
+                batch_messages, 
+                metadata={"timestamp": timestamp},
+                dia_ids=dia_ids
+            )
 
             # 每 10 个 batch 打印一次 LLM / mem0 返回结果，便于 debug，
             # 同时避免把控制台刷爆。
@@ -233,13 +259,14 @@ class MemoryADD:
                     raise ValueError(f"Unknown speaker: {chat['speaker']}")
 
             # add memories for the two users on different threads
+            # 传递chats以便提取dia_ids
             thread_a = threading.Thread(
                 target=self.add_memories_for_speaker,
-                args=(speaker_a_user_id, messages, timestamp, "Adding Memories for Speaker A"),
+                args=(speaker_a_user_id, messages, timestamp, "Adding Memories for Speaker A", chats),
             )
             thread_b = threading.Thread(
                 target=self.add_memories_for_speaker,
-                args=(speaker_b_user_id, messages_reverse, timestamp, "Adding Memories for Speaker B"),
+                args=(speaker_b_user_id, messages_reverse, timestamp, "Adding Memories for Speaker B", chats),
             )
 
             thread_a.start()

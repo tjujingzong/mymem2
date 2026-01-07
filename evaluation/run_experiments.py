@@ -44,16 +44,23 @@ def main():
     print(f"Running experiments with technique: {args.technique_type}, chunk size: {args.chunk_size}")
 
     if args.technique_type == "mem0":
+        data_path = "dataset/locomo10.json"
         if args.method == "add":
-            memory_manager = MemoryADD(data_path="dataset/locomo10.json", is_graph=args.is_graph)
+            memory_manager = MemoryADD(data_path=data_path, is_graph=args.is_graph)
             memory_manager.process_all_conversations()
         elif args.method == "search":
             output_file_path = os.path.join(
                 args.output_folder,
                 f"mem0_results_top_{args.top_k}_filter_{args.filter_memories}_graph_{args.is_graph}.json",
             )
-            memory_searcher = MemorySearch(output_file_path, args.top_k, args.filter_memories, args.is_graph)
-            memory_searcher.process_data_file("dataset/locomo10.json")
+            memory_searcher = MemorySearch(
+                output_file_path, 
+                args.top_k, 
+                args.filter_memories, 
+                args.is_graph,
+                data_path=data_path
+            )
+            memory_searcher.process_data_file(data_path)
     elif args.technique_type == "rag":
         output_file_path = os.path.join(args.output_folder, f"rag_results_{args.chunk_size}_k{args.num_chunks}.json")
         rag_manager = RAGManager(data_path="dataset/locomo10_rag.json", chunk_size=args.chunk_size, k=args.num_chunks)

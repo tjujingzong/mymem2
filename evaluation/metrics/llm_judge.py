@@ -63,7 +63,15 @@ def evaluate_llm_judge(question, gold_answer, generated_answer):
         temperature=0.0,
     )
     label = json.loads(extract_json(response.choices[0].message.content))["label"]
-    return 1 if label == "CORRECT" else 0
+    
+    # 提取token使用量
+    token_usage = {
+        "prompt_tokens": response.usage.prompt_tokens if response.usage else 0,
+        "completion_tokens": response.usage.completion_tokens if response.usage else 0,
+        "total_tokens": response.usage.total_tokens if response.usage else 0,
+    }
+    
+    return (1 if label == "CORRECT" else 0, token_usage)
 
 
 def main():

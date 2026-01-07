@@ -20,7 +20,7 @@ load_dotenv()
 
 
 class MemorySearch:
-    def __init__(self, output_path="results.json", top_k=10, filter_memories=False, is_graph=False):
+    def __init__(self, output_path="results.json", top_k=10, filter_memories=False, is_graph=False, data_path=None):
         self.use_local = str(os.getenv("MEM0_LOCAL_MODE", "0")).lower() in ("1", "true", "yes")
         if self.use_local:
             vector_provider = os.getenv("MEM0_VECTOR_PROVIDER", "faiss")
@@ -120,8 +120,48 @@ class MemorySearch:
             self.ANSWER_PROMPT = ANSWER_PROMPT_GRAPH
         else:
             self.ANSWER_PROMPT = ANSWER_PROMPT
+        
+        # 加载原始数据文件，用于根据dia_id查找对话内容
+        self.original_data = None
+        if data_path and os.path.exists(data_path):
+            try:
+                with open(data_path, "r", encoding="utf-8") as f:
+                    self.original_data = json.load(f)
+                print(f"已加载原始数据文件: {len(self.original_data)} 个对话")
+            except Exception as e:
+                print(f"加载原始数据文件失败: {e}")
+                self.original_data = None
+    
+    def _get_conversation_by_dia_ids(self, dia_ids, conversation_idx):
+        """根据dia_ids和对话索引从原始数据中获取对话内容"""
+        if not dia_ids or not self.original_data or conversation_idx >= len(self.original_data):
+            return None
+        
+        conversation = self.original_data[conversation_idx].get("conversation", {})
+        if not conversation:
+            return None
+        
+        # 收集所有相关的对话文本（保持顺序）
+        conversation_texts = []
+        dia_ids_set = set(dia_ids)  # 转换为set以提高查找效率
+        
+        # 遍历所有session查找匹配的dia_id
+        # 按session顺序遍历，保持对话的时序性
+        session_keys = sorted([k for k in conversation.keys() if k.startswith("session_") and not k.endswith("_date_time")])
+        
+        for session_key in session_keys:
+            chats = conversation.get(session_key, [])
+            for chat in chats:
+                if "dia_id" in chat and chat["dia_id"] in dia_ids_set:
+                    speaker = chat.get("speaker", "")
+                    text = chat.get("text", "")
+                    conversation_texts.append(f"{speaker}: {text}")
+        
+        if conversation_texts:
+            return "\n".join(conversation_texts)
+        return None
 
-    def search_memory(self, user_id, query, max_retries=3, retry_delay=1):
+    def search_memory(self, user_id, query, conversation_idx=None, max_retries=3, retry_delay=1):
         start_time = time.time()
         retries = 0
         # mem0 v2 要求 filters 非空，这里强制携带 user_id 过滤，避免 400
@@ -170,40 +210,94 @@ class MemorySearch:
             else:
                 memories_list = memories
 
-            semantic_memories = [
-                {
-                    "memory": memory["memory"] if isinstance(memory, dict) else str(memory),
-                    "timestamp": memory.get("metadata", {}).get("timestamp") if isinstance(memory, dict) else "",
-                    "score": round(memory.get("score", 0), 2) if isinstance(memory, dict) else None,
+            semantic_memories = []
+            for memory in memories_list:
+                memory_dict = memory if isinstance(memory, dict) else {"memory": str(memory)}
+                metadata = memory_dict.get("metadata", {})
+                
+                # 获取dia_ids并获取原始对话
+                dia_ids = metadata.get("dia_ids", [])
+                original_conversation = None
+                if dia_ids and conversation_idx is not None:
+                    original_conversation = self._get_conversation_by_dia_ids(dia_ids, conversation_idx)
+                
+                memory_item = {
+                    "memory": memory_dict.get("memory", str(memory)),
+                    "timestamp": metadata.get("timestamp", ""),
+                    "score": round(memory_dict.get("score", 0), 2) if isinstance(memory_dict.get("score"), (int, float)) else None,
                 }
-                for memory in memories_list
-            ]
+                
+                # 如果有原始对话，添加到结果中
+                if original_conversation:
+                    memory_item["original_conversation"] = original_conversation
+                    memory_item["dia_ids"] = dia_ids
+                
+                semantic_memories.append(memory_item)
+            
             graph_memories = None
         else:
-            semantic_memories = [
-                {
+            semantic_memories = []
+            for memory in memories["results"]:
+                metadata = memory.get("metadata", {})
+                
+                # 获取dia_ids并获取原始对话
+                dia_ids = metadata.get("dia_ids", [])
+                original_conversation = None
+                if dia_ids and conversation_idx is not None:
+                    original_conversation = self._get_conversation_by_dia_ids(dia_ids, conversation_idx)
+                
+                memory_item = {
                     "memory": memory["memory"],
-                    "timestamp": memory["metadata"]["timestamp"],
-                    "score": round(memory["score"], 2),
+                    "timestamp": metadata.get("timestamp", ""),
+                    "score": round(memory.get("score", 0), 2),
                 }
-                for memory in memories["results"]
-            ]
+                
+                # 如果有原始对话，添加到结果中
+                if original_conversation:
+                    memory_item["original_conversation"] = original_conversation
+                    memory_item["dia_ids"] = dia_ids
+                
+                semantic_memories.append(memory_item)
+            
             graph_memories = [
                 {"source": relation["source"], "relationship": relation["relationship"], "target": relation["target"]}
                 for relation in memories["relations"]
             ]
         return semantic_memories, graph_memories, end_time - start_time
 
-    def answer_question(self, speaker_1_user_id, speaker_2_user_id, question, answer, category):
+    def answer_question(self, speaker_1_user_id, speaker_2_user_id, question, answer, category, conversation_idx=None):
         speaker_1_memories, speaker_1_graph_memories, speaker_1_memory_time = self.search_memory(
-            speaker_1_user_id, question
+            speaker_1_user_id, question, conversation_idx=conversation_idx
         )
         speaker_2_memories, speaker_2_graph_memories, speaker_2_memory_time = self.search_memory(
-            speaker_2_user_id, question
+            speaker_2_user_id, question, conversation_idx=conversation_idx
         )
 
         search_1_memory = [f"{item['timestamp']}: {item['memory']}" for item in speaker_1_memories]
         search_2_memory = [f"{item['timestamp']}: {item['memory']}" for item in speaker_2_memories]
+        
+        # 收集原始对话内容（去重）
+        original_conversations_1 = []
+        seen_dia_ids_1 = set()
+        for item in speaker_1_memories:
+            if "original_conversation" in item and item["original_conversation"]:
+                dia_ids = item.get("dia_ids", [])
+                # 使用dia_ids的元组作为唯一标识
+                dia_ids_key = tuple(sorted(dia_ids)) if dia_ids else None
+                if dia_ids_key and dia_ids_key not in seen_dia_ids_1:
+                    original_conversations_1.append(item["original_conversation"])
+                    seen_dia_ids_1.add(dia_ids_key)
+        
+        original_conversations_2 = []
+        seen_dia_ids_2 = set()
+        for item in speaker_2_memories:
+            if "original_conversation" in item and item["original_conversation"]:
+                dia_ids = item.get("dia_ids", [])
+                # 使用dia_ids的元组作为唯一标识
+                dia_ids_key = tuple(sorted(dia_ids)) if dia_ids else None
+                if dia_ids_key and dia_ids_key not in seen_dia_ids_2:
+                    original_conversations_2.append(item["original_conversation"])
+                    seen_dia_ids_2.add(dia_ids_key)
 
         template = Template(self.ANSWER_PROMPT)
         answer_prompt = template.render(
@@ -213,6 +307,8 @@ class MemorySearch:
             speaker_2_memories=json.dumps(search_2_memory, indent=4),
             speaker_1_graph_memories=json.dumps(speaker_1_graph_memories, indent=4),
             speaker_2_graph_memories=json.dumps(speaker_2_graph_memories, indent=4),
+            speaker_1_original_conversations=json.dumps(original_conversations_1, indent=4, ensure_ascii=False) if original_conversations_1 else "",
+            speaker_2_original_conversations=json.dumps(original_conversations_2, indent=4, ensure_ascii=False) if original_conversations_2 else "",
             question=question,
         )
 
@@ -222,6 +318,14 @@ class MemorySearch:
         )
         t2 = time.time()
         response_time = t2 - t1
+        
+        # 提取token使用量
+        token_usage = {
+            "prompt_tokens": response.usage.prompt_tokens if response.usage else 0,
+            "completion_tokens": response.usage.completion_tokens if response.usage else 0,
+            "total_tokens": response.usage.total_tokens if response.usage else 0,
+        }
+        
         return (
             response.choices[0].message.content,
             speaker_1_memories,
@@ -231,9 +335,10 @@ class MemorySearch:
             speaker_1_graph_memories,
             speaker_2_graph_memories,
             response_time,
+            token_usage,
         )
 
-    def process_question(self, val, speaker_a_user_id, speaker_b_user_id):
+    def process_question(self, val, speaker_a_user_id, speaker_b_user_id, conversation_idx=None):
         question = val.get("question", "")
         answer = val.get("answer", "")
         category = val.get("category", -1)
@@ -249,7 +354,8 @@ class MemorySearch:
             speaker_1_graph_memories,
             speaker_2_graph_memories,
             response_time,
-        ) = self.answer_question(speaker_a_user_id, speaker_b_user_id, question, answer, category)
+            token_usage,
+        ) = self.answer_question(speaker_a_user_id, speaker_b_user_id, question, answer, category, conversation_idx=conversation_idx)
 
         result = {
             "question": question,
@@ -267,6 +373,7 @@ class MemorySearch:
             "speaker_1_graph_memories": speaker_1_graph_memories,
             "speaker_2_graph_memories": speaker_2_graph_memories,
             "response_time": response_time,
+            "token_usage": token_usage,
         }
 
         # Save results after each question is processed
@@ -276,8 +383,17 @@ class MemorySearch:
         return result
 
     def process_data_file(self, file_path):
-        with open(file_path, "r") as f:
+        with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
+        
+        # 如果还没有加载原始数据，加载它
+        if not self.original_data:
+            try:
+                with open(file_path, "r", encoding="utf-8") as f:
+                    self.original_data = json.load(f)
+                print(f"已加载原始数据文件: {len(self.original_data)} 个对话")
+            except Exception as e:
+                print(f"加载原始数据文件失败: {e}")
 
         for idx, item in tqdm(enumerate(data), total=len(data), desc="Processing conversations"):
             qa = item["qa"]
@@ -291,7 +407,7 @@ class MemorySearch:
             for question_item in tqdm(
                 qa, total=len(qa), desc=f"Processing questions for conversation {idx}", leave=False
             ):
-                result = self.process_question(question_item, speaker_a_user_id, speaker_b_user_id)
+                result = self.process_question(question_item, speaker_a_user_id, speaker_b_user_id, conversation_idx=idx)
                 self.results[idx].append(result)
 
                 # Save results after each question is processed

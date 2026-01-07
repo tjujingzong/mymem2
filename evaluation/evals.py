@@ -27,19 +27,54 @@ def process_item(item_data, pbar, pbar_lock):
 
         metrics = calculate_metrics(pred_answer, gt_answer)
         bleu_scores = calculate_bleu_scores(pred_answer, gt_answer)
-        llm_score = evaluate_llm_judge(question, gt_answer, pred_answer)
+        llm_result = evaluate_llm_judge(question, gt_answer, pred_answer)
+        
+        # 处理LLM judge的返回值（可能是元组或单个值，以兼容旧版本）
+        if isinstance(llm_result, tuple):
+            llm_score, llm_judge_token_usage = llm_result
+        else:
+            llm_score = llm_result
+            llm_judge_token_usage = None
 
-        local_results[k].append(
-            {
-                "question": question,
-                "answer": gt_answer,
-                "response": pred_answer,
-                "category": category,
-                "bleu_score": bleu_scores["bleu1"],
-                "f1_score": metrics["f1"],
-                "llm_score": llm_score,
-            }
-        )
+        # 提取时间信息和token信息（如果存在）
+        result_item = {
+            "question": question,
+            "answer": gt_answer,
+            "response": pred_answer,
+            "category": category,
+            "bleu_score": bleu_scores["bleu1"],
+            "f1_score": metrics["f1"],
+            "llm_score": llm_score,
+        }
+        
+        # 保留响应时间信息
+        if "response_time" in item:
+            result_item["response_time"] = item["response_time"]
+        if "speaker_1_memory_time" in item:
+            result_item["speaker_1_memory_time"] = item["speaker_1_memory_time"]
+        if "speaker_2_memory_time" in item:
+            result_item["speaker_2_memory_time"] = item["speaker_2_memory_time"]
+        
+        # 保留token使用量信息（QA过程的token）
+        if "token_usage" in item:
+            result_item["token_usage"] = item["token_usage"]
+        elif "prompt_tokens" in item or "completion_tokens" in item or "total_tokens" in item:
+            # 兼容旧格式（如果token信息是平铺的）
+            token_usage = {}
+            if "prompt_tokens" in item:
+                token_usage["prompt_tokens"] = item["prompt_tokens"]
+            if "completion_tokens" in item:
+                token_usage["completion_tokens"] = item["completion_tokens"]
+            if "total_tokens" in item:
+                token_usage["total_tokens"] = item["total_tokens"]
+            if token_usage:
+                result_item["token_usage"] = token_usage
+        
+        # 记录LLM judge评估过程的token使用量
+        if llm_judge_token_usage:
+            result_item["llm_judge_token_usage"] = llm_judge_token_usage
+        
+        local_results[k].append(result_item)
 
         # 更新进度条（线程安全）
         with pbar_lock:
