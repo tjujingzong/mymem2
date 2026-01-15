@@ -17,7 +17,6 @@ from pathlib import Path
 from typing import Dict, List, Union
 
 import nltk
-from bert_score import score as bert_score
 from nltk.translate.bleu_score import SmoothingFunction, sentence_bleu
 from nltk.translate.meteor_score import meteor_score
 from rouge_score import rouge_scorer
@@ -38,13 +37,17 @@ else:
     # 如果项目根目录没有 .env，尝试当前目录
     load_dotenv()
 
-# Download required NLTK data
-try:
-    nltk.download("punkt", quiet=True)
-    nltk.download("punkt_tab", quiet=True)
-    nltk.download("wordnet", quiet=True)
-except Exception as e:
-    print(f"Error downloading NLTK data: {e}")
+# Download required NLTK data (may hit network).
+# 默认关闭自动下载，避免评估脚本“导包阶段卡住/无输出”。
+# 如需开启：设置 ALLOW_NLTK_DOWNLOAD=1
+_ALLOW_NLTK_DOWNLOAD = os.getenv("ALLOW_NLTK_DOWNLOAD", "0").strip().lower() in ("1", "true", "yes")
+if _ALLOW_NLTK_DOWNLOAD:
+    try:
+        nltk.download("punkt", quiet=True)
+        nltk.download("punkt_tab", quiet=True)
+        nltk.download("wordnet", quiet=True)
+    except Exception as e:
+        print(f"Error downloading NLTK data: {e}")
 
 # Initialize SentenceTransformer model (this will be reused)
 # 优先使用本地模型，如果不存在则从 HuggingFace 下载
@@ -179,6 +182,8 @@ def calculate_bleu_scores(prediction: str, reference: str) -> Dict[str, float]:
 def calculate_bert_scores(prediction: str, reference: str) -> Dict[str, float]:
     """Calculate BERTScore for semantic similarity."""
     try:
+        # 延迟导入：避免在模块 import 阶段触发下载/初始化
+        from bert_score import score as bert_score
         P, R, F1 = bert_score([prediction], [reference], lang="en", verbose=False)
         return {"bert_precision": P.item(), "bert_recall": R.item(), "bert_f1": F1.item()}
     except Exception as e:

@@ -20,7 +20,15 @@ load_dotenv()
 
 
 class MemorySearch:
-    def __init__(self, output_path="results.json", top_k=10, filter_memories=False, is_graph=False, data_path=None):
+    def __init__(
+        self,
+        output_path="results.json",
+        top_k=10,
+        filter_memories=False,
+        is_graph=False,
+        data_path=None,
+        include_original_conversations=None,
+    ):
         self.use_local = str(os.getenv("MEM0_LOCAL_MODE", "0")).lower() in ("1", "true", "yes")
         if self.use_local:
             vector_provider = os.getenv("MEM0_VECTOR_PROVIDER", "faiss")
@@ -111,6 +119,17 @@ class MemorySearch:
         self.output_path = output_path
         self.filter_memories = filter_memories
         self.is_graph = is_graph
+        if include_original_conversations is None:
+            # 默认值为 1 (True)，保持旧行为兼容性
+            self.include_original_conversations = str(
+                os.getenv("MEM0_INCLUDE_ORIGINAL_CONVERSATIONS", "1")
+            ).lower() in ("1", "true", "yes")
+        else:
+            self.include_original_conversations = include_original_conversations
+
+        # 是否启用两阶段按需加载原文（默认关闭，保持旧行为不变）
+        self.qa_two_stage = str(os.getenv("MEM0_QA_TWO_STAGE", "0")).lower() in ("1", "true", "yes")
+
         # 确保输出目录存在
         output_dir = os.path.dirname(self.output_path)
         if output_dir:
@@ -265,6 +284,54 @@ class MemorySearch:
             ]
         return semantic_memories, graph_memories, end_time - start_time
 
+    def _collect_original_conversations(self, speaker_memories):
+        original_conversations = []
+        seen_dia_ids = set()
+        for item in speaker_memories:
+            if "original_conversation" in item and item["original_conversation"]:
+                dia_ids = item.get("dia_ids", [])
+                dia_ids_key = tuple(sorted(dia_ids)) if dia_ids else None
+                if dia_ids_key and dia_ids_key not in seen_dia_ids:
+                    original_conversations.append(item["original_conversation"])
+                    seen_dia_ids.add(dia_ids_key)
+        return original_conversations
+
+    def _call_llm(self, prompt):
+        t1 = time.time()
+        response = self.openai_client.chat.completions.create(
+            model=os.getenv("MODEL"),
+            messages=[{"role": "system", "content": prompt}],
+            temperature=0.0,
+        )
+        t2 = time.time()
+        response_time = t2 - t1
+        token_usage = {
+            "prompt_tokens": response.usage.prompt_tokens if response.usage else 0,
+            "completion_tokens": response.usage.completion_tokens if response.usage else 0,
+            "total_tokens": response.usage.total_tokens if response.usage else 0,
+        }
+        content = response.choices[0].message.content
+        return content, response_time, token_usage
+
+    def _need_original_conversations(self, answer_text):
+        if not answer_text:
+            return True
+        text = str(answer_text).strip().lower()
+        triggers = [
+            "i don't know",
+            "i do not know",
+            "unknown",
+            "not sure",
+            "cannot determine",
+            "can't determine",
+            "insufficient",
+            "need more",
+            "no information",
+            "no information provided",
+            "none",
+        ]
+        return any(t in text for t in triggers)
+
     def answer_question(self, speaker_1_user_id, speaker_2_user_id, question, answer, category, conversation_idx=None):
         speaker_1_memories, speaker_1_graph_memories, speaker_1_memory_time = self.search_memory(
             speaker_1_user_id, question, conversation_idx=conversation_idx
@@ -275,59 +342,95 @@ class MemorySearch:
 
         search_1_memory = [f"{item['timestamp']}: {item['memory']}" for item in speaker_1_memories]
         search_2_memory = [f"{item['timestamp']}: {item['memory']}" for item in speaker_2_memories]
-        
-        # 收集原始对话内容（去重）
-        original_conversations_1 = []
-        seen_dia_ids_1 = set()
-        for item in speaker_1_memories:
-            if "original_conversation" in item and item["original_conversation"]:
-                dia_ids = item.get("dia_ids", [])
-                # 使用dia_ids的元组作为唯一标识
-                dia_ids_key = tuple(sorted(dia_ids)) if dia_ids else None
-                if dia_ids_key and dia_ids_key not in seen_dia_ids_1:
-                    original_conversations_1.append(item["original_conversation"])
-                    seen_dia_ids_1.add(dia_ids_key)
-        
-        original_conversations_2 = []
-        seen_dia_ids_2 = set()
-        for item in speaker_2_memories:
-            if "original_conversation" in item and item["original_conversation"]:
-                dia_ids = item.get("dia_ids", [])
-                # 使用dia_ids的元组作为唯一标识
-                dia_ids_key = tuple(sorted(dia_ids)) if dia_ids else None
-                if dia_ids_key and dia_ids_key not in seen_dia_ids_2:
-                    original_conversations_2.append(item["original_conversation"])
-                    seen_dia_ids_2.add(dia_ids_key)
 
         template = Template(self.ANSWER_PROMPT)
-        answer_prompt = template.render(
+
+        # 第一阶段：默认不带原文（用于省 prompt_tokens）
+        stage1_prompt = template.render(
             speaker_1_user_id=speaker_1_user_id.split("_")[0],
             speaker_2_user_id=speaker_2_user_id.split("_")[0],
             speaker_1_memories=json.dumps(search_1_memory, indent=4),
             speaker_2_memories=json.dumps(search_2_memory, indent=4),
             speaker_1_graph_memories=json.dumps(speaker_1_graph_memories, indent=4),
             speaker_2_graph_memories=json.dumps(speaker_2_graph_memories, indent=4),
-            speaker_1_original_conversations=json.dumps(original_conversations_1, indent=4, ensure_ascii=False) if original_conversations_1 else "",
-            speaker_2_original_conversations=json.dumps(original_conversations_2, indent=4, ensure_ascii=False) if original_conversations_2 else "",
+            speaker_1_original_conversations="",
+            speaker_2_original_conversations="",
             question=question,
         )
 
-        t1 = time.time()
-        response = self.openai_client.chat.completions.create(
-            model=os.getenv("MODEL"), messages=[{"role": "system", "content": answer_prompt}], temperature=0.0
-        )
-        t2 = time.time()
-        response_time = t2 - t1
-        
-        # 提取token使用量
-        token_usage = {
-            "prompt_tokens": response.usage.prompt_tokens if response.usage else 0,
-            "completion_tokens": response.usage.completion_tokens if response.usage else 0,
-            "total_tokens": response.usage.total_tokens if response.usage else 0,
-        }
-        
+        response_text, response_time, token_usage = self._call_llm(stage1_prompt)
+
+        # 兼容旧行为：
+        # - 若未开启两阶段，则是否带原文完全由 include_original_conversations 控制
+        # - 若开启两阶段，则优先按需加载（即第一阶段不带，必要时第二阶段才带）
+        if not self.qa_two_stage:
+            if self.include_original_conversations:
+                original_conversations_1 = self._collect_original_conversations(speaker_1_memories)
+                original_conversations_2 = self._collect_original_conversations(speaker_2_memories)
+
+                stage_full_prompt = template.render(
+                    speaker_1_user_id=speaker_1_user_id.split("_")[0],
+                    speaker_2_user_id=speaker_2_user_id.split("_")[0],
+                    speaker_1_memories=json.dumps(search_1_memory, indent=4),
+                    speaker_2_memories=json.dumps(search_2_memory, indent=4),
+                    speaker_1_graph_memories=json.dumps(speaker_1_graph_memories, indent=4),
+                    speaker_2_graph_memories=json.dumps(speaker_2_graph_memories, indent=4),
+                    speaker_1_original_conversations=json.dumps(original_conversations_1, indent=4, ensure_ascii=False)
+                    if original_conversations_1
+                    else "",
+                    speaker_2_original_conversations=json.dumps(original_conversations_2, indent=4, ensure_ascii=False)
+                    if original_conversations_2
+                    else "",
+                    question=question,
+                )
+                response_text, response_time, token_usage = self._call_llm(stage_full_prompt)
+
+            return (
+                response_text,
+                speaker_1_memories,
+                speaker_2_memories,
+                speaker_1_memory_time,
+                speaker_2_memory_time,
+                speaker_1_graph_memories,
+                speaker_2_graph_memories,
+                response_time,
+                token_usage,
+            )
+
+        # 两阶段：如果第一阶段“不确定/不知道/需要更多信息”，再加载原文重试
+        if self._need_original_conversations(response_text):
+            original_conversations_1 = self._collect_original_conversations(speaker_1_memories)
+            original_conversations_2 = self._collect_original_conversations(speaker_2_memories)
+
+            stage2_prompt = template.render(
+                speaker_1_user_id=speaker_1_user_id.split("_")[0],
+                speaker_2_user_id=speaker_2_user_id.split("_")[0],
+                speaker_1_memories=json.dumps(search_1_memory, indent=4),
+                speaker_2_memories=json.dumps(search_2_memory, indent=4),
+                speaker_1_graph_memories=json.dumps(speaker_1_graph_memories, indent=4),
+                speaker_2_graph_memories=json.dumps(speaker_2_graph_memories, indent=4),
+                speaker_1_original_conversations=json.dumps(original_conversations_1, indent=4, ensure_ascii=False)
+                if original_conversations_1
+                else "",
+                speaker_2_original_conversations=json.dumps(original_conversations_2, indent=4, ensure_ascii=False)
+                if original_conversations_2
+                else "",
+                question=question,
+            )
+
+            response_text_2, response_time_2, token_usage_2 = self._call_llm(stage2_prompt)
+
+            # 用第二阶段结果覆盖输出，同时把 token_usage 叠加记录（不破坏原结构）
+            token_usage = {
+                "prompt_tokens": token_usage.get("prompt_tokens", 0) + token_usage_2.get("prompt_tokens", 0),
+                "completion_tokens": token_usage.get("completion_tokens", 0) + token_usage_2.get("completion_tokens", 0),
+                "total_tokens": token_usage.get("total_tokens", 0) + token_usage_2.get("total_tokens", 0),
+            }
+            response_time = response_time + response_time_2
+            response_text = response_text_2
+
         return (
-            response.choices[0].message.content,
+            response_text,
             speaker_1_memories,
             speaker_2_memories,
             speaker_1_memory_time,

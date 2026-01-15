@@ -37,6 +37,18 @@ def main():
     parser.add_argument("--filter_memories", action="store_true", default=False, help="Whether to filter memories")
     parser.add_argument("--is_graph", action="store_true", default=False, help="Whether to use graph-based search")
     parser.add_argument("--num_chunks", type=int, default=1, help="Number of chunks to process")
+    parser.add_argument(
+        "--include_original_conversations",
+        type=str,
+        default=os.getenv("MEM0_INCLUDE_ORIGINAL_CONVERSATIONS", "1"),
+        help="Whether to include original conversations in QA generation prompt (1/0, true/false). Default keeps backward compatibility.",
+    )
+    parser.add_argument(
+        "--qa_two_stage",
+        type=str,
+        default=os.getenv("MEM0_QA_TWO_STAGE", "0"),
+        help="Whether to enable two-stage QA generation (1/0, true/false). Stage1 without originals; retry with originals if needed.",
+    )
 
     args = parser.parse_args()
 
@@ -53,12 +65,22 @@ def main():
                 args.output_folder,
                 f"mem0_results_top_{args.top_k}_filter_{args.filter_memories}_graph_{args.is_graph}.json",
             )
+            include_original = str(args.include_original_conversations).lower() in ("1", "true", "yes")
+            qa_two_stage = str(args.qa_two_stage).lower() in ("1", "true", "yes")
+
+            # 兼容性：
+            # - 未开启两阶段：按 include_original_conversations 决定是否拼原文
+            # - 开启两阶段：强制第一阶段不拼原文（用于省 token），必要时再按需加载
+            if qa_two_stage:
+                include_original = False
+
             memory_searcher = MemorySearch(
-                output_file_path, 
-                args.top_k, 
-                args.filter_memories, 
+                output_file_path,
+                args.top_k,
+                args.filter_memories,
                 args.is_graph,
-                data_path=data_path
+                data_path=data_path,
+                include_original_conversations=include_original,
             )
             memory_searcher.process_data_file(data_path)
     elif args.technique_type == "rag":

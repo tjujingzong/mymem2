@@ -1,0 +1,58 @@
+{
+  "total_questions": 1986,
+  "excluded_category_5": 446,
+  "questions_without_evidence": 4,
+  "valid_questions": 1536,
+  "speaker_1": {
+    "overall_top5_accuracy": 0.3763020833333333,
+    "top5_accuracy_count": 578,
+    "top5_accuracy_by_category": {
+      "2": {
+        "count": 321,
+        "top5_accuracy": 0.4392523364485981,
+        "top5_accuracy_count": 141
+      },
+      "3": {
+        "count": 92,
+        "top5_accuracy": 0.22826086956521738,
+        "top5_accuracy_count": 21
+      },
+      "1": {
+        "count": 282,
+        "top5_accuracy": 0.41843971631205673,
+        "top5_accuracy_count": 118
+      },
+      "4": {
+        "count": 841,
+        "top5_accuracy": 0.35434007134363854,
+        "top5_accuracy_count": 298
+      }
+    }
+  },
+  "speaker_2": {
+    "overall_top5_accuracy": 0.3678385416666667,
+    "top5_accuracy_count": 565,
+    "top5_accuracy_by_category": {
+      "2": {
+        "count": 321,
+        "top5_accuracy": 0.470404984423676,
+        "top5_accuracy_count": 151
+      },
+      "3": {
+        "count": 92,
+        "top5_accuracy": 0.2608695652173913,
+        "top5_accuracy_count": 24
+      },
+      "1": {
+        "count": 282,
+        "top5_accuracy": 0.4078014184397163,
+        "top5_accuracy_count": 115
+      },
+      "4": {
+        "count": 841,
+        "top5_accuracy": 0.3269916765755054,
+        "top5_accuracy_count": 275
+      }
+    }
+  }
+}
