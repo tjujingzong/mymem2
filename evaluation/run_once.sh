@@ -1,40 +1,19 @@
-#!/bin/bash
-
-# 脚本：依次执行实验、评估和生成分数的完整流程（执行一遍）
-# 使用方法: bash run_once.sh 或 ./run_once.sh
-
 set -e  # 如果任何命令失败，立即退出
-
 # 获取脚本所在目录
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-# ==========================================
-# 配置区域 - 可根据需要修改以下参数
-# ==========================================
+# 是否启用“LLM 动态评估（按需指针回溯原文）”
+# - 兼容性策略：默认 0，完全不改变原有流程；设为 1 才会切到新的 llm_evals.py
+USE_LLM_DYNAMIC_EVAL="${USE_LLM_DYNAMIC_EVAL:-0}"
 
-# MEM0_VECTOR_PATH（向量存储路径）
-VECTOR_PATH="/root/ljz/mymem2/evaluation/local_mem2/faiss_8b"
+# 是否启用短句模式（按标点切分文本而非提取facts）
+# - 默认 0，使用原有的facts提取模式；设为 1 则使用短句模式
+USE_SENTENCE_MODE="${USE_SENTENCE_MODE:-0}"
 
-# 是否在 QA 生成阶段把 original conversations 拼进 prompt
-# - 1: 拼进（兼容旧行为，但 prompt_tokens 更高）
-# - 0: 不拼（更省 token）
-MEM0_INCLUDE_ORIGINAL_CONVERSATIONS="${MEM0_INCLUDE_ORIGINAL_CONVERSATIONS:-1}"
-
-# 是否启用“两阶段按需加载原文”
-# - 0: 关闭（默认，完全不改变旧行为）
-# - 1: 开启：先不带原文生成；若模型判定不确定/需证据，再加载原文重试
-MEM0_QA_TWO_STAGE="${MEM0_QA_TWO_STAGE:-0}"
-
-# 我建议把语义明确成下面这套规则（当前代码基本已做到）：
-# 规则 1：MEM0_QA_TWO_STAGE 优先级最高
-# MEM0_QA_TWO_STAGE=1：启用按需加载（Stage1 不带原文，必要时 Stage2 才带）
-# MEM0_QA_TWO_STAGE=0：关闭按需加载，走单阶段
-# 规则 2：MEM0_INCLUDE_ORIGINAL_CONVERSATIONS 只在单阶段时生效
-# 当 MEM0_QA_TWO_STAGE=0：
-# MEM0_INCLUDE_ORIGINAL_CONVERSATIONS=1：总是带原文（旧行为）
-# MEM0_INCLUDE_ORIGINAL_CONVERSATIONS=0：从不带原文（省 token，但可能影响正确率）
-
+# 是否启用 Hybrid-Sentence 模式（facts 检索 + 对话内短句再检索 + 仅前半句写入 Prompt）
+# - 默认 0；设为 1 则启用
+USE_HYBRID_MODE="${USE_HYBRID_MODE:-0}"
 
 # 输出文件夹
 OUTPUT_SEARCH="results_search"
@@ -56,10 +35,13 @@ if ! [[ "$FROM_STEP" =~ ^[1-4]$ ]]; then
     exit 1
 fi
 
+# MEM0_VECTOR_PATH（向量存储路径）
+VECTOR_PATH="/root/ljz/mymem2/evaluation/local_mem2/faiss_8b-short"
+
 # 输出文件名配置
-SEARCH_FILENAME="mem0_results_top_10-8b-2.json"
-METRICS_FILENAME="evaluation_metrics_run-8b-2.json"
-SCORES_FILENAME="scores_output_run-8b-2.txt"
+SEARCH_FILENAME="mem0_results_top_10-8b-short.json"
+METRICS_FILENAME="evaluation_metrics_run-8b-short.json"
+SCORES_FILENAME="scores_output_run-8b-short.txt"
 
 # run_experiments.py 参数配置
 TECHNIQUE_TYPE="mem0"
@@ -82,16 +64,11 @@ echo ""
 echo "使用 MEM0_VECTOR_PATH: $VECTOR_PATH"
 echo ""
 
-# 预先定义输出文件路径（用于从任意步骤开始时的依赖）
-SEARCH_OUTPUT_FILE="${OUTPUT_SEARCH}/${SEARCH_FILENAME}"
-METRICS_OUTPUT_FILE="${OUTPUT_METRICS}/${METRICS_FILENAME}"
-SCORES_OUTPUT_FILE="${OUTPUT_SCORES}/${SCORES_FILENAME}"
-
 # 步骤1: 运行实验 - add方法（使用对应的 MEM0_VECTOR_PATH）
 if [ "$FROM_STEP" -le 1 ]; then
     echo "[步骤1] 执行: python run_experiments.py --technique_type ${TECHNIQUE_TYPE} --method add"
     echo "环境变量: MEM0_VECTOR_PATH=$VECTOR_PATH"
-    MEM0_VECTOR_PATH="$VECTOR_PATH" MEM0_INCLUDE_ORIGINAL_CONVERSATIONS="$MEM0_INCLUDE_ORIGINAL_CONVERSATIONS" MEM0_QA_TWO_STAGE="$MEM0_QA_TWO_STAGE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method add
+    MEM0_VECTOR_PATH="$VECTOR_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method add
     if [ $? -eq 0 ]; then
         echo "✓ 步骤1完成"
     else
@@ -106,9 +83,12 @@ fi
 
 # 步骤2: 运行实验 - search方法（使用对应的 MEM0_VECTOR_PATH，输出到 results_search/）
 if [ "$FROM_STEP" -le 2 ]; then
+    # 预先定义输出文件路径
+    SEARCH_OUTPUT_FILE="${OUTPUT_SEARCH}/${SEARCH_FILENAME}"
+    
     echo "[步骤2] 执行: python run_experiments.py --technique_type ${TECHNIQUE_TYPE} --method search --top_k ${TOP_K} --output_folder ${OUTPUT_SEARCH}/"
     echo "环境变量: MEM0_VECTOR_PATH=$VECTOR_PATH"
-    MEM0_VECTOR_PATH="$VECTOR_PATH" MEM0_INCLUDE_ORIGINAL_CONVERSATIONS="$MEM0_INCLUDE_ORIGINAL_CONVERSATIONS" MEM0_QA_TWO_STAGE="$MEM0_QA_TWO_STAGE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method search --top_k "$TOP_K" --output_folder "${OUTPUT_SEARCH}/"
+    MEM0_VECTOR_PATH="$VECTOR_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method search --top_k "$TOP_K" --output_folder "${OUTPUT_SEARCH}/"
     if [ $? -eq 0 ]; then
         echo "✓ 步骤2完成"
         # 重命名输出文件以区分不同运行
@@ -125,6 +105,11 @@ else
     echo "[跳过步骤2] FROM_STEP=$FROM_STEP"
     echo ""
 fi
+
+# 预先定义输出文件路径（用于从任意步骤开始时的依赖）
+SEARCH_OUTPUT_FILE="${OUTPUT_SEARCH}/${SEARCH_FILENAME}"
+METRICS_OUTPUT_FILE="${OUTPUT_METRICS}/${METRICS_FILENAME}"
+SCORES_OUTPUT_FILE="${OUTPUT_SCORES}/${SCORES_FILENAME}"
 
 # 步骤3: 运行评估（输出到 results_metrics/）
 if [ "$FROM_STEP" -le 3 ]; then

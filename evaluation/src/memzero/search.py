@@ -4,6 +4,9 @@ import time
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
+import re
+import numpy as np
+
 from dotenv import load_dotenv
 from jinja2 import Template
 from openai import OpenAI
@@ -28,6 +31,8 @@ class MemorySearch:
         is_graph=False,
         data_path=None,
         include_original_conversations=None,
+        use_sentence_mode=False,
+        use_hybrid_mode=False,
     ):
         self.use_local = str(os.getenv("MEM0_LOCAL_MODE", "0")).lower() in ("1", "true", "yes")
         if self.use_local:
@@ -118,7 +123,15 @@ class MemorySearch:
         self.results = defaultdict(list)
         self.output_path = output_path
         self.filter_memories = filter_memories
+        self.use_sentence_mode = use_sentence_mode
+        self.sentence_stats = {"total_sentences": 0, "num_messages": 0}
         self.is_graph = is_graph
+        self.use_hybrid_mode = use_hybrid_mode
+
+        if self.use_sentence_mode and self.is_graph:
+            raise ValueError("短句模式不支持图搜索，请关闭 --is_graph。")
+        if self.use_sentence_mode and self.use_hybrid_mode:
+            raise ValueError("USE_SENTENCE_MODE 与 USE_HYBRID_MODE 不能同时开启。")
         if include_original_conversations is None:
             # 默认值为 1 (True)，保持旧行为兼容性
             self.include_original_conversations = str(
@@ -126,6 +139,10 @@ class MemorySearch:
             ).lower() in ("1", "true", "yes")
         else:
             self.include_original_conversations = include_original_conversations
+
+        # 在纯短句模式下，为了省 token 强制不带原文
+        if self.use_sentence_mode:
+            self.include_original_conversations = False
 
         # 是否启用两阶段按需加载原文（默认关闭，保持旧行为不变）
         self.qa_two_stage = str(os.getenv("MEM0_QA_TWO_STAGE", "0")).lower() in ("1", "true", "yes")
@@ -151,6 +168,34 @@ class MemorySearch:
                 print(f"加载原始数据文件失败: {e}")
                 self.original_data = None
     
+    def _rank_sentences_by_query(self, query: str, sentences: list[str]):
+        """Rank sentences by cosine similarity using the same embedding model as mem0."""
+        if not sentences:
+            return []
+        try:
+            embed_fn = self.mem0_client.embedding_model.embed
+        except AttributeError:
+            # fallback: overlap
+            return sentences
+
+        query_emb = np.array(embed_fn(query, "search"))
+        sent_embs = [np.array(embed_fn(s, "search")) for s in sentences]
+        # normalize
+        query_emb = query_emb / (np.linalg.norm(query_emb) + 1e-8)
+        sims = []
+        for s, emb in zip(sentences, sent_embs):
+            emb_n = emb / (np.linalg.norm(emb) + 1e-8)
+            sims.append(float(np.dot(query_emb, emb_n)))
+        ranked = [s for _, s in sorted(zip(sims, sentences), key=lambda x: -x[0])]
+        return ranked
+
+    def _split_text_to_sentences(self, text: str):
+        if not text:
+            return []
+        parts = re.split(r"[，,。.!！？?；;：:\n\r]+", str(text))
+        sentences = [p.strip() for p in parts if p and p.strip()]
+        return sentences
+
     def _get_conversation_by_dia_ids(self, dia_ids, conversation_idx):
         """根据dia_ids和对话索引从原始数据中获取对话内容"""
         if not dia_ids or not self.original_data or conversation_idx >= len(self.original_data):
@@ -284,15 +329,23 @@ class MemorySearch:
             ]
         return semantic_memories, graph_memories, end_time - start_time
 
-    def _collect_original_conversations(self, speaker_memories):
+    def _collect_original_conversations(self, speaker_memories, query=None):
         original_conversations = []
+        trim_half = self.use_hybrid_mode and query
         seen_dia_ids = set()
         for item in speaker_memories:
             if "original_conversation" in item and item["original_conversation"]:
                 dia_ids = item.get("dia_ids", [])
                 dia_ids_key = tuple(sorted(dia_ids)) if dia_ids else None
                 if dia_ids_key and dia_ids_key not in seen_dia_ids:
-                    original_conversations.append(item["original_conversation"])
+                    convo_text = item["original_conversation"]
+                    if trim_half:
+                        sents = self._split_text_to_sentences(convo_text)
+                        if sents:
+                            ranked = self._rank_sentences_by_query(query, sents)
+                            keep_n = max(1, (len(ranked) + 1) // 2)
+                            convo_text = "\n".join(ranked[:keep_n])
+                    original_conversations.append(convo_text)
                     seen_dia_ids.add(dia_ids_key)
         return original_conversations
 
@@ -365,8 +418,8 @@ class MemorySearch:
         # - 若开启两阶段，则优先按需加载（即第一阶段不带，必要时第二阶段才带）
         if not self.qa_two_stage:
             if self.include_original_conversations:
-                original_conversations_1 = self._collect_original_conversations(speaker_1_memories)
-                original_conversations_2 = self._collect_original_conversations(speaker_2_memories)
+                original_conversations_1 = self._collect_original_conversations(speaker_1_memories, query=question)
+                original_conversations_2 = self._collect_original_conversations(speaker_2_memories, query=question)
 
                 stage_full_prompt = template.render(
                     speaker_1_user_id=speaker_1_user_id.split("_")[0],
@@ -399,8 +452,8 @@ class MemorySearch:
 
         # 两阶段：如果第一阶段“不确定/不知道/需要更多信息”，再加载原文重试
         if self._need_original_conversations(response_text):
-            original_conversations_1 = self._collect_original_conversations(speaker_1_memories)
-            original_conversations_2 = self._collect_original_conversations(speaker_2_memories)
+            original_conversations_1 = self._collect_original_conversations(speaker_1_memories, query=question)
+            original_conversations_2 = self._collect_original_conversations(speaker_2_memories, query=question)
 
             stage2_prompt = template.render(
                 speaker_1_user_id=speaker_1_user_id.split("_")[0],
@@ -479,6 +532,15 @@ class MemorySearch:
             "token_usage": token_usage,
         }
 
+        if self.use_sentence_mode:
+            denom = max(self.sentence_stats.get("num_messages", 0), 1)
+            result["sentence_mode"] = True
+            result["avg_sentences_per_message"] = round(self.sentence_stats.get("total_sentences", 0) / denom, 4)
+            result["total_sentences"] = self.sentence_stats.get("total_sentences", 0)
+            result["num_messages"] = self.sentence_stats.get("num_messages", 0)
+        if self.use_hybrid_mode:
+            result["hybrid_mode"] = True
+
         # Save results after each question is processed
         with open(self.output_path, "w") as f:
             json.dump(self.results, f, indent=4)
@@ -510,6 +572,25 @@ class MemorySearch:
             for question_item in tqdm(
                 qa, total=len(qa), desc=f"Processing questions for conversation {idx}", leave=False
             ):
+                if self.use_sentence_mode:
+                    conversation_obj = item.get("conversation", {})
+                    total_sent = 0
+                    total_msg = 0
+                    for k, chats in conversation_obj.items():
+                        if k in ["speaker_a", "speaker_b"] or "date" in k or "timestamp" in k:
+                            continue
+                        if not isinstance(chats, list):
+                            continue
+                        for chat in chats:
+                            if not isinstance(chat, dict):
+                                continue
+                            text = chat.get("text", "")
+                            sents = self._split_text_to_sentences(text)
+                            total_sent += len(sents)
+                            total_msg += 1
+                    self.sentence_stats["total_sentences"] = total_sent
+                    self.sentence_stats["num_messages"] = total_msg
+
                 result = self.process_question(question_item, speaker_a_user_id, speaker_b_user_id, conversation_idx=idx)
                 self.results[idx].append(result)
 

@@ -17,6 +17,11 @@ from src.utils import METHODS, TECHNIQUES
 from src.zep.add import ZepAdd
 from src.zep.search import ZepSearch
 
+# 通过环境变量切换短句模式（保持默认不变）
+USE_SENTENCE_MODE = str(os.getenv("USE_SENTENCE_MODE", "0")).lower() in ("1", "true", "yes")
+# Hybrid-Sentence 模式：facts 检索 + 对话内短句再检索
+USE_HYBRID_MODE = str(os.getenv("USE_HYBRID_MODE", "0")).lower() in ("1", "true", "yes")
+
 
 class Experiment:
     def __init__(self, technique_type, chunk_size):
@@ -58,7 +63,7 @@ def main():
     if args.technique_type == "mem0":
         data_path = "dataset/locomo10.json"
         if args.method == "add":
-            memory_manager = MemoryADD(data_path=data_path, is_graph=args.is_graph)
+            memory_manager = MemoryADD(data_path=data_path, is_graph=args.is_graph, use_sentence_mode=USE_SENTENCE_MODE)
             memory_manager.process_all_conversations()
         elif args.method == "search":
             output_file_path = os.path.join(
@@ -81,6 +86,8 @@ def main():
                 args.is_graph,
                 data_path=data_path,
                 include_original_conversations=include_original,
+                use_sentence_mode=USE_SENTENCE_MODE,
+                use_hybrid_mode=USE_HYBRID_MODE,
             )
             memory_searcher.process_data_file(data_path)
     elif args.technique_type == "rag":

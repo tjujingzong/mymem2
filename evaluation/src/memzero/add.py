@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -125,7 +126,7 @@ def _build_local_memory():
 
 
 class MemoryADD:
-    def __init__(self, data_path=None, batch_size=2, is_graph=False):
+    def __init__(self, data_path=None, batch_size=2, is_graph=False, use_sentence_mode=False):
         self.use_local = _use_local_memory()
         if self.use_local:
             self.mem0_client = _build_local_memory()
@@ -151,6 +152,7 @@ class MemoryADD:
         self.data_path = data_path
         self.data = None
         self.is_graph = is_graph
+        self.use_sentence_mode = use_sentence_mode
         
         if data_path:
             self.load_data()
@@ -168,6 +170,13 @@ class MemoryADD:
                 dia_ids.append(chat["dia_id"])
         return dia_ids
 
+    def _split_text_to_sentences(self, text: str):
+        if not text:
+            return []
+        parts = re.split(r"[，,。.!！？?；;：:\n\r]+", str(text))
+        sentences = [p.strip() for p in parts if p and p.strip()]
+        return sentences
+
     def add_memory(self, user_id, message, metadata, dia_ids=None, retries=3):
         # 如果有dia_id列表，将其添加到metadata中
         if dia_ids:
@@ -178,10 +187,15 @@ class MemoryADD:
         for attempt in range(retries):
             try:
                 if self.use_local:
-                    result = self.mem0_client.add(message, user_id=user_id, metadata=metadata, infer=True)
+                    result = self.mem0_client.add(message, user_id=user_id, metadata=metadata, infer=(not self.use_sentence_mode))
                 else:
                     result = self.mem0_client.add(
-                        message, user_id=user_id, version="v2", metadata=metadata, enable_graph=self.is_graph
+                        message,
+                        user_id=user_id,
+                        version="v2",
+                        metadata=metadata,
+                        enable_graph=self.is_graph,
+                        infer=(not self.use_sentence_mode),
                     )
                 return result
             except Exception as e:
@@ -202,18 +216,42 @@ class MemoryADD:
             )
         ):
             batch_messages = messages[i : i + self.batch_size]
+            
             # 提取对应的dia_ids（messages和chats是一一对应的）
             dia_ids = None
             if chats:
                 end_idx = min(i + self.batch_size, len(chats))
                 dia_ids = self._extract_dia_ids_from_chats(chats, i, end_idx)
-            
-            result = self.add_memory(
-                speaker, 
-                batch_messages, 
-                metadata={"timestamp": timestamp},
-                dia_ids=dia_ids
-            )
+
+            # 短句模式：把每个短句当作一条 memory 写入向量库（infer=False 已由 add_memory 控制）
+            if self.use_sentence_mode:
+                sentence_idx = i * 100000
+                for message_dict in batch_messages:
+                    if not isinstance(message_dict, dict):
+                        continue
+                    content = message_dict.get("content", "")
+                    role = message_dict.get("role", "")
+
+                    # content 形如 "speaker: text"，按你的要求只切 chat['text']：取冒号后的部分
+                    text_part = content
+                    if isinstance(content, str) and ":" in content:
+                        text_part = content.split(":", 1)[1]
+                    sentences = self._split_text_to_sentences(text_part)
+
+                    for sent in sentences:
+                        per_meta = {"timestamp": timestamp, "role": role, "sentence_mode": True, "sentence_idx": sentence_idx}
+                        if dia_ids:
+                            per_meta["dia_ids"] = dia_ids
+                        self.add_memory(speaker, sent, metadata=per_meta, dia_ids=dia_ids)
+                        sentence_idx += 1
+                result = None
+            else:
+                result = self.add_memory(
+                    speaker, 
+                    batch_messages, 
+                    metadata={"timestamp": timestamp},
+                    dia_ids=dia_ids
+                )
 
             # 每 10 个 batch 打印一次 LLM / mem0 返回结果，便于 debug，
             # 同时避免把控制台刷爆。
