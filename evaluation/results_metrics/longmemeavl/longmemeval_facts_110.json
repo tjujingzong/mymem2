@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "How many doctor's appointments did I go to in March?",
+            "answer": "2",
+            "response": "Answer: Two appointments.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.41070103645324707,
+            "speaker_1_memory_time": 0.4422261714935303,
+            "speaker_2_memory_time": 0.042943477630615234,
+            "token_usage": {
+                "prompt_tokens": 3821,
+                "completion_tokens": 6,
+                "total_tokens": 3827
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many days did it take for my laptop backpack to arrive after I bought it?",
+            "answer": "5 days. 6 days (including the last day) is also acceptable.",
+            "response": "The laptop backpack was bought on 1/15 and arrived on 1/20. \n\n**Answer:** 5 days.",
+            "category": "multi-session",
+            "bleu_score": 0.23809523809523808,
+            "f1_score": 0.2608695652173913,
+            "llm_score": 1,
+            "response_time": 0.5156950950622559,
+            "speaker_1_memory_time": 0.042105913162231445,
+            "speaker_2_memory_time": 0.04190969467163086,
+            "token_usage": {
+                "prompt_tokens": 2411,
+                "completion_tokens": 29,
+                "total_tokens": 2440
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 446,
+                "completion_tokens": 8,
+                "total_tokens": 454
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "How many musical instruments do I currently own?",
+            "answer": "I currently own 4 musical instruments. I've had the Fender Stratocaster electric guitar for 5 years, the Yamaha FG800 acoustic guitar for 8 years, the 5-piece Pearl Export drum set for an unspecified amount of time, and the Korg B1 piano for 3 years.",
+            "response": "Answer: None mentioned.",
+            "category": "multi-session",
+            "bleu_score": 2.4681960817335914e-05,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.43302154541015625,
+            "speaker_1_memory_time": 0.04423785209655762,
+            "speaker_2_memory_time": 0.042841434478759766,
+            "token_usage": {
+                "prompt_tokens": 4400,
+                "completion_tokens": 6,
+                "total_tokens": 4406
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 462,
+                "completion_tokens": 8,
+                "total_tokens": 470
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How many fitness classes do I attend in a typical week?",
+            "answer": "5",
+            "response": "**Answer:** 4 fitness classes.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.29185914993286133,
+            "speaker_1_memory_time": 0.04177403450012207,
+            "speaker_2_memory_time": 0.04190206527709961,
+            "token_usage": {
+                "prompt_tokens": 2488,
+                "completion_tokens": 9,
+                "total_tokens": 2497
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many projects have I been working on simultaneously, excluding my thesis?",
+            "answer": "2",
+            "response": "**Answer:** Two projects.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.20893454551696777,
+            "speaker_1_memory_time": 0.042870283126831055,
+            "speaker_2_memory_time": 0.04265475273132324,
+            "token_usage": {
+                "prompt_tokens": 1869,
+                "completion_tokens": 7,
+                "total_tokens": 1876
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many fish are there in total in both of my aquariums?",
+            "answer": "17",
+            "response": "Answer: 25 fish",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.4925520420074463,
+            "speaker_1_memory_time": 0.044420719146728516,
+            "speaker_2_memory_time": 0.043187618255615234,
+            "token_usage": {
+                "prompt_tokens": 4949,
+                "completion_tokens": 7,
+                "total_tokens": 4956
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many pieces of jewelry did I acquire in the last two months?",
+            "answer": "3",
+            "response": "Answer: 1 piece",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.39011526107788086,
+            "speaker_1_memory_time": 0.043144941329956055,
+            "speaker_2_memory_time": 0.042313575744628906,
+            "token_usage": {
+                "prompt_tokens": 3891,
+                "completion_tokens": 6,
+                "total_tokens": 3897
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many health-related devices do I use in a day?",
+            "answer": "4",
+            "response": "**Answer:** 2 devices",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.3131225109100342,
+            "speaker_1_memory_time": 0.043810367584228516,
+            "speaker_2_memory_time": 0.043134212493896484,
+            "token_usage": {
+                "prompt_tokens": 2920,
+                "completion_tokens": 7,
+                "total_tokens": 2927
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How much money did I raise in total through all the charity events I participated in?",
+            "answer": "$5,850",
+            "response": "**Answer:** $5,600",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.4,
+            "llm_score": 1,
+            "response_time": 0.3125340938568115,
+            "speaker_1_memory_time": 0.04395866394042969,
+            "speaker_2_memory_time": 0.043996334075927734,
+            "token_usage": {
+                "prompt_tokens": 2594,
+                "completion_tokens": 10,
+                "total_tokens": 2604
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 418,
+                "completion_tokens": 8,
+                "total_tokens": 426
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many days did it take for me to receive the new remote shutter release after I ordered it?",
+            "answer": "5 days. 6 days (including the last day) is also acceptable.",
+            "response": "The user ordered the remote shutter release on February 5th and received it on February 10th. \n\nTo calculate the number of days between these dates:\n- February 5th to February 6th: 1 day\n- February 6th to February 7th: 2 days\n- February 7th to February 8th: 3 days\n- February 8th to February 9th: 4 days\n- February 9th to February 10th: 5 days\n\nIt took **5 days** to receive the new remote shutter release after ordering it.\n\nAnswer: 5 days",
+            "category": "multi-session",
+            "bleu_score": 0.07368421052631577,
+            "f1_score": 0.1090909090909091,
+            "llm_score": 1,
+            "response_time": 1.8081433773040771,
+            "speaker_1_memory_time": 0.042680978775024414,
+            "speaker_2_memory_time": 0.043984174728393555,
+            "token_usage": {
+                "prompt_tokens": 2646,
+                "completion_tokens": 132,
+                "total_tokens": 2778
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 553,
+                "completion_tokens": 8,
+                "total_tokens": 561
+            }
+        }
+    ]
+}

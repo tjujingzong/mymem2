@@ -1,0 +1,242 @@
+{
+    "7": [
+        {
+            "question": "How much more did I spend on accommodations per night in Hawaii compared to Tokyo?",
+            "answer": "$270",
+            "response": "**Answer:** $270 more",
+            "category": "multi-session",
+            "bleu_score": 0.2222222222222222,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.3904914855957031,
+            "speaker_1_memory_time": 0.04237055778503418,
+            "speaker_2_memory_time": 0.04111766815185547,
+            "token_usage": {
+                "prompt_tokens": 3548,
+                "completion_tokens": 9,
+                "total_tokens": 3557
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many different cuisines have I learned to cook or tried out in the past few months?",
+            "answer": "4",
+            "response": "Answer: None mentioned.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.0915536880493164,
+            "speaker_1_memory_time": 0.040575265884399414,
+            "speaker_2_memory_time": 0.04107356071472168,
+            "token_usage": {
+                "prompt_tokens": 590,
+                "completion_tokens": 6,
+                "total_tokens": 596
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 411,
+                "completion_tokens": 8,
+                "total_tokens": 419
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many properties did I view before making an offer on the townhouse in the Brookside neighborhood?",
+            "answer": "I viewed four properties before making an offer on the townhouse in the Brookside neighborhood. The reasons I didn't make an offer on them were: the kitchen of the bungalow needed serious renovation, the property in Cedar Creek was out of my budget, the noise from the highway was a deal-breaker for the 1-bedroom condo, and my offer on the 2-bedroom condo was rejected due to a higher bid.",
+            "response": "Answer: Three properties.",
+            "category": "multi-session",
+            "bleu_score": 4.0847888063858055e-07,
+            "f1_score": 0.04,
+            "llm_score": 1,
+            "response_time": 0.6030521392822266,
+            "speaker_1_memory_time": 0.03966164588928223,
+            "speaker_2_memory_time": 0.03850984573364258,
+            "token_usage": {
+                "prompt_tokens": 6013,
+                "completion_tokens": 6,
+                "total_tokens": 6019
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 494,
+                "completion_tokens": 8,
+                "total_tokens": 502
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many different types of food delivery services have I used recently?",
+            "answer": "3",
+            "response": "**Answer:** One",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.13835716247558594,
+            "speaker_1_memory_time": 0.041463613510131836,
+            "speaker_2_memory_time": 0.041660308837890625,
+            "token_usage": {
+                "prompt_tokens": 1304,
+                "completion_tokens": 5,
+                "total_tokens": 1309
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How many hours of jogging and yoga did I do last week?",
+            "answer": "0.5 hours",
+            "response": "Answer: No data available.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.10291862487792969,
+            "speaker_1_memory_time": 0.042047739028930664,
+            "speaker_2_memory_time": 0.04215550422668457,
+            "token_usage": {
+                "prompt_tokens": 584,
+                "completion_tokens": 7,
+                "total_tokens": 591
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How many different museums or galleries did I visit in the month of February?",
+            "answer": "2",
+            "response": "0",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.11655211448669434,
+            "speaker_1_memory_time": 0.44887471199035645,
+            "speaker_2_memory_time": 0.04192304611206055,
+            "token_usage": {
+                "prompt_tokens": 1389,
+                "completion_tokens": 2,
+                "total_tokens": 1391
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many different art-related events did I attend in the past month?",
+            "answer": "4",
+            "response": "**Answer:** None",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2107682228088379,
+            "speaker_1_memory_time": 0.0427091121673584,
+            "speaker_2_memory_time": 0.042264699935913086,
+            "token_usage": {
+                "prompt_tokens": 2148,
+                "completion_tokens": 5,
+                "total_tokens": 2153
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "Which grocery store did I spend the most money at in the past month?",
+            "answer": "Thrive Market",
+            "response": "**Answer:** Walmart",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.24337172508239746,
+            "speaker_1_memory_time": 0.041296958923339844,
+            "speaker_2_memory_time": 0.041152000427246094,
+            "token_usage": {
+                "prompt_tokens": 2518,
+                "completion_tokens": 5,
+                "total_tokens": 2523
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "Which social media platform did I gain the most followers on over the past month?",
+            "answer": "TikTok",
+            "response": "Answer: TikTok",
+            "category": "multi-session",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.427337646484375,
+            "speaker_1_memory_time": 0.042463064193725586,
+            "speaker_2_memory_time": 0.042707204818725586,
+            "token_usage": {
+                "prompt_tokens": 4470,
+                "completion_tokens": 5,
+                "total_tokens": 4475
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What is the average age of me, my parents, and my grandparents?",
+            "answer": "59.6",
+            "response": "To determine the average age of you, your parents, and your grandparents, we need to know the ages of all three groups. However, the provided memories only mention the ages of your grandparents and your parents, not your own age.\n\nFrom the memories:\n- Grandma is 75\n- Grandpa is 78\n- Mom is 55\n- Dad is 58\n\nSince your age is not mentioned, we cannot calculate the average age of all three groups. Therefore, the answer is:\n\n**Cannot determine**",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 1.634394645690918,
+            "speaker_1_memory_time": 0.04201340675354004,
+            "speaker_2_memory_time": 0.04046463966369629,
+            "token_usage": {
+                "prompt_tokens": 3604,
+                "completion_tokens": 109,
+                "total_tokens": 3713
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 513,
+                "completion_tokens": 11,
+                "total_tokens": 524
+            }
+        }
+    ]
+}

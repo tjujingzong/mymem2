@@ -1,0 +1,242 @@
+{
+    "6": [
+        {
+            "question": "How many days ago did I watch the Super Bowl?",
+            "answer": "17 days ago. 18 days (including the last day) is also acceptable.",
+            "response": "The Super Bowl was watched 1 day ago.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.2041892551270785,
+            "f1_score": 0.2105263157894737,
+            "llm_score": 0,
+            "response_time": 0.2992136478424072,
+            "speaker_1_memory_time": 0.03950858116149902,
+            "speaker_2_memory_time": 0.038778066635131836,
+            "token_usage": {
+                "prompt_tokens": 2344,
+                "completion_tokens": 11,
+                "total_tokens": 2355
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 425,
+                "completion_tokens": 8,
+                "total_tokens": 433
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many months passed between the completion of my undergraduate degree and the submission of my master's thesis?",
+            "answer": "6 months",
+            "response": "**Answer:** 12 months",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.4,
+            "llm_score": 0,
+            "response_time": 0.1736607551574707,
+            "speaker_1_memory_time": 0.04352402687072754,
+            "speaker_2_memory_time": 0.0422670841217041,
+            "token_usage": {
+                "prompt_tokens": 1218,
+                "completion_tokens": 8,
+                "total_tokens": 1226
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 416,
+                "completion_tokens": 8,
+                "total_tokens": 424
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How many days passed between the day I repotted the previous spider plant and the day I gave my neighbor, Mrs. Johnson, a few cuttings from my spider plant?",
+            "answer": "14 days. 15 days (including the last day) is also acceptable.",
+            "response": "To determine the number of days between the two events, we need to calculate the difference between the dates:\n\n1. **Repotted the previous spider plant**: 2023/03/04\n2. **Gave cuttings to Mrs. Johnson**: 2023/03/18\n\nSubtracting the two dates:\n\n- 2023/03/18 - 2023/03/04 = 14 days\n\n**Answer:** 14 days",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.08955223880597013,
+            "f1_score": 0.14634146341463414,
+            "llm_score": 1,
+            "response_time": 1.636838436126709,
+            "speaker_1_memory_time": 0.39759206771850586,
+            "speaker_2_memory_time": 0.04046034812927246,
+            "token_usage": {
+                "prompt_tokens": 3276,
+                "completion_tokens": 112,
+                "total_tokens": 3388
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 550,
+                "completion_tokens": 8,
+                "total_tokens": 558
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "How many days ago did I harvest my first batch of fresh herbs from the herb garden kit?",
+            "answer": "3 days ago. 4 days (including the last day) is also acceptable.",
+            "response": "**Answer:** 0 days ago",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.10209462756353925,
+            "f1_score": 0.26666666666666666,
+            "llm_score": 0,
+            "response_time": 0.3367893695831299,
+            "speaker_1_memory_time": 0.04474925994873047,
+            "speaker_2_memory_time": 0.04246020317077637,
+            "token_usage": {
+                "prompt_tokens": 3088,
+                "completion_tokens": 8,
+                "total_tokens": 3096
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 429,
+                "completion_tokens": 8,
+                "total_tokens": 437
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "Which event did I participate in first, the charity gala or the charity bake sale?",
+            "answer": "I participated in the charity bake sale first.",
+            "response": "The charity bake sale.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.44932896411722156,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.35768675804138184,
+            "speaker_1_memory_time": 0.04248523712158203,
+            "speaker_2_memory_time": 0.04469108581542969,
+            "token_usage": {
+                "prompt_tokens": 3628,
+                "completion_tokens": 6,
+                "total_tokens": 3634
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 415,
+                "completion_tokens": 8,
+                "total_tokens": 423
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many weeks ago did I attend a bird watching workshop at the local Audubon society?",
+            "answer": "4",
+            "response": "The answer is: 2 weeks ago.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.20633268356323242,
+            "speaker_1_memory_time": 0.04413461685180664,
+            "speaker_2_memory_time": 0.0438385009765625,
+            "token_usage": {
+                "prompt_tokens": 1489,
+                "completion_tokens": 10,
+                "total_tokens": 1499
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 415,
+                "completion_tokens": 8,
+                "total_tokens": 423
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How many months ago did I attend the photography workshop?",
+            "answer": "3",
+            "response": "Answer: 0 months ago",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.4809083938598633,
+            "speaker_1_memory_time": 0.0974888801574707,
+            "speaker_2_memory_time": 0.042403221130371094,
+            "token_usage": {
+                "prompt_tokens": 4638,
+                "completion_tokens": 7,
+                "total_tokens": 4645
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many days passed between the day I replaced my spark plugs and the day I participated in the Turbocharged Tuesdays auto racking event?",
+            "answer": "29 days. 30 days (including the last day) is also acceptable.",
+            "response": "To determine the number of days between the day the user replaced their spark plugs and the day they participated in the Turbocharged Tuesdays auto racking event, we need to identify the relevant dates from the memories and original conversations.\n\n1. **Spark Plug Replacement Date**: The user replaced their spark plugs on **2023/03/15** (Wed) 08:37, as mentioned in the user's memory.\n\n2. **Turbocharged Tuesdays Event Date**: The user participated in the Turbocharged Tuesdays event on **2023/03/15** (Wed), as mentioned in the user's original conversation.\n\nSince both events occurred on the same date, **2023/03/15**, the number of days between the two events is **0 days**.\n\n**Answer:** 0 days",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.05806451612903226,
+            "f1_score": 0.08695652173913043,
+            "llm_score": 0,
+            "response_time": 2.486473798751831,
+            "speaker_1_memory_time": 0.04329967498779297,
+            "speaker_2_memory_time": 0.0424036979675293,
+            "token_usage": {
+                "prompt_tokens": 3495,
+                "completion_tokens": 178,
+                "total_tokens": 3673
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 609,
+                "completion_tokens": 11,
+                "total_tokens": 620
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many days ago did I go on a whitewater rafting trip in the Oregon mountains?",
+            "answer": "3 days ago. 4 days (including the last day) is also acceptable.",
+            "response": "The memory states that the user went on a whitewater rafting trip \"recently\" on 2023/06/17. Since the current date is not provided, we assume the question is being asked on or after 2023/06/17. Therefore, the trip occurred on the same day as the memory, which is 2023/06/17.\n\nAnswer: 0 days ago.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.11475409836065574,
+            "f1_score": 0.1702127659574468,
+            "llm_score": 0,
+            "response_time": 1.3122587203979492,
+            "speaker_1_memory_time": 0.04487133026123047,
+            "speaker_2_memory_time": 0.04289054870605469,
+            "token_usage": {
+                "prompt_tokens": 2018,
+                "completion_tokens": 96,
+                "total_tokens": 2114
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 516,
+                "completion_tokens": 8,
+                "total_tokens": 524
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How many days ago did I launch my website when I signed a contract with my first client?",
+            "answer": "19 days ago. 20 days (including the last day) is also acceptable.",
+            "response": "To determine how many days ago the website was launched when the first contract was signed, we need to compare the timestamps of the relevant memories.\n\n- The website was launched on **2023/02/10**.\n- The first contract was signed on **2023/03/01**.\n\nNow, calculate the number of days between these two dates:\n\n- From **2023/02/10** to **2023/03/01** is **21 days**.\n\nAnswer: 21 days",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.07777777777777779,
+            "f1_score": 0.16326530612244897,
+            "llm_score": 0,
+            "response_time": 1.754345417022705,
+            "speaker_1_memory_time": 0.044730424880981445,
+            "speaker_2_memory_time": 0.04241681098937988,
+            "token_usage": {
+                "prompt_tokens": 3296,
+                "completion_tokens": 120,
+                "total_tokens": 3416
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 543,
+                "completion_tokens": 11,
+                "total_tokens": 554
+            }
+        }
+    ]
+}

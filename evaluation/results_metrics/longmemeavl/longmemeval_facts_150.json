@@ -1,0 +1,242 @@
+{
+    "2": [
+        {
+            "question": "What should I serve for dinner this weekend with my homegrown ingredients?",
+            "answer": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+            "response": "Answer: Homegrown vegetables and herbs.",
+            "category": "single-session-preference",
+            "bleu_score": 0.0014164298152379191,
+            "f1_score": 0.15,
+            "llm_score": 1,
+            "response_time": 0.12423038482666016,
+            "speaker_1_memory_time": 0.10029458999633789,
+            "speaker_2_memory_time": 0.042140960693359375,
+            "token_usage": {
+                "prompt_tokens": 585,
+                "completion_tokens": 9,
+                "total_tokens": 594
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 457,
+                "completion_tokens": 8,
+                "total_tokens": 465
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "I was thinking about rearranging the furniture in my bedroom this weekend. Any tips?",
+            "answer": "The user would prefer responses that take into account their existing plans to replace the bedroom dresser and their interest in mid-century modern style, suggesting furniture layouts that accommodate the new dresser and incorporate elements of this design aesthetic. They might not prefer general furniture arrangement tips or suggestions that do not consider their specific design preferences.",
+            "response": "Answer: No specific memories found.",
+            "category": "single-session-preference",
+            "bleu_score": 0.0001471303631659116,
+            "f1_score": 0.039999999999999994,
+            "llm_score": 0,
+            "response_time": 0.11128401756286621,
+            "speaker_1_memory_time": 0.039461374282836914,
+            "speaker_2_memory_time": 0.042116641998291016,
+            "token_usage": {
+                "prompt_tokens": 588,
+                "completion_tokens": 8,
+                "total_tokens": 596
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 469,
+                "completion_tokens": 8,
+                "total_tokens": 477
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "I've been struggling with my slow cooker recipes. Any advice on getting better results?",
+            "answer": "The user would prefer responses that provide tips and advice specifically tailored to their slow cooker experiences, utilizing their recent success with beef stew and interest in making yogurt in the slow cooker. They might not prefer general slow cooker recipes or advice unrelated to their specific experiences and interests.",
+            "response": "Answer: Try vegetarian recipes.",
+            "category": "single-session-preference",
+            "bleu_score": 0.00013210075619996857,
+            "f1_score": 0.049999999999999996,
+            "llm_score": 0,
+            "response_time": 0.34173011779785156,
+            "speaker_1_memory_time": 0.4016609191894531,
+            "speaker_2_memory_time": 0.041777849197387695,
+            "token_usage": {
+                "prompt_tokens": 3086,
+                "completion_tokens": 7,
+                "total_tokens": 3093
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 460,
+                "completion_tokens": 8,
+                "total_tokens": 468
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "I'm thinking of inviting my colleagues over for a small gathering. Any tips on what to bake?",
+            "answer": "The user would prefer baking suggestions that take into account their previous success with the lemon poppyseed cake, such as variations of that recipe or other desserts that share similar qualities. They might prefer suggestions that balance impressiveness with manageability, considering their previous experience. The user may not prefer overly complex or unfamiliar recipes, or suggestions that do not build upon their existing baking experience.",
+            "response": "Answer: Make lemon cake and cookies.",
+            "category": "single-session-preference",
+            "bleu_score": 0.0001425483592010489,
+            "f1_score": 0.0784313725490196,
+            "llm_score": 1,
+            "response_time": 0.4807875156402588,
+            "speaker_1_memory_time": 0.04199051856994629,
+            "speaker_2_memory_time": 0.04202532768249512,
+            "token_usage": {
+                "prompt_tokens": 4535,
+                "completion_tokens": 9,
+                "total_tokens": 4544
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 487,
+                "completion_tokens": 8,
+                "total_tokens": 495
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "I've been thinking about ways to stay connected with my colleagues. Any suggestions?",
+            "answer": "The user would prefer responses that acknowledge their desire for social interaction and collaboration while working remotely, utilizing their previous experiences with company initiatives and team collaborations. They might prefer suggestions of virtual team-building activities, regular check-ins, or joining interest-based groups within the company. The user may not prefer generic suggestions that do not take into account their specific work situation or previous attempts at staying connected with colleagues.",
+            "response": "Virtual Coffee Breaks",
+            "category": "single-session-preference",
+            "bleu_score": 1.2583781814263659e-11,
+            "f1_score": 0.03508771929824561,
+            "llm_score": 1,
+            "response_time": 0.09748601913452148,
+            "speaker_1_memory_time": 0.042463064193725586,
+            "speaker_2_memory_time": 0.04167747497558594,
+            "token_usage": {
+                "prompt_tokens": 891,
+                "completion_tokens": 5,
+                "total_tokens": 896
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 483,
+                "completion_tokens": 8,
+                "total_tokens": 491
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "I've been feeling like my chocolate chip cookies need something extra. Any advice?",
+            "answer": "The user would prefer responses that build upon their previous experimentation with turbinado sugar, suggesting ingredients or techniques that complement its richer flavor. They might not prefer generic cookie-making advice or suggestions that don't take into account their existing use of turbinado sugar.",
+            "response": "Answer: Try muscovado sugar.",
+            "category": "single-session-preference",
+            "bleu_score": 0.00035908708510407343,
+            "f1_score": 0.049999999999999996,
+            "llm_score": 1,
+            "response_time": 0.1829376220703125,
+            "speaker_1_memory_time": 0.0411527156829834,
+            "speaker_2_memory_time": 0.04060697555541992,
+            "token_usage": {
+                "prompt_tokens": 1281,
+                "completion_tokens": 9,
+                "total_tokens": 1290
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 460,
+                "completion_tokens": 8,
+                "total_tokens": 468
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "I've been having trouble with the battery life on my phone lately. Any tips?",
+            "answer": "The user would prefer responses that build upon their previous mention of purchasing a portable power bank, such as suggestions on how to optimize its use, like ensuring it's fully charged before use. They might also appreciate tips on utilizing battery-saving features on their phone. The user may not prefer responses that suggest alternative solutions or unrelated advice.",
+            "response": "Answer: Check for software updates.",
+            "category": "single-session-preference",
+            "bleu_score": 4.154359118868661e-05,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.11174559593200684,
+            "speaker_1_memory_time": 0.04054880142211914,
+            "speaker_2_memory_time": 0.04212355613708496,
+            "token_usage": {
+                "prompt_tokens": 588,
+                "completion_tokens": 8,
+                "total_tokens": 596
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 473,
+                "completion_tokens": 8,
+                "total_tokens": 481
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "I've been thinking about making a cocktail for an upcoming get-together, but I'm not sure which one to choose. Any suggestions?",
+            "answer": "Considering their mixology class background, the user would prefer cocktail suggestions that build upon their existing skills and interests, such as creative variations of classic cocktails or innovative twists on familiar flavors. They might appreciate recommendations that incorporate their experience with refreshing summer drinks like Pimm's Cup. The user would not prefer overly simplistic or basic cocktail recipes, and may not be interested in suggestions that don't take into account their mixology class background.",
+            "response": "**Answer:** Try Hendrick's High Tea.",
+            "category": "single-session-preference",
+            "bleu_score": 0.00048804994913636483,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2518293857574463,
+            "speaker_1_memory_time": 0.04135417938232422,
+            "speaker_2_memory_time": 0.04222226142883301,
+            "token_usage": {
+                "prompt_tokens": 1807,
+                "completion_tokens": 11,
+                "total_tokens": 1818
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 507,
+                "completion_tokens": 8,
+                "total_tokens": 515
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+            "answer": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+            "response": "Answer: Explore new techniques and subjects.",
+            "category": "single-session-preference",
+            "bleu_score": 0.00016773131395125593,
+            "f1_score": 0.10526315789473684,
+            "llm_score": 1,
+            "response_time": 0.41074490547180176,
+            "speaker_1_memory_time": 0.04306674003601074,
+            "speaker_2_memory_time": 0.04377341270446777,
+            "token_usage": {
+                "prompt_tokens": 3714,
+                "completion_tokens": 9,
+                "total_tokens": 3723
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 493,
+                "completion_tokens": 8,
+                "total_tokens": 501
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "I'm getting excited about my visit to the music store this weekend. Any tips on what to look for in a new guitar?",
+            "answer": "The user would prefer responses that highlight the differences between Fender Stratocaster and Gibson Les Paul electric guitars, such as the feel of the neck, weight, and sound profile. They might not prefer general tips on buying an electric guitar or suggestions that do not take into account their current guitar and desired upgrade.",
+            "response": "Answer: Check string tension and sound.",
+            "category": "single-session-preference",
+            "bleu_score": 0.0006388574234259652,
+            "f1_score": 0.08,
+            "llm_score": 0,
+            "response_time": 0.12303996086120605,
+            "speaker_1_memory_time": 0.04066801071166992,
+            "speaker_2_memory_time": 0.03817033767700195,
+            "token_usage": {
+                "prompt_tokens": 597,
+                "completion_tokens": 9,
+                "total_tokens": 606
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 480,
+                "completion_tokens": 8,
+                "total_tokens": 488
+            }
+        }
+    ]
+}

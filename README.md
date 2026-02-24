@@ -24,3 +24,26 @@ USE_HYBRID_MODE=1 bash evaluation/run_once.sh
 
 
 USE_HYBRID_MODE=1 bash run_once.sh
+
+
+  {
+    "question_id": "object",
+    "question_type": "object",
+    "question": "object",
+    "question_date": "object",
+    "answer": "object",
+    "answer_session_ids": "object",
+    "haystack_dates": "object",
+    "haystack_session_ids": "object",
+    "haystack_sessions": "object"
+  },
+
+
+  python convert_longmemeval.py --input dataset/longmemeval_s_cleaned.json     --output dataset/longmemeval_as_locomo_10.json     --limit 10
+
+
+  python3 evaluation/convert_firstagent_to_locomo.py \
+  --input evaluation/dataset/FirstAgentDataHighLevel.json \
+  --output evaluation/dataset/FirstAgentDataHighLevel_as_locomo.json
+
+python3 evaluation/summarize_scores.py

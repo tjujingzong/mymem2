@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "How many women are on the team led by my former manager Rachel?",
+            "answer": "6",
+            "response": "Answer: 5 women",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.4329524040222168,
+            "speaker_1_memory_time": 0.4450960159301758,
+            "speaker_2_memory_time": 0.03947591781616211,
+            "token_usage": {
+                "prompt_tokens": 4241,
+                "completion_tokens": 6,
+                "total_tokens": 4247
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many times have I met up with Alex from Germany?",
+            "answer": "We've met up twice.",
+            "response": "**Answer:** Three times.",
+            "category": "knowledge-update",
+            "bleu_score": 0.11111111111111109,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.3208343982696533,
+            "speaker_1_memory_time": 0.0437161922454834,
+            "speaker_2_memory_time": 0.04324221611022949,
+            "token_usage": {
+                "prompt_tokens": 3088,
+                "completion_tokens": 7,
+                "total_tokens": 3095
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "Did I mostly recently increase or decrease the limit on the number of cups of coffee in the morning?",
+            "answer": "You increased the limit (from one cup to two cups)",
+            "response": "Answer: Increased",
+            "category": "knowledge-update",
+            "bleu_score": 0.016595689455954646,
+            "f1_score": 0.16666666666666669,
+            "llm_score": 1,
+            "response_time": 0.32424020767211914,
+            "speaker_1_memory_time": 0.04455757141113281,
+            "speaker_2_memory_time": 0.03926587104797363,
+            "token_usage": {
+                "prompt_tokens": 3436,
+                "completion_tokens": 4,
+                "total_tokens": 3440
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 420,
+                "completion_tokens": 8,
+                "total_tokens": 428
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "Do I have a spare screwdriver for opening up my laptop?",
+            "answer": "Yes",
+            "response": "**Answer:** No, you don't have a spare screwdriver.",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.3411569595336914,
+            "speaker_1_memory_time": 0.040892839431762695,
+            "speaker_2_memory_time": 0.042510986328125,
+            "token_usage": {
+                "prompt_tokens": 2368,
+                "completion_tokens": 15,
+                "total_tokens": 2383
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many Italian restaurants have I tried in my city?",
+            "answer": "The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.",
+            "response": "Answer: None mentioned.",
+            "category": "knowledge-update",
+            "bleu_score": 0.036287181315765006,
+            "f1_score": 0.125,
+            "llm_score": 1,
+            "response_time": 0.09098386764526367,
+            "speaker_1_memory_time": 0.04356503486633301,
+            "speaker_2_memory_time": 0.03887176513671875,
+            "token_usage": {
+                "prompt_tokens": 582,
+                "completion_tokens": 6,
+                "total_tokens": 588
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "How long have I been living in my current apartment in Shinjuku?",
+            "answer": "The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.",
+            "response": "The memories indicate that the user has been living in Harajuku for 3 months. However, the question asks about living in Shinjuku, which is a different area. There is no mention of living in Shinjuku in the provided memories. Therefore, the answer is that there is no information about living in Shinjuku. \n\nAnswer: No information about Shinjuku.",
+            "category": "knowledge-update",
+            "bleu_score": 0.15151515151515155,
+            "f1_score": 0.35555555555555557,
+            "llm_score": 1,
+            "response_time": 1.1512880325317383,
+            "speaker_1_memory_time": 0.04353141784667969,
+            "speaker_2_memory_time": 0.04183650016784668,
+            "token_usage": {
+                "prompt_tokens": 2519,
+                "completion_tokens": 79,
+                "total_tokens": 2598
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 497,
+                "completion_tokens": 8,
+                "total_tokens": 505
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How many trips have I taken my Canon EOS 80D camera on?",
+            "answer": "five",
+            "response": "Answer: Five trips.",
+            "category": "knowledge-update",
+            "bleu_score": 0.2,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.3127424716949463,
+            "speaker_1_memory_time": 0.0420835018157959,
+            "speaker_2_memory_time": 0.04157400131225586,
+            "token_usage": {
+                "prompt_tokens": 3208,
+                "completion_tokens": 6,
+                "total_tokens": 3214
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How many engineers do I lead when I just started my new role as Software Engineer Manager?",
+            "answer": "The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.",
+            "response": "Answer: 4 engineers",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.17084479331970215,
+            "speaker_1_memory_time": 0.03981471061706543,
+            "speaker_2_memory_time": 0.04191327095031738,
+            "token_usage": {
+                "prompt_tokens": 1611,
+                "completion_tokens": 6,
+                "total_tokens": 1617
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 430,
+                "completion_tokens": 8,
+                "total_tokens": 438
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "What new kitchen gadget did I invest in before getting the Air Fryer?",
+            "answer": "Instant Pot",
+            "response": "Answer: Instant Pot",
+            "category": "knowledge-update",
+            "bleu_score": 0.5,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.363661527633667,
+            "speaker_1_memory_time": 0.04000043869018555,
+            "speaker_2_memory_time": 0.0428922176361084,
+            "token_usage": {
+                "prompt_tokens": 3674,
+                "completion_tokens": 5,
+                "total_tokens": 3679
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How often do I see Dr. Johnson?",
+            "answer": "The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.",
+            "response": "The memories mention seeing Dr. Smith, not Dr. Johnson. There is no information about Dr. Johnson. \n\nAnswer: Never mentioned.",
+            "category": "knowledge-update",
+            "bleu_score": 0.5,
+            "f1_score": 0.6206896551724138,
+            "llm_score": 1,
+            "response_time": 0.5130712985992432,
+            "speaker_1_memory_time": 0.04265284538269043,
+            "speaker_2_memory_time": 0.041245460510253906,
+            "token_usage": {
+                "prompt_tokens": 2222,
+                "completion_tokens": 29,
+                "total_tokens": 2251
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 440,
+                "completion_tokens": 11,
+                "total_tokens": 451
+            }
+        }
+    ]
+}

@@ -1,0 +1,242 @@
+{
+    "6": [
+        {
+            "question": "I was going through our previous chat and I was wondering, what was Andy wearing in the script you wrote for the comedy movie scene?",
+            "answer": "Andy was wearing an untidy, stained white shirt.",
+            "response": "Answer: Untidy, stained white shirt.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.5841005873035536,
+            "f1_score": 0.6153846153846154,
+            "llm_score": 1,
+            "response_time": 0.2858469486236572,
+            "speaker_1_memory_time": 0.04419994354248047,
+            "speaker_2_memory_time": 0.042497873306274414,
+            "token_usage": {
+                "prompt_tokens": 2552,
+                "completion_tokens": 10,
+                "total_tokens": 2562
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 431,
+                "completion_tokens": 8,
+                "total_tokens": 439
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "I was looking back at our previous conversation about buying unique engagement rings directly from designers. Can you remind me of the Instagram handle of the UK-based designer who works with unusual gemstones?",
+            "answer": "@jessica_poole_jewellery",
+            "response": "@jessica_poole_jewellery",
+            "category": "single-session-assistant",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.24881887435913086,
+            "speaker_1_memory_time": 0.04398083686828613,
+            "speaker_2_memory_time": 0.04090523719787598,
+            "token_usage": {
+                "prompt_tokens": 1982,
+                "completion_tokens": 10,
+                "total_tokens": 1992
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 441,
+                "completion_tokens": 8,
+                "total_tokens": 449
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "I'm looking back at our previous conversation about the Bajimaya v Reward Homes Pty Ltd case. Can you remind me what year the construction of the house began?",
+            "answer": "2014.",
+            "response": "The construction of the house began in 2014.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.2222222222222222,
+            "f1_score": 0.25,
+            "llm_score": 1,
+            "response_time": 0.3180372714996338,
+            "speaker_1_memory_time": 0.042789459228515625,
+            "speaker_2_memory_time": 0.04052257537841797,
+            "token_usage": {
+                "prompt_tokens": 2172,
+                "completion_tokens": 14,
+                "total_tokens": 2186
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 437,
+                "completion_tokens": 8,
+                "total_tokens": 445
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "I wanted to follow up on our previous conversation about private sector businesses in Chaudhary. Can you remind me of the company that employs over 40,000 people in the rug-manufacturing industry?",
+            "answer": "Jaipur Rugs",
+            "response": "Answer: No specific company mentioned.",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.11131453514099121,
+            "speaker_1_memory_time": 0.041350603103637695,
+            "speaker_2_memory_time": 0.040819406509399414,
+            "token_usage": {
+                "prompt_tokens": 616,
+                "completion_tokens": 8,
+                "total_tokens": 624
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 441,
+                "completion_tokens": 8,
+                "total_tokens": 449
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "I wanted to follow up on our previous conversation about language learning apps. You mentioned a few options, and I was wondering if you could remind me of the one that uses mnemonics to help learners memorize words and phrases?",
+            "answer": "Memrise",
+            "response": "Memrise",
+            "category": "single-session-assistant",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.11913943290710449,
+            "speaker_1_memory_time": 0.3928546905517578,
+            "speaker_2_memory_time": 0.04173398017883301,
+            "token_usage": {
+                "prompt_tokens": 1188,
+                "completion_tokens": 3,
+                "total_tokens": 1191
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 436,
+                "completion_tokens": 8,
+                "total_tokens": 444
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "I was going through our previous conversation and I was wondering if you could remind me of the two companies you mentioned that prioritize employee safety and well-being like Triumvirate?",
+            "answer": "Patagonia and Southwest Airlines.",
+            "response": "Patagonia and Southwest Airlines",
+            "category": "single-session-assistant",
+            "bleu_score": 0.7788007830714049,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.14494085311889648,
+            "speaker_1_memory_time": 0.041719675064086914,
+            "speaker_2_memory_time": 0.04247117042541504,
+            "token_usage": {
+                "prompt_tokens": 1177,
+                "completion_tokens": 7,
+                "total_tokens": 1184
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 433,
+                "completion_tokens": 8,
+                "total_tokens": 441
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "I'm looking back at our previous chat about the DHL Wellness Retreats campaign. Can you remind me how much was allocated for influencer marketing in the campaign plan?",
+            "answer": "$2,000",
+            "response": "The budget for influencer marketing was $2,000.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.2222222222222222,
+            "f1_score": 0.4,
+            "llm_score": 1,
+            "response_time": 0.35866546630859375,
+            "speaker_1_memory_time": 0.041457176208496094,
+            "speaker_2_memory_time": 0.04257321357727051,
+            "token_usage": {
+                "prompt_tokens": 2539,
+                "completion_tokens": 15,
+                "total_tokens": 2554
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 439,
+                "completion_tokens": 8,
+                "total_tokens": 447
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "I was looking back at our previous chat and I wanted to confirm, how many times did the Chiefs play the Jaguars at Arrowhead Stadium?",
+            "answer": "The Chiefs played the Jaguars 12 times at Arrowhead Stadium.",
+            "response": "0",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.04269075393676758,
+            "speaker_1_memory_time": 0.04463982582092285,
+            "speaker_2_memory_time": 0.04056143760681152,
+            "token_usage": {
+                "prompt_tokens": 599,
+                "completion_tokens": 2,
+                "total_tokens": 601
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 429,
+                "completion_tokens": 8,
+                "total_tokens": 437
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "I wanted to follow up on our previous conversation about YouTube videos for workplace posture. Can you remind me of the Mayo Clinic video you recommended?",
+            "answer": "The video is 'How to Sit Properly at a Desk to Avoid Back Pain' and the link is https://www.youtube.com/watch?v=UfOvNlX9Hh0.",
+            "response": "Answer: No specific video was mentioned.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.04478736310001986,
+            "f1_score": 0.08,
+            "llm_score": 0,
+            "response_time": 0.12308573722839355,
+            "speaker_1_memory_time": 0.04060006141662598,
+            "speaker_2_memory_time": 0.04268789291381836,
+            "token_usage": {
+                "prompt_tokens": 599,
+                "completion_tokens": 9,
+                "total_tokens": 608
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 461,
+                "completion_tokens": 8,
+                "total_tokens": 469
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "I was thinking back to our previous conversation about the Radiation Amplified zombie, and I was wondering if you remembered what we finally decided to name it?",
+            "answer": "Fissionator.",
+            "response": "Radialisk",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.19172215461730957,
+            "speaker_1_memory_time": 0.04330182075500488,
+            "speaker_2_memory_time": 0.04065418243408203,
+            "token_usage": {
+                "prompt_tokens": 2323,
+                "completion_tokens": 4,
+                "total_tokens": 2327
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 422,
+                "completion_tokens": 8,
+                "total_tokens": 430
+            }
+        }
+    ]
+}

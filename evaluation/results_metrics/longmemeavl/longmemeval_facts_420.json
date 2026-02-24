@@ -1,0 +1,242 @@
+{
+    "7": [
+        {
+            "question": "How often do I play tennis with my friends at the local park previously? How often do I play now?",
+            "answer": "Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).",
+            "response": "**Answer:** Weekly, planned this Sunday.",
+            "category": "knowledge-update",
+            "bleu_score": 0.047218900709390464,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.4020209312438965,
+            "speaker_1_memory_time": 0.041610002517700195,
+            "speaker_2_memory_time": 0.038764238357543945,
+            "token_usage": {
+                "prompt_tokens": 3558,
+                "completion_tokens": 10,
+                "total_tokens": 3568
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 445,
+                "completion_tokens": 8,
+                "total_tokens": 453
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "What time do I usually go to the gym?",
+            "answer": "6:00 pm",
+            "response": "6:00 pm",
+            "category": "knowledge-update",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.23298287391662598,
+            "speaker_1_memory_time": 0.4513094425201416,
+            "speaker_2_memory_time": 0.043006181716918945,
+            "token_usage": {
+                "prompt_tokens": 2204,
+                "completion_tokens": 6,
+                "total_tokens": 2210
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "What was my previous personal best time for the charity 5K run?",
+            "answer": "27 minutes and 45 seconds",
+            "response": "26 minutes and 30 seconds",
+            "category": "knowledge-update",
+            "bleu_score": 0.6,
+            "f1_score": 0.6,
+            "llm_score": 0,
+            "response_time": 0.26366114616394043,
+            "speaker_1_memory_time": 0.04030203819274902,
+            "speaker_2_memory_time": 0.03910708427429199,
+            "token_usage": {
+                "prompt_tokens": 2342,
+                "completion_tokens": 9,
+                "total_tokens": 2351
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 419,
+                "completion_tokens": 8,
+                "total_tokens": 427
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many different species of birds have I seen in my local park?",
+            "answer": "32",
+            "response": "27",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.374194860458374,
+            "speaker_1_memory_time": 0.039897918701171875,
+            "speaker_2_memory_time": 0.03914642333984375,
+            "token_usage": {
+                "prompt_tokens": 4390,
+                "completion_tokens": 3,
+                "total_tokens": 4393
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many autographed baseballs have I added to my collection in the first three months of collection?",
+            "answer": "15",
+            "response": "**Answer:** 15",
+            "category": "knowledge-update",
+            "bleu_score": 0.14285714285714285,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.3894057273864746,
+            "speaker_1_memory_time": 0.04188847541809082,
+            "speaker_2_memory_time": 0.039052724838256836,
+            "token_usage": {
+                "prompt_tokens": 3826,
+                "completion_tokens": 7,
+                "total_tokens": 3833
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 415,
+                "completion_tokens": 8,
+                "total_tokens": 423
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What day of the week did I meet with my previous language exchange tutor Juan?",
+            "answer": "Wednesday",
+            "response": "Answer: Wednesday",
+            "category": "knowledge-update",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.31326866149902344,
+            "speaker_1_memory_time": 0.044597625732421875,
+            "speaker_2_memory_time": 0.04270148277282715,
+            "token_usage": {
+                "prompt_tokens": 3375,
+                "completion_tokens": 4,
+                "total_tokens": 3379
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What was my previous frequent flyer status on United Airlines before I got the current status?",
+            "answer": "Premier Silver",
+            "response": "**Answer:** Premier Gold status",
+            "category": "knowledge-update",
+            "bleu_score": 0.11111111111111109,
+            "f1_score": 0.3333333333333333,
+            "llm_score": 0,
+            "response_time": 0.3487083911895752,
+            "speaker_1_memory_time": 0.04152226448059082,
+            "speaker_2_memory_time": 0.039316654205322266,
+            "token_usage": {
+                "prompt_tokens": 3467,
+                "completion_tokens": 7,
+                "total_tokens": 3474
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 411,
+                "completion_tokens": 8,
+                "total_tokens": 419
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How much time do I dedicate to coding exercises each day?",
+            "answer": "about two hours",
+            "response": "2 hours a day",
+            "category": "knowledge-update",
+            "bleu_score": 0.25,
+            "f1_score": 0.28571428571428575,
+            "llm_score": 1,
+            "response_time": 0.40630674362182617,
+            "speaker_1_memory_time": 0.04392218589782715,
+            "speaker_2_memory_time": 0.04195070266723633,
+            "token_usage": {
+                "prompt_tokens": 4207,
+                "completion_tokens": 5,
+                "total_tokens": 4212
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "Where am I planning to stay for my birthday trip to Hawaii?",
+            "answer": "Oahu",
+            "response": "Answer: Oahu",
+            "category": "knowledge-update",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.3862175941467285,
+            "speaker_1_memory_time": 0.039808034896850586,
+            "speaker_2_memory_time": 0.03949379920959473,
+            "token_usage": {
+                "prompt_tokens": 4158,
+                "completion_tokens": 5,
+                "total_tokens": 4163
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many Crash Course videos have I watched in the past few weeks?",
+            "answer": "15",
+            "response": "15",
+            "category": "knowledge-update",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.30359792709350586,
+            "speaker_1_memory_time": 0.042270660400390625,
+            "speaker_2_memory_time": 0.04127359390258789,
+            "token_usage": {
+                "prompt_tokens": 3267,
+                "completion_tokens": 3,
+                "total_tokens": 3270
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ]
+}

@@ -1,0 +1,242 @@
+{
+    "2": [
+        {
+            "question": "What is the total number of lunch meals I got from the chicken fajitas and lentil soup?",
+            "answer": "8 meals",
+            "response": "The total number of lunch meals is 8.",
+            "category": "multi-session",
+            "bleu_score": 0.2222222222222222,
+            "f1_score": 0.4,
+            "llm_score": 1,
+            "response_time": 0.4599487781524658,
+            "speaker_1_memory_time": 0.04266190528869629,
+            "speaker_2_memory_time": 0.04094505310058594,
+            "token_usage": {
+                "prompt_tokens": 4210,
+                "completion_tokens": 11,
+                "total_tokens": 4221
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 419,
+                "completion_tokens": 8,
+                "total_tokens": 427
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "What is the total cost of Lola's vet visit and flea medication?",
+            "answer": "$75",
+            "response": "**Answer:** $75",
+            "category": "multi-session",
+            "bleu_score": 0.25,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.4680030345916748,
+            "speaker_1_memory_time": 0.4414517879486084,
+            "speaker_2_memory_time": 0.039089202880859375,
+            "token_usage": {
+                "prompt_tokens": 4969,
+                "completion_tokens": 7,
+                "total_tokens": 4976
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How much more did I have to pay for the trip after the initial quote?",
+            "answer": "$300",
+            "response": "The initial quote was $2,500, and the corrected price was $2,800. Therefore, the additional amount paid was $300. \n\nAnswer: $300 more.",
+            "category": "multi-session",
+            "bleu_score": 0.06451612903225806,
+            "f1_score": 0.1111111111111111,
+            "llm_score": 1,
+            "response_time": 0.7727842330932617,
+            "speaker_1_memory_time": 0.043479204177856445,
+            "speaker_2_memory_time": 0.041443824768066406,
+            "token_usage": {
+                "prompt_tokens": 3065,
+                "completion_tokens": 45,
+                "total_tokens": 3110
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 449,
+                "completion_tokens": 8,
+                "total_tokens": 457
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "What is the total cost of the car cover and detailing spray I purchased?",
+            "answer": "$140",
+            "response": "The total cost is $140.",
+            "category": "multi-session",
+            "bleu_score": 0.2857142857142857,
+            "f1_score": 0.33333333333333337,
+            "llm_score": 1,
+            "response_time": 0.27122020721435547,
+            "speaker_1_memory_time": 0.043506622314453125,
+            "speaker_2_memory_time": 0.041532039642333984,
+            "token_usage": {
+                "prompt_tokens": 2243,
+                "completion_tokens": 10,
+                "total_tokens": 2253
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How much more was the pre-approval amount than the final sale price of the house?",
+            "answer": "$25,000",
+            "response": "**Answer:** $25,000",
+            "category": "multi-session",
+            "bleu_score": 0.25,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.4428269863128662,
+            "speaker_1_memory_time": 0.04291892051696777,
+            "speaker_2_memory_time": 0.03359556198120117,
+            "token_usage": {
+                "prompt_tokens": 4029,
+                "completion_tokens": 11,
+                "total_tokens": 4040
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 421,
+                "completion_tokens": 8,
+                "total_tokens": 429
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "At which university did I present a poster on my thesis research?",
+            "answer": "Harvard University",
+            "response": "Answer: Harvard University",
+            "category": "multi-session",
+            "bleu_score": 0.5,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.2953014373779297,
+            "speaker_1_memory_time": 0.042822837829589844,
+            "speaker_2_memory_time": 0.03988528251647949,
+            "token_usage": {
+                "prompt_tokens": 3144,
+                "completion_tokens": 5,
+                "total_tokens": 3149
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How much did I spend on each coffee mug for my coworkers?",
+            "answer": "$12",
+            "response": "**Answer:** $12",
+            "category": "multi-session",
+            "bleu_score": 0.25,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.324596643447876,
+            "speaker_1_memory_time": 0.04270052909851074,
+            "speaker_2_memory_time": 0.04067039489746094,
+            "token_usage": {
+                "prompt_tokens": 3229,
+                "completion_tokens": 7,
+                "total_tokens": 3236
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "What is the total distance I covered in my four road trips?",
+            "answer": "3,000 miles",
+            "response": "The total distance covered in the four road trips is 3,000 miles.",
+            "category": "multi-session",
+            "bleu_score": 0.15384615384615385,
+            "f1_score": 0.4,
+            "llm_score": 1,
+            "response_time": 0.41546010971069336,
+            "speaker_1_memory_time": 0.04007411003112793,
+            "speaker_2_memory_time": 0.04169201850891113,
+            "token_usage": {
+                "prompt_tokens": 2495,
+                "completion_tokens": 19,
+                "total_tokens": 2514
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 423,
+                "completion_tokens": 8,
+                "total_tokens": 431
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What is the total time it takes I to get ready and commute to work?",
+            "answer": "an hour and a half",
+            "response": "The total time is not mentioned.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2455592155456543,
+            "speaker_1_memory_time": 0.0404055118560791,
+            "speaker_2_memory_time": 0.04029369354248047,
+            "token_usage": {
+                "prompt_tokens": 2130,
+                "completion_tokens": 8,
+                "total_tokens": 2138
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How long have I been working in my current role?",
+            "answer": "1 year and 5 months",
+            "response": "3 years and 9 months",
+            "category": "multi-session",
+            "bleu_score": 0.4,
+            "f1_score": 0.4000000000000001,
+            "llm_score": 0,
+            "response_time": 0.34763598442077637,
+            "speaker_1_memory_time": 0.04289507865905762,
+            "speaker_2_memory_time": 0.04124259948730469,
+            "token_usage": {
+                "prompt_tokens": 3436,
+                "completion_tokens": 7,
+                "total_tokens": 3443
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 411,
+                "completion_tokens": 8,
+                "total_tokens": 419
+            }
+        }
+    ]
+}

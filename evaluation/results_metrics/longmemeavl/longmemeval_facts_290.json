@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "How many weeks ago did I attend the 'Summer Nights' festival at Universal Studios Hollywood?",
+            "answer": "3 weeks ago",
+            "response": "**Answer:** 3 weeks ago",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.8571428571428571,
+            "llm_score": 1,
+            "response_time": 0.3305697441101074,
+            "speaker_1_memory_time": 0.39931535720825195,
+            "speaker_2_memory_time": 0.040148258209228516,
+            "token_usage": {
+                "prompt_tokens": 2813,
+                "completion_tokens": 8,
+                "total_tokens": 2821
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 415,
+                "completion_tokens": 8,
+                "total_tokens": 423
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "Who graduated first, second and third among Emma, Rachel and Alex?",
+            "answer": "Emma graduated first, followed by Rachel and then Alex.",
+            "response": "None of the memories mention Rachel or Alex.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.26691246763893595,
+            "f1_score": 0.23529411764705882,
+            "llm_score": 0,
+            "response_time": 0.28029489517211914,
+            "speaker_1_memory_time": 0.04512739181518555,
+            "speaker_2_memory_time": 0.04159736633300781,
+            "token_usage": {
+                "prompt_tokens": 2271,
+                "completion_tokens": 10,
+                "total_tokens": 2281
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 418,
+                "completion_tokens": 8,
+                "total_tokens": 426
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "I received a piece of jewelry last Saturday from whom?",
+            "answer": "my aunt",
+            "response": "Answer: No information available.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.10273551940917969,
+            "speaker_1_memory_time": 0.04214048385620117,
+            "speaker_2_memory_time": 0.03862404823303223,
+            "token_usage": {
+                "prompt_tokens": 582,
+                "completion_tokens": 7,
+                "total_tokens": 589
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many days ago did I participate in the 5K charity run?",
+            "answer": "7 days ago. 8 days (including the last day) is also acceptable.",
+            "response": "**Answer:** 5 days ago",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.10209462756353925,
+            "f1_score": 0.26666666666666666,
+            "llm_score": 0,
+            "response_time": 0.37941813468933105,
+            "speaker_1_memory_time": 0.09513020515441895,
+            "speaker_2_memory_time": 0.0425412654876709,
+            "token_usage": {
+                "prompt_tokens": 3467,
+                "completion_tokens": 8,
+                "total_tokens": 3475
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 425,
+                "completion_tokens": 8,
+                "total_tokens": 433
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "I mentioned participating in a sports event two weeks ago. What was the event?",
+            "answer": "The company's annual charity soccer tournament.",
+            "response": "Answer: Sports event details not found.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.12679171562194824,
+            "speaker_1_memory_time": 0.03981494903564453,
+            "speaker_2_memory_time": 0.042646169662475586,
+            "token_usage": {
+                "prompt_tokens": 587,
+                "completion_tokens": 9,
+                "total_tokens": 596
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 416,
+                "completion_tokens": 8,
+                "total_tokens": 424
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "Which book did I finish a week ago?",
+            "answer": "'The Nightingale' by Kristin Hannah",
+            "response": "**Answer:** \"The Nightingale\"",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.10000000000000002,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.3086826801300049,
+            "speaker_1_memory_time": 0.0403285026550293,
+            "speaker_2_memory_time": 0.042461395263671875,
+            "token_usage": {
+                "prompt_tokens": 2562,
+                "completion_tokens": 10,
+                "total_tokens": 2572
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many days ago did I read the March 15th issue of The New Yorker?",
+            "answer": "12 days ago. 13 days (including the last day) is also acceptable.",
+            "response": "The March 15th issue was read 5 days ago.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.21952465443761057,
+            "f1_score": 0.3,
+            "llm_score": 0,
+            "response_time": 0.4013254642486572,
+            "speaker_1_memory_time": 0.0415654182434082,
+            "speaker_2_memory_time": 0.04126858711242676,
+            "token_usage": {
+                "prompt_tokens": 2798,
+                "completion_tokens": 15,
+                "total_tokens": 2813
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 437,
+                "completion_tokens": 8,
+                "total_tokens": 445
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many days passed between the day I fixed my mountain bike and the day I decided to upgrade my road bike's pedals?",
+            "answer": "4 days. 5 days (including the last day) is also acceptable.",
+            "response": "To determine the number of days between the day the user fixed their mountain bike and the day they decided to upgrade their road bike's pedals, we need to analyze the timestamps from the memories.\n\n1. **Mountain bike fix**: The memory states, \"2023/03/15 (Wed) 11:17: Fixed a flat tire on mountain bike, replaced inner tube, cleaned chain.\" This indicates the mountain bike was fixed on **March 15, 2023**.\n\n2. **Pedal upgrade decision**: The memory states, \"2023/03/19 (Sun) 16:29: Considering scheduling a maintenance check for road bike at local bike shop\" and \"2023/03/19 (Sun) 16:29: Upgrading road bike's pedals to Shimano Ultegra clipless pedals.\" This indicates the decision to upgrade the pedals was made on **March 19, 2023**.\n\n3. **Calculate the number of days**: From March 15 to March 19, there are **4 days** (March 15, 16, 17, 18, and 19).\n\n**Answer**: 4 days.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.041666666666666664,
+            "f1_score": 0.0625,
+            "llm_score": 1,
+            "response_time": 3.6302881240844727,
+            "speaker_1_memory_time": 0.04181933403015137,
+            "speaker_2_memory_time": 0.04051518440246582,
+            "token_usage": {
+                "prompt_tokens": 3431,
+                "completion_tokens": 271,
+                "total_tokens": 3702
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 696,
+                "completion_tokens": 8,
+                "total_tokens": 704
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What charity event did I participate in a month ago?",
+            "answer": "the 'Walk for Hunger' charity event",
+            "response": "The answer is: Walk for Hunger.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.375,
+            "f1_score": 0.3333333333333333,
+            "llm_score": 1,
+            "response_time": 0.23302865028381348,
+            "speaker_1_memory_time": 0.04104161262512207,
+            "speaker_2_memory_time": 0.041883230209350586,
+            "token_usage": {
+                "prompt_tokens": 1824,
+                "completion_tokens": 9,
+                "total_tokens": 1833
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "Which event happened first, my participation in the #PlankChallenge or my post about vegan chili recipe?",
+            "answer": "You posted a recipe for vegan chili on Instagram using the hashtag #FoodieAdventures first.",
+            "response": "The #PlankChallenge participation happened first. \n\nAnswer: #PlankChallenge",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.2308132432510116,
+            "f1_score": 0.2,
+            "llm_score": 1,
+            "response_time": 0.46121740341186523,
+            "speaker_1_memory_time": 0.042533159255981445,
+            "speaker_2_memory_time": 0.04015517234802246,
+            "token_usage": {
+                "prompt_tokens": 3174,
+                "completion_tokens": 17,
+                "total_tokens": 3191
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 442,
+                "completion_tokens": 8,
+                "total_tokens": 450
+            }
+        }
+    ]
+}

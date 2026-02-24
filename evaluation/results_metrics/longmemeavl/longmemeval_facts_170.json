@@ -1,0 +1,242 @@
+{
+    "7": [
+        {
+            "question": "What is the total cost of the new food bowl, measuring cup, dental chews, and flea and tick collar I got for Max?",
+            "answer": "$50",
+            "response": "To determine the total cost of the new food bowl, measuring cup, dental chews, and flea and tick collar for Max, we need to extract the relevant costs from the memories and original conversations.\n\n1. **Food Bowl**: The user mentions getting a new stainless steel food bowl from Amazon for $15.\n2. **Measuring Cup**: The user mentions getting a measuring cup from the pet store for $5.\n3. **Dental Chews**: The user mentions buying dental chews every month, one pack at a time, costing $10/month.\n4. **Flea and Tick Collar**: The user mentions getting a flea and tick collar for $20, which is a one-time expense.\n\nNow, we sum these costs:\n\n- Food Bowl: $15\n- Measuring Cup: $5\n- Dental Chews: $10 (monthly, but we are considering the cost of one pack, which is $10)\n- Flea and Tick Collar: $20\n\nAdding these together: $15 + $5 + $10 + $20 = $50\n\nThus, the total cost of the new food bowl, measuring cup, dental chews, and flea and tick collar for Max is $50.",
+            "category": "multi-session",
+            "bleu_score": 0.008230452674897122,
+            "f1_score": 0.022988505747126436,
+            "llm_score": 1,
+            "response_time": 3.339754819869995,
+            "speaker_1_memory_time": 0.04242086410522461,
+            "speaker_2_memory_time": 0.043215274810791016,
+            "token_usage": {
+                "prompt_tokens": 2197,
+                "completion_tokens": 262,
+                "total_tokens": 2459
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 677,
+                "completion_tokens": 8,
+                "total_tokens": 685
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many antique items did I inherit or acquire from my family members?",
+            "answer": "5",
+            "response": "**Answer:** 4",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.37633514404296875,
+            "speaker_1_memory_time": 0.04207730293273926,
+            "speaker_2_memory_time": 0.04311060905456543,
+            "token_usage": {
+                "prompt_tokens": 3865,
+                "completion_tokens": 6,
+                "total_tokens": 3871
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "Can you suggest some activities I can do during my commute to work?",
+            "answer": "The user would prefer suggestions related to listening to new podcasts or audiobooks, especially the genre beyond true crime or self-improvement, such as history. They may not be interested in activities that require visual attention, such as reading or watching videos, as they are commuting. The user would not prefer general podcast topics such as true crime or self-improvement, as the user wants to explore other topics.",
+            "response": "**Answer:** Listen to podcasts.",
+            "category": "single-session-preference",
+            "bleu_score": 0.0004510317578932717,
+            "f1_score": 0.0851063829787234,
+            "llm_score": 1,
+            "response_time": 0.44391441345214844,
+            "speaker_1_memory_time": 0.4530775547027588,
+            "speaker_2_memory_time": 0.0429377555847168,
+            "token_usage": {
+                "prompt_tokens": 4111,
+                "completion_tokens": 8,
+                "total_tokens": 4119
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 488,
+                "completion_tokens": 8,
+                "total_tokens": 496
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "What was the approximate increase in Instagram followers I experienced in two weeks?",
+            "answer": "100",
+            "response": "350",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.44407010078430176,
+            "speaker_1_memory_time": 0.04271888732910156,
+            "speaker_2_memory_time": 0.0437471866607666,
+            "token_usage": {
+                "prompt_tokens": 4642,
+                "completion_tokens": 4,
+                "total_tokens": 4646
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "What is the total distance of the hikes I did on two consecutive weekends?",
+            "answer": "8 miles",
+            "response": "The total distance of the hikes is 5 miles.",
+            "category": "multi-session",
+            "bleu_score": 0.10000000000000002,
+            "f1_score": 0.2,
+            "llm_score": 0,
+            "response_time": 0.4607560634613037,
+            "speaker_1_memory_time": 0.04209423065185547,
+            "speaker_2_memory_time": 0.043610572814941406,
+            "token_usage": {
+                "prompt_tokens": 3800,
+                "completion_tokens": 12,
+                "total_tokens": 3812
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What is the difference in price between my luxury boots and the similar pair found at the budget store?",
+            "answer": "$750",
+            "response": "**Answer:** $750",
+            "category": "multi-session",
+            "bleu_score": 0.25,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.5838520526885986,
+            "speaker_1_memory_time": 0.042088985443115234,
+            "speaker_2_memory_time": 0.04233193397521973,
+            "token_usage": {
+                "prompt_tokens": 5542,
+                "completion_tokens": 8,
+                "total_tokens": 5550
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How much cashback did I earn at SaveMart last Thursday?",
+            "answer": "$0.75",
+            "response": "**Answer:** $0.54",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.4,
+            "llm_score": 0,
+            "response_time": 0.42930150032043457,
+            "speaker_1_memory_time": 0.04324936866760254,
+            "speaker_2_memory_time": 0.04152727127075195,
+            "token_usage": {
+                "prompt_tokens": 4094,
+                "completion_tokens": 9,
+                "total_tokens": 4103
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "I\u2019m a bit anxious about getting around Tokyo. Do you have any helpful tips?",
+            "answer": "The user would prefer responses that utilize their existing resources, such as their Suica card and TripIt app, to provide personalized tips for navigating Tokyo's public transportation. They might not prefer general tips or recommendations that do not take into account their prior preparations.",
+            "response": "Answer: Use Suica card for travel.",
+            "category": "single-session-preference",
+            "bleu_score": 0.002973108678236047,
+            "f1_score": 0.13636363636363635,
+            "llm_score": 1,
+            "response_time": 0.5110230445861816,
+            "speaker_1_memory_time": 0.04352426528930664,
+            "speaker_2_memory_time": 0.04163384437561035,
+            "token_usage": {
+                "prompt_tokens": 4615,
+                "completion_tokens": 10,
+                "total_tokens": 4625
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 461,
+                "completion_tokens": 8,
+                "total_tokens": 469
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "For my daily commute, how much more expensive was the taxi ride compared to the train fare?",
+            "answer": "$6",
+            "response": "**Answer:** $6 more expensive",
+            "category": "multi-session",
+            "bleu_score": 0.2,
+            "f1_score": 0.4,
+            "llm_score": 1,
+            "response_time": 0.32942748069763184,
+            "speaker_1_memory_time": 0.04374098777770996,
+            "speaker_2_memory_time": 0.04265165328979492,
+            "token_usage": {
+                "prompt_tokens": 3075,
+                "completion_tokens": 8,
+                "total_tokens": 3083
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many pages do I have left to read in 'The Nightingale'?",
+            "answer": "190",
+            "response": "To determine how many pages are left to read in \"The Nightingale,\" we need to consider the information provided in the memories and the original conversation.\n\n1. **Memory for user**: \"2023/05/28 (Sun) 08:47: Currently reading 'The Nightingale' which is 440 pages\"\n2. **Memory for assistant**: \"2023/05/30 (Tue) 01:32: Currently on page 250 of 'The Nightingale' by Kristin Hannah\"\n\nFrom the assistant's memory, we know the user is currently on page 250 of a 440-page book.\n\n**Calculation**:\n- Total pages: 440\n- Pages read: 250\n- Pages left: 440 - 250 = 190\n\nThus, the user has 190 pages left to read in \"The Nightingale.\"",
+            "category": "multi-session",
+            "bleu_score": 0.006802721088435376,
+            "f1_score": 0.029411764705882353,
+            "llm_score": 1,
+            "response_time": 2.782283067703247,
+            "speaker_1_memory_time": 0.04230332374572754,
+            "speaker_2_memory_time": 0.04240536689758301,
+            "token_usage": {
+                "prompt_tokens": 2573,
+                "completion_tokens": 212,
+                "total_tokens": 2785
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 617,
+                "completion_tokens": 11,
+                "total_tokens": 628
+            }
+        }
+    ]
+}

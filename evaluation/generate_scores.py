@@ -46,8 +46,7 @@ def main():
     # Convert to DataFrame
     df = pd.DataFrame(all_items)
     
-    # Convert category to numeric type
-    df["category"] = pd.to_numeric(df["category"])
+    # 保持 category 为字符串（例如 single-session-user），不再强制转为数值类型
     
     # 处理token_usage字段（如果是字典格式，展开为单独的列）
     if "token_usage" in df.columns:

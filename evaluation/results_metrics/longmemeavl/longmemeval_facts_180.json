@@ -1,0 +1,242 @@
+{
+    "6": [
+        {
+            "question": "How many hours do I work in a typical week during peak campaign seasons?",
+            "answer": "50",
+            "response": "**Answer:** 50 hours per week",
+            "category": "multi-session",
+            "bleu_score": 0.10000000000000002,
+            "f1_score": 0.33333333333333337,
+            "llm_score": 1,
+            "response_time": 0.4991302490234375,
+            "speaker_1_memory_time": 0.043734073638916016,
+            "speaker_2_memory_time": 0.041582345962524414,
+            "token_usage": {
+                "prompt_tokens": 4588,
+                "completion_tokens": 10,
+                "total_tokens": 4598
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "When did I submit my research paper on sentiment analysis?",
+            "answer": "February 1st",
+            "response": "2023/05/22",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.4870913028717041,
+            "speaker_1_memory_time": 0.044852256774902344,
+            "speaker_2_memory_time": 0.042160987854003906,
+            "token_usage": {
+                "prompt_tokens": 4291,
+                "completion_tokens": 11,
+                "total_tokens": 4302
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "What percentage discount did I get on the book from my favorite author?",
+            "answer": "20%",
+            "response": "The memories do not provide specific information about the percentage discount on the book. Therefore, the answer is: **Not specified**.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.43927884101867676,
+            "speaker_1_memory_time": 0.0419924259185791,
+            "speaker_2_memory_time": 0.04224061965942383,
+            "token_usage": {
+                "prompt_tokens": 1769,
+                "completion_tokens": 27,
+                "total_tokens": 1796
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 428,
+                "completion_tokens": 8,
+                "total_tokens": 436
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How much older am I than the average age of employees in my department?",
+            "answer": "2.5 years",
+            "response": "**Answer:** 0.5 years older.",
+            "category": "multi-session",
+            "bleu_score": 0.10000000000000002,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.3744330406188965,
+            "speaker_1_memory_time": 0.04128861427307129,
+            "speaker_2_memory_time": 0.04085183143615723,
+            "token_usage": {
+                "prompt_tokens": 3103,
+                "completion_tokens": 11,
+                "total_tokens": 3114
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 415,
+                "completion_tokens": 8,
+                "total_tokens": 423
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What is the total number of episodes I've listened to from 'How I Built This' and 'My Favorite Murder'?",
+            "answer": "27",
+            "response": "**Answer:** 12 episodes",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.3171558380126953,
+            "speaker_1_memory_time": 0.043706417083740234,
+            "speaker_2_memory_time": 0.04231381416320801,
+            "token_usage": {
+                "prompt_tokens": 2867,
+                "completion_tokens": 8,
+                "total_tokens": 2875
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 421,
+                "completion_tokens": 8,
+                "total_tokens": 429
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many plants did I initially plant for tomatoes and cucumbers?",
+            "answer": "8",
+            "response": "**Answer:** 5 tomato plants, 3 cucumber plants.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.4513418674468994,
+            "speaker_1_memory_time": 0.04360675811767578,
+            "speaker_2_memory_time": 0.04169464111328125,
+            "token_usage": {
+                "prompt_tokens": 3523,
+                "completion_tokens": 14,
+                "total_tokens": 3537
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "Did I receive a higher percentage discount on my first order from HelloFresh, compared to my first UberEats order?",
+            "answer": "Yes.",
+            "response": "**Answer:** HelloFresh 40%, UberEats 20%",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.5570647716522217,
+            "speaker_1_memory_time": 0.04283905029296875,
+            "speaker_2_memory_time": 0.04318046569824219,
+            "token_usage": {
+                "prompt_tokens": 4269,
+                "completion_tokens": 17,
+                "total_tokens": 4286
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 426,
+                "completion_tokens": 8,
+                "total_tokens": 434
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "What was the total number of people reached by my Facebook ad campaign and Instagram influencer collaboration?",
+            "answer": "12,000",
+            "response": "The total number of people reached by the Facebook ad campaign and Instagram influencer collaboration is 12,000.",
+            "category": "multi-session",
+            "bleu_score": 0.05555555555555554,
+            "f1_score": 0.21052631578947367,
+            "llm_score": 1,
+            "response_time": 0.5744771957397461,
+            "speaker_1_memory_time": 0.04330110549926758,
+            "speaker_2_memory_time": 0.04077267646789551,
+            "token_usage": {
+                "prompt_tokens": 3236,
+                "completion_tokens": 26,
+                "total_tokens": 3262
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 436,
+                "completion_tokens": 8,
+                "total_tokens": 444
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "How many Marvel movies did I re-watch?",
+            "answer": "2",
+            "response": "**Answer:** 1",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.29923152923583984,
+            "speaker_1_memory_time": 0.043602943420410156,
+            "speaker_2_memory_time": 0.041197776794433594,
+            "token_usage": {
+                "prompt_tokens": 2920,
+                "completion_tokens": 6,
+                "total_tokens": 2926
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 402,
+                "completion_tokens": 8,
+                "total_tokens": 410
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "What percentage of packed shoes did I wear on my last trip?",
+            "answer": "40%",
+            "response": "The user packed a lot of shoes for their last trip but only wore two: sneakers and sandals. This indicates that they wore 2 out of the many pairs they packed. Since the exact number of pairs packed is not specified, we cannot determine the exact percentage. However, based on the information provided, the answer is:\n\n**2**",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 1.0680415630340576,
+            "speaker_1_memory_time": 0.4417910575866699,
+            "speaker_2_memory_time": 0.042418718338012695,
+            "token_usage": {
+                "prompt_tokens": 2759,
+                "completion_tokens": 69,
+                "total_tokens": 2828
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 469,
+                "completion_tokens": 11,
+                "total_tokens": 480
+            }
+        }
+    ]
+}

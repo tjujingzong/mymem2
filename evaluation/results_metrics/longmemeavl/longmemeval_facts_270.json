@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "What is the order of the sports events I watched in January?",
+            "answer": "First, I attended a NBA game at the Staples Center, then I watched the College Football National Championship game, and finally, I watched the NFL playoffs.",
+            "response": "The answer is: No information provided.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.014104034875944338,
+            "f1_score": 0.07692307692307691,
+            "llm_score": 0,
+            "response_time": 0.36527419090270996,
+            "speaker_1_memory_time": 0.44724321365356445,
+            "speaker_2_memory_time": 0.04410958290100098,
+            "token_usage": {
+                "prompt_tokens": 3041,
+                "completion_tokens": 9,
+                "total_tokens": 3050
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 436,
+                "completion_tokens": 8,
+                "total_tokens": 444
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "Which mode of transport did I use most recently, a bus or a train?",
+            "answer": "train",
+            "response": "Answer: Train",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.26595497131347656,
+            "speaker_1_memory_time": 0.042099714279174805,
+            "speaker_2_memory_time": 0.04403877258300781,
+            "token_usage": {
+                "prompt_tokens": 2829,
+                "completion_tokens": 4,
+                "total_tokens": 2833
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many days passed between the day I finished reading 'The Nightingale' and the day I started reading 'The Hitchhiker's Guide to the Galaxy'?",
+            "answer": "1 day. 2 days (including the last day) is also acceptable.",
+            "response": "**Answer:** 10 days.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.11409269311835378,
+            "f1_score": 0.14285714285714288,
+            "llm_score": 0,
+            "response_time": 0.18664216995239258,
+            "speaker_1_memory_time": 0.04532027244567871,
+            "speaker_2_memory_time": 0.044190168380737305,
+            "token_usage": {
+                "prompt_tokens": 1300,
+                "completion_tokens": 9,
+                "total_tokens": 1309
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 443,
+                "completion_tokens": 8,
+                "total_tokens": 451
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How many weeks have I been taking sculpting classes when I invested in my own set of sculpting tools?",
+            "answer": "3",
+            "response": "**Answer:** 6 weeks",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.3235747814178467,
+            "speaker_1_memory_time": 0.0445709228515625,
+            "speaker_2_memory_time": 0.04115104675292969,
+            "token_usage": {
+                "prompt_tokens": 3044,
+                "completion_tokens": 7,
+                "total_tokens": 3051
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 416,
+                "completion_tokens": 8,
+                "total_tokens": 424
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many days did it take me to finish 'The Nightingale' by Kristin Hannah?",
+            "answer": "21 days. 22 days (including the last day) is also acceptable.",
+            "response": "The answer is: 21 days.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.2277903980885503,
+            "f1_score": 0.4,
+            "llm_score": 1,
+            "response_time": 0.37480711936950684,
+            "speaker_1_memory_time": 0.04521918296813965,
+            "speaker_2_memory_time": 0.04194140434265137,
+            "token_usage": {
+                "prompt_tokens": 3177,
+                "completion_tokens": 10,
+                "total_tokens": 3187
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 432,
+                "completion_tokens": 8,
+                "total_tokens": 440
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What is the order of the concerts and musical events I attended in the past two months, starting from the earliest?",
+            "answer": "The order of the concerts I attended is: 1. Billie Eilish concert at the Wells Fargo Center in Philly, 2. Free outdoor concert series in the park, 3. Music festival in Brooklyn, 4. Jazz night at a local bar, 5. Queen + Adam Lambert concert at the Prudential Center in Newark, NJ.",
+            "response": "**Answer:** April 1, April 15",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.0023149100305909012,
+            "f1_score": 0.045454545454545456,
+            "llm_score": 0,
+            "response_time": 0.49061059951782227,
+            "speaker_1_memory_time": 0.04538583755493164,
+            "speaker_2_memory_time": 0.046018362045288086,
+            "token_usage": {
+                "prompt_tokens": 4061,
+                "completion_tokens": 12,
+                "total_tokens": 4073
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 493,
+                "completion_tokens": 8,
+                "total_tokens": 501
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "What is the order of the three sports events I participated in during the past month, from earliest to latest?",
+            "answer": "I first completed the Spring Sprint Triathlon, then took part in the Midsummer 5K Run, and finally participated in the company's annual charity soccer tournament.",
+            "response": "Answer: No information provided.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.0036062284532488503,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.1016395092010498,
+            "speaker_1_memory_time": 0.04250478744506836,
+            "speaker_2_memory_time": 0.04322695732116699,
+            "token_usage": {
+                "prompt_tokens": 593,
+                "completion_tokens": 7,
+                "total_tokens": 600
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 445,
+                "completion_tokens": 8,
+                "total_tokens": 453
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many days ago did I attend a networking event?",
+            "answer": "26 days. 27 days (including the last day) is also acceptable.",
+            "response": "The networking event occurred today, so it is 0 days ago.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.263816590510905,
+            "f1_score": 0.28571428571428564,
+            "llm_score": 0,
+            "response_time": 0.24715471267700195,
+            "speaker_1_memory_time": 0.04317140579223633,
+            "speaker_2_memory_time": 0.04451584815979004,
+            "token_usage": {
+                "prompt_tokens": 1228,
+                "completion_tokens": 15,
+                "total_tokens": 1243
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 428,
+                "completion_tokens": 8,
+                "total_tokens": 436
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What is the order of airlines I flew with from earliest to latest before today?",
+            "answer": "JetBlue, Delta, United, American Airlines",
+            "response": "Answer: JetBlue, Delta",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.32928698165641584,
+            "f1_score": 0.5,
+            "llm_score": 0,
+            "response_time": 0.31430578231811523,
+            "speaker_1_memory_time": 0.04465794563293457,
+            "speaker_2_memory_time": 0.04330277442932129,
+            "token_usage": {
+                "prompt_tokens": 2941,
+                "completion_tokens": 7,
+                "total_tokens": 2948
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many weeks had passed since I recovered from the flu when I went on my 10th jog outdoors?",
+            "answer": "15",
+            "response": "To determine how many weeks had passed since the user recovered from the flu when they went on their 10th jog outdoors, we need to analyze the timestamps and the context provided in the memories.\n\n1. **Recovery from the flu**: The user mentioned recovering from the flu on **2023/01/19 (Thu) 10:47**.\n2. **10th jog outdoors**: The user mentioned going on their 10th jog outdoors on **2023/04/10 (Mon) 20:58**.\n\nNow, we calculate the number of weeks between these two dates:\n\n- From **2023/01/19** to **2023/04/10** is **8 weeks and 21 days**.\n\nSince the question asks for the number of weeks, we round down to the nearest whole number, which is **8 weeks**.\n\n**Answer:** 8 weeks",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 2.955758810043335,
+            "speaker_1_memory_time": 0.04240846633911133,
+            "speaker_2_memory_time": 0.043103933334350586,
+            "token_usage": {
+                "prompt_tokens": 4526,
+                "completion_tokens": 207,
+                "total_tokens": 4733
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 618,
+                "completion_tokens": 11,
+                "total_tokens": 629
+            }
+        }
+    ]
+}

@@ -39,6 +39,7 @@ def main():
     parser.add_argument("--chunk_size", type=int, default=1000, help="Chunk size for processing")
     parser.add_argument("--output_folder", type=str, default="results/", help="Output path for results")
     parser.add_argument("--top_k", type=int, default=30, help="Number of top memories to retrieve")
+    parser.add_argument("--data_path", type=str, default=os.getenv("DATASET_PATH", "dataset/locomo10.json"), help="Path to the dataset file")
     parser.add_argument("--filter_memories", action="store_true", default=False, help="Whether to filter memories")
     parser.add_argument("--is_graph", action="store_true", default=False, help="Whether to use graph-based search")
     parser.add_argument("--num_chunks", type=int, default=1, help="Number of chunks to process")
@@ -61,7 +62,7 @@ def main():
     print(f"Running experiments with technique: {args.technique_type}, chunk size: {args.chunk_size}")
 
     if args.technique_type == "mem0":
-        data_path = "dataset/locomo10.json"
+        data_path = args.data_path
         if args.method == "add":
             memory_manager = MemoryADD(data_path=data_path, is_graph=args.is_graph, use_sentence_mode=USE_SENTENCE_MODE)
             memory_manager.process_all_conversations()
@@ -92,24 +93,24 @@ def main():
             memory_searcher.process_data_file(data_path)
     elif args.technique_type == "rag":
         output_file_path = os.path.join(args.output_folder, f"rag_results_{args.chunk_size}_k{args.num_chunks}.json")
-        rag_manager = RAGManager(data_path="dataset/locomo10_rag.json", chunk_size=args.chunk_size, k=args.num_chunks)
+        rag_manager = RAGManager(data_path=args.data_path, chunk_size=args.chunk_size, k=args.num_chunks)
         rag_manager.process_all_conversations(output_file_path)
     elif args.technique_type == "langmem":
         output_file_path = os.path.join(args.output_folder, "langmem_results.json")
-        langmem_manager = LangMemManager(dataset_path="dataset/locomo10_rag.json")
+        langmem_manager = LangMemManager(dataset_path=args.data_path)
         langmem_manager.process_all_conversations(output_file_path)
     elif args.technique_type == "zep":
         if args.method == "add":
-            zep_manager = ZepAdd(data_path="dataset/locomo10.json")
+            zep_manager = ZepAdd(data_path=args.data_path)
             zep_manager.process_all_conversations("1")
         elif args.method == "search":
             output_file_path = os.path.join(args.output_folder, "zep_search_results.json")
             zep_manager = ZepSearch()
-            zep_manager.process_data_file("dataset/locomo10.json", "1", output_file_path)
+            zep_manager.process_data_file(args.data_path, "1", output_file_path)
     elif args.technique_type == "openai":
         output_file_path = os.path.join(args.output_folder, "openai_results.json")
         openai_manager = OpenAIPredict()
-        openai_manager.process_data_file("dataset/locomo10.json", output_file_path)
+        openai_manager.process_data_file(args.data_path, output_file_path)
     else:
         raise ValueError(f"Invalid technique type: {args.technique_type}")
 

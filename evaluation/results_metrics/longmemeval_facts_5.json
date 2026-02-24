@@ -1,0 +1,122 @@
+{
+    "1": [
+        {
+            "question": "How long is my daily commute to work?",
+            "answer": "45 minutes each way",
+            "response": "45 minutes each way",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.13811326026916504,
+            "speaker_1_memory_time": 0.0423429012298584,
+            "speaker_2_memory_time": 0.041681528091430664,
+            "token_usage": {
+                "prompt_tokens": 1172,
+                "completion_tokens": 6,
+                "total_tokens": 1178
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "What play did I attend at the local community theater?",
+            "answer": "The Glass Menagerie",
+            "response": "The Glass Menagerie",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.15625238418579102,
+            "speaker_1_memory_time": 0.040853023529052734,
+            "speaker_2_memory_time": 0.03998827934265137,
+            "token_usage": {
+                "prompt_tokens": 1501,
+                "completion_tokens": 6,
+                "total_tokens": 1507
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What is the name of the playlist I created on Spotify?",
+            "answer": "Summer Vibes",
+            "response": "**Answer:** Summer Vibes",
+            "category": "single-session-user",
+            "bleu_score": 0.25,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.20877814292907715,
+            "speaker_1_memory_time": 0.0417017936706543,
+            "speaker_2_memory_time": 0.04166746139526367,
+            "token_usage": {
+                "prompt_tokens": 1864,
+                "completion_tokens": 7,
+                "total_tokens": 1871
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "What degree did I graduate with?",
+            "answer": "Business Administration",
+            "response": "Business Administration",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.19870924949645996,
+            "speaker_1_memory_time": 0.44440722465515137,
+            "speaker_2_memory_time": 0.040692806243896484,
+            "token_usage": {
+                "prompt_tokens": 1912,
+                "completion_tokens": 3,
+                "total_tokens": 1915
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 397,
+                "completion_tokens": 8,
+                "total_tokens": 405
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "Where did I redeem a $5 coupon on coffee creamer?",
+            "answer": "Target",
+            "response": "Target",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.08736252784729004,
+            "speaker_1_memory_time": 0.04378056526184082,
+            "speaker_2_memory_time": 0.03898310661315918,
+            "token_usage": {
+                "prompt_tokens": 1238,
+                "completion_tokens": 2,
+                "total_tokens": 1240
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 401,
+                "completion_tokens": 8,
+                "total_tokens": 409
+            }
+        }
+    ]
+}

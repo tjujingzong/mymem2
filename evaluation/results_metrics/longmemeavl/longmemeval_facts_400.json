@@ -1,0 +1,242 @@
+{
+    "2": [
+        {
+            "question": "How many episodes of the Science series have I completed on Crash Course?",
+            "answer": "50",
+            "response": "50 episodes",
+            "category": "knowledge-update",
+            "bleu_score": 0.5,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.23596811294555664,
+            "speaker_1_memory_time": 0.08925008773803711,
+            "speaker_2_memory_time": 0.03831744194030762,
+            "token_usage": {
+                "prompt_tokens": 2626,
+                "completion_tokens": 4,
+                "total_tokens": 2630
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How long have my parents been staying with me in the US?",
+            "answer": "nine months",
+            "response": "Answer: Nine months.",
+            "category": "knowledge-update",
+            "bleu_score": 0.4,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.597285270690918,
+            "speaker_1_memory_time": 0.042495012283325195,
+            "speaker_2_memory_time": 0.04131150245666504,
+            "token_usage": {
+                "prompt_tokens": 5873,
+                "completion_tokens": 6,
+                "total_tokens": 5879
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "What brand of BBQ sauce am I currently obsessed with?",
+            "answer": "Kansas City Masterpiece",
+            "response": "Answer: Kansas City Masterpiece",
+            "category": "knowledge-update",
+            "bleu_score": 0.6,
+            "f1_score": 0.8571428571428571,
+            "llm_score": 1,
+            "response_time": 0.2436671257019043,
+            "speaker_1_memory_time": 0.04085731506347656,
+            "speaker_2_memory_time": 0.04021286964416504,
+            "token_usage": {
+                "prompt_tokens": 2212,
+                "completion_tokens": 7,
+                "total_tokens": 2219
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How long have I been living in my current apartment in Harajuku?",
+            "answer": "3 months",
+            "response": "Answer: 3 months",
+            "category": "knowledge-update",
+            "bleu_score": 0.5,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.35532236099243164,
+            "speaker_1_memory_time": 0.04401206970214844,
+            "speaker_2_memory_time": 0.04215645790100098,
+            "token_usage": {
+                "prompt_tokens": 3552,
+                "completion_tokens": 6,
+                "total_tokens": 3558
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "How long have I been sticking to my daily tidying routine?",
+            "answer": "4 weeks",
+            "response": "Answer: 4 weeks",
+            "category": "knowledge-update",
+            "bleu_score": 0.5,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.3921384811401367,
+            "speaker_1_memory_time": 0.04458189010620117,
+            "speaker_2_memory_time": 0.0423276424407959,
+            "token_usage": {
+                "prompt_tokens": 3961,
+                "completion_tokens": 6,
+                "total_tokens": 3967
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How many new postcards have I added to my collection since I started collecting again?",
+            "answer": "25",
+            "response": "**Answer:** 25 new postcards.",
+            "category": "knowledge-update",
+            "bleu_score": 0.10000000000000002,
+            "f1_score": 0.4,
+            "llm_score": 1,
+            "response_time": 0.5163817405700684,
+            "speaker_1_memory_time": 0.04210066795349121,
+            "speaker_2_memory_time": 0.039763689041137695,
+            "token_usage": {
+                "prompt_tokens": 4623,
+                "completion_tokens": 11,
+                "total_tokens": 4634
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 415,
+                "completion_tokens": 8,
+                "total_tokens": 423
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "Do I go to the gym more frequently than I did previously?",
+            "answer": "Yes",
+            "response": "The answer is: No.",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.24022316932678223,
+            "speaker_1_memory_time": 0.03889632225036621,
+            "speaker_2_memory_time": 0.037851572036743164,
+            "token_usage": {
+                "prompt_tokens": 2224,
+                "completion_tokens": 7,
+                "total_tokens": 2231
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "Where is the painting 'Ethereal Dreams' by Emma Taylor currently hanging?",
+            "answer": "in my bedroom",
+            "response": "Answer: Above the bed",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.28086042404174805,
+            "speaker_1_memory_time": 0.39362525939941406,
+            "speaker_2_memory_time": 0.038431406021118164,
+            "token_usage": {
+                "prompt_tokens": 2552,
+                "completion_tokens": 6,
+                "total_tokens": 2558
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 410,
+                "completion_tokens": 8,
+                "total_tokens": 418
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many times have I worn my new black Converse Chuck Taylor All Star sneakers?",
+            "answer": "six",
+            "response": "**Answer:** Six times.",
+            "category": "knowledge-update",
+            "bleu_score": 0.11111111111111109,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.26691389083862305,
+            "speaker_1_memory_time": 0.03958487510681152,
+            "speaker_2_memory_time": 0.03859090805053711,
+            "token_usage": {
+                "prompt_tokens": 2573,
+                "completion_tokens": 7,
+                "total_tokens": 2580
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many videos of Corey Schafer's Python programming series have I completed so far?",
+            "answer": "30",
+            "response": "30 videos",
+            "category": "knowledge-update",
+            "bleu_score": 0.5,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.47655558586120605,
+            "speaker_1_memory_time": 0.0409855842590332,
+            "speaker_2_memory_time": 0.04271435737609863,
+            "token_usage": {
+                "prompt_tokens": 4940,
+                "completion_tokens": 4,
+                "total_tokens": 4944
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 410,
+                "completion_tokens": 8,
+                "total_tokens": 418
+            }
+        }
+    ]
+}

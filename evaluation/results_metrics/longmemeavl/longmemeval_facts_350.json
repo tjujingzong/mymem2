@@ -1,0 +1,242 @@
+{
+    "1": [
+        {
+            "question": "How long had I been using the new area rug when I rearranged my living room furniture?",
+            "answer": "One week. Answers ranging from 7 days to 10 days are also acceptable.",
+            "response": "The user mentioned getting a new area rug \"a month ago\" and rearranging furniture \"three weeks ago.\" \n\nTo determine how long they had been using the rug before rearranging, we calculate the difference between the two time frames:\n\n- A month ago (approximately 30 days) vs. three weeks ago (approximately 21 days).\n\nThe difference is about 9 days. Therefore, the user had been using the new area rug for approximately 9 days before rearranging the furniture.\n\nAnswer: 9 days.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.05208333333333335,
+            "f1_score": 0.06557377049180327,
+            "llm_score": 1,
+            "response_time": 1.4522814750671387,
+            "speaker_1_memory_time": 0.0420994758605957,
+            "speaker_2_memory_time": 0.041126251220703125,
+            "token_usage": {
+                "prompt_tokens": 2225,
+                "completion_tokens": 107,
+                "total_tokens": 2332
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 527,
+                "completion_tokens": 8,
+                "total_tokens": 535
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How long had I been taking guitar lessons when I bought the new guitar amp?",
+            "answer": "Four weeks",
+            "response": "The answer is: **six weeks**.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.0909090909090909,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2840301990509033,
+            "speaker_1_memory_time": 0.04240536689758301,
+            "speaker_2_memory_time": 0.04126572608947754,
+            "token_usage": {
+                "prompt_tokens": 2338,
+                "completion_tokens": 10,
+                "total_tokens": 2348
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "Which streaming service did I start using most recently?",
+            "answer": "Disney+",
+            "response": "Answer: Disney+",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.36526060104370117,
+            "speaker_1_memory_time": 0.041959524154663086,
+            "speaker_2_memory_time": 0.04526066780090332,
+            "token_usage": {
+                "prompt_tokens": 3805,
+                "completion_tokens": 5,
+                "total_tokens": 3810
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 400,
+                "completion_tokens": 8,
+                "total_tokens": 408
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many weeks have I been accepted into the exchange program when I started attending the pre-departure orientation sessions?",
+            "answer": "one week",
+            "response": "Answer: 5 weeks",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.4133129119873047,
+            "speaker_1_memory_time": 0.04162406921386719,
+            "speaker_2_memory_time": 0.04122638702392578,
+            "token_usage": {
+                "prompt_tokens": 4110,
+                "completion_tokens": 6,
+                "total_tokens": 4116
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 416,
+                "completion_tokens": 8,
+                "total_tokens": 424
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "Which group did I join first, 'Page Turners' or 'Marketing Professionals'?",
+            "answer": "Page Turners",
+            "response": "The answer is: Marketing Professionals.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.25321245193481445,
+            "speaker_1_memory_time": 0.04095649719238281,
+            "speaker_2_memory_time": 0.04143643379211426,
+            "token_usage": {
+                "prompt_tokens": 2193,
+                "completion_tokens": 8,
+                "total_tokens": 2201
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "Who did I meet first, Mark and Sarah or Tom?",
+            "answer": "Tom",
+            "response": "Answer: Mark and Sarah",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.4151904582977295,
+            "speaker_1_memory_time": 0.040999650955200195,
+            "speaker_2_memory_time": 0.04127049446105957,
+            "token_usage": {
+                "prompt_tokens": 4283,
+                "completion_tokens": 6,
+                "total_tokens": 4289
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "Which trip did the narrator take first, the solo trip to Europe or the family road trip across the American Southwest?",
+            "answer": "The family road trip across the American Southwest",
+            "response": "The solo trip to Europe.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.23884377019126307,
+            "f1_score": 0.3333333333333333,
+            "llm_score": 0,
+            "response_time": 0.1785280704498291,
+            "speaker_1_memory_time": 0.041072845458984375,
+            "speaker_2_memory_time": 0.0405583381652832,
+            "token_usage": {
+                "prompt_tokens": 1613,
+                "completion_tokens": 7,
+                "total_tokens": 1620
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 422,
+                "completion_tokens": 8,
+                "total_tokens": 430
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How old was I when I moved to the United States?",
+            "answer": "27",
+            "response": "None of the memories provide information about the user's age when they moved to the United States.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.6900112628936768,
+            "speaker_1_memory_time": 0.4473395347595215,
+            "speaker_2_memory_time": 0.042717695236206055,
+            "token_usage": {
+                "prompt_tokens": 5161,
+                "completion_tokens": 20,
+                "total_tokens": 5181
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 419,
+                "completion_tokens": 8,
+                "total_tokens": 427
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How long did I use my new binoculars before I saw the American goldfinches returning to the area?",
+            "answer": "Two weeks",
+            "response": "The answer is: **Three weeks**.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.0909090909090909,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.34810924530029297,
+            "speaker_1_memory_time": 0.04116630554199219,
+            "speaker_2_memory_time": 0.038130760192871094,
+            "token_usage": {
+                "prompt_tokens": 3084,
+                "completion_tokens": 10,
+                "total_tokens": 3094
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 419,
+                "completion_tokens": 8,
+                "total_tokens": 427
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many days before my best friend's birthday party did I order her gift?",
+            "answer": "7 days. 8 days (including the last day) is also acceptable.",
+            "response": "The question cannot be answered.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.09111615923542012,
+            "f1_score": 0.13333333333333333,
+            "llm_score": 0,
+            "response_time": 0.1797623634338379,
+            "speaker_1_memory_time": 0.04048323631286621,
+            "speaker_2_memory_time": 0.0416874885559082,
+            "token_usage": {
+                "prompt_tokens": 1597,
+                "completion_tokens": 7,
+                "total_tokens": 1604
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 423,
+                "completion_tokens": 11,
+                "total_tokens": 434
+            }
+        }
+    ]
+}

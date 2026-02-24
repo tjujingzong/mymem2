@@ -1,0 +1,242 @@
+{
+    "8": [
+        {
+            "question": "How much more money did I raise than my initial goal in the charity cycling event?",
+            "answer": "$50",
+            "response": "**Answer:** $250",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2943093776702881,
+            "speaker_1_memory_time": 0.04484820365905762,
+            "speaker_2_memory_time": 0.044464826583862305,
+            "token_usage": {
+                "prompt_tokens": 2700,
+                "completion_tokens": 8,
+                "total_tokens": 2708
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many years older am I than when I graduated from college?",
+            "answer": "7",
+            "response": "**Answer:** 25 years old.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2829768657684326,
+            "speaker_1_memory_time": 0.04297161102294922,
+            "speaker_2_memory_time": 0.03983330726623535,
+            "token_usage": {
+                "prompt_tokens": 2299,
+                "completion_tokens": 10,
+                "total_tokens": 2309
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many days a week do I attend fitness classes?",
+            "answer": "4 days.",
+            "response": "Answer: 3 days a week.",
+            "category": "multi-session",
+            "bleu_score": 0.2857142857142857,
+            "f1_score": 0.28571428571428575,
+            "llm_score": 0,
+            "response_time": 0.16678738594055176,
+            "speaker_1_memory_time": 0.0440371036529541,
+            "speaker_2_memory_time": 0.04274177551269531,
+            "token_usage": {
+                "prompt_tokens": 1132,
+                "completion_tokens": 9,
+                "total_tokens": 1141
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "What is the total amount I spent on the designer handbag and high-end skincare products?",
+            "answer": "$1,300",
+            "response": "**Answer:** $500",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.4654679298400879,
+            "speaker_1_memory_time": 0.04330873489379883,
+            "speaker_2_memory_time": 0.04325437545776367,
+            "token_usage": {
+                "prompt_tokens": 4474,
+                "completion_tokens": 8,
+                "total_tokens": 4482
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What is the average GPA of my undergraduate and graduate studies?",
+            "answer": "3.83",
+            "response": "The memories do not mention graduate studies. \n\n**Answer:** 3.86",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.16666666666666669,
+            "llm_score": 0,
+            "response_time": 0.38234424591064453,
+            "speaker_1_memory_time": 0.042687416076660156,
+            "speaker_2_memory_time": 0.0422060489654541,
+            "token_usage": {
+                "prompt_tokens": 2307,
+                "completion_tokens": 18,
+                "total_tokens": 2325
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 420,
+                "completion_tokens": 8,
+                "total_tokens": 428
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "What is the total number of views on my most popular videos on YouTube and TikTok?",
+            "answer": "1,998",
+            "response": "542 views on YouTube",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.23310232162475586,
+            "speaker_1_memory_time": 0.0399470329284668,
+            "speaker_2_memory_time": 0.03916740417480469,
+            "token_usage": {
+                "prompt_tokens": 2105,
+                "completion_tokens": 7,
+                "total_tokens": 2112
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "What is the total number of comments on my recent Facebook Live session and my most popular YouTube video?",
+            "answer": "33",
+            "response": "**Answer:** 33 comments",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.453094482421875,
+            "speaker_1_memory_time": 0.046846628189086914,
+            "speaker_2_memory_time": 0.04189491271972656,
+            "token_usage": {
+                "prompt_tokens": 4215,
+                "completion_tokens": 8,
+                "total_tokens": 4223
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 416,
+                "completion_tokens": 8,
+                "total_tokens": 424
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How much will I save by taking the train from the airport to my hotel instead of a taxi?",
+            "answer": "$50",
+            "response": "**Answer:** $10 saved.",
+            "category": "multi-session",
+            "bleu_score": 0.10000000000000002,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.29893994331359863,
+            "speaker_1_memory_time": 0.3932225704193115,
+            "speaker_2_memory_time": 0.04307079315185547,
+            "token_usage": {
+                "prompt_tokens": 2669,
+                "completion_tokens": 9,
+                "total_tokens": 2678
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 416,
+                "completion_tokens": 8,
+                "total_tokens": 424
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many years older is my grandma than me?",
+            "answer": "43",
+            "response": "The question cannot be answered based on the provided information.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.30314111709594727,
+            "speaker_1_memory_time": 0.09938216209411621,
+            "speaker_2_memory_time": 0.04204869270324707,
+            "token_usage": {
+                "prompt_tokens": 2212,
+                "completion_tokens": 12,
+                "total_tokens": 2224
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What is the total amount I spent on gifts for my coworker and brother?",
+            "answer": "$200",
+            "response": "**Answer:** $100\n\n**Step-by-Step Explanation:**\n\n1. **Identify Relevant Memories:**\n   - User memory: \"2023/05/28 (Sun) 08:47: Spent $100 on graduation gift for brother in May\"\n   - User memory: \"2023/05/29 (Mon) 11:32: Spending around $150 to $200 on a gift\"\n   - Assistant memory: \"2023/05/28 (Sun) 08:47: Spent $100 on graduation gift for brother in May\"\n   - Assistant memory: \"2023/05/29 (Mon) 11:32: Spends around $500 per month on gifts for friends and family\"\n\n2. **Analyze the Question:**\n   - The question asks for the total amount spent on gifts for the **coworker** and the **brother**.\n\n3. **Extract Specific Information:**\n   - The user explicitly mentions spending **$100 on a graduation gift for the brother**.\n   - The user also mentions attending a **baby shower and getting a gift for the coworker's baby**, but the **exact amount** is not specified in the memories.\n   - The assistant mentions the user spends **$500 per month** on gifts, but this is a general statement and not directly tied to the coworker or brother.\n\n4. **Determine the Answer:**\n   - The only **explicitly stated amount** for the **brother** is **$100**.\n   - There is **no specific amount** mentioned for the **coworker**.\n   - Therefore, the **only confirmed total** is **$100** for the **brother**.\n\n5. **Final Answer:**\n   - The total amount spent on gifts for the **coworker** and **brother** is **$100** (only the brother's gift is confirmed).",
+            "category": "multi-session",
+            "bleu_score": 0.005277044854881267,
+            "f1_score": 0.0196078431372549,
+            "llm_score": 1,
+            "response_time": 5.568934679031372,
+            "speaker_1_memory_time": 0.043908119201660156,
+            "speaker_2_memory_time": 0.040880441665649414,
+            "token_usage": {
+                "prompt_tokens": 2333,
+                "completion_tokens": 442,
+                "total_tokens": 2775
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 846,
+                "completion_tokens": 11,
+                "total_tokens": 857
+            }
+        }
+    ]
+}

@@ -1,0 +1,856 @@
+{
+    "0": [
+        {
+            "question": "I'm trying to recall what the designation on my jumpsuit was that helped me find the file number in the records room?",
+            "answer": "The designation on your jumpsuit was 'LIV'.",
+            "category": "single-session-assistant",
+            "evidence": [
+                "D6:1",
+                "D6:2",
+                "D6:3",
+                "D6:4",
+                "D6:5",
+                "D6:6",
+                "D6:7",
+                "D6:8",
+                "D6:9",
+                "D6:10",
+                "D6:11",
+                "D6:12",
+                "D6:13",
+                "D6:14",
+                "D6:15",
+                "D6:16",
+                "D6:17",
+                "D6:18",
+                "D6:19",
+                "D6:20",
+                "D6:21",
+                "D6:22",
+                "D6:23",
+                "D6:24",
+                "D6:25",
+                "D6:26",
+                "D6:27",
+                "D6:28",
+                "D6:29",
+                "D6:30",
+                "D6:31",
+                "D6:32"
+            ],
+            "response": "LIV",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Jumpsuit has designation 'LIV' with a square around it",
+                    "timestamp": "2023/05/21 (Sun) 04:56",
+                    "score": 0.58,
+                    "original_conversation": "user_ac031881: Two clues come to mind. Wasn't there a designation for your study on your jumpsuit? And wasn't there a mention on the clipboard about the previous iteration of the study?\n\n(Remember: always respond with what YOU do, using first-person perspective)\nassistant_ac031881: I look down at my jumpsuit and see the designation \"LIV\" and a square around it. I also remember the clipboard mentioning the previous iteration of the study. I decide to start searching the records for a file related to the designation \"LIV\" and any previous iterations mentioned on the clipboard. Since the files are organized by numbers, I try to look for a connection between the designation and the file numbers.",
+                    "dia_ids": [
+                        "D6:5",
+                        "D6:6"
+                    ]
+                },
+                {
+                    "memory": "Keycard with green stripe was found in the lab coat pocket",
+                    "timestamp": "2023/05/21 (Sun) 04:56",
+                    "score": 0.58,
+                    "original_conversation": "user_ac031881: You follow the familiar path of the green pipe and come to Security. Their doors are closed. A security panel with a green slash on it has a slot for a keycard and a hole for a USB stick.\nassistant_ac031881: I take out the keycard with the green stripe that I found in the lab coat pocket and insert it into the security panel's slot.",
+                    "dia_ids": [
+                        "D6:27",
+                        "D6:28"
+                    ]
+                },
+                {
+                    "memory": "User mentioned using square pill powers to navigate back to Room LIV, the Meeting Hall, and Records",
+                    "timestamp": "2023/05/21 (Sun) 04:56",
+                    "score": 0.53,
+                    "original_conversation": "user_ac031881: They don't seem to be in this hallway, and you're afraid of wandering around too much and getting lost. You know you can always use your square pill powers to navigate back to the squares you've touched: Room LIV, the Meeting Hall, and Records.\nassistant_ac031881: I decide to go back to Room LIV, the location where I initially noticed the colored pipes. Once there, I'll look for the green pipe and follow it to the security room.",
+                    "dia_ids": [
+                        "D6:25",
+                        "D6:26"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [],
+            "num_speaker_1_memories": 3,
+            "num_speaker_2_memories": 0,
+            "speaker_1_memory_time": 0.39748430252075195,
+            "speaker_2_memory_time": 0.03980875015258789,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.10473871231079102,
+            "token_usage": {
+                "prompt_tokens": 1092,
+                "completion_tokens": 3,
+                "total_tokens": 1095
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "I'm going back to our previous conversation about music theory. You mentioned some online resources for learning music theory. Can you remind me of the website you recommended for free lessons and exercises?",
+            "answer": "MusicTheory.net",
+            "category": "single-session-assistant",
+            "evidence": [
+                "D4:1",
+                "D4:2",
+                "D4:3",
+                "D4:4",
+                "D4:5",
+                "D4:6"
+            ],
+            "response": "MusicTheory.net",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Interested in learning music theory through MusicTheory.net and YouTube channels",
+                    "timestamp": "2023/05/20 (Sat) 15:06",
+                    "score": 0.74,
+                    "original_conversation": "user_28bcfaac: I think I'll start with MusicTheory.net and check out some YouTube channels. Can't wait to see how learning music theory will improve my playing.\nassistant_28bcfaac: MusicTheory.net is a great place to start, and YouTube channels can be helpful too. I wish you all the best in your music theory learning journey, and I hope it helps take your playing to the next level! Don't hesitate to reach out if you have any questions or want more recommendations.",
+                    "dia_ids": [
+                        "D4:5",
+                        "D4:6"
+                    ]
+                },
+                {
+                    "memory": "Asks for recommendations on learning resources for music theory",
+                    "timestamp": "2023/05/20 (Sat) 15:06",
+                    "score": 0.72,
+                    "original_conversation": "user_28bcfaac: That makes a lot of sense. I've always been intimidated by music theory, but it seems like it could really take my playing to the next level. Do you have any recommendations for learning resources?\nassistant_28bcfaac: There are many great resources online that can help you learn music theory, whether you're a beginner or an advanced musician. Here are a few recommendations:\n\n1. MusicTheory.net: This website offers free lessons and exercises on music theory, covering topics such as rhythm, chords, and scales.\n\n2. Online courses: Platforms like Udemy and Coursera offer online courses on music theory taught by professional musicians and educators.\n\n3. YouTube: There are numerous channels dedicated to teaching music theory on YouTube, including popular ones like Rick Beato and Adam Neely.\n\n4. Books: There are many great books on music theory for both beginners and advanced learners. Some popular options include \"Music Theory For Dummies\" by Michael Pilhofer and \"The Jazz Theory Book\" by Mark Levine.\n\n5. Private lessons: If you're serious about learning music theory, consider taking private lessons from a music teacher. They can provide personalized instruction and help you progress faster. \n\nI hope this helps! Good luck and have fun learning music theory!",
+                    "dia_ids": [
+                        "D4:3",
+                        "D4:4"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Interested in learning music theory through MusicTheory.net and YouTube channels",
+                    "timestamp": "2023/05/20 (Sat) 15:06",
+                    "score": 0.74,
+                    "original_conversation": "user_28bcfaac: I think I'll start with MusicTheory.net and check out some YouTube channels. Can't wait to see how learning music theory will improve my playing.\nassistant_28bcfaac: MusicTheory.net is a great place to start, and YouTube channels can be helpful too. I wish you all the best in your music theory learning journey, and I hope it helps take your playing to the next level! Don't hesitate to reach out if you have any questions or want more recommendations.",
+                    "dia_ids": [
+                        "D4:5",
+                        "D4:6"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 2,
+            "num_speaker_2_memories": 1,
+            "speaker_1_memory_time": 0.04046750068664551,
+            "speaker_2_memory_time": 0.03883481025695801,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.11420631408691406,
+            "token_usage": {
+                "prompt_tokens": 1239,
+                "completion_tokens": 4,
+                "total_tokens": 1243
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "I'm looking back at our previous conversation about the Seco de Cordero recipe from Ancash. You mentioned using a light or medium-bodied beer, but I was wondering if you could remind me what type of beer you specifically recommended?",
+            "answer": "I recommended using a Pilsner or Lager for the recipe.",
+            "category": "single-session-assistant",
+            "evidence": [
+                "D42:1",
+                "D42:2",
+                "D42:3",
+                "D42:4",
+                "D42:5",
+                "D42:6",
+                "D42:7",
+                "D42:8",
+                "D42:9",
+                "D42:10"
+            ],
+            "response": "Pilsner or lager",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Asks for beer recommendations for a lamb stew recipe",
+                    "timestamp": "2023/05/28 (Sun) 13:04",
+                    "score": 0.62,
+                    "original_conversation": "user_16c90bf4: That sounds amazing! I've never tried a lamb stew before. Do you have any recommendations for a good type of beer to use in the recipe?\nassistant_16c90bf4: I don't have personal preferences, but in general, it's recommended to use a light or medium-bodied beer for this recipe to avoid overpowering the flavors of the lamb and spices. a pilsner or lager would work well, but you can also use a local beer from ancash to give the dish a more authentic touch. ultimately, it comes down to your personal preference, so you can choose a beer that you enjoy drinking and experiment with different types to find your favorite one. enjoy your delicious seco de cordero!",
+                    "dia_ids": [
+                        "D42:3",
+                        "D42:4"
+                    ]
+                },
+                {
+                    "memory": "Looking for dessert suggestions that would pair well with Seco de Cordero",
+                    "timestamp": "2023/05/28 (Sun) 13:04",
+                    "score": 0.61,
+                    "original_conversation": "user_16c90bf4: I'm really excited to try this recipe this weekend. Do you have any dessert suggestions that would pair well with the Seco de Cordero?\nassistant_16c90bf4: Absolutely! How about a classic Peruvian dessert - \"Arroz con Leche\" (Rice Pudding)? It's a creamy and comforting dessert that would complement the rich flavors of the lamb stew. Here's a simple recipe you can try:\n\nIngredients:\n- 1 cup white rice\n- 4 cups whole milk\n- 1 can (14 oz.) sweetened condensed milk\n- 1 cinnamon stick\n- 1 tsp. vanilla extract\n- 1/4 cup raisins (optional)\n- Ground cinnamon for dusting\n\nInstructions:\n1. Rinse the rice in cold water and drain. 2. In a large saucepan, combine the rice, milk, sweetened condensed milk, and cinnamon stick. Bring the mixture to a simmer over medium heat. 3. Reduce the heat to low and cook, stirring frequently, for about 30-40 minutes, or until the rice is tender and the mixture has thickened to a pudding-like consistency. 4. Remove the cinnamon stick and stir in the vanilla extract and raisins (if using). Let the rice pudding cool to room temperature, then chill in the fridge for at least an hour. 5. To serve, spoon the rice pudding into bowls and dust with some ground cinnamon. Enjoy your delicious Seco de Cordero followed by a comforting bowl of Arroz con Leche for dessert!",
+                    "dia_ids": [
+                        "D42:7",
+                        "D42:8"
+                    ]
+                },
+                {
+                    "memory": "Asked for a recipe for Seco de Cordero",
+                    "timestamp": "2023/05/28 (Sun) 13:04",
+                    "score": 0.61,
+                    "original_conversation": "user_16c90bf4: Could you suggest a recipe for a classic dish from Ancash?\nassistant_16c90bf4: Sure! How about \"Seco de Cordero\" (Lamb Stew) from Ancash:\n\nIngredients:\n- 2 lbs. lamb, cut into small pieces\n- 1 onion, chopped\n- 3 garlic cloves, minced\n- 1 tsp. cumin\n- 1 tsp. dried oregano\n- 2 tbsp. vegetable oil\n- 2 tbsp. aj\u00ed amarillo paste\n- 1 cup beer\n- 2 cups water\n- 4 potatoes, peeled and cut into wedges\n- Salt and pepper, to taste\n- 1/4 cup chopped cilantro\n\nInstructions:\n1. In a large pot, heat the oil over medium-high heat. Add the lamb pieces and cook until browned on all sides, about 8-10 minutes.\n2. Remove the lamb from the pot and set it aside on a plate.\n3. In the same pot, add the chopped onion and garlic. Cook until translucent, about 5-7 minutes.\n4. Add the cumin, oregano, and aj\u00ed amarillo paste to the pot. Stir to combine and cook for another minute or two.\n5. Add the beer, water, and lamb back to the pot. Bring the mixture to a boil and then reduce the heat to low. Cover and let simmer for about 1 hour, or until the lamb is tender.\n6. Add the potatoes to the pot and season with salt and pepper to taste. Cook until the potatoes are soft and the stew has thickened, about 30-45 minutes.\n7. To finish, stir in the chopped cilantro and serve hot with a side of rice.\n\nEnjoy your Seco de Cordero, a delicious and hearty dish from Ancash!",
+                    "dia_ids": [
+                        "D42:1",
+                        "D42:2"
+                    ]
+                },
+                {
+                    "memory": "Enjoyed Seco de Cordero dinner",
+                    "timestamp": "2023/05/28 (Sun) 13:04",
+                    "score": 0.57,
+                    "original_conversation": "user_16c90bf4: Yum, that sounds like the perfect way to end my Seco de Cordero dinner. Do you have any other classic Peruvian recipes you would recommend trying?\nassistant_16c90bf4: Yes, there are many delicious Peruvian dishes you can try! Here are some classic Peruvian dishes that you might want to add to your recipe collection:\n\n1. Ceviche - a refreshing dish made with fresh raw fish or seafood marinated in citrus juice and spices, served with sweet potato and corn. 2. Lomo Saltado - a popular stir-fry dish made with beef, onions, tomatoes, and spices, served with rice and french fries. 3. Aj\u00ed de Gallina - a creamy chicken stew made with shredded chicken, bread, walnuts and aji amarillo pepper, served with boiled potatoes and rice. 4. Pollo a la Brasa - a succulent rotisserie chicken marinated in spices, served with fries, salad, and aji sauce. 5. Papa a la Huanca\u00edna - boiled potatoes served with a spicy creamy sauce made with cheese, aj\u00ed amarillo pepper and evaporated milk, garnished with hard-boiled eggs and olives. 6. Anticuchos - skewers of marinated beef heart or chicken, grilled and served with boiled potatoes and aji sauce. All of these dishes are delicious and unique, and can give you an authentic taste of Peruvian cuisine. You can also explore other Peruvian dishes and find the ones that suit your taste buds. Enjoy!",
+                    "dia_ids": [
+                        "D42:9",
+                        "D42:10"
+                    ]
+                },
+                {
+                    "memory": "Looking for a classic dish from Ancash",
+                    "timestamp": "2023/05/28 (Sun) 13:04",
+                    "score": 0.56,
+                    "original_conversation": "user_16c90bf4: Could you suggest a recipe for a classic dish from Ancash?\nassistant_16c90bf4: Sure! How about \"Seco de Cordero\" (Lamb Stew) from Ancash:\n\nIngredients:\n- 2 lbs. lamb, cut into small pieces\n- 1 onion, chopped\n- 3 garlic cloves, minced\n- 1 tsp. cumin\n- 1 tsp. dried oregano\n- 2 tbsp. vegetable oil\n- 2 tbsp. aj\u00ed amarillo paste\n- 1 cup beer\n- 2 cups water\n- 4 potatoes, peeled and cut into wedges\n- Salt and pepper, to taste\n- 1/4 cup chopped cilantro\n\nInstructions:\n1. In a large pot, heat the oil over medium-high heat. Add the lamb pieces and cook until browned on all sides, about 8-10 minutes.\n2. Remove the lamb from the pot and set it aside on a plate.\n3. In the same pot, add the chopped onion and garlic. Cook until translucent, about 5-7 minutes.\n4. Add the cumin, oregano, and aj\u00ed amarillo paste to the pot. Stir to combine and cook for another minute or two.\n5. Add the beer, water, and lamb back to the pot. Bring the mixture to a boil and then reduce the heat to low. Cover and let simmer for about 1 hour, or until the lamb is tender.\n6. Add the potatoes to the pot and season with salt and pepper to taste. Cook until the potatoes are soft and the stew has thickened, about 30-45 minutes.\n7. To finish, stir in the chopped cilantro and serve hot with a side of rice.\n\nEnjoy your Seco de Cordero, a delicious and hearty dish from Ancash!",
+                    "dia_ids": [
+                        "D42:1",
+                        "D42:2"
+                    ]
+                },
+                {
+                    "memory": "Not a big fan of wine, but loves craft beer",
+                    "timestamp": "2023/05/29 (Mon) 12:43",
+                    "score": 0.51,
+                    "original_conversation": "user_16c90bf4: I'm not a big fan of wine, but I love craft beer. Are there any breweries in Napa Valley worth checking out?\nassistant_16c90bf4: Yes! While Napa Valley is best known for its wine, there are a few breweries in the area that are worth checking out.\n\n1. Napa Smith Brewery - This brewery is located in Napa and offers a variety of craft beers, including IPAs, stouts, and wheat beers. They also have a spacious tasting room and a beautiful outdoor patio.\n\n2. Calistoga Inn Restaurant & Brewery - This brewery is located in Calistoga and offers a selection of beers brewed onsite, as well as delicious pub fare. The outdoor patio is surrounded by beautiful gardens.\n\n3. Downtown Joe's Brewery and Restaurant - This brewery is located in downtown Napa and offers great beer plus a full menu of pub food. They have a large indoor space for dining and a beautiful outdoor patio.\n\n4. Mad Fritz - This small brewery is located in St. Helena and offers a unique selection of beers that are brewed with locally sourced ingredients. Tastings are available by appointment only.\n\n5. St. Clair Brown Winery & Brewery - This hybrid winery-brewery is located in Napa and offers both wine and beer tastings. They have a beautiful outdoor patio and an impressive garden where they grow some of the ingredients used in their beers and wines.\n\nThese breweries offer a great alternative to wine tasting, and you can try some delicious craft beers while enjoying the beautiful scenery of Napa Valley.",
+                    "dia_ids": [
+                        "D46:9",
+                        "D46:10"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Looking for dessert suggestions that would pair well with Seco de Cordero",
+                    "timestamp": "2023/05/28 (Sun) 13:04",
+                    "score": 0.61,
+                    "original_conversation": "user_16c90bf4: I'm really excited to try this recipe this weekend. Do you have any dessert suggestions that would pair well with the Seco de Cordero?\nassistant_16c90bf4: Absolutely! How about a classic Peruvian dessert - \"Arroz con Leche\" (Rice Pudding)? It's a creamy and comforting dessert that would complement the rich flavors of the lamb stew. Here's a simple recipe you can try:\n\nIngredients:\n- 1 cup white rice\n- 4 cups whole milk\n- 1 can (14 oz.) sweetened condensed milk\n- 1 cinnamon stick\n- 1 tsp. vanilla extract\n- 1/4 cup raisins (optional)\n- Ground cinnamon for dusting\n\nInstructions:\n1. Rinse the rice in cold water and drain. 2. In a large saucepan, combine the rice, milk, sweetened condensed milk, and cinnamon stick. Bring the mixture to a simmer over medium heat. 3. Reduce the heat to low and cook, stirring frequently, for about 30-40 minutes, or until the rice is tender and the mixture has thickened to a pudding-like consistency. 4. Remove the cinnamon stick and stir in the vanilla extract and raisins (if using). Let the rice pudding cool to room temperature, then chill in the fridge for at least an hour. 5. To serve, spoon the rice pudding into bowls and dust with some ground cinnamon. Enjoy your delicious Seco de Cordero followed by a comforting bowl of Arroz con Leche for dessert!",
+                    "dia_ids": [
+                        "D42:7",
+                        "D42:8"
+                    ]
+                },
+                {
+                    "memory": "Asked for a recipe for a classic dish from Ancash",
+                    "timestamp": "2023/05/28 (Sun) 13:04",
+                    "score": 0.57,
+                    "original_conversation": "user_16c90bf4: Could you suggest a recipe for a classic dish from Ancash?\nassistant_16c90bf4: Sure! How about \"Seco de Cordero\" (Lamb Stew) from Ancash:\n\nIngredients:\n- 2 lbs. lamb, cut into small pieces\n- 1 onion, chopped\n- 3 garlic cloves, minced\n- 1 tsp. cumin\n- 1 tsp. dried oregano\n- 2 tbsp. vegetable oil\n- 2 tbsp. aj\u00ed amarillo paste\n- 1 cup beer\n- 2 cups water\n- 4 potatoes, peeled and cut into wedges\n- Salt and pepper, to taste\n- 1/4 cup chopped cilantro\n\nInstructions:\n1. In a large pot, heat the oil over medium-high heat. Add the lamb pieces and cook until browned on all sides, about 8-10 minutes.\n2. Remove the lamb from the pot and set it aside on a plate.\n3. In the same pot, add the chopped onion and garlic. Cook until translucent, about 5-7 minutes.\n4. Add the cumin, oregano, and aj\u00ed amarillo paste to the pot. Stir to combine and cook for another minute or two.\n5. Add the beer, water, and lamb back to the pot. Bring the mixture to a boil and then reduce the heat to low. Cover and let simmer for about 1 hour, or until the lamb is tender.\n6. Add the potatoes to the pot and season with salt and pepper to taste. Cook until the potatoes are soft and the stew has thickened, about 30-45 minutes.\n7. To finish, stir in the chopped cilantro and serve hot with a side of rice.\n\nEnjoy your Seco de Cordero, a delicious and hearty dish from Ancash!",
+                    "dia_ids": [
+                        "D42:1",
+                        "D42:2"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 6,
+            "num_speaker_2_memories": 2,
+            "speaker_1_memory_time": 0.04093503952026367,
+            "speaker_2_memory_time": 0.039383888244628906,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.3372013568878174,
+            "token_usage": {
+                "prompt_tokens": 3286,
+                "completion_tokens": 7,
+                "total_tokens": 3293
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "I wanted to follow up on our previous conversation about fracking in the Marcellus Shale region. You mentioned that some states require fracking companies to monitor groundwater quality at nearby wells before drilling and for a certain period after drilling is complete. Can you remind me which state you mentioned as an example that has this requirement?",
+            "answer": "Pennsylvania",
+            "category": "single-session-assistant",
+            "evidence": [
+                "D8:1",
+                "D8:2",
+                "D8:3",
+                "D8:4",
+                "D8:5",
+                "D8:6"
+            ],
+            "response": "The question is about fracking regulations in the Marcellus Shale region, specifically which state requires monitoring groundwater quality before and after drilling. However, the provided memories and original conversations only discuss fishing regulations on Lake Michigan and do not mention anything about fracking, the Marcellus Shale region, or any states with specific fracking requirements.\n\nSince there is no relevant information in the memories or original conversations to answer the question, the answer is:\n\n**No information provided.**",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Asking about fishing regulations on Lake Michigan",
+                    "timestamp": "2023/05/23 (Tue) 10:43",
+                    "score": 0.41,
+                    "original_conversation": "user_c8f1aeed: I was wondering if you could tell me more about the fishing regulations on Lake Michigan, specifically about the daily catch limit and size restrictions for largemouth bass.\nassistant_c8f1aeed: Fishing regulations on Lake Michigan are managed by the Lake Michigan Committee, which consists of representatives from the states of Illinois, Indiana, Michigan, and Wisconsin, as well as the Chippewa-Ottawa Resource Authority. Here are the current fishing regulations for largemouth bass on Lake Michigan:\n\n**Daily Catch Limit:**\n\n* The daily catch limit for largemouth bass on Lake Michigan is 5 bass per angler, with a minimum size limit of 14 inches.\n\n**Size Restrictions:**\n\n* The minimum size limit for largemouth bass on Lake Michigan is 14 inches, measured from the tip of the nose to the tip of the tail (total length).\n* There is no maximum size limit for largemouth bass on Lake Michigan.\n\n**Seasonal Restrictions:**\n\n* There is no closed season for largemouth bass fishing on Lake Michigan, but there are some restrictions during the spawning season.\n* From April 1 to June 15, largemouth bass fishing is catch-and-immediate-release only, meaning you cannot harvest or possess any largemouth bass during this period.\n\n**Other Regulations:**\n\n* Anglers are required to possess a valid Illinois, Indiana, Michigan, or Wisconsin fishing license to fish on Lake Michigan.\n* There are specific gear restrictions and bag limits for other species, such as smallmouth bass, walleye, and yellow perch.\n* It's essential to check for any local or seasonal closures, as well as any changes to fishing regulations, before heading out on the water.\n\nPlease note that fishing regulations are subject to change, and it's always a good idea to check with the relevant authorities or a reliable fishing website for the most up-to-date information before your trip. You can find more information on the Lake Michigan Committee's website or through the Illinois Department of Natural Resources, Indiana Department of Natural Resources, Michigan Department of Natural Resources, or Wisconsin Department of Natural Resources websites.\n\nRemember to always practice responsible and sustainable fishing practices, and respect the lake's ecosystem to ensure the long-term health of the fish population.",
+                    "dia_ids": [
+                        "D15:5",
+                        "D15:6"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Asking about fishing regulations on Lake Michigan",
+                    "timestamp": "2023/05/23 (Tue) 10:43",
+                    "score": 0.41,
+                    "original_conversation": "user_c8f1aeed: I was wondering if you could tell me more about the fishing regulations on Lake Michigan, specifically about the daily catch limit and size restrictions for largemouth bass.\nassistant_c8f1aeed: Fishing regulations on Lake Michigan are managed by the Lake Michigan Committee, which consists of representatives from the states of Illinois, Indiana, Michigan, and Wisconsin, as well as the Chippewa-Ottawa Resource Authority. Here are the current fishing regulations for largemouth bass on Lake Michigan:\n\n**Daily Catch Limit:**\n\n* The daily catch limit for largemouth bass on Lake Michigan is 5 bass per angler, with a minimum size limit of 14 inches.\n\n**Size Restrictions:**\n\n* The minimum size limit for largemouth bass on Lake Michigan is 14 inches, measured from the tip of the nose to the tip of the tail (total length).\n* There is no maximum size limit for largemouth bass on Lake Michigan.\n\n**Seasonal Restrictions:**\n\n* There is no closed season for largemouth bass fishing on Lake Michigan, but there are some restrictions during the spawning season.\n* From April 1 to June 15, largemouth bass fishing is catch-and-immediate-release only, meaning you cannot harvest or possess any largemouth bass during this period.\n\n**Other Regulations:**\n\n* Anglers are required to possess a valid Illinois, Indiana, Michigan, or Wisconsin fishing license to fish on Lake Michigan.\n* There are specific gear restrictions and bag limits for other species, such as smallmouth bass, walleye, and yellow perch.\n* It's essential to check for any local or seasonal closures, as well as any changes to fishing regulations, before heading out on the water.\n\nPlease note that fishing regulations are subject to change, and it's always a good idea to check with the relevant authorities or a reliable fishing website for the most up-to-date information before your trip. You can find more information on the Lake Michigan Committee's website or through the Illinois Department of Natural Resources, Indiana Department of Natural Resources, Michigan Department of Natural Resources, or Wisconsin Department of Natural Resources websites.\n\nRemember to always practice responsible and sustainable fishing practices, and respect the lake's ecosystem to ensure the long-term health of the fish population.",
+                    "dia_ids": [
+                        "D15:5",
+                        "D15:6"
+                    ]
+                },
+                {
+                    "memory": "Fishing in the southern part of Lake Michigan, near the Indiana border",
+                    "timestamp": "2023/05/23 (Tue) 10:43",
+                    "score": 0.38,
+                    "original_conversation": "user_c8f1aeed: I'll be fishing in the southern part of Lake Michigan, near the Indiana border. As for structure, I usually prefer fishing around weed beds and drop-offs. On my last trip, I was using soft plastic lures, mainly curly tail grubs.\nassistant_c8f1aeed: The southern part of Lake Michigan, near the Indiana border, is a great area for largemouth bass fishing. Here are some fishing spots and tips that might help you catch some nice ones:\n\n1. **Portage Lake**: This lake is located near the Indiana Dunes National Park and is known for its abundant weed growth, which attracts largemouth bass. Look for areas with thick weed beds, especially in the northern part of the lake.\n2. **East Chicago Marina**: This marina is located near the Indiana border and offers a variety of structures, including weed beds, rocks, and drop-offs. Largemouth bass tend to congregate around the marina's docks and piers.\n3. **Wolf Lake**: This lake is situated near Hammond, Indiana, and is connected to Lake Michigan via a channel. Wolf Lake has plenty of weed beds, drop-offs, and submerged logs that largemouth bass love.\n4. **Lake Michigan shoreline**: The shoreline near the Indiana Dunes National Park offers a mix of sand, rocks, and weed beds, making it an ideal spot for largemouth bass. Look for areas with structural features like drop-offs, points, and weed lines.\n\nTips:\n\n* **Soft plastics**: Your curly tail grubs should work well in these areas, especially around weed beds. Try using a slow, steady retrieve to tempt bass.\n* **Weedless presentations**: When fishing in thick weeds, consider using weedless presentations like a Texas rig or a jig with a weed guard to reduce snagging.\n* **Pay attention to water conditions**: Largemouth bass in Lake Michigan can be sensitive to water temperature and clarity. Look for areas with warmer water (around 70-80\u00b0F) and moderate clarity.\n* **Fish the edges**: Largemouth bass often hang out near the edges of weed beds, drop-offs, and structures. Focus on these transition areas to increase your chances of catching bass.\n* **Be prepared for changing conditions**: Lake Michigan's weather and water conditions can change quickly. Be prepared to adapt your presentation and location accordingly.\n\nRemember to always follow local fishing regulations and practice catch-and-release fishing to help conserve the lake's bass population.\n\nI hope this information helps you plan your fishing trip and catch some nice largemouth bass on Lake Michigan!",
+                    "dia_ids": [
+                        "D15:3",
+                        "D15:4"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 1,
+            "num_speaker_2_memories": 2,
+            "speaker_1_memory_time": 0.04082822799682617,
+            "speaker_2_memory_time": 0.04066634178161621,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 1.309250831604004,
+            "token_usage": {
+                "prompt_tokens": 2281,
+                "completion_tokens": 94,
+                "total_tokens": 2375
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "I'm looking back at our previous conversation where you created two sad songs for me. Can you remind me what was the chord progression for the chorus in the second song?",
+            "answer": "C D E F G A B A G F E D C",
+            "category": "single-session-assistant",
+            "evidence": [
+                "D38:1",
+                "D38:2",
+                "D38:3",
+                "D38:4"
+            ],
+            "response": "**Answer:** No information provided.",
+            "adversarial_answer": "",
+            "speaker_1_memories": [],
+            "speaker_2_memories": [
+                {
+                    "memory": "Favorite song is 'The Room Where It Happens'",
+                    "timestamp": "2023/05/29 (Mon) 12:02",
+                    "score": 0.54,
+                    "original_conversation": "user_eaca4986: I'll definitely keep those tips in mind. I've also been listening to a lot of musical soundtracks lately, including Hamilton. Have you heard the song \"The Room Where It Happens\"? It's one of my favorites.\nassistant_eaca4986: \"The Room Where It Happens\" is an amazing song! Hamilton is a groundbreaking musical, and Lin-Manuel Miranda's writing is pure genius. \"The Room Where It Happens\" is a fantastic example of his clever storytelling and catchy songwriting. The way the song builds momentum and reveals the behind-the-scenes machinations of the Compromise of 1790 is just masterful.\n\nAs a digital AI assistant, I don't have personal preferences or opinions, but I can certainly appreciate the artistry and craftsmanship that goes into creating iconic musicals like Hamilton. It's wonderful that you're enjoying the soundtrack and exploring the world of musical theater!\n\nIf you're interested, you might want to explore other musicals that share similar themes, styles, or elements. For example, you might enjoy other hip-hop infused musicals like In the Heights (also by Lin-Manuel Miranda) or Freestyle Love Supreme. Or, if you're interested in exploring more classic musicals, you could try shows like Les Mis\u00e9rables, Chicago, or West Side Story (which you're already planning to see!).\n\nRemember, the world of musical theater is vast and diverse, and there's always something new to discover. Keep exploring, and I hope you have a fantastic time at your Broadway shows!",
+                    "dia_ids": [
+                        "D42:5",
+                        "D42:6"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 0,
+            "num_speaker_2_memories": 1,
+            "speaker_1_memory_time": 0.03998136520385742,
+            "speaker_2_memory_time": 0.04158592224121094,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.14882397651672363,
+            "token_usage": {
+                "prompt_tokens": 987,
+                "completion_tokens": 8,
+                "total_tokens": 995
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "I'm going back to our previous conversation about traditional Indian embroidery and tailoring techniques. Can you remind me of the name of that online store based in India that sells traditional Indian fabrics, threads, and embellishments?",
+            "answer": "Nostalgia",
+            "category": "single-session-assistant",
+            "evidence": [
+                "D47:1",
+                "D47:2",
+                "D47:3",
+                "D47:4",
+                "D47:5",
+                "D47:6",
+                "D47:7",
+                "D47:8",
+                "D47:9",
+                "D47:10",
+                "D47:11",
+                "D47:12",
+                "D47:13",
+                "D47:14"
+            ],
+            "response": "Nostalgia",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Looking for high-quality materials and tools for traditional Indian embroidery and tailoring techniques",
+                    "timestamp": "2023/05/29 (Mon) 12:47",
+                    "score": 0.82,
+                    "original_conversation": "user_c7cf7dfd: Wow, these tips are really helpful! I am really excited to start practicing traditional Indian embroidery and tailoring techniques on my own. Do you have any recommendations for where I can find high-quality materials and tools?\nassistant_c7cf7dfd: Yes, absolutely! Here are a few recommendations for where you can find high-quality materials and tools for traditional Indian embroidery and tailoring techniques:\n\n1. Dharma Trading Co. - Dharma Trading Co. specializes in natural dyes, fabrics, and embroidery threads that are perfect for traditional Indian embroidery techniques.\n\n2. Fabriclore - Fabriclore sells a wide range of fabrics like cotton, silk, chiffon, and georgette that can be used for traditional Indian tailoring techniques.\n\n3. EmbroideryCentral - EmbroideryCentral offers a vast selection of embroidery supplies, including embroidery needles, hoops, and frames.\n\n4. Nostalgia - Nostalgia is an online store based in India that offers an expansive collection of traditional Indian fabrics, threads, and embellishments.\n\n5. Amazon - Amazon also offers a wide variety of materials and tools for both Indian embroidery and tailoring, including fabrics, threads, needles, and tools.\n\n6. Joann - Joann is a popular crafting and fabrics store that offers a variety of fabric, thread, and tools suitable for traditional Indian embroidery and tailoring techniques.\n\nRemember to check for materials and tools that are authentic to the technique you're trying to learn, and try to use high-quality materials to ensure the longevity and authenticity of your work!",
+                    "dia_ids": [
+                        "D47:7",
+                        "D47:8"
+                    ]
+                },
+                {
+                    "memory": "Looking for book recommendations on traditional Indian embroidery and tailoring",
+                    "timestamp": "2023/05/29 (Mon) 12:47",
+                    "score": 0.78,
+                    "original_conversation": "user_c7cf7dfd: Do you have any recommendations for specific books or workshops I should look into for learning about traditional Indian embroidery and tailoring techniques?\nassistant_c7cf7dfd: Sure, here are some recommendations for books and workshops related to traditional Indian embroidery and tailoring techniques:\n\nBooks:\n1. Indian Embroideries by John Irwin and Margaret Halliday\n2. The Art of Indian Asia: Its Mythology and Transformations by Heinrich Zimmer\n3. The Fabric of India by Rosemary Crill\n\nWorkshops:\n1. Craft Village: Located in Delhi, India, Craft Village offers workshops and courses on traditional Indian embroidery techniques such as Kantha, Chikankari, and Phulkari.\n2. The Block Printing Company: Based in Jaipur, India, The Block Printing Company offers workshops on traditional block printing techniques used in Indian textiles.\n3. The Stitching Project: Located in Pushkar, India, The Stitching Project offers workshops on Indian hand embroidery techniques such as Zardozi, Gota Patti, and Mirror Work.\n\nNote: Due to the ongoing COVID-19 pandemic, it's important to check whether the workshops are currently operating or have switched to online formats.",
+                    "dia_ids": [
+                        "D47:3",
+                        "D47:4"
+                    ]
+                },
+                {
+                    "memory": "Looking for workshop recommendations on traditional Indian embroidery and tailoring",
+                    "timestamp": "2023/05/29 (Mon) 12:47",
+                    "score": 0.77,
+                    "original_conversation": "user_c7cf7dfd: Do you have any recommendations for specific books or workshops I should look into for learning about traditional Indian embroidery and tailoring techniques?\nassistant_c7cf7dfd: Sure, here are some recommendations for books and workshops related to traditional Indian embroidery and tailoring techniques:\n\nBooks:\n1. Indian Embroideries by John Irwin and Margaret Halliday\n2. The Art of Indian Asia: Its Mythology and Transformations by Heinrich Zimmer\n3. The Fabric of India by Rosemary Crill\n\nWorkshops:\n1. Craft Village: Located in Delhi, India, Craft Village offers workshops and courses on traditional Indian embroidery techniques such as Kantha, Chikankari, and Phulkari.\n2. The Block Printing Company: Based in Jaipur, India, The Block Printing Company offers workshops on traditional block printing techniques used in Indian textiles.\n3. The Stitching Project: Located in Pushkar, India, The Stitching Project offers workshops on Indian hand embroidery techniques such as Zardozi, Gota Patti, and Mirror Work.\n\nNote: Due to the ongoing COVID-19 pandemic, it's important to check whether the workshops are currently operating or have switched to online formats.",
+                    "dia_ids": [
+                        "D47:3",
+                        "D47:4"
+                    ]
+                },
+                {
+                    "memory": "Interested in practicing traditional Indian embroidery and tailoring techniques",
+                    "timestamp": "2023/05/29 (Mon) 12:47",
+                    "score": 0.76,
+                    "original_conversation": "user_c7cf7dfd: I'm really excited to start practicing traditional Indian embroidery and tailoring techniques. Do you have any recommendations for online communities or forums where I can connect with other enthusiasts and get feedback on my work?\nassistant_c7cf7dfd: Yes, definitely! Online communities and forums can be a great way to get feedback and advice on your work and connect with other enthusiasts who share your interest in traditional Indian embroidery and tailoring techniques. Here are a few recommendations for online communities and forums:\n\n1. Embroidery Network - The Embroidery Network is an online community for embroidery enthusiasts, with a specific section dedicated to Indian embroidery techniques. Here, you can connect with like-minded people, share your work and seek feedback on it.\n\n2. The Embroidery Resource Forum - The Embroidery Resource Forum is an active online community that provides insights into different types of embroidery techniques. Here, you can ask questions, share your work, and get feedback.\n\n3. Reddit - There are several subreddits related to embroidery and traditional Indian tailoring techniques where you can connect with other enthusiasts, share your work, and get feedback from others.\n\n4. Craftsy - Craftsy (now Bluprint) offers a variety of online courses and communities for crafters including embroidery, sewing, and quilting.  The course and forums provide an opportunity to connect with others, share your work, and get tips and advice.\n\nRemember to share your work, ask for feedback, and connect with other enthusiasts! It's a great way to grow your skills and enthusiasm for traditional Indian embroidery and tailoring techniques.",
+                    "dia_ids": [
+                        "D47:11",
+                        "D47:12"
+                    ]
+                },
+                {
+                    "memory": "Interested in learning traditional Indian embroidery and tailoring techniques",
+                    "timestamp": "2023/05/29 (Mon) 12:47",
+                    "score": 0.76,
+                    "original_conversation": "user_c7cf7dfd: Do you have any recommendations for specific books or workshops I should look into for learning about traditional Indian embroidery and tailoring techniques?\nassistant_c7cf7dfd: Sure, here are some recommendations for books and workshops related to traditional Indian embroidery and tailoring techniques:\n\nBooks:\n1. Indian Embroideries by John Irwin and Margaret Halliday\n2. The Art of Indian Asia: Its Mythology and Transformations by Heinrich Zimmer\n3. The Fabric of India by Rosemary Crill\n\nWorkshops:\n1. Craft Village: Located in Delhi, India, Craft Village offers workshops and courses on traditional Indian embroidery techniques such as Kantha, Chikankari, and Phulkari.\n2. The Block Printing Company: Based in Jaipur, India, The Block Printing Company offers workshops on traditional block printing techniques used in Indian textiles.\n3. The Stitching Project: Located in Pushkar, India, The Stitching Project offers workshops on Indian hand embroidery techniques such as Zardozi, Gota Patti, and Mirror Work.\n\nNote: Due to the ongoing COVID-19 pandemic, it's important to check whether the workshops are currently operating or have switched to online formats.",
+                    "dia_ids": [
+                        "D47:3",
+                        "D47:4"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Looking for high-quality materials and tools for traditional Indian embroidery and tailoring techniques",
+                    "timestamp": "2023/05/29 (Mon) 12:47",
+                    "score": 0.82,
+                    "original_conversation": "user_c7cf7dfd: Wow, these tips are really helpful! I am really excited to start practicing traditional Indian embroidery and tailoring techniques on my own. Do you have any recommendations for where I can find high-quality materials and tools?\nassistant_c7cf7dfd: Yes, absolutely! Here are a few recommendations for where you can find high-quality materials and tools for traditional Indian embroidery and tailoring techniques:\n\n1. Dharma Trading Co. - Dharma Trading Co. specializes in natural dyes, fabrics, and embroidery threads that are perfect for traditional Indian embroidery techniques.\n\n2. Fabriclore - Fabriclore sells a wide range of fabrics like cotton, silk, chiffon, and georgette that can be used for traditional Indian tailoring techniques.\n\n3. EmbroideryCentral - EmbroideryCentral offers a vast selection of embroidery supplies, including embroidery needles, hoops, and frames.\n\n4. Nostalgia - Nostalgia is an online store based in India that offers an expansive collection of traditional Indian fabrics, threads, and embellishments.\n\n5. Amazon - Amazon also offers a wide variety of materials and tools for both Indian embroidery and tailoring, including fabrics, threads, needles, and tools.\n\n6. Joann - Joann is a popular crafting and fabrics store that offers a variety of fabric, thread, and tools suitable for traditional Indian embroidery and tailoring techniques.\n\nRemember to check for materials and tools that are authentic to the technique you're trying to learn, and try to use high-quality materials to ensure the longevity and authenticity of your work!",
+                    "dia_ids": [
+                        "D47:7",
+                        "D47:8"
+                    ]
+                },
+                {
+                    "memory": "Looking for book recommendations on traditional Indian embroidery and tailoring",
+                    "timestamp": "2023/05/29 (Mon) 12:47",
+                    "score": 0.78,
+                    "original_conversation": "user_c7cf7dfd: Do you have any recommendations for specific books or workshops I should look into for learning about traditional Indian embroidery and tailoring techniques?\nassistant_c7cf7dfd: Sure, here are some recommendations for books and workshops related to traditional Indian embroidery and tailoring techniques:\n\nBooks:\n1. Indian Embroideries by John Irwin and Margaret Halliday\n2. The Art of Indian Asia: Its Mythology and Transformations by Heinrich Zimmer\n3. The Fabric of India by Rosemary Crill\n\nWorkshops:\n1. Craft Village: Located in Delhi, India, Craft Village offers workshops and courses on traditional Indian embroidery techniques such as Kantha, Chikankari, and Phulkari.\n2. The Block Printing Company: Based in Jaipur, India, The Block Printing Company offers workshops on traditional block printing techniques used in Indian textiles.\n3. The Stitching Project: Located in Pushkar, India, The Stitching Project offers workshops on Indian hand embroidery techniques such as Zardozi, Gota Patti, and Mirror Work.\n\nNote: Due to the ongoing COVID-19 pandemic, it's important to check whether the workshops are currently operating or have switched to online formats.",
+                    "dia_ids": [
+                        "D47:3",
+                        "D47:4"
+                    ]
+                },
+                {
+                    "memory": "Looking for workshop recommendations on traditional Indian embroidery and tailoring",
+                    "timestamp": "2023/05/29 (Mon) 12:47",
+                    "score": 0.77,
+                    "original_conversation": "user_c7cf7dfd: Do you have any recommendations for specific books or workshops I should look into for learning about traditional Indian embroidery and tailoring techniques?\nassistant_c7cf7dfd: Sure, here are some recommendations for books and workshops related to traditional Indian embroidery and tailoring techniques:\n\nBooks:\n1. Indian Embroideries by John Irwin and Margaret Halliday\n2. The Art of Indian Asia: Its Mythology and Transformations by Heinrich Zimmer\n3. The Fabric of India by Rosemary Crill\n\nWorkshops:\n1. Craft Village: Located in Delhi, India, Craft Village offers workshops and courses on traditional Indian embroidery techniques such as Kantha, Chikankari, and Phulkari.\n2. The Block Printing Company: Based in Jaipur, India, The Block Printing Company offers workshops on traditional block printing techniques used in Indian textiles.\n3. The Stitching Project: Located in Pushkar, India, The Stitching Project offers workshops on Indian hand embroidery techniques such as Zardozi, Gota Patti, and Mirror Work.\n\nNote: Due to the ongoing COVID-19 pandemic, it's important to check whether the workshops are currently operating or have switched to online formats.",
+                    "dia_ids": [
+                        "D47:3",
+                        "D47:4"
+                    ]
+                },
+                {
+                    "memory": "Interested in learning traditional Indian embroidery and tailoring techniques",
+                    "timestamp": "2023/05/29 (Mon) 12:47",
+                    "score": 0.76,
+                    "original_conversation": "user_c7cf7dfd: Do you have any recommendations for specific books or workshops I should look into for learning about traditional Indian embroidery and tailoring techniques?\nassistant_c7cf7dfd: Sure, here are some recommendations for books and workshops related to traditional Indian embroidery and tailoring techniques:\n\nBooks:\n1. Indian Embroideries by John Irwin and Margaret Halliday\n2. The Art of Indian Asia: Its Mythology and Transformations by Heinrich Zimmer\n3. The Fabric of India by Rosemary Crill\n\nWorkshops:\n1. Craft Village: Located in Delhi, India, Craft Village offers workshops and courses on traditional Indian embroidery techniques such as Kantha, Chikankari, and Phulkari.\n2. The Block Printing Company: Based in Jaipur, India, The Block Printing Company offers workshops on traditional block printing techniques used in Indian textiles.\n3. The Stitching Project: Located in Pushkar, India, The Stitching Project offers workshops on Indian hand embroidery techniques such as Zardozi, Gota Patti, and Mirror Work.\n\nNote: Due to the ongoing COVID-19 pandemic, it's important to check whether the workshops are currently operating or have switched to online formats.",
+                    "dia_ids": [
+                        "D47:3",
+                        "D47:4"
+                    ]
+                },
+                {
+                    "memory": "Excited to start practicing traditional Indian embroidery and tailoring techniques",
+                    "timestamp": "2023/05/29 (Mon) 12:47",
+                    "score": 0.73,
+                    "original_conversation": "user_c7cf7dfd: I'm really excited to start practicing traditional Indian embroidery and tailoring techniques. Do you have any recommendations for online communities or forums where I can connect with other enthusiasts and get feedback on my work?\nassistant_c7cf7dfd: Yes, definitely! Online communities and forums can be a great way to get feedback and advice on your work and connect with other enthusiasts who share your interest in traditional Indian embroidery and tailoring techniques. Here are a few recommendations for online communities and forums:\n\n1. Embroidery Network - The Embroidery Network is an online community for embroidery enthusiasts, with a specific section dedicated to Indian embroidery techniques. Here, you can connect with like-minded people, share your work and seek feedback on it.\n\n2. The Embroidery Resource Forum - The Embroidery Resource Forum is an active online community that provides insights into different types of embroidery techniques. Here, you can ask questions, share your work, and get feedback.\n\n3. Reddit - There are several subreddits related to embroidery and traditional Indian tailoring techniques where you can connect with other enthusiasts, share your work, and get feedback from others.\n\n4. Craftsy - Craftsy (now Bluprint) offers a variety of online courses and communities for crafters including embroidery, sewing, and quilting.  The course and forums provide an opportunity to connect with others, share your work, and get tips and advice.\n\nRemember to share your work, ask for feedback, and connect with other enthusiasts! It's a great way to grow your skills and enthusiasm for traditional Indian embroidery and tailoring techniques.",
+                    "dia_ids": [
+                        "D47:11",
+                        "D47:12"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 5,
+            "num_speaker_2_memories": 5,
+            "speaker_1_memory_time": 0.03989911079406738,
+            "speaker_2_memory_time": 0.042169809341430664,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.2560567855834961,
+            "token_usage": {
+                "prompt_tokens": 2858,
+                "completion_tokens": 5,
+                "total_tokens": 2863
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "I was looking back at our previous conversation about environmentally responsible supply chain practices, and I was wondering if you could remind me of the company you mentioned that's doing a great job with sustainability?",
+            "answer": "Patagonia",
+            "category": "single-session-assistant",
+            "evidence": [
+                "D39:1",
+                "D39:2",
+                "D39:3",
+                "D39:4",
+                "D39:5",
+                "D39:6"
+            ],
+            "response": "Patagonia",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Hopes more companies prioritize sustainability in their supply chain practices",
+                    "timestamp": "2023/05/28 (Sun) 16:39",
+                    "score": 0.7,
+                    "original_conversation": "user_e48988bc: It's great to see companies like Patagonia taking the initiative to be environmentally responsible. I hope more companies follow suit and prioritize sustainability in their supply chain practices.\nassistant_e48988bc: As an AI language model, I completely agree with you! Encouraging eco-friendly practices within the supply chain is an essential step that companies can take to reduce their environmental impact and contribute to a greener future. By implementing these practices, companies can not only reduce their ecological footprint but also minimize risks associated with environmental non-compliance, improve their brand image and reputation, and foster goodwill among customers, employees, and stakeholders. Hopefully, more companies will follow the lead of Patagonia and make a sincere commitment to sustainability in their supply chain practices.",
+                    "dia_ids": [
+                        "D39:5",
+                        "D39:6"
+                    ]
+                },
+                {
+                    "memory": "Supports environmentally responsible companies like Patagonia",
+                    "timestamp": "2023/05/28 (Sun) 16:39",
+                    "score": 0.7,
+                    "original_conversation": "user_e48988bc: It's great to see companies like Patagonia taking the initiative to be environmentally responsible. I hope more companies follow suit and prioritize sustainability in their supply chain practices.\nassistant_e48988bc: As an AI language model, I completely agree with you! Encouraging eco-friendly practices within the supply chain is an essential step that companies can take to reduce their environmental impact and contribute to a greener future. By implementing these practices, companies can not only reduce their ecological footprint but also minimize risks associated with environmental non-compliance, improve their brand image and reputation, and foster goodwill among customers, employees, and stakeholders. Hopefully, more companies will follow the lead of Patagonia and make a sincere commitment to sustainability in their supply chain practices.",
+                    "dia_ids": [
+                        "D39:5",
+                        "D39:6"
+                    ]
+                },
+                {
+                    "memory": "Loves the fact that sustainability is becoming more of a focus for companies",
+                    "timestamp": "2023/05/26 (Fri) 17:00",
+                    "score": 0.68,
+                    "original_conversation": "user_e48988bc: Yeah, I love the fact that sustainability is becoming more of a focus for companies. Do you know if Reebok has any sustainable collections?\nassistant_e48988bc: Yes, Reebok has been making efforts to promote sustainability and ethical manufacturing in their products. Here are some of their sustainable collections and initiatives:\n\n1. Cotton + Corn: A collection of shoes made from a 100% plant-based material, including a corn-based sole and an organic cotton upper.\n\n2. Forever Floatride Grow: A line of running shoes made with natural and recycled materials, including eucalyptus tree bark, castor bean oil, and algae foam.\n\n3. Classic Leather Legacy: A sneaker line made with at least 30% recycled polyester.\n\n4. Reebok One Series: A clothing collection made with eco-friendly materials such as recycled polyester, organic cotton, and TENCEL lyocell fiber.\n\n5. The Better Cotton Initiative: Reebok is a member of The Better Cotton Initiative; a global sustainability program that works to improve the sustainability of cotton farming practices.\n\nSo yes, you can find sustainable collections and initiatives from Reebok.",
+                    "dia_ids": [
+                        "D31:7",
+                        "D31:8"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Loves the fact that sustainability is becoming more of a focus for companies",
+                    "timestamp": "2023/05/26 (Fri) 17:00",
+                    "score": 0.68,
+                    "original_conversation": "user_e48988bc: Yeah, I love the fact that sustainability is becoming more of a focus for companies. Do you know if Reebok has any sustainable collections?\nassistant_e48988bc: Yes, Reebok has been making efforts to promote sustainability and ethical manufacturing in their products. Here are some of their sustainable collections and initiatives:\n\n1. Cotton + Corn: A collection of shoes made from a 100% plant-based material, including a corn-based sole and an organic cotton upper.\n\n2. Forever Floatride Grow: A line of running shoes made with natural and recycled materials, including eucalyptus tree bark, castor bean oil, and algae foam.\n\n3. Classic Leather Legacy: A sneaker line made with at least 30% recycled polyester.\n\n4. Reebok One Series: A clothing collection made with eco-friendly materials such as recycled polyester, organic cotton, and TENCEL lyocell fiber.\n\n5. The Better Cotton Initiative: Reebok is a member of The Better Cotton Initiative; a global sustainability program that works to improve the sustainability of cotton farming practices.\n\nSo yes, you can find sustainable collections and initiatives from Reebok.",
+                    "dia_ids": [
+                        "D31:7",
+                        "D31:8"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 3,
+            "num_speaker_2_memories": 1,
+            "speaker_1_memory_time": 0.03993701934814453,
+            "speaker_2_memory_time": 0.040665388107299805,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.13063788414001465,
+            "token_usage": {
+                "prompt_tokens": 1470,
+                "completion_tokens": 4,
+                "total_tokens": 1474
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "I was going through our previous conversation about high-end fashion brands, and I was wondering if you could remind me of the brand that uses wild rubber sourced from the Amazon rainforest?",
+            "answer": "Veja",
+            "category": "single-session-assistant",
+            "evidence": [
+                "D42:1",
+                "D42:2",
+                "D42:3",
+                "D42:4",
+                "D42:5",
+                "D42:6",
+                "D42:7",
+                "D42:8",
+                "D42:9",
+                "D42:10",
+                "D42:11",
+                "D42:12"
+            ],
+            "response": "Veja",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Asks for recommendations for high-end brands that prioritize sustainability",
+                    "timestamp": "2023/05/29 (Mon) 22:01",
+                    "score": 0.63,
+                    "original_conversation": "user_1de5cff2: I agree, it's important to consider my budget before investing in high-end brands. But I do love the idea of owning a piece that lasts a long time and has a unique design. Do you have any recommendations for high-end brands that prioritize sustainability?\nassistant_1de5cff2: Sure! Here are a few high-end fashion brands that are known for their commitment to sustainability:\n\n1. Stella McCartney - The brand is well known for its ethical and environmentally friendly practices, using eco-friendly fabrics such as organic cotton, recycled polyester, and wool sourced from non-mulesing farms.\n\n2. Eileen Fisher - This brand uses organic cotton, hemp, and linen fabrics and has a take-back program for customers to recycle or repurpose their old clothes.\n\n3. Patagonia - Although it's known for its outdoor clothing, Patagonia has a strong commitment to sustainability, using eco-friendly fabrics and investing in projects that promote conservation and environmental protection.\n\n4. Reformation - This brand's motto is \"Being naked is the #1 most sustainable option. We're #2,\u201d and they use eco-friendly materials and have a transparent supply chain to promote sustainability.\n\n5. Veja - This French brand produces eco-friendly sneakers using organic cotton, recycled plastic bottles, and wild rubber sourced from the Amazon rainforest.\n\nThese brands are just a few examples of the high-end fashion companies that prioritize sustainability. There are many more out there, so you can always research and find additional brands that fit your style and values.",
+                    "dia_ids": [
+                        "D42:7",
+                        "D42:8"
+                    ]
+                },
+                {
+                    "memory": "Likes buying from brands committed to sustainability",
+                    "timestamp": "2023/05/29 (Mon) 22:01",
+                    "score": 0.59,
+                    "original_conversation": "user_1de5cff2: I really like the idea of buying from brands that are committed to sustainability. I'll definitely check those out. Do you know if any of these brands have sales or discounts on their products?\nassistant_1de5cff2: While I don't have any specific information on sales or discounts for these brands, it's not uncommon for high-end fashion brands to offer seasonal sales or promotions. However, it's essential to keep in mind that these sales are often limited and can sell out quickly due to their popularity, so you may need to act fast if you spot a good deal. Another option is to shop for these brands during off-season periods or look for gently used items from sources such as consignment stores or online marketplaces like The RealReal or Vestiaire Collective. You can also sign up for newsletters or follow them on social media to stay up to date with any sales or promotions they might be offering.",
+                    "dia_ids": [
+                        "D42:9",
+                        "D42:10"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Asks for recommendations for high-end brands that prioritize sustainability",
+                    "timestamp": "2023/05/29 (Mon) 22:01",
+                    "score": 0.63,
+                    "original_conversation": "user_1de5cff2: I agree, it's important to consider my budget before investing in high-end brands. But I do love the idea of owning a piece that lasts a long time and has a unique design. Do you have any recommendations for high-end brands that prioritize sustainability?\nassistant_1de5cff2: Sure! Here are a few high-end fashion brands that are known for their commitment to sustainability:\n\n1. Stella McCartney - The brand is well known for its ethical and environmentally friendly practices, using eco-friendly fabrics such as organic cotton, recycled polyester, and wool sourced from non-mulesing farms.\n\n2. Eileen Fisher - This brand uses organic cotton, hemp, and linen fabrics and has a take-back program for customers to recycle or repurpose their old clothes.\n\n3. Patagonia - Although it's known for its outdoor clothing, Patagonia has a strong commitment to sustainability, using eco-friendly fabrics and investing in projects that promote conservation and environmental protection.\n\n4. Reformation - This brand's motto is \"Being naked is the #1 most sustainable option. We're #2,\u201d and they use eco-friendly materials and have a transparent supply chain to promote sustainability.\n\n5. Veja - This French brand produces eco-friendly sneakers using organic cotton, recycled plastic bottles, and wild rubber sourced from the Amazon rainforest.\n\nThese brands are just a few examples of the high-end fashion companies that prioritize sustainability. There are many more out there, so you can always research and find additional brands that fit your style and values.",
+                    "dia_ids": [
+                        "D42:7",
+                        "D42:8"
+                    ]
+                },
+                {
+                    "memory": "Likes buying from brands committed to sustainability",
+                    "timestamp": "2023/05/29 (Mon) 22:01",
+                    "score": 0.59,
+                    "original_conversation": "user_1de5cff2: I really like the idea of buying from brands that are committed to sustainability. I'll definitely check those out. Do you know if any of these brands have sales or discounts on their products?\nassistant_1de5cff2: While I don't have any specific information on sales or discounts for these brands, it's not uncommon for high-end fashion brands to offer seasonal sales or promotions. However, it's essential to keep in mind that these sales are often limited and can sell out quickly due to their popularity, so you may need to act fast if you spot a good deal. Another option is to shop for these brands during off-season periods or look for gently used items from sources such as consignment stores or online marketplaces like The RealReal or Vestiaire Collective. You can also sign up for newsletters or follow them on social media to stay up to date with any sales or promotions they might be offering.",
+                    "dia_ids": [
+                        "D42:9",
+                        "D42:10"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 2,
+            "num_speaker_2_memories": 2,
+            "speaker_1_memory_time": 0.0399775505065918,
+            "speaker_2_memory_time": 0.042971134185791016,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.1494312286376953,
+            "token_usage": {
+                "prompt_tokens": 1811,
+                "completion_tokens": 3,
+                "total_tokens": 1814
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "I remember you told me to dilute tea tree oil with a carrier oil before applying it to my skin. Can you remind me what the recommended ratio is?",
+            "answer": "The recommended ratio is 1:10, meaning one part tea tree oil to ten parts carrier oil.",
+            "category": "single-session-assistant",
+            "evidence": [
+                "D11:1",
+                "D11:2",
+                "D11:3",
+                "D11:4",
+                "D11:5",
+                "D11:6",
+                "D11:7",
+                "D11:8",
+                "D11:9",
+                "D11:10",
+                "D11:11",
+                "D11:12",
+                "D11:13",
+                "D11:14"
+            ],
+            "response": "1:10",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Inquires if tea tree oil can be applied directly or needs dilution",
+                    "timestamp": "2023/05/23 (Tue) 02:14",
+                    "score": 0.8,
+                    "original_conversation": "user_65240037: Is it safe to use tea tree oil on my scalp as a treatment for dandruff? Can I apply it directly, or do I need to dilute it first?\nassistant_65240037: Yes, tea tree oil can be an effective natural treatment for dandruff. Tea tree oil is antimicrobial and antifungal, which means it can help to kill the yeast or fungus that causes dandruff. It can also help to reduce inflammation and soothe the scalp. However, it's essential to dilute tea tree oil before applying it to the scalp to avoid skin irritation, redness, or allergic reactions.\n\nTo use tea tree oil for dandruff:\n\n1. Dilute the tea tree oil: Mix a few drops of tea tree oil with a carrier oil like coconut oil, jojoba oil or almond oil in a 1:10 ratio.\n\n2. Apply the mixture to your scalp: Part your hair and apply the mixture to your scalp using your fingers or a cotton ball, making sure to cover the entire scalp.\n\n3. Leave it on for a few hours or overnight: Let the mixture sit on your scalp for a few hours or overnight.\n\n4. Wash your hair: Wash your hair with a mild shampoo to remove the oil and rinse it thoroughly.\n\n5. Repeat the process 2-3 times a week.\n\nUsing undiluted tea tree oil on your scalp can cause skin irritation and allergic reactions, and it is not recommended.",
+                    "dia_ids": [
+                        "D11:7",
+                        "D11:8"
+                    ]
+                },
+                {
+                    "memory": "Inquires if applying tea tree oil undiluted will work faster",
+                    "timestamp": "2023/05/23 (Tue) 02:14",
+                    "score": 0.73,
+                    "original_conversation": "user_65240037: Can I apply tea tree oil directly to my face without diluting it? Will it work faster that way?\nassistant_65240037: I must provide the most accurate and truthful information to my knowledge. no, it is not recommended to apply tea tree oil directly to the face without diluting it since it can cause skin irritation, redness, itching, and even acne breakouts. tea tree oil is too strong, and direct application to the skin may cause more harm than good. it's essential to dilute tea tree oil with a carrier oil such as coconut oil, jojoba oil or almond oil in a 1:10 ratio to prevent skin irritation and other adverse effects. it's also important to conduct a patch test before applying diluted tea tree oil to your face to ensure you are not allergic or sensitive to it. using undiluted tea tree oil may not work faster, and it could cause more problems for your skin.",
+                    "dia_ids": [
+                        "D11:5",
+                        "D11:6"
+                    ]
+                },
+                {
+                    "memory": "Asks about using tea tree oil to treat scars or dark spots on skin",
+                    "timestamp": "2023/05/23 (Tue) 02:14",
+                    "score": 0.64,
+                    "original_conversation": "user_65240037: Can I use tea tree oil to treat scars or dark spots on my skin?\nassistant_65240037: Yes, tea tree oil may help to reduce the appearance of scars and dark spots on the skin. This is because of its anti-inflammatory and antimicrobial properties, which may help to improve skin healing and reduce acne breakouts that can lead to scarring. However, it is important to note that tea tree oil should not be applied directly to the skin since it can cause irritation. It should be diluted with a carrier oil such as coconut oil, jojoba oil or almond oil in a 1:10 ratio before application. You can then apply the mixture to the affected area and leave it on for a few hours before washing it off. Results may vary depending on the severity of the scars or dark spots, and it is always recommended to consult a dermatologist before trying any new skincare treatment.",
+                    "dia_ids": [
+                        "D11:3",
+                        "D11:4"
+                    ]
+                },
+                {
+                    "memory": "Asks about safety of using tea tree oil on scalp for dandruff",
+                    "timestamp": "2023/05/23 (Tue) 02:14",
+                    "score": 0.64,
+                    "original_conversation": "user_65240037: Is it safe to use tea tree oil on my scalp as a treatment for dandruff? Can I apply it directly, or do I need to dilute it first?\nassistant_65240037: Yes, tea tree oil can be an effective natural treatment for dandruff. Tea tree oil is antimicrobial and antifungal, which means it can help to kill the yeast or fungus that causes dandruff. It can also help to reduce inflammation and soothe the scalp. However, it's essential to dilute tea tree oil before applying it to the scalp to avoid skin irritation, redness, or allergic reactions.\n\nTo use tea tree oil for dandruff:\n\n1. Dilute the tea tree oil: Mix a few drops of tea tree oil with a carrier oil like coconut oil, jojoba oil or almond oil in a 1:10 ratio.\n\n2. Apply the mixture to your scalp: Part your hair and apply the mixture to your scalp using your fingers or a cotton ball, making sure to cover the entire scalp.\n\n3. Leave it on for a few hours or overnight: Let the mixture sit on your scalp for a few hours or overnight.\n\n4. Wash your hair: Wash your hair with a mild shampoo to remove the oil and rinse it thoroughly.\n\n5. Repeat the process 2-3 times a week.\n\nUsing undiluted tea tree oil on your scalp can cause skin irritation and allergic reactions, and it is not recommended.",
+                    "dia_ids": [
+                        "D11:7",
+                        "D11:8"
+                    ]
+                },
+                {
+                    "memory": "Asks about using tea tree oil for fungal infections on the feet",
+                    "timestamp": "2023/05/23 (Tue) 02:14",
+                    "score": 0.58,
+                    "original_conversation": "user_65240037: Can tea tree oil be used to treat fungal infections on the feet, or is it only for skin conditions on the face and scalp?\nassistant_65240037: Yes, tea tree oil can be used to treat fungal infections on the feet such as athlete's foot. Tea tree oil is antifungal and anti-inflammatory, both of which may help to kill the fungus that causes athlete's foot, reduce inflammation, and soothe the skin. The oil can also help to prevent further outbreaks and maintain healthy feet.\n\nTo use tea tree oil for athlete's foot:\n\n1. Cleanse the feet: Wash and dry your feet thoroughly, making sure to remove any dirt or debris from between your toes and under your nails.\n\n2. Dilute the tea tree oil: Mix a few drops of tea tree oil with a carrier oil like coconut oil, jojoba oil or almond oil in a 1:10 ratio.\n\n3. Apply the mixture to the affected area: Apply the mixture to the affected area, making sure to cover the entire foot, including the toes, toenails, and the skin between them.\n\n4. Let it dry: Let the mixture dry on your feet and wear clean socks.\n\n5. Repeat the process twice a day.\n\nTea tree oil is safe and effective for treating various skin conditions, including fungal infections on the feet. It's essential to follow the proper dilution ratio to avoid skin irritation or other adverse reactions. If your condition persists or worsens, consult a healthcare provider or a dermatologist.",
+                    "dia_ids": [
+                        "D11:11",
+                        "D11:12"
+                    ]
+                },
+                {
+                    "memory": "Asks about using tea tree oil for scalp conditions like itchiness or flakiness",
+                    "timestamp": "2023/05/23 (Tue) 02:14",
+                    "score": 0.57,
+                    "original_conversation": "user_65240037: Can tea tree oil be used to treat other scalp conditions such as itchiness or flakiness, or is it only effective against dandruff?\nassistant_65240037: Yes, tea tree oil can be used to treat other scalp conditions such as itchiness and flakiness. Tea tree oil has antifungal and antimicrobial properties that can help to soothe the scalp, reduce itchiness and flakiness, and prevent infections caused by bacteria, fungi, and other microorganisms.\n\nTo use tea tree oil for itchiness or flakiness:\n\n1. Dilute the tea tree oil: Mix a few drops of tea tree oil with a carrier oil such as coconut oil, jojoba oil or almond oil in a 1:10 ratio.\n\n2. Apply the mixture to your scalp: Part your hair and apply the mixture to your scalp using your fingers or a cotton ball, making sure to cover the entire scalp.\n\n3. Leave it on for a few hours or overnight: Let the mixture sit on your scalp for a few hours or overnight.\n\n4. Wash your hair: Wash your hair with a mild shampoo to remove the oil and rinse it thoroughly.\n\n5. Repeat the process 2-3 times a week.\n\nTea tree oil has been shown to be effective against various scalp conditions, but it's essential to dilute it with a carrier oil to avoid skin irritation or allergic reactions. If you develop any adverse reactions or if your scalp condition worsens, consult a healthcare provider or a dermatologist.",
+                    "dia_ids": [
+                        "D11:9",
+                        "D11:10"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Asked about applying tea tree oil directly to the face without diluting it",
+                    "timestamp": "2023/05/23 (Tue) 02:14",
+                    "score": 0.75,
+                    "original_conversation": "user_65240037: Can I apply tea tree oil directly to my face without diluting it? Will it work faster that way?\nassistant_65240037: I must provide the most accurate and truthful information to my knowledge. no, it is not recommended to apply tea tree oil directly to the face without diluting it since it can cause skin irritation, redness, itching, and even acne breakouts. tea tree oil is too strong, and direct application to the skin may cause more harm than good. it's essential to dilute tea tree oil with a carrier oil such as coconut oil, jojoba oil or almond oil in a 1:10 ratio to prevent skin irritation and other adverse effects. it's also important to conduct a patch test before applying diluted tea tree oil to your face to ensure you are not allergic or sensitive to it. using undiluted tea tree oil may not work faster, and it could cause more problems for your skin.",
+                    "dia_ids": [
+                        "D11:5",
+                        "D11:6"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 6,
+            "num_speaker_2_memories": 1,
+            "speaker_1_memory_time": 0.042519569396972656,
+            "speaker_2_memory_time": 0.04244422912597656,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.22732019424438477,
+            "token_usage": {
+                "prompt_tokens": 2533,
+                "completion_tokens": 5,
+                "total_tokens": 2538
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "I was looking back at our previous conversation about Caribbean dishes and I was wondering, what was the name of that Jamaican dish you recommended I try with snapper that has fruit in it?",
+            "answer": "Grilled Snapper with Mango Salsa",
+            "category": "single-session-assistant",
+            "evidence": [
+                "D48:1",
+                "D48:2",
+                "D48:3",
+                "D48:4",
+                "D48:5",
+                "D48:6",
+                "D48:7",
+                "D48:8",
+                "D48:9",
+                "D48:10",
+                "D48:11",
+                "D48:12"
+            ],
+            "response": "Grilled Snapper with Mango Salsa",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Asks about popular Caribbean dishes that feature snapper",
+                    "timestamp": "2023/05/30 (Tue) 15:28",
+                    "score": 0.76,
+                    "original_conversation": "user_778164c6: Oh, I love snapper! What are some popular Caribbean dishes that feature snapper?\nassistant_778164c6: There are many popular Caribbean dishes that feature snapper, some of which include:\n\n1. Escovitch Fish - a Jamaican dish where fried snapper is topped with a spicy pickled vegetable sauce.\n2. Fish Curry - a Trinidadian dish that features snapper cooked in a curry sauce with vegetables and aromatics.\n3. Conch & Snapper Stew - a dish from the Bahamas that combines conch and snapper in a tomato-based stew with peppers and onions.\n4. Grilled Snapper with Mango Salsa - a popular dish in many Caribbean countries where grilled snapper is topped with a fruity and spicy salsa.\n5. Fish and Fungi - a dish from the Virgin Islands where snapper is served with a polenta-like dish made from cornmeal.\n\nThese dishes are just a few of the many delicious ways snapper can be cooked and enjoyed in Caribbean cuisine.",
+                    "dia_ids": [
+                        "D48:3",
+                        "D48:4"
+                    ]
+                },
+                {
+                    "memory": "Asking about other Jamaican dishes to try",
+                    "timestamp": "2023/05/30 (Tue) 15:28",
+                    "score": 0.74,
+                    "original_conversation": "user_778164c6: I've actually tried Jerk Chicken before and loved it! Are there any other Jamaican dishes that I should try?\nassistant_778164c6: Yes, there are many other Jamaican dishes that are worth trying. Here are a few more:\n\n1. Ackee and Saltfish - Jamaica's national dish, made with the fruit of the ackee tree and salted codfish.\n\n2. Curry Goat - a flavorful curry made with tender goat meat and Jamaican curry spices.\n\n3. Festival and Fried Fish - festival is a popular Jamaican festival, similar to a fried cornbread or dumpling, that is often eaten with fried fish.\n\n4. Brown Stew Chicken - chicken is marinated in a sweet and savory sauce, then cooked with vegetables such as onion, garlic, and bell peppers.\n\n5. Oxtail Stew - oxtail is slow-cooked in a rich and savory stew with vegetables and beans.\n\nAll of these dishes are hearty, flavorful, and unique to Jamaican cuisine.",
+                    "dia_ids": [
+                        "D48:11",
+                        "D48:12"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Asks about popular Caribbean dishes that feature snapper",
+                    "timestamp": "2023/05/30 (Tue) 15:28",
+                    "score": 0.76,
+                    "original_conversation": "user_778164c6: Oh, I love snapper! What are some popular Caribbean dishes that feature snapper?\nassistant_778164c6: There are many popular Caribbean dishes that feature snapper, some of which include:\n\n1. Escovitch Fish - a Jamaican dish where fried snapper is topped with a spicy pickled vegetable sauce.\n2. Fish Curry - a Trinidadian dish that features snapper cooked in a curry sauce with vegetables and aromatics.\n3. Conch & Snapper Stew - a dish from the Bahamas that combines conch and snapper in a tomato-based stew with peppers and onions.\n4. Grilled Snapper with Mango Salsa - a popular dish in many Caribbean countries where grilled snapper is topped with a fruity and spicy salsa.\n5. Fish and Fungi - a dish from the Virgin Islands where snapper is served with a polenta-like dish made from cornmeal.\n\nThese dishes are just a few of the many delicious ways snapper can be cooked and enjoyed in Caribbean cuisine.",
+                    "dia_ids": [
+                        "D48:3",
+                        "D48:4"
+                    ]
+                },
+                {
+                    "memory": "Asks for other favorite dishes from Caribbean cuisine",
+                    "timestamp": "2023/05/30 (Tue) 15:28",
+                    "score": 0.67,
+                    "original_conversation": "user_778164c6: I will definitely give Escovitch Fish a try and check out some Jamaican restaurants in my area. Do you have any other favorite dishes from Caribbean cuisine?\nassistant_778164c6: I don't have personal preferences, but there are many other delicious dishes from caribbean cuisine. here are a few more popular ones:\n\n1. jerk chicken - a spicy and flavorful jamaican dish where chicken is marinated in a blend of spices and grilled over charcoal or wood. 2. arroz con pollo - a puerto rican dish that translates to \"rice with chicken,\" made with yellow rice, chicken, and sofrito (a mixture of onions, peppers, and garlic). 3. callaloo - a popular trinidadian soup made with leafy greens, okra, coconut milk, and spices. 4. cubano sandwich - a cuban sandwich made with cuban bread, roast pork, ham, swiss cheese, pickles, and mustard. 5. tostones - fried plantains, a popular side dish in many caribbean countries. these dishes are just a few examples, and there are many more delicious dishes to explore in caribbean cuisine.",
+                    "dia_ids": [
+                        "D48:9",
+                        "D48:10"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 2,
+            "num_speaker_2_memories": 2,
+            "speaker_1_memory_time": 0.042537689208984375,
+            "speaker_2_memory_time": 0.04187154769897461,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.2189342975616455,
+            "token_usage": {
+                "prompt_tokens": 1726,
+                "completion_tokens": 9,
+                "total_tokens": 1735
+            }
+        }
+    ]
+}

@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "What did I do with Rachel on the Wednesday two months ago?",
+            "answer": "I started taking ukulele lessons with Rachel.",
+            "response": "Answer: Went to the park.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.12383969996431167,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.11629796028137207,
+            "speaker_1_memory_time": 0.4515988826751709,
+            "speaker_2_memory_time": 0.04002094268798828,
+            "token_usage": {
+                "prompt_tokens": 584,
+                "completion_tokens": 8,
+                "total_tokens": 592
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "I mentioned visiting a museum two months ago. Did I visit with a friend or not?",
+            "answer": "No, you did not visit with a friend.",
+            "response": "Answer: With a friend.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.3422780793550613,
+            "f1_score": 0.5,
+            "llm_score": 0,
+            "response_time": 0.2564198970794678,
+            "speaker_1_memory_time": 0.04156684875488281,
+            "speaker_2_memory_time": 0.03859138488769531,
+            "token_usage": {
+                "prompt_tokens": 2487,
+                "completion_tokens": 7,
+                "total_tokens": 2494
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 418,
+                "completion_tokens": 8,
+                "total_tokens": 426
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "What was the first issue I had with my new car after its first service?",
+            "answer": "GPS system not functioning correctly",
+            "response": "The first issue was the GPS system on 3/22.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.2,
+            "f1_score": 0.3076923076923077,
+            "llm_score": 1,
+            "response_time": 0.4090876579284668,
+            "speaker_1_memory_time": 0.03954434394836426,
+            "speaker_2_memory_time": 0.04091763496398926,
+            "token_usage": {
+                "prompt_tokens": 2901,
+                "completion_tokens": 15,
+                "total_tokens": 2916
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 420,
+                "completion_tokens": 8,
+                "total_tokens": 428
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "I mentioned an investment for a competition four weeks ago? What did I buy?",
+            "answer": "I got my own set of sculpting tools.",
+            "response": "The answer is: a painting.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.10735389901075512,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2834606170654297,
+            "speaker_1_memory_time": 0.04223155975341797,
+            "speaker_2_memory_time": 0.043668508529663086,
+            "token_usage": {
+                "prompt_tokens": 2511,
+                "completion_tokens": 8,
+                "total_tokens": 2519
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "Where did I attend the religious activity last week?",
+            "answer": "the Episcopal Church",
+            "response": "Episcopal Church",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.6065306597126334,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.20026326179504395,
+            "speaker_1_memory_time": 0.040303707122802734,
+            "speaker_2_memory_time": 0.04001593589782715,
+            "token_usage": {
+                "prompt_tokens": 2259,
+                "completion_tokens": 4,
+                "total_tokens": 2263
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 401,
+                "completion_tokens": 8,
+                "total_tokens": 409
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "Which event did I attend first, the 'Effective Time Management' workshop or the 'Data Analysis using Python' webinar?",
+            "answer": "'Data Analysis using Python' webinar",
+            "response": "The 'Effective Time Management' workshop.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.14285714285714285,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.3970613479614258,
+            "speaker_1_memory_time": 0.044907569885253906,
+            "speaker_2_memory_time": 0.04082489013671875,
+            "token_usage": {
+                "prompt_tokens": 3599,
+                "completion_tokens": 9,
+                "total_tokens": 3608
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 424,
+                "completion_tokens": 8,
+                "total_tokens": 432
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?",
+            "answer": "Samsung Galaxy S22",
+            "response": "The Dell XPS 13 was pre-ordered first. \n\nAnswer: Dell XPS 13",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.44008517265319824,
+            "speaker_1_memory_time": 0.04193472862243652,
+            "speaker_2_memory_time": 0.0437321662902832,
+            "token_usage": {
+                "prompt_tokens": 2346,
+                "completion_tokens": 23,
+                "total_tokens": 2369
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 435,
+                "completion_tokens": 8,
+                "total_tokens": 443
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "Which vehicle did I take care of first in February, the bike or the car?",
+            "answer": "bike",
+            "response": "Answer: Bike",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.24061322212219238,
+            "speaker_1_memory_time": 0.041690826416015625,
+            "speaker_2_memory_time": 0.04192090034484863,
+            "token_usage": {
+                "prompt_tokens": 2641,
+                "completion_tokens": 4,
+                "total_tokens": 2645
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "What was the social media activity I participated 5 days ago?",
+            "answer": "You participated in a social media challenge called #PlankChallenge.",
+            "response": "Answer: No memory available.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.07243303475117972,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.0991973876953125,
+            "speaker_1_memory_time": 0.04022383689880371,
+            "speaker_2_memory_time": 0.03897213935852051,
+            "token_usage": {
+                "prompt_tokens": 584,
+                "completion_tokens": 7,
+                "total_tokens": 591
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 416,
+                "completion_tokens": 8,
+                "total_tokens": 424
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "What kitchen appliance did I buy 10 days ago?",
+            "answer": "a smoker",
+            "response": "Answer: No memory available.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.09921622276306152,
+            "speaker_1_memory_time": 0.04123187065124512,
+            "speaker_2_memory_time": 0.04384160041809082,
+            "token_usage": {
+                "prompt_tokens": 583,
+                "completion_tokens": 7,
+                "total_tokens": 590
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ]
+}

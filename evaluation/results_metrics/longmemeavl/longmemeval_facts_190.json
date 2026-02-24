@@ -1,0 +1,242 @@
+{
+    "2": [
+        {
+            "question": "How much did I spend on car wash and parking ticket?",
+            "answer": "$65",
+            "response": "**Answer:** $15 and $50",
+            "category": "multi-session",
+            "bleu_score": 0.0909090909090909,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.3257417678833008,
+            "speaker_1_memory_time": 0.04439520835876465,
+            "speaker_2_memory_time": 0.04262661933898926,
+            "token_usage": {
+                "prompt_tokens": 2681,
+                "completion_tokens": 11,
+                "total_tokens": 2692
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 411,
+                "completion_tokens": 8,
+                "total_tokens": 419
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many sports have I played competitively in the past?",
+            "answer": "two",
+            "response": "**Answer:** 2",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.21729254722595215,
+            "speaker_1_memory_time": 0.043874263763427734,
+            "speaker_2_memory_time": 0.04282498359680176,
+            "token_usage": {
+                "prompt_tokens": 2064,
+                "completion_tokens": 6,
+                "total_tokens": 2070
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many points do I need to earn to redeem a free skincare product at Sephora?",
+            "answer": "100",
+            "response": "300",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.3281867504119873,
+            "speaker_1_memory_time": 0.04195737838745117,
+            "speaker_2_memory_time": 0.03934669494628906,
+            "token_usage": {
+                "prompt_tokens": 3624,
+                "completion_tokens": 4,
+                "total_tokens": 3628
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What percentage of the countryside property's price is the cost of the renovations I plan to do on my current house?",
+            "answer": "10%",
+            "response": "Answer: 10%",
+            "category": "multi-session",
+            "bleu_score": 0.5,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.7043251991271973,
+            "speaker_1_memory_time": 0.04419231414794922,
+            "speaker_2_memory_time": 0.039734601974487305,
+            "token_usage": {
+                "prompt_tokens": 6802,
+                "completion_tokens": 7,
+                "total_tokens": 6809
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "What is the minimum amount I could get if I sold the vintage diamond necklace and the antique vanity?",
+            "answer": "$5,150",
+            "response": "**Answer:** $5,000",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.4,
+            "llm_score": 1,
+            "response_time": 0.5284690856933594,
+            "speaker_1_memory_time": 0.04453849792480469,
+            "speaker_2_memory_time": 0.03966712951660156,
+            "token_usage": {
+                "prompt_tokens": 4889,
+                "completion_tokens": 10,
+                "total_tokens": 4899
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 421,
+                "completion_tokens": 8,
+                "total_tokens": 429
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What are the two hobbies that led me to join online communities?",
+            "answer": "photography and cooking",
+            "response": "Answer: Photography and cooking",
+            "category": "multi-session",
+            "bleu_score": 0.6,
+            "f1_score": 0.8571428571428571,
+            "llm_score": 1,
+            "response_time": 0.43691539764404297,
+            "speaker_1_memory_time": 0.04419350624084473,
+            "speaker_2_memory_time": 0.04376816749572754,
+            "token_usage": {
+                "prompt_tokens": 4480,
+                "completion_tokens": 6,
+                "total_tokens": 4486
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How old was I when Alex was born?",
+            "answer": "11",
+            "response": "The answer is: 21 years old.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.37156176567077637,
+            "speaker_1_memory_time": 0.04275012016296387,
+            "speaker_2_memory_time": 0.04109835624694824,
+            "token_usage": {
+                "prompt_tokens": 3081,
+                "completion_tokens": 11,
+                "total_tokens": 3092
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "What is the total number of days I spent in Japan and Chicago?",
+            "answer": "11 days (or 12 days, if April 15th to 22nd is considered as 8 days)",
+            "response": "The total number of days spent in Japan and Chicago is not mentioned in the provided memories.",
+            "category": "multi-session",
+            "bleu_score": 0.11111111111111109,
+            "f1_score": 0.1379310344827586,
+            "llm_score": 1,
+            "response_time": 0.6069276332855225,
+            "speaker_1_memory_time": 0.040610551834106445,
+            "speaker_2_memory_time": 0.03924393653869629,
+            "token_usage": {
+                "prompt_tokens": 4583,
+                "completion_tokens": 19,
+                "total_tokens": 4602
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 445,
+                "completion_tokens": 8,
+                "total_tokens": 453
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "What is the total number of goals and assists I have in the recreational indoor soccer league?",
+            "answer": "5",
+            "response": "**Answer:** 5 goals and 2 assists",
+            "category": "multi-session",
+            "bleu_score": 0.0909090909090909,
+            "f1_score": 0.2857142857142857,
+            "llm_score": 1,
+            "response_time": 0.4869809150695801,
+            "speaker_1_memory_time": 0.04284811019897461,
+            "speaker_2_memory_time": 0.03970193862915039,
+            "token_usage": {
+                "prompt_tokens": 4205,
+                "completion_tokens": 11,
+                "total_tokens": 4216
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 416,
+                "completion_tokens": 8,
+                "total_tokens": 424
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How much did I save on the designer handbag at TK Maxx?",
+            "answer": "$300",
+            "response": "The answer is: $500.",
+            "category": "multi-session",
+            "bleu_score": 0.14285714285714285,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.44878268241882324,
+            "speaker_1_memory_time": 0.44145989418029785,
+            "speaker_2_memory_time": 0.043749094009399414,
+            "token_usage": {
+                "prompt_tokens": 4137,
+                "completion_tokens": 10,
+                "total_tokens": 4147
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ]
+}

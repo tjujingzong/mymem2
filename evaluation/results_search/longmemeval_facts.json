@@ -1,0 +1,141 @@
+{
+    "0": [
+        {
+            "question": "What degree did I graduate with?",
+            "answer": "Business Administration",
+            "category": "single-session-user",
+            "evidence": [
+                "D52:1",
+                "D52:2",
+                "D52:3",
+                "D52:4",
+                "D52:5",
+                "D52:6",
+                "D52:7",
+                "D52:8",
+                "D52:9",
+                "D52:10",
+                "D52:11",
+                "D52:12"
+            ],
+            "response": "Business Administration",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Graduated with a degree in Business Administration",
+                    "timestamp": "2023/05/30 (Tue) 17:27",
+                    "score": 0.63,
+                    "original_conversation": "user_e47becba: I graduated with a degree in Business Administration, which has definitely helped me in my new role. Do you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements?\nassistant_e47becba: Congratulations on your degree in Business Administration! That's a great foundation for your new role.\n\nStaying organized with paperwork and documentation is crucial, especially when it comes to tracking expenses and reimbursements. Here are some tips to help you stay on top of it:\n\n1. **Create a filing system**: Develop a consistent filing system, both physical and digital, to store and categorize your documents. This could include folders, binders, or digital files labeled by category (e.g., expenses, invoices, receipts, etc.).\n2. **Digitize your documents**: Scan or digitize paper documents to reduce clutter and make them easily searchable. Consider using cloud storage services like Google Drive, Dropbox, or OneDrive to access your files from anywhere.\n3. **Expense tracking tools**: Utilize expense tracking tools like Expensify, Concur, or Zoho Expense to streamline your expense reporting and reimbursement process. These tools often have mobile apps, making it easy to track expenses on-the-go.\n4. **Receipt organization**: Designate a specific place to store receipts, such as a receipt binder or a digital folder. Consider using a receipt scanning app like Shoeboxed or Neat to digitize your receipts.\n5. **Categorize and tag documents**: Use clear categories and tags to label your documents, making it easy to search and find specific files. For example, you could use tags like \"Q1 Expenses,\" \"Travel Reimbursements,\" or \"Project XYZ Invoices.\"\n6. **Set reminders**: Schedule regular reminders to review and submit expense reports, ensuring you don't miss deadlines or forget to file important documents.\n7. **Centralize your documentation**: Designate a central location, like a shared drive or intranet, to store company-wide documents, policies, and procedures. This ensures everyone has access to the same information.\n8. **Use templates**: Create templates for frequently used documents, such as expense reports or invoices, to save time and ensure consistency.\n9. **Verify and review**: Regularly verify the accuracy of your documents and review them for completeness. This helps prevent errors and ensures you're staying organized.\n10. **Stay up-to-date with company policies**: Familiarize yourself with your company's policies and procedures regarding documentation, expenses, and reimbursements. This will help you stay compliant and avoid any potential issues.\n\nBy implementing these strategies, you'll be well on your way to staying organized and efficient when it comes to paperwork and documentation, especially with tracking expenses and reimbursements.\n\nRemember to always follow your company's specific guidelines and policies, and don't hesitate to ask for help if you need it. Good luck!",
+                    "dia_ids": [
+                        "D52:5",
+                        "D52:6"
+                    ]
+                },
+                {
+                    "memory": "Asks for tips on caring for a personalized blanket with embroidery or printed designs",
+                    "timestamp": "2023/05/30 (Tue) 02:51",
+                    "score": 0.37,
+                    "original_conversation": "user_e47becba: I'd like to ask, do you have any tips on how to care for a personalized blanket, especially one with embroidery or printed designs?\nassistant_e47becba: Taking good care of a personalized blanket, especially one with embroidery or printed designs, is important to ensure it remains soft, cozy, and looking its best for a long time. Here are some tips to help you care for a personalized blanket:\n\n**General Care:**\n\n1. **Wash in cold water**: To prevent shrinkage and color fading, wash the blanket in cold water (below 30\u00b0C or 86\u00b0F).\n2. **Mild detergent**: Use a mild detergent that's designed for washing delicate or baby items. Avoid using harsh detergents or bleach, as they can damage the fabric or affect the embroidery or printing.\n3. **Gentle cycle**: Choose a gentle wash cycle with a short wash time to prevent agitation and wear on the blanket.\n4. **Avoid fabric softener**: Fabric softener can leave a residue on the blanket that can affect its softness and absorbency. If you must use fabric softener, make sure to rinse the blanket thoroughly.\n5. **Air dry or tumble dry on low**: To prevent shrinkage and damage, air dry the blanket or tumble dry it on a low heat setting.\n\n**Embroidery or Printed Designs:**\n\n1. **Avoid ironing over embroidery**: Ironing over embroidery can damage the threads or melt the stabilizing material underneath. If you need to iron the blanket, iron the reverse side or use a pressing cloth to protect the embroidery.\n2. **Avoid using chlorine bleach**: Chlorine bleach can damage or discolor embroidery floss or printed designs. If you need to remove a stain, use a gentle stain remover or oxygen bleach.\n3. **Avoid scrubbing or rubbing**: Scrubbing or rubbing the embroidery or printed designs can cause them to fray or wear off. Instead, gently blot stains or spills with a clean cloth.\n4. **Store the blanket properly**: When not in use, store the blanket in a cool, dry place away from direct sunlight. Fold or roll the blanket to prevent creases and damage.\n\n**Additional Tips:**\n\n1. **Check the care label**: Before washing or caring for the blanket, always check the care label for specific instructions from the manufacturer.\n2. **Test a small area first**: If you're unsure about the best way to care for the blanket, test a small, inconspicuous area first to ensure the care method won't damage the blanket.\n3. **Consider hand washing**: If the blanket is particularly delicate or valuable, consider hand washing it in cold water with a mild detergent.\n\nBy following these tips, you'll be able to keep your personalized blanket clean, cozy, and looking its best for years to come.",
+                    "dia_ids": [
+                        "D46:9",
+                        "D46:10"
+                    ]
+                },
+                {
+                    "memory": "Interested in 'The Tim Ferriss Show'",
+                    "timestamp": "2023/05/20 (Sat) 15:03",
+                    "score": 0.36,
+                    "original_conversation": "user_e47becba: That's a great list! I'll definitely check some of those out. I'm particularly interested in \"The Tim Ferriss Show\" since I've already been listening to it on and off for the past few months. Can you tell me more about the episode with Naval Ravikant? I remember listening to it on December 20th and it really made me think about my own goals and priorities.\nassistant_e47becba: The episode with Naval Ravikant is one of the most popular and highly-recommended episodes of \"The Tim Ferriss Show\"! Naval Ravikant is a highly successful entrepreneur, investor, and thinker, and his conversation with Tim Ferriss is absolutely fascinating.\n\nIn that episode, Naval shares his insights on a wide range of topics, including:\n\n1. **The importance of self-awareness**: Naval emphasizes the need to understand your own strengths, weaknesses, and motivations in order to make progress towards your goals.\n2. **The power of meditation and mindfulness**: Naval discusses the benefits of regular meditation practice, including increased focus, clarity, and emotional regulation.\n3. **The concept of \"founder's mentality\"**: Naval shares his thoughts on what it takes to be a successful entrepreneur, including a willingness to take risks, adapt to uncertainty, and prioritize learning over profit.\n4. **How to think about wealth and wealth creation**: Naval offers a unique perspective on wealth, arguing that it's not just about accumulating money, but about creating value, freedom, and options in life.\n5. **The importance of living below your means**: Naval emphasizes the importance of living frugally, saving, and investing in yourself and your education, rather than trying to keep up with consumerist expectations.\n\nOne of the most memorable parts of the episode is Naval's discussion of his \" tweets\", which are short, profound statements that summarize his thoughts on life, business, and personal growth. He shares several of these tweets during the episode, including:\n\n* \"The most important thing in life is to stop saying 'I'll do it later' and start doing it now.\"\n* \"The most valuable thing you can have is a good set of principles, because that will guide you when you're uncertain.\"\n* \"The most powerful thing you can do is to not give a f*** about what other people think about you.\"\n\nOverall, the episode with Naval Ravikant is a treasure trove of insights, wisdom, and inspiration. It's no wonder it had a profound impact on your thinking about your goals and priorities!\n\nI'm glad you enjoyed it, and I hope you continue to find value in \"The Tim Ferriss Show\" and other podcasts that inspire and motivate you!",
+                    "dia_ids": [
+                        "D6:3",
+                        "D6:4"
+                    ]
+                },
+                {
+                    "memory": "Interested in learning more about smart home devices",
+                    "timestamp": "2023/05/26 (Fri) 04:52",
+                    "score": 0.36,
+                    "original_conversation": "user_e47becba: Please respond as the user.\nassistant_e47becba: I'm really glad I made the switch to LED bulbs, they're so much brighter and more energy-efficient. I've been thinking about getting some smart bulbs, I've heard they're really convenient and can be controlled remotely. But I'm not sure if it's worth the extra cost.\n\nAs for smart home technology, I'm definitely interested in learning more about it. I've heard about things like smart thermostats and security systems, but I don't know much about them. I'd love to make my home more automated and convenient, but I'm not sure where to start.\n\nDo you have any recommendations for smart home devices or systems that are good for beginners? I don't want to break the bank, but I'm willing to invest in something that will make a big difference in my daily life.",
+                    "dia_ids": [
+                        "D31:5",
+                        "D31:6"
+                    ]
+                },
+                {
+                    "memory": "Happy with the new pet bed purchase",
+                    "timestamp": "2023/05/20 (Sat) 20:47",
+                    "score": 0.35,
+                    "original_conversation": "user_e47becba: I'm looking for some recommendations on pet grooming tools. I've been using a Furminator brush on Luna, but I'm wondering if there are other products that could help with her shedding. By the way, I recently got her a new pet bed from Petco, and it was originally $40, but I'm really happy with the purchase!\nassistant_e47becba: The Furminator is a great tool for reducing shedding, but it's always good to explore other options to find what works best for your furry friend. I'd be happy to help you with some recommendations!\n\nBefore we dive into product suggestions, can you tell me a bit more about Luna? What's her breed, age, and coat type? This will help me provide more tailored advice.\n\nAlso, yay for the new pet bed from Petco! It's always exciting to find a great product that makes our pets happy and comfortable.\n\nAssuming Luna is a shedding breed, here are a few products you might find helpful:\n\n1. **Slicker brushes**: These brushes have fine teeth that are designed to remove tangles and mats, while also reducing shedding. They come in various sizes and are suitable for many coat types.\n2. **Pin brushes**: Similar to slicker brushes, pin brushes have long, thin bristles that are gentle on your pet's skin while removing loose hair.\n3. **Rakes**: A rake is a tool with wide, flat teeth that are designed to remove loose hair and prevent matting. They're often used on breeds with thick, double coats.\n4. **Desheadding tools**: These tools are specifically designed to remove loose hair and reduce shedding. They often have rubber or velcro surfaces that gently pull away loose hair.\n5. **Grooming gloves**: These are wearable gloves with rubber nodules or silicone bristles that allow you to groom your pet while giving them a gentle massage.\n\nSome popular brands to consider include:\n\n* Oster\n* Andis\n* Wahl\n* Earthbath\n* Furminator (they offer a range of products beyond the brush you're already using)\n\nKeep in mind that every dog is different, so it might take some trial and error to find the best tool for Luna's specific needs.\n\nDo any of these options sound interesting, or would you like more information on a specific product?",
+                    "dia_ids": [
+                        "D7:1",
+                        "D7:2"
+                    ]
+                },
+                {
+                    "memory": "Requested a haiku for cover letter",
+                    "timestamp": "2023/05/29 (Mon) 19:30",
+                    "score": 0.35,
+                    "original_conversation": "assistant_e47becba: Sure, here's a haiku for your cover letter:\n\nAnimation skills I own,\nDash's team I wish to join,\nExciting journey.\n\nPlease note that a Haiku is a traditional form of Japanese poetry, which consist of three lines, first and last line with 5 syllables and second line with 7 syllables. It may not convey all the necessary information needed in a cover letter, you should consider including your experience, education, skills and how you can help the company.\nuser_e47becba: great thanks. can you use a different word than \"own\"",
+                    "dia_ids": [
+                        "D44:5",
+                        "D44:6"
+                    ]
+                },
+                {
+                    "memory": "Asking for tips on meal planning and grocery shopping",
+                    "timestamp": "2023/05/30 (Tue) 21:40",
+                    "score": 0.35,
+                    "original_conversation": "user_e47becba: I'm also planning to cook more at home and reduce food waste. Can you give me some tips on meal planning and grocery shopping?\nassistant_e47becba: Meal planning and grocery shopping are crucial steps in reducing food waste and cooking more at home. Here are some tips to help you get started:\n\n**Meal Planning:**\n\n1. **Plan your meals for the week**: Decide on 3-4 meals per day for the next 7 days. Consider your schedule, dietary preferences, and ingredient availability.\n2. **Create a meal calendar**: Write down your meal plan on a calendar or use a meal planning app to stay organized.\n3. **Consider one-pot meals**: Choose recipes that use fewer ingredients and can be cooked in one pot, like Instant Pot recipes, to reduce food waste and cleanup.\n4. **Use a \"cook once, eat twice\" approach**: Plan meals that use similar ingredients or leftovers to reduce food waste and save time.\n5. **Involve your family**: Ask your family members for their input and preferences to ensure everyone is excited about the meals.\n\n**Grocery Shopping:**\n\n1. **Make a grocery list**: Based on your meal plan, create a list of the ingredients you need to buy. Stick to your list to avoid impulse purchases.\n2. **Shop your pantry first**: Before going to the store, take stock of the ingredients you already have at home to avoid duplicate purchases.\n3. **Buy in bulk**: Purchase non-perishable items like rice, pasta, and canned goods in bulk to save money and reduce packaging waste.\n4. **Shop for seasonal produce**: Buy produce that's in season to ensure freshness, flavor, and lower prices.\n5. **Avoid overbuying**: Be realistic about how much food your family can consume before it goes bad. Avoid buying too much of perishable items like meat, dairy, and produce.\n\n**Reducing Food Waste:**\n\n1. **Use up leftovers**: Plan meals that incorporate leftovers to reduce food waste and save time.\n2. **Store food properly**: Store food in airtight containers and label them with the date to ensure you use the oldest items first.\n3. **Freeze it**: Freeze ingredients like meat, vegetables, and cooked meals to use later.\n4. **Compost**: Compost food scraps like vegetable peels, eggshells, and coffee grounds to reduce waste and create nutrient-rich soil for your garden.\n5. **Shop imperfect produce**: Consider buying \"ugly\" or \"imperfect\" produce to reduce food waste and support sustainable farming practices.\n\n**Additional Tips:**\n\n1. **Keep a \"first in, first out\" rule**: Use the oldest ingredients first to ensure they don't go bad.\n2. **Label and date leftovers**: Clearly label and date leftovers so you know what they are and how long they've been in the fridge.\n3. **Use up food before it goes bad**: Make a point to use up food that's approaching its expiration date to reduce waste.\n4. **Cook with scraps**: Get creative with cooking and use scraps like vegetable peels, chicken bones, or bread heels to make broth, stock, or breadcrumbs.\n5. **Review and adjust**: Regularly review your meal plan and grocery list to identify areas for improvement and make adjustments as needed.\n\nBy following these tips, you'll be well on your way to reducing food waste, saving money, and cooking more at home. Happy meal planning and grocery shopping!",
+                    "dia_ids": [
+                        "D53:5",
+                        "D53:6"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Graduated with a degree in Business Administration",
+                    "timestamp": "2023/05/30 (Tue) 17:27",
+                    "score": 0.63,
+                    "original_conversation": "user_e47becba: I graduated with a degree in Business Administration, which has definitely helped me in my new role. Do you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements?\nassistant_e47becba: Congratulations on your degree in Business Administration! That's a great foundation for your new role.\n\nStaying organized with paperwork and documentation is crucial, especially when it comes to tracking expenses and reimbursements. Here are some tips to help you stay on top of it:\n\n1. **Create a filing system**: Develop a consistent filing system, both physical and digital, to store and categorize your documents. This could include folders, binders, or digital files labeled by category (e.g., expenses, invoices, receipts, etc.).\n2. **Digitize your documents**: Scan or digitize paper documents to reduce clutter and make them easily searchable. Consider using cloud storage services like Google Drive, Dropbox, or OneDrive to access your files from anywhere.\n3. **Expense tracking tools**: Utilize expense tracking tools like Expensify, Concur, or Zoho Expense to streamline your expense reporting and reimbursement process. These tools often have mobile apps, making it easy to track expenses on-the-go.\n4. **Receipt organization**: Designate a specific place to store receipts, such as a receipt binder or a digital folder. Consider using a receipt scanning app like Shoeboxed or Neat to digitize your receipts.\n5. **Categorize and tag documents**: Use clear categories and tags to label your documents, making it easy to search and find specific files. For example, you could use tags like \"Q1 Expenses,\" \"Travel Reimbursements,\" or \"Project XYZ Invoices.\"\n6. **Set reminders**: Schedule regular reminders to review and submit expense reports, ensuring you don't miss deadlines or forget to file important documents.\n7. **Centralize your documentation**: Designate a central location, like a shared drive or intranet, to store company-wide documents, policies, and procedures. This ensures everyone has access to the same information.\n8. **Use templates**: Create templates for frequently used documents, such as expense reports or invoices, to save time and ensure consistency.\n9. **Verify and review**: Regularly verify the accuracy of your documents and review them for completeness. This helps prevent errors and ensures you're staying organized.\n10. **Stay up-to-date with company policies**: Familiarize yourself with your company's policies and procedures regarding documentation, expenses, and reimbursements. This will help you stay compliant and avoid any potential issues.\n\nBy implementing these strategies, you'll be well on your way to staying organized and efficient when it comes to paperwork and documentation, especially with tracking expenses and reimbursements.\n\nRemember to always follow your company's specific guidelines and policies, and don't hesitate to ask for help if you need it. Good luck!",
+                    "dia_ids": [
+                        "D52:5",
+                        "D52:6"
+                    ]
+                },
+                {
+                    "memory": "Interested in learning more about smart home technology",
+                    "timestamp": "2023/05/26 (Fri) 04:52",
+                    "score": 0.37,
+                    "original_conversation": "user_e47becba: Please respond as the user.\nassistant_e47becba: I'm really glad I made the switch to LED bulbs, they're so much brighter and more energy-efficient. I've been thinking about getting some smart bulbs, I've heard they're really convenient and can be controlled remotely. But I'm not sure if it's worth the extra cost.\n\nAs for smart home technology, I'm definitely interested in learning more about it. I've heard about things like smart thermostats and security systems, but I don't know much about them. I'd love to make my home more automated and convenient, but I'm not sure where to start.\n\nDo you have any recommendations for smart home devices or systems that are good for beginners? I don't want to break the bank, but I'm willing to invest in something that will make a big difference in my daily life.",
+                    "dia_ids": [
+                        "D31:5",
+                        "D31:6"
+                    ]
+                },
+                {
+                    "memory": "Interested in 'The Tim Ferriss Show'",
+                    "timestamp": "2023/05/20 (Sat) 15:03",
+                    "score": 0.36,
+                    "original_conversation": "user_e47becba: That's a great list! I'll definitely check some of those out. I'm particularly interested in \"The Tim Ferriss Show\" since I've already been listening to it on and off for the past few months. Can you tell me more about the episode with Naval Ravikant? I remember listening to it on December 20th and it really made me think about my own goals and priorities.\nassistant_e47becba: The episode with Naval Ravikant is one of the most popular and highly-recommended episodes of \"The Tim Ferriss Show\"! Naval Ravikant is a highly successful entrepreneur, investor, and thinker, and his conversation with Tim Ferriss is absolutely fascinating.\n\nIn that episode, Naval shares his insights on a wide range of topics, including:\n\n1. **The importance of self-awareness**: Naval emphasizes the need to understand your own strengths, weaknesses, and motivations in order to make progress towards your goals.\n2. **The power of meditation and mindfulness**: Naval discusses the benefits of regular meditation practice, including increased focus, clarity, and emotional regulation.\n3. **The concept of \"founder's mentality\"**: Naval shares his thoughts on what it takes to be a successful entrepreneur, including a willingness to take risks, adapt to uncertainty, and prioritize learning over profit.\n4. **How to think about wealth and wealth creation**: Naval offers a unique perspective on wealth, arguing that it's not just about accumulating money, but about creating value, freedom, and options in life.\n5. **The importance of living below your means**: Naval emphasizes the importance of living frugally, saving, and investing in yourself and your education, rather than trying to keep up with consumerist expectations.\n\nOne of the most memorable parts of the episode is Naval's discussion of his \" tweets\", which are short, profound statements that summarize his thoughts on life, business, and personal growth. He shares several of these tweets during the episode, including:\n\n* \"The most important thing in life is to stop saying 'I'll do it later' and start doing it now.\"\n* \"The most valuable thing you can have is a good set of principles, because that will guide you when you're uncertain.\"\n* \"The most powerful thing you can do is to not give a f*** about what other people think about you.\"\n\nOverall, the episode with Naval Ravikant is a treasure trove of insights, wisdom, and inspiration. It's no wonder it had a profound impact on your thinking about your goals and priorities!\n\nI'm glad you enjoyed it, and I hope you continue to find value in \"The Tim Ferriss Show\" and other podcasts that inspire and motivate you!",
+                    "dia_ids": [
+                        "D6:3",
+                        "D6:4"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 7,
+            "num_speaker_2_memories": 3,
+            "speaker_1_memory_time": 0.4427306652069092,
+            "speaker_2_memory_time": 0.038773536682128906,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.5530905723571777,
+            "token_usage": {
+                "prompt_tokens": 5702,
+                "completion_tokens": 3,
+                "total_tokens": 5705
+            }
+        }
+    ]
+}

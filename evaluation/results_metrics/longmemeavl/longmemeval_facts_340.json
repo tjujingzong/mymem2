@@ -1,0 +1,242 @@
+{
+    "8": [
+        {
+            "question": "Which device did I set up first, the smart thermostat or the new router?",
+            "answer": "new router",
+            "response": "Answer: Smart thermostat first.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.31424832344055176,
+            "speaker_1_memory_time": 0.04161524772644043,
+            "speaker_2_memory_time": 0.040934085845947266,
+            "token_usage": {
+                "prompt_tokens": 2944,
+                "completion_tokens": 7,
+                "total_tokens": 2951
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "Which trip did I take first, the one to Europe with family or the solo trip to Thailand?",
+            "answer": "The solo trip to Thailand",
+            "response": "The answer is: Thailand.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.4444444444444445,
+            "llm_score": 1,
+            "response_time": 0.3246338367462158,
+            "speaker_1_memory_time": 0.04180431365966797,
+            "speaker_2_memory_time": 0.04031801223754883,
+            "token_usage": {
+                "prompt_tokens": 3063,
+                "completion_tokens": 7,
+                "total_tokens": 3070
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 416,
+                "completion_tokens": 8,
+                "total_tokens": 424
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How long had I been a member of 'Book Lovers Unite' when I attended the meetup?",
+            "answer": "Two weeks",
+            "response": "Answer: Three weeks",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.25,
+            "f1_score": 0.4,
+            "llm_score": 0,
+            "response_time": 0.4038562774658203,
+            "speaker_1_memory_time": 0.39246487617492676,
+            "speaker_2_memory_time": 0.042191505432128906,
+            "token_usage": {
+                "prompt_tokens": 4390,
+                "completion_tokens": 5,
+                "total_tokens": 4395
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How long had I been bird watching when I attended the bird watching workshop?",
+            "answer": "Two months",
+            "response": "Answer: Three months",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.25,
+            "f1_score": 0.4,
+            "llm_score": 0,
+            "response_time": 0.34468936920166016,
+            "speaker_1_memory_time": 0.042961835861206055,
+            "speaker_2_memory_time": 0.04134559631347656,
+            "token_usage": {
+                "prompt_tokens": 3586,
+                "completion_tokens": 5,
+                "total_tokens": 3591
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many days had passed since I bought my Adidas running shoes when I realized one of the shoelaces on my old Converse sneakers had broken?",
+            "answer": "14 days. 15 days (including the last day) is also acceptable.",
+            "response": "The answer is: 14 days.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.2277903980885503,
+            "f1_score": 0.4,
+            "llm_score": 1,
+            "response_time": 0.3635399341583252,
+            "speaker_1_memory_time": 0.043256282806396484,
+            "speaker_2_memory_time": 0.04282808303833008,
+            "token_usage": {
+                "prompt_tokens": 3082,
+                "completion_tokens": 10,
+                "total_tokens": 3092
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 442,
+                "completion_tokens": 8,
+                "total_tokens": 450
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "Which airline did I fly with the most in March and April?",
+            "answer": "United Airlines",
+            "response": "Answer: Southwest Airlines",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.25,
+            "f1_score": 0.4,
+            "llm_score": 0,
+            "response_time": 0.423382043838501,
+            "speaker_1_memory_time": 0.04382610321044922,
+            "speaker_2_memory_time": 0.0403285026550293,
+            "token_usage": {
+                "prompt_tokens": 4349,
+                "completion_tokens": 5,
+                "total_tokens": 4354
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "Which event happened first, the road trip to the coast or the arrival of the new prime lens?",
+            "answer": "The arrival of the new prime lens",
+            "response": "The arrival of the new prime lens happened first.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.7,
+            "f1_score": 0.8571428571428571,
+            "llm_score": 1,
+            "response_time": 0.3177521228790283,
+            "speaker_1_memory_time": 0.0443882942199707,
+            "speaker_2_memory_time": 0.04188418388366699,
+            "token_usage": {
+                "prompt_tokens": 2468,
+                "completion_tokens": 11,
+                "total_tokens": 2479
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 422,
+                "completion_tokens": 8,
+                "total_tokens": 430
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How long had I been watching stand-up comedy specials regularly when I attended the open mic night at the local comedy club?",
+            "answer": "2 months",
+            "response": "**Answer:** 3 months",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.4,
+            "llm_score": 0,
+            "response_time": 0.4840517044067383,
+            "speaker_1_memory_time": 0.04239249229431152,
+            "speaker_2_memory_time": 0.0401768684387207,
+            "token_usage": {
+                "prompt_tokens": 4812,
+                "completion_tokens": 7,
+                "total_tokens": 4819
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 419,
+                "completion_tokens": 8,
+                "total_tokens": 427
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "Which health issue did I deal with first, the persistent cough or the skin tag removal?",
+            "answer": "Persistent cough",
+            "response": "The persistent cough.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.5,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.18295812606811523,
+            "speaker_1_memory_time": 0.04189014434814453,
+            "speaker_2_memory_time": 0.0404965877532959,
+            "token_usage": {
+                "prompt_tokens": 1870,
+                "completion_tokens": 5,
+                "total_tokens": 1875
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "What time do I wake up on Tuesdays and Thursdays?",
+            "answer": "6:45 AM",
+            "response": "The memories indicate that the user wakes up 15 minutes earlier on Tuesdays and Thursdays. However, the exact time is not specified. Therefore, the answer is:\n\n**15 minutes earlier**",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.650001049041748,
+            "speaker_1_memory_time": 0.09786081314086914,
+            "speaker_2_memory_time": 0.043372154235839844,
+            "token_usage": {
+                "prompt_tokens": 1942,
+                "completion_tokens": 42,
+                "total_tokens": 1984
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 445,
+                "completion_tokens": 11,
+                "total_tokens": 456
+            }
+        }
+    ]
+}

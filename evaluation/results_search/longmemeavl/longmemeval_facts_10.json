@@ -1,0 +1,678 @@
+{
+    "0": [
+        {
+            "question": "What degree did I graduate with?",
+            "answer": "Business Administration",
+            "category": "single-session-user",
+            "evidence": [
+                "D52:1",
+                "D52:2",
+                "D52:3",
+                "D52:4",
+                "D52:5",
+                "D52:6",
+                "D52:7",
+                "D52:8",
+                "D52:9",
+                "D52:10",
+                "D52:11",
+                "D52:12"
+            ],
+            "response": "Business Administration",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Graduated with a degree in Business Administration",
+                    "timestamp": "2023/05/30 (Tue) 17:27",
+                    "score": 0.63,
+                    "original_conversation": "user_e47becba: I graduated with a degree in Business Administration, which has definitely helped me in my new role. Do you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements?\nassistant_e47becba: Congratulations on your degree in Business Administration! That's a great foundation for your new role.\n\nStaying organized with paperwork and documentation is crucial, especially when it comes to tracking expenses and reimbursements. Here are some tips to help you stay on top of it:\n\n1. **Create a filing system**: Develop a consistent filing system, both physical and digital, to store and categorize your documents. This could include folders, binders, or digital files labeled by category (e.g., expenses, invoices, receipts, etc.).\n2. **Digitize your documents**: Scan or digitize paper documents to reduce clutter and make them easily searchable. Consider using cloud storage services like Google Drive, Dropbox, or OneDrive to access your files from anywhere.\n3. **Expense tracking tools**: Utilize expense tracking tools like Expensify, Concur, or Zoho Expense to streamline your expense reporting and reimbursement process. These tools often have mobile apps, making it easy to track expenses on-the-go.\n4. **Receipt organization**: Designate a specific place to store receipts, such as a receipt binder or a digital folder. Consider using a receipt scanning app like Shoeboxed or Neat to digitize your receipts.\n5. **Categorize and tag documents**: Use clear categories and tags to label your documents, making it easy to search and find specific files. For example, you could use tags like \"Q1 Expenses,\" \"Travel Reimbursements,\" or \"Project XYZ Invoices.\"\n6. **Set reminders**: Schedule regular reminders to review and submit expense reports, ensuring you don't miss deadlines or forget to file important documents.\n7. **Centralize your documentation**: Designate a central location, like a shared drive or intranet, to store company-wide documents, policies, and procedures. This ensures everyone has access to the same information.\n8. **Use templates**: Create templates for frequently used documents, such as expense reports or invoices, to save time and ensure consistency.\n9. **Verify and review**: Regularly verify the accuracy of your documents and review them for completeness. This helps prevent errors and ensures you're staying organized.\n10. **Stay up-to-date with company policies**: Familiarize yourself with your company's policies and procedures regarding documentation, expenses, and reimbursements. This will help you stay compliant and avoid any potential issues.\n\nBy implementing these strategies, you'll be well on your way to staying organized and efficient when it comes to paperwork and documentation, especially with tracking expenses and reimbursements.\n\nRemember to always follow your company's specific guidelines and policies, and don't hesitate to ask for help if you need it. Good luck!",
+                    "dia_ids": [
+                        "D52:5",
+                        "D52:6"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Graduated with a degree in Business Administration",
+                    "timestamp": "2023/05/30 (Tue) 17:27",
+                    "score": 0.63,
+                    "original_conversation": "user_e47becba: I graduated with a degree in Business Administration, which has definitely helped me in my new role. Do you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements?\nassistant_e47becba: Congratulations on your degree in Business Administration! That's a great foundation for your new role.\n\nStaying organized with paperwork and documentation is crucial, especially when it comes to tracking expenses and reimbursements. Here are some tips to help you stay on top of it:\n\n1. **Create a filing system**: Develop a consistent filing system, both physical and digital, to store and categorize your documents. This could include folders, binders, or digital files labeled by category (e.g., expenses, invoices, receipts, etc.).\n2. **Digitize your documents**: Scan or digitize paper documents to reduce clutter and make them easily searchable. Consider using cloud storage services like Google Drive, Dropbox, or OneDrive to access your files from anywhere.\n3. **Expense tracking tools**: Utilize expense tracking tools like Expensify, Concur, or Zoho Expense to streamline your expense reporting and reimbursement process. These tools often have mobile apps, making it easy to track expenses on-the-go.\n4. **Receipt organization**: Designate a specific place to store receipts, such as a receipt binder or a digital folder. Consider using a receipt scanning app like Shoeboxed or Neat to digitize your receipts.\n5. **Categorize and tag documents**: Use clear categories and tags to label your documents, making it easy to search and find specific files. For example, you could use tags like \"Q1 Expenses,\" \"Travel Reimbursements,\" or \"Project XYZ Invoices.\"\n6. **Set reminders**: Schedule regular reminders to review and submit expense reports, ensuring you don't miss deadlines or forget to file important documents.\n7. **Centralize your documentation**: Designate a central location, like a shared drive or intranet, to store company-wide documents, policies, and procedures. This ensures everyone has access to the same information.\n8. **Use templates**: Create templates for frequently used documents, such as expense reports or invoices, to save time and ensure consistency.\n9. **Verify and review**: Regularly verify the accuracy of your documents and review them for completeness. This helps prevent errors and ensures you're staying organized.\n10. **Stay up-to-date with company policies**: Familiarize yourself with your company's policies and procedures regarding documentation, expenses, and reimbursements. This will help you stay compliant and avoid any potential issues.\n\nBy implementing these strategies, you'll be well on your way to staying organized and efficient when it comes to paperwork and documentation, especially with tracking expenses and reimbursements.\n\nRemember to always follow your company's specific guidelines and policies, and don't hesitate to ask for help if you need it. Good luck!",
+                    "dia_ids": [
+                        "D52:5",
+                        "D52:6"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 1,
+            "num_speaker_2_memories": 1,
+            "speaker_1_memory_time": 0.442216157913208,
+            "speaker_2_memory_time": 0.04272270202636719,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.20479702949523926,
+            "token_usage": {
+                "prompt_tokens": 1912,
+                "completion_tokens": 3,
+                "total_tokens": 1915
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How long is my daily commute to work?",
+            "answer": "45 minutes each way",
+            "category": "single-session-user",
+            "evidence": [
+                "D8:1",
+                "D8:2",
+                "D8:3",
+                "D8:4",
+                "D8:5",
+                "D8:6",
+                "D8:7",
+                "D8:8",
+                "D8:9",
+                "D8:10",
+                "D8:11",
+                "D8:12"
+            ],
+            "response": "45 minutes each way",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Commute takes 45 minutes each way",
+                    "timestamp": "2023/05/22 (Mon) 21:18",
+                    "score": 0.72,
+                    "original_conversation": "user_118b2229: I've been listening to audiobooks during my daily commute, which takes 45 minutes each way.\nassistant_118b2229: That's a great way to make the most of your commute time! An hour each way is a significant amount of time that can be utilized for personal development, entertainment, or relaxation. Audiobooks are an excellent choice for commutes, as they allow you to multitask while still enjoying a good story or learning something new.\n\nWith an hour of commute time each way, you can easily get through a significant portion of an audiobook. You might even find yourself looking forward to your commute, knowing that you'll have some dedicated time to immerse yourself in a good story or learn something new.\n\nHave you noticed any benefits from listening to audiobooks during your commute? For example, do you feel more relaxed, energized, or inspired after listening to a particular book?\n\nAlso, are there any specific genres or topics you prefer to listen to during your commute? Do you find that certain types of books help you relax, while others keep you more engaged and awake?",
+                    "dia_ids": [
+                        "D8:9",
+                        "D8:10"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Commute takes 45 minutes each way",
+                    "timestamp": "2023/05/22 (Mon) 21:18",
+                    "score": 0.72,
+                    "original_conversation": "user_118b2229: I've been listening to audiobooks during my daily commute, which takes 45 minutes each way.\nassistant_118b2229: That's a great way to make the most of your commute time! An hour each way is a significant amount of time that can be utilized for personal development, entertainment, or relaxation. Audiobooks are an excellent choice for commutes, as they allow you to multitask while still enjoying a good story or learning something new.\n\nWith an hour of commute time each way, you can easily get through a significant portion of an audiobook. You might even find yourself looking forward to your commute, knowing that you'll have some dedicated time to immerse yourself in a good story or learn something new.\n\nHave you noticed any benefits from listening to audiobooks during your commute? For example, do you feel more relaxed, energized, or inspired after listening to a particular book?\n\nAlso, are there any specific genres or topics you prefer to listen to during your commute? Do you find that certain types of books help you relax, while others keep you more engaged and awake?",
+                    "dia_ids": [
+                        "D8:9",
+                        "D8:10"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 1,
+            "num_speaker_2_memories": 1,
+            "speaker_1_memory_time": 0.0429081916809082,
+            "speaker_2_memory_time": 0.04160451889038086,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.14169573783874512,
+            "token_usage": {
+                "prompt_tokens": 1172,
+                "completion_tokens": 6,
+                "total_tokens": 1178
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "Where did I redeem a $5 coupon on coffee creamer?",
+            "answer": "Target",
+            "category": "single-session-user",
+            "evidence": [
+                "D43:1",
+                "D43:2",
+                "D43:3",
+                "D43:4",
+                "D43:5",
+                "D43:6",
+                "D43:7",
+                "D43:8",
+                "D43:9",
+                "D43:10",
+                "D43:11",
+                "D43:12"
+            ],
+            "response": "Target",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Redeemed a $5 coupon on coffee creamer last Sunday",
+                    "timestamp": "2023/05/29 (Mon) 13:28",
+                    "score": 0.86,
+                    "original_conversation": "user_51a45a95: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.\nassistant_51a45a95: That's awesome! Redeeming a surprise coupon is always a great feeling, especially when it's on something you need or regularly buy like coffee creamer! It's like finding money in your pocket that you didn't know you had.\n\nIt's also a great reminder to regularly check your email inbox for coupons and offers. Many retailers, like Target, send exclusive coupons and promotions to their email subscribers. By staying on top of your email, you can catch those surprise deals and save even more.\n\nHere's a tip to help you stay organized:\n\n**Designate an email folder:** Create a specific folder in your email inbox for coupons, offers, and promotions. This way, you can easily find and sort through them when you need to. You can also set up filters or labels to automatically sort these emails into your designated folder.\n\nBy doing this, you'll be more likely to catch those surprise coupons and make the most of your savings.\n\nHow often do you typically shop at Target, and what are some of your favorite items to buy there?",
+                    "dia_ids": [
+                        "D43:5",
+                        "D43:6"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Redeemed a $5 coupon on coffee creamer last Sunday",
+                    "timestamp": "2023/05/29 (Mon) 13:28",
+                    "score": 0.86,
+                    "original_conversation": "user_51a45a95: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.\nassistant_51a45a95: That's awesome! Redeeming a surprise coupon is always a great feeling, especially when it's on something you need or regularly buy like coffee creamer! It's like finding money in your pocket that you didn't know you had.\n\nIt's also a great reminder to regularly check your email inbox for coupons and offers. Many retailers, like Target, send exclusive coupons and promotions to their email subscribers. By staying on top of your email, you can catch those surprise deals and save even more.\n\nHere's a tip to help you stay organized:\n\n**Designate an email folder:** Create a specific folder in your email inbox for coupons, offers, and promotions. This way, you can easily find and sort through them when you need to. You can also set up filters or labels to automatically sort these emails into your designated folder.\n\nBy doing this, you'll be more likely to catch those surprise coupons and make the most of your savings.\n\nHow often do you typically shop at Target, and what are some of your favorite items to buy there?",
+                    "dia_ids": [
+                        "D43:5",
+                        "D43:6"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 1,
+            "num_speaker_2_memories": 1,
+            "speaker_1_memory_time": 0.04227900505065918,
+            "speaker_2_memory_time": 0.040314435958862305,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.08229541778564453,
+            "token_usage": {
+                "prompt_tokens": 1238,
+                "completion_tokens": 2,
+                "total_tokens": 1240
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "What play did I attend at the local community theater?",
+            "answer": "The Glass Menagerie",
+            "category": "single-session-user",
+            "evidence": [
+                "D30:1",
+                "D30:2",
+                "D30:3",
+                "D30:4",
+                "D30:5",
+                "D30:6",
+                "D30:7",
+                "D30:8",
+                "D30:9",
+                "D30:10",
+                "D30:11",
+                "D30:12"
+            ],
+            "response": "The Glass Menagerie",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Recently went to a play at the local community theater",
+                    "timestamp": "2023/05/26 (Fri) 07:31",
+                    "score": 0.84,
+                    "original_conversation": "user_58bf7951: I'll definitely try those suggestions. By the way, I recently went to a play at the local community theater and was impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress.\nassistant_58bf7951: That's great to hear! It's always exciting to discover new talent and be impressed by a performance. Community theaters are wonderful platforms for local artists to showcase their skills, and it's fantastic that you're supporting the arts in your area.\n\nIt's interesting that the lead actress reminded you of your friend Emily, who's also an aspiring actress. Perhaps you could encourage Emily to audition for a role at the community theater or explore other local theater groups. Who knows, maybe she'll get her big break!\n\nAs a side note, I'm a large language model, I don't have personal relationships or acquaintances, so I don't know Emily or any other individuals. I'm here to provide information and assist with inquiries to the best of my abilities.\n\nIf you'd like to discuss more about the play, the community theater, or Emily's interests, I'm happy to chat with you!",
+                    "dia_ids": [
+                        "D30:3",
+                        "D30:4"
+                    ]
+                },
+                {
+                    "memory": "Attended a production of The Glass Menagerie",
+                    "timestamp": "2023/05/26 (Fri) 07:31",
+                    "score": 0.64,
+                    "original_conversation": "user_58bf7951: I was thinking of getting Emily to audition for a role, I'll definitely encourage her to give it a shot. The play I attended was actually a production of The Glass Menagerie, have you heard of it?\nassistant_58bf7951: The Glass Menagerie is a classic play by Tennessee Williams, one of the most renowned American playwrights. It's a memory play that explores the complex relationships within the Wingfield family, particularly between Amanda, Laura, and Tom. The play is known for its poignant and introspective themes, as well as its beautiful, lyrical language.\n\nAs a large language model, I don't have personal experiences or emotions, but I can provide information and insights about the play. I can tell you that The Glass Menagerie is considered one of Williams' most autobiographical works, drawing from his own family dynamics and experiences.\n\nIf Emily is interested in auditioning for a role, I'm sure she'll find the play's themes and characters fascinating to work with. The Glass Menagerie is a challenging but rewarding play for actors, and it's a great opportunity for Emily to showcase her skills.\n\nRemember to encourage Emily to prepare thoroughly for the audition, and to have fun with the process. Break a leg, Emily!",
+                    "dia_ids": [
+                        "D30:5",
+                        "D30:6"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Recently went to a play at the local community theater",
+                    "timestamp": "2023/05/26 (Fri) 07:31",
+                    "score": 0.84,
+                    "original_conversation": "user_58bf7951: I'll definitely try those suggestions. By the way, I recently went to a play at the local community theater and was impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress.\nassistant_58bf7951: That's great to hear! It's always exciting to discover new talent and be impressed by a performance. Community theaters are wonderful platforms for local artists to showcase their skills, and it's fantastic that you're supporting the arts in your area.\n\nIt's interesting that the lead actress reminded you of your friend Emily, who's also an aspiring actress. Perhaps you could encourage Emily to audition for a role at the community theater or explore other local theater groups. Who knows, maybe she'll get her big break!\n\nAs a side note, I'm a large language model, I don't have personal relationships or acquaintances, so I don't know Emily or any other individuals. I'm here to provide information and assist with inquiries to the best of my abilities.\n\nIf you'd like to discuss more about the play, the community theater, or Emily's interests, I'm happy to chat with you!",
+                    "dia_ids": [
+                        "D30:3",
+                        "D30:4"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 2,
+            "num_speaker_2_memories": 1,
+            "speaker_1_memory_time": 0.04169058799743652,
+            "speaker_2_memory_time": 0.041910648345947266,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.15396571159362793,
+            "token_usage": {
+                "prompt_tokens": 1501,
+                "completion_tokens": 6,
+                "total_tokens": 1507
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What is the name of the playlist I created on Spotify?",
+            "answer": "Summer Vibes",
+            "category": "single-session-user",
+            "evidence": [
+                "D14:1",
+                "D14:2",
+                "D14:3",
+                "D14:4",
+                "D14:5",
+                "D14:6",
+                "D14:7",
+                "D14:8",
+                "D14:9",
+                "D14:10",
+                "D14:11",
+                "D14:12"
+            ],
+            "response": "**Answer:** Summer Vibes",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Listening to a playlist on Spotify called Summer Vibes with chill tracks for relaxing or working out",
+                    "timestamp": "2023/05/21 (Sun) 13:13",
+                    "score": 0.77,
+                    "original_conversation": "user_1e043500: What's a good music streaming service that can help me discover new music and artists, especially in the ambient and lo-fi genres? Also, by the way, I've been listening to this one playlist on Spotify that I created, called Summer Vibes, and it's got all these chill tracks that are perfect for relaxing or working out.\nassistant_1e043500: Music discovery is a great topic!\n\nFor ambient and lo-fi music, I'd recommend the following music streaming services:\n\n1. **Bandcamp**: While not a traditional streaming service, Bandcamp is a fantastic platform for discovering new artists and labels in the ambient and lo-fi genres. You can browse through tags, genres, and labels to find hidden gems. They also offer a \"Discover\" feature that suggests music based on your listening history.\n2. **Apple Music**: Apple Music has a vast collection of ambient and lo-fi music, and their \"Browse\" tab features a \"Moods\" section that's perfect for discovering relaxing music. They also have a \"New Music Mix\" playlist that updates regularly, showcasing new artists and tracks.\n3. **Tidal**: Tidal's \"Discover\" feature is powered by human curators, which means you'll get recommendations based on your listening habits and preferences. They also have a \"Rising\" section that highlights emerging artists.\n4. **Deezer**: Deezer's \"Discover\" feature uses AI to recommend music based on your listening history, and they have a \"Mood\" section that's perfect for finding relaxing music.\n\nAs for your Summer Vibes playlist, it sounds like you've got a great mix of chill tracks! If you're looking for more music to add, you might enjoy the following playlists on Spotify:\n\n1. **Lo-Fi Girl**: A popular playlist with over 2 million followers, featuring a constant stream of lo-fi hip-hop and chillhop tracks.\n2. **Ambient Universe**: A playlist with a focus on ambient, drone, and experimental music.\n3. **Chillhop Music**: A playlist featuring a mix of lo-fi hip-hop, chillhop, and instrumental tracks.\n4. **Coffee Shop Jazz**: A playlist with a relaxing atmosphere, perfect for working or studying.\n\nYou can also try exploring Spotify's \"Discover Weekly\" and \"Release Radar\" playlists, which are tailored to your listening habits and preferences.\n\nLastly, if you're interested in discovering new music and artists, I'd recommend checking out online music communities like Reddit's \"WeAreTheMusicMakers\" and \"Music\" subreddits, as well as online forums dedicated to ambient and lo-fi music. These communities are great resources for discovering new music and connecting with like-minded listeners.",
+                    "dia_ids": [
+                        "D14:3",
+                        "D14:4"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Listening to a playlist on Spotify called Summer Vibes with chill tracks for relaxing or working out",
+                    "timestamp": "2023/05/21 (Sun) 13:13",
+                    "score": 0.77,
+                    "original_conversation": "user_1e043500: What's a good music streaming service that can help me discover new music and artists, especially in the ambient and lo-fi genres? Also, by the way, I've been listening to this one playlist on Spotify that I created, called Summer Vibes, and it's got all these chill tracks that are perfect for relaxing or working out.\nassistant_1e043500: Music discovery is a great topic!\n\nFor ambient and lo-fi music, I'd recommend the following music streaming services:\n\n1. **Bandcamp**: While not a traditional streaming service, Bandcamp is a fantastic platform for discovering new artists and labels in the ambient and lo-fi genres. You can browse through tags, genres, and labels to find hidden gems. They also offer a \"Discover\" feature that suggests music based on your listening history.\n2. **Apple Music**: Apple Music has a vast collection of ambient and lo-fi music, and their \"Browse\" tab features a \"Moods\" section that's perfect for discovering relaxing music. They also have a \"New Music Mix\" playlist that updates regularly, showcasing new artists and tracks.\n3. **Tidal**: Tidal's \"Discover\" feature is powered by human curators, which means you'll get recommendations based on your listening habits and preferences. They also have a \"Rising\" section that highlights emerging artists.\n4. **Deezer**: Deezer's \"Discover\" feature uses AI to recommend music based on your listening history, and they have a \"Mood\" section that's perfect for finding relaxing music.\n\nAs for your Summer Vibes playlist, it sounds like you've got a great mix of chill tracks! If you're looking for more music to add, you might enjoy the following playlists on Spotify:\n\n1. **Lo-Fi Girl**: A popular playlist with over 2 million followers, featuring a constant stream of lo-fi hip-hop and chillhop tracks.\n2. **Ambient Universe**: A playlist with a focus on ambient, drone, and experimental music.\n3. **Chillhop Music**: A playlist featuring a mix of lo-fi hip-hop, chillhop, and instrumental tracks.\n4. **Coffee Shop Jazz**: A playlist with a relaxing atmosphere, perfect for working or studying.\n\nYou can also try exploring Spotify's \"Discover Weekly\" and \"Release Radar\" playlists, which are tailored to your listening habits and preferences.\n\nLastly, if you're interested in discovering new music and artists, I'd recommend checking out online music communities like Reddit's \"WeAreTheMusicMakers\" and \"Music\" subreddits, as well as online forums dedicated to ambient and lo-fi music. These communities are great resources for discovering new music and connecting with like-minded listeners.",
+                    "dia_ids": [
+                        "D14:3",
+                        "D14:4"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 1,
+            "num_speaker_2_memories": 1,
+            "speaker_1_memory_time": 0.042031049728393555,
+            "speaker_2_memory_time": 0.0447697639465332,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.20798349380493164,
+            "token_usage": {
+                "prompt_tokens": 1865,
+                "completion_tokens": 7,
+                "total_tokens": 1872
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "What was my last name before I changed it?",
+            "answer": "Johnson",
+            "category": "single-session-user",
+            "evidence": [
+                "D37:1",
+                "D37:2",
+                "D37:3",
+                "D37:4",
+                "D37:5",
+                "D37:6",
+                "D37:7",
+                "D37:8",
+                "D37:9",
+                "D37:10",
+                "D37:11",
+                "D37:12"
+            ],
+            "response": "Answer: Johnson",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Recently changed last name from Johnson to Winters",
+                    "timestamp": "2023/05/28 (Sun) 20:27",
+                    "score": 0.71,
+                    "original_conversation": "user_c5e8278d: I need to update my address with my health insurance provider. Can you walk me through the process or give me a phone number to call? By the way, I just recently changed my last name, and I'm still getting used to it - it's funny, my old name was Johnson, but now it's Winters.\nassistant_c5e8278d: Congratulations on your recent name change!\n\nI'd be happy to help you update your address with your health insurance provider. Since I'm a large language model, I don't have access to specific phone numbers or personal information, but I can guide you through the general process.\n\n**Option 1: Update Online**\n\n1. Log in to your health insurance provider's website or mobile app using your username and password.\n2. Look for the \"My Account\" or \"Profile\" section, where you can update your personal information.\n3. Click on \"Update Address\" or \"Change Address\" and enter your new address.\n4. Make sure to update your name to reflect your new last name, Winters.\n5. Save the changes and review your updated information.\n\n**Option 2: Call the Insurance Provider**\n\n1. Look for the customer service phone number on your insurance card, website, or documentation.\n2. Call the phone number and speak with a representative.\n3. Let them know you need to update your address and name (from Johnson to Winters).\n4. Provide your new address and confirm your identity to ensure the change is made accurately.\n5. Ask the representative to confirm the update and provide any additional instructions.\n\n**Option 3: Mail or Fax**\n\n1. Check your insurance provider's website or documentation for a mailing address or fax number for updates.\n2. Download and complete the required form (if available) or write a letter with your updated information.\n3. Mail or fax the form/letter to the provided address, making sure to include your old and new names, as well as your new address.\n\nRemember to keep a record of your update request, including the date and any confirmation numbers or references provided by the insurance representative.\n\nIf you need additional assistance or have questions, feel free to ask!",
+                    "dia_ids": [
+                        "D37:1",
+                        "D37:2"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Changed last name from Johnson to Winters",
+                    "timestamp": "2023/05/28 (Sun) 20:27",
+                    "score": 0.67,
+                    "original_conversation": "user_c5e8278d: I need to update my address with my health insurance provider. Can you walk me through the process or give me a phone number to call? By the way, I just recently changed my last name, and I'm still getting used to it - it's funny, my old name was Johnson, but now it's Winters.\nassistant_c5e8278d: Congratulations on your recent name change!\n\nI'd be happy to help you update your address with your health insurance provider. Since I'm a large language model, I don't have access to specific phone numbers or personal information, but I can guide you through the general process.\n\n**Option 1: Update Online**\n\n1. Log in to your health insurance provider's website or mobile app using your username and password.\n2. Look for the \"My Account\" or \"Profile\" section, where you can update your personal information.\n3. Click on \"Update Address\" or \"Change Address\" and enter your new address.\n4. Make sure to update your name to reflect your new last name, Winters.\n5. Save the changes and review your updated information.\n\n**Option 2: Call the Insurance Provider**\n\n1. Look for the customer service phone number on your insurance card, website, or documentation.\n2. Call the phone number and speak with a representative.\n3. Let them know you need to update your address and name (from Johnson to Winters).\n4. Provide your new address and confirm your identity to ensure the change is made accurately.\n5. Ask the representative to confirm the update and provide any additional instructions.\n\n**Option 3: Mail or Fax**\n\n1. Check your insurance provider's website or documentation for a mailing address or fax number for updates.\n2. Download and complete the required form (if available) or write a letter with your updated information.\n3. Mail or fax the form/letter to the provided address, making sure to include your old and new names, as well as your new address.\n\nRemember to keep a record of your update request, including the date and any confirmation numbers or references provided by the insurance representative.\n\nIf you need additional assistance or have questions, feel free to ask!",
+                    "dia_ids": [
+                        "D37:1",
+                        "D37:2"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 1,
+            "num_speaker_2_memories": 1,
+            "speaker_1_memory_time": 0.04206657409667969,
+            "speaker_2_memory_time": 0.04274129867553711,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.15675568580627441,
+            "token_usage": {
+                "prompt_tokens": 1650,
+                "completion_tokens": 4,
+                "total_tokens": 1654
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "Where do I take yoga classes?",
+            "answer": "Serenity Yoga",
+            "category": "single-session-user",
+            "evidence": [
+                "D51:1",
+                "D51:2",
+                "D51:3",
+                "D51:4",
+                "D51:5",
+                "D51:6",
+                "D51:7",
+                "D51:8",
+                "D51:9",
+                "D51:10",
+                "D51:11",
+                "D51:12"
+            ],
+            "response": "Answer: At the community center.",
+            "adversarial_answer": "",
+            "speaker_1_memories": [],
+            "speaker_2_memories": [],
+            "num_speaker_1_memories": 0,
+            "num_speaker_2_memories": 0,
+            "speaker_1_memory_time": 0.04239511489868164,
+            "speaker_2_memory_time": 0.04213404655456543,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.10849928855895996,
+            "token_usage": {
+                "prompt_tokens": 578,
+                "completion_tokens": 8,
+                "total_tokens": 586
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "What color did I repaint my bedroom walls?",
+            "answer": "a lighter shade of gray",
+            "category": "single-session-user",
+            "evidence": [
+                "D38:1",
+                "D38:2",
+                "D38:3",
+                "D38:4",
+                "D38:5",
+                "D38:6",
+                "D38:7",
+                "D38:8",
+                "D38:9",
+                "D38:10"
+            ],
+            "response": "Answer: Lighter shade of gray",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Repainted bedroom walls a lighter shade of gray",
+                    "timestamp": "2023/05/27 (Sat) 19:51",
+                    "score": 0.78,
+                    "original_conversation": "user_6f9b354f: I've heard great things about Snake Plants, but I'm also curious about the ZZ Plant. Can you tell me more about its watering schedule and how often it needs to be fertilized? By the way, I've been doing some redecorating and recently repainted my bedroom walls a lighter shade of gray - it's made the room feel so much brighter!\nassistant_6f9b354f: The ZZ Plant is an excellent choice! It's a low-maintenance plant that's perfect for busy people or those new to plant care.\n\n**Watering Schedule:**\nThe ZZ Plant is known for its ability to survive in extreme conditions, including neglect. It can go weeks without watering, making it perfect for those who tend to forget to water their plants (no judgment here!). Water your ZZ Plant when the soil feels dry to the touch, usually every 1-2 weeks in the summer and every 4-6 weeks in the winter. Make sure not to overwater, as this can lead to root rot. Water sparingly, and avoid getting water on the leaves to prevent fungal diseases.\n\n**Fertilization:**\nThe ZZ Plant doesn't require frequent fertilization. Feed your plant with a balanced, water-soluble fertilizer (20-20-20) once a month during the growing season (spring and summer). Dilute the fertilizer to half the recommended strength to avoid burning the roots. You can skip fertilizing during the winter months when the plant is dormant.\n\n**Additional Tips:**\n\n* The ZZ Plant prefers well-draining soil and can thrive in a variety of potting mixes.\n* Avoid direct sunlight, as it can cause the leaves to become scorched. Low to medium indirect light is ideal.\n* Prune the plant to maintain its shape and encourage new growth. Remove any dead or damaged leaves to prevent the spread of disease.\n* The ZZ Plant is toxic to pets and humans if ingested, so keep it out of reach of curious critters and kids.\n\nIt's great to hear that you've been redecorating and repainted your bedroom walls a lighter shade of gray! A fresh coat of paint can completely transform a room, making it feel brighter and more inviting. The lighter color will also help reflect any natural light, making the space feel more airy and spacious.\n\nNow, imagine adding a ZZ Plant to your bedroom to complement your new gray walls. The plant's dark green leaves will provide a beautiful contrast to the light background, creating a soothing and calming atmosphere.",
+                    "dia_ids": [
+                        "D38:3",
+                        "D38:4"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Recently repainted bedroom walls a lighter shade of gray",
+                    "timestamp": "2023/05/27 (Sat) 19:51",
+                    "score": 0.77,
+                    "original_conversation": "user_6f9b354f: I've heard great things about Snake Plants, but I'm also curious about the ZZ Plant. Can you tell me more about its watering schedule and how often it needs to be fertilized? By the way, I've been doing some redecorating and recently repainted my bedroom walls a lighter shade of gray - it's made the room feel so much brighter!\nassistant_6f9b354f: The ZZ Plant is an excellent choice! It's a low-maintenance plant that's perfect for busy people or those new to plant care.\n\n**Watering Schedule:**\nThe ZZ Plant is known for its ability to survive in extreme conditions, including neglect. It can go weeks without watering, making it perfect for those who tend to forget to water their plants (no judgment here!). Water your ZZ Plant when the soil feels dry to the touch, usually every 1-2 weeks in the summer and every 4-6 weeks in the winter. Make sure not to overwater, as this can lead to root rot. Water sparingly, and avoid getting water on the leaves to prevent fungal diseases.\n\n**Fertilization:**\nThe ZZ Plant doesn't require frequent fertilization. Feed your plant with a balanced, water-soluble fertilizer (20-20-20) once a month during the growing season (spring and summer). Dilute the fertilizer to half the recommended strength to avoid burning the roots. You can skip fertilizing during the winter months when the plant is dormant.\n\n**Additional Tips:**\n\n* The ZZ Plant prefers well-draining soil and can thrive in a variety of potting mixes.\n* Avoid direct sunlight, as it can cause the leaves to become scorched. Low to medium indirect light is ideal.\n* Prune the plant to maintain its shape and encourage new growth. Remove any dead or damaged leaves to prevent the spread of disease.\n* The ZZ Plant is toxic to pets and humans if ingested, so keep it out of reach of curious critters and kids.\n\nIt's great to hear that you've been redecorating and repainted your bedroom walls a lighter shade of gray! A fresh coat of paint can completely transform a room, making it feel brighter and more inviting. The lighter color will also help reflect any natural light, making the space feel more airy and spacious.\n\nNow, imagine adding a ZZ Plant to your bedroom to complement your new gray walls. The plant's dark green leaves will provide a beautiful contrast to the light background, creating a soothing and calming atmosphere.",
+                    "dia_ids": [
+                        "D38:3",
+                        "D38:4"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 1,
+            "num_speaker_2_memories": 1,
+            "speaker_1_memory_time": 0.042948246002197266,
+            "speaker_2_memory_time": 0.04201149940490723,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.20899462699890137,
+            "token_usage": {
+                "prompt_tokens": 1757,
+                "completion_tokens": 8,
+                "total_tokens": 1765
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "When did I volunteer at the local animal shelter's fundraising dinner?",
+            "answer": "February 14th",
+            "category": "single-session-user",
+            "evidence": [
+                "D50:1",
+                "D50:2",
+                "D50:3",
+                "D50:4",
+                "D50:5",
+                "D50:6",
+                "D50:7",
+                "D50:8",
+                "D50:9",
+                "D50:10",
+                "D50:11",
+                "D50:12"
+            ],
+            "response": "Answer: Valentine's Day",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Interested in volunteering at a local food bank",
+                    "timestamp": "2023/04/02 (Sun) 19:39",
+                    "score": 0.68,
+                    "original_conversation": "user_58ef2f1c: I'm interested in helping out at a local food bank. Can you tell me more about what kind of tasks I'd be doing if I volunteered there?\nassistant_58ef2f1c: That's a great choice! Food banks play a vital role in providing food assistance to those in need. As a volunteer at a food bank, you'll be contributing to a wonderful cause. Here are some tasks you might be doing as a food bank volunteer:\n\n**Receiving and Sorting Donations:**\n\n* Unloading food donations from trucks, cars, and other vehicles\n* Inspecting donations for expiration dates, damage, and quality\n* Sorting donations into categories (e.g., canned goods, produce, bakery items, etc.)\n* Stocking shelves with sorted donations\n\n** Warehouse and Inventory Management:**\n\n* Organizing and maintaining a clean and efficient warehouse space\n* Assisting with inventory management, including counting and tracking donations\n* Restocking shelves and ensuring that products are easily accessible\n\n**Food Distribution:**\n\n* Assisting clients with selecting food items and assembling food boxes or bags\n* Helping to distribute food to clients, including seniors, families, and individuals in need\n* Maintaining a friendly and welcoming atmosphere for clients\n\n**Packing and Preparing Orders:**\n\n* Assembling food boxes or bags for specific programs, such as senior boxes or backpack programs for children\n* Preparing orders for agencies, pantries, or other organizations that distribute food to those in need\n* Packing fresh produce, meat, dairy, or other perishable items for distribution\n\n**Administrative Tasks:**\n\n* Assisting with data entry, filing, and other administrative tasks\n* Helping with fundraising efforts, such as preparing mailings or packing fundraising materials\n* Providing general office support, like answering phones or greeting visitors\n\n**Special Events and Projects:**\n\n* Participating in food drives, fundraisers, or other special events to support the food bank\n* Helping with seasonal programs, such as holiday meal distributions or summer food programs for children\n* Assisting with community outreach and education initiatives\n\n**Other Tasks:**\n\n* Maintaining a safe and clean environment, adhering to food safety guidelines\n* Collaborating with other volunteers and staff members to accomplish tasks efficiently\n* Providing excellent customer service to clients, donors, and other stakeholders\n\nKeep in mind that tasks may vary depending on the specific food bank and their operations. Some food banks might have additional tasks, such as:\n\n* Gleaning: Recovering surplus produce from farms, orchards, or other sources to distribute to those in need\n* Cooking: Preparing meals or snacks for clients, such as at a soup kitchen or food pantry\n* Delivery: Delivering food to clients, especially those who are homebound or have mobility issues\n\nRemember to ask about specific volunteer opportunities and tasks when you contact the food bank. They'll be able to provide more information and help you find a role that suits your interests, skills, and availability.",
+                    "dia_ids": [
+                        "D44:3",
+                        "D44:4"
+                    ]
+                },
+                {
+                    "memory": "Had a great experience with similar events in the past, like the 'Love is in the Air' fundraising dinner volunteered at back on Valentine's Day",
+                    "timestamp": "2023/04/02 (Sun) 22:15",
+                    "score": 0.68,
+                    "original_conversation": "user_58ef2f1c: I'm really looking forward to the silent auction and raffles at \"Strut Your Mutt\". I've had a great experience with similar events in the past, like the \"Love is in the Air\" fundraising dinner I volunteered at back on Valentine's Day. The energy and excitement of bidding on amazing prizes while supporting a good cause is just fantastic!\nassistant_58ef2f1c: I'm so glad to hear that! It's wonderful that you've had a positive experience with silent auctions and raffles in the past. The energy and excitement of bidding on amazing prizes while supporting a good cause is indeed infectious!\n\nThe \"Love is in the Air\" fundraising dinner sounds like a fantastic event, and I'm sure your volunteering efforts made a significant impact. It's great that you're continuing to support wonderful causes like animal welfare and children's health.\n\nAt \"Strut Your Mutt\", you'll have the opportunity to mingle with like-minded individuals, enjoy the festive atmosphere, and bid on incredible prizes, all while making a difference in the lives of animals in need. The silent auction and raffles are always a highlight of the event, and I'm sure you'll have a fantastic time.\n\nRemember to arrive early to get a good look at the auction items and raffle prizes, and don't hesitate to ask volunteers for more information about each item. You can also set a budget for yourself and stick to it to ensure a fun and responsible bidding experience.\n\nAre you planning on attending the event with friends or family, or will you be meeting new people there?",
+                    "dia_ids": [
+                        "D50:9",
+                        "D50:10"
+                    ]
+                },
+                {
+                    "memory": "Planning to volunteer with the Dayton Foodbank",
+                    "timestamp": "2023/04/02 (Sun) 15:08",
+                    "score": 0.65,
+                    "original_conversation": "user_58ef2f1c: I think I'm going to start by volunteering with the Dayton Foodbank. Do you know if they have any upcoming events or opportunities to volunteer?\nassistant_58ef2f1c: As an AI language model, I don't have access to real-time information, but I can guide you on how to find out about upcoming events and volunteer opportunities with the Dayton Foodbank. Here are a few steps you can take:\n\n1. Visit the Dayton Foodbank website: The Dayton Foodbank website provides information on their programs and services, as well as upcoming events and volunteer opportunities. You can visit their website at thefoodbankdayton.org. 2. Contact the Dayton Foodbank directly: You can contact the Dayton Foodbank directly to inquire about upcoming events or volunteer opportunities. You can find their contact information on their website or social media pages. 3. Follow the Dayton Foodbank on social media: The Dayton Foodbank regularly posts updates on their social media pages, including upcoming events and volunteer opportunities. You can follow them on platforms such as Facebook and Twitter to stay up-to-date on their activities. By following these steps, you should be able to find out information about upcoming events and volunteer opportunities with the Dayton Foodbank.",
+                    "dia_ids": [
+                        "D32:11",
+                        "D32:12"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Had a great experience with similar events in the past, like the 'Love is in the Air' fundraising dinner volunteered at back on Valentine's Day",
+                    "timestamp": "2023/04/02 (Sun) 22:15",
+                    "score": 0.68,
+                    "original_conversation": "user_58ef2f1c: I'm really looking forward to the silent auction and raffles at \"Strut Your Mutt\". I've had a great experience with similar events in the past, like the \"Love is in the Air\" fundraising dinner I volunteered at back on Valentine's Day. The energy and excitement of bidding on amazing prizes while supporting a good cause is just fantastic!\nassistant_58ef2f1c: I'm so glad to hear that! It's wonderful that you've had a positive experience with silent auctions and raffles in the past. The energy and excitement of bidding on amazing prizes while supporting a good cause is indeed infectious!\n\nThe \"Love is in the Air\" fundraising dinner sounds like a fantastic event, and I'm sure your volunteering efforts made a significant impact. It's great that you're continuing to support wonderful causes like animal welfare and children's health.\n\nAt \"Strut Your Mutt\", you'll have the opportunity to mingle with like-minded individuals, enjoy the festive atmosphere, and bid on incredible prizes, all while making a difference in the lives of animals in need. The silent auction and raffles are always a highlight of the event, and I'm sure you'll have a fantastic time.\n\nRemember to arrive early to get a good look at the auction items and raffle prizes, and don't hesitate to ask volunteers for more information about each item. You can also set a budget for yourself and stick to it to ensure a fun and responsible bidding experience.\n\nAre you planning on attending the event with friends or family, or will you be meeting new people there?",
+                    "dia_ids": [
+                        "D50:9",
+                        "D50:10"
+                    ]
+                },
+                {
+                    "memory": "Had a fulfilling experience serving breakfast to people in need during volunteer work",
+                    "timestamp": "2023/04/02 (Sun) 19:39",
+                    "score": 0.63,
+                    "original_conversation": "user_58ef2f1c: I'm looking for some volunteer opportunities in my community. I've had a really fulfilling experience serving breakfast to people in need during my volunteer work, and I'm eager to do more. Can you suggest some organizations or events that I can get involved with?\nassistant_58ef2f1c: That's wonderful to hear! Serving breakfast to those in need is a great way to make a positive impact in your community. I'd be happy to help you find more volunteer opportunities that align with your interests and values. Here are some suggestions:\n\n**Food-related volunteer opportunities:**\n\n1. **Food banks**: Many food banks rely on volunteers to help sort and distribute food to those in need. You can search for food banks in your area and contact them to inquire about volunteer opportunities.\n2. **Soup kitchens**: Similar to serving breakfast, soup kitchens provide meals to people in need. You can search online for soup kitchens in your area and reach out to them to volunteer.\n3. **Food pantries**: Food pantries provide groceries to individuals and families in need. You can help sort and distribute food, as well as assist with client intake.\n4. **Meal delivery programs**: Organizations like Meals on Wheels deliver meals to seniors and individuals with disabilities. You can volunteer to help prepare, package, and deliver meals.\n\n**Other volunteer opportunities:**\n\n1. **Homeless shelters**: Many shelters provide temporary housing and support services to individuals and families in need. You can volunteer to help with daily tasks, such as serving meals, sorting donations, or leading activities.\n2. **Community gardens**: Community gardens provide fresh produce to those in need and often rely on volunteers to help with planting, harvesting, and distributing food.\n3. **Parks and recreation departments**: Many parks and recreation departments offer volunteer opportunities to help with community events, clean-up initiatives, and youth programs.\n4. **Senior centers**: Senior centers often provide meals, social activities, and support services to seniors. You can volunteer to help with daily activities, such as serving meals, leading classes, or simply socializing with seniors.\n\n**Events and organizations:**\n\n1. **VolunteerMatch**: A website that connects volunteers with non-profit organizations in their area. You can search for volunteer opportunities by location, cause, and type of work.\n2. **United Way**: A non-profit organization that focuses on education, income, and health. You can search for volunteer opportunities in your area through their website.\n3. **Food festivals and events**: Many food festivals and events rely on volunteers to help with setup, food preparation, and teardown. You can search online for food festivals in your area and contact the organizers to inquire about volunteer opportunities.\n4. **Local non-profits**: Research local non-profits in your area that align with your values and interests. Reach out to them to inquire about volunteer opportunities.\n\nRemember to consider your availability, skills, and interests when selecting a volunteer opportunity. You can also ask friends, family, or colleagues for recommendations or suggestions. Good luck, and I hope you find a fulfilling volunteer opportunity!",
+                    "dia_ids": [
+                        "D44:1",
+                        "D44:2"
+                    ]
+                },
+                {
+                    "memory": "Intends to volunteer with the Dayton Foodbank",
+                    "timestamp": "2023/04/02 (Sun) 15:08",
+                    "score": 0.63,
+                    "original_conversation": "user_58ef2f1c: I think I'm going to start by volunteering with the Dayton Foodbank. Do you know if they have any upcoming events or opportunities to volunteer?\nassistant_58ef2f1c: As an AI language model, I don't have access to real-time information, but I can guide you on how to find out about upcoming events and volunteer opportunities with the Dayton Foodbank. Here are a few steps you can take:\n\n1. Visit the Dayton Foodbank website: The Dayton Foodbank website provides information on their programs and services, as well as upcoming events and volunteer opportunities. You can visit their website at thefoodbankdayton.org. 2. Contact the Dayton Foodbank directly: You can contact the Dayton Foodbank directly to inquire about upcoming events or volunteer opportunities. You can find their contact information on their website or social media pages. 3. Follow the Dayton Foodbank on social media: The Dayton Foodbank regularly posts updates on their social media pages, including upcoming events and volunteer opportunities. You can follow them on platforms such as Facebook and Twitter to stay up-to-date on their activities. By following these steps, you should be able to find out information about upcoming events and volunteer opportunities with the Dayton Foodbank.",
+                    "dia_ids": [
+                        "D32:11",
+                        "D32:12"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 3,
+            "num_speaker_2_memories": 3,
+            "speaker_1_memory_time": 0.04470419883728027,
+            "speaker_2_memory_time": 0.04137063026428223,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.34336304664611816,
+            "token_usage": {
+                "prompt_tokens": 3355,
+                "completion_tokens": 6,
+                "total_tokens": 3361
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "Where did I buy my new tennis racket from?",
+            "answer": "the sports store downtown",
+            "category": "single-session-user",
+            "evidence": [
+                "D28:1",
+                "D28:2",
+                "D28:3",
+                "D28:4",
+                "D28:5",
+                "D28:6",
+                "D28:7",
+                "D28:8",
+                "D28:9",
+                "D28:10",
+                "D28:11",
+                "D28:12"
+            ],
+            "response": "**Answer:** sports store downtown",
+            "adversarial_answer": "",
+            "speaker_1_memories": [
+                {
+                    "memory": "Got new tennis racket from a sports store downtown",
+                    "timestamp": "2023/05/25 (Thu) 21:29",
+                    "score": 0.84,
+                    "original_conversation": "user_f8c5f88b: I'll definitely do those exercises before playing tennis. By the way, I'm really happy with my new tennis racket, which I got from a sports store downtown. It's been performing really well, and I feel like it's improved my game. Do you have any tips on how to maintain and clean my racket?\nassistant_f8c5f88b: Congratulations on your new tennis racket! I'm glad to hear it's been performing well for you.\n\nMaintaining and cleaning your tennis racket is crucial to extend its lifespan and ensure it continues to perform well. Here are some tips to help you keep your racket in top condition:\n\n1. **Clean the racket head**: Use a soft, dry cloth to wipe away dirt, dust, and debris from the racket head after each use. This will prevent dirt from accumulating and affecting the strings.\n2. **String maintenance**: Check your strings regularly for signs of wear, such as fraying or broken strings. Consider restringing your racket every 3-6 months or as needed.\n3. **Avoid extreme temperatures**: Don't leave your racket in a hot car or in freezing temperatures, as this can cause damage to the materials.\n4. **Store your racket properly**: Keep your racket in a protective cover or bag when not in use to prevent scratches and damage.\n5. **Handle care**: Use a soft cloth to wipe down the handle and grip, and apply a small amount of grip tape or overgrip to maintain a secure hold.\n6. **Avoid exposure to chemicals**: Don't expose your racket to chemicals, such as cleaning products or pesticides, as they can damage the materials.\n7. **Clean the grommets**: Use a small brush or toothbrush to clean out debris from the grommets (the holes where the strings pass through).\n8. **Inspect for damage**: Regularly inspect your racket for signs of damage, such as cracks, dents, or worn-out areas. Address any issues promptly to prevent further damage.\n\nBy following these tips, you'll be able to keep your tennis racket in great condition and ensure it continues to perform well for you.\n\nRemember to also take care of your tennis balls, as they can affect your game too!",
+                    "dia_ids": [
+                        "D28:5",
+                        "D28:6"
+                    ]
+                },
+                {
+                    "memory": "Happy with new tennis racket",
+                    "timestamp": "2023/05/25 (Thu) 21:29",
+                    "score": 0.72,
+                    "original_conversation": "user_f8c5f88b: I'll definitely do those exercises before playing tennis. By the way, I'm really happy with my new tennis racket, which I got from a sports store downtown. It's been performing really well, and I feel like it's improved my game. Do you have any tips on how to maintain and clean my racket?\nassistant_f8c5f88b: Congratulations on your new tennis racket! I'm glad to hear it's been performing well for you.\n\nMaintaining and cleaning your tennis racket is crucial to extend its lifespan and ensure it continues to perform well. Here are some tips to help you keep your racket in top condition:\n\n1. **Clean the racket head**: Use a soft, dry cloth to wipe away dirt, dust, and debris from the racket head after each use. This will prevent dirt from accumulating and affecting the strings.\n2. **String maintenance**: Check your strings regularly for signs of wear, such as fraying or broken strings. Consider restringing your racket every 3-6 months or as needed.\n3. **Avoid extreme temperatures**: Don't leave your racket in a hot car or in freezing temperatures, as this can cause damage to the materials.\n4. **Store your racket properly**: Keep your racket in a protective cover or bag when not in use to prevent scratches and damage.\n5. **Handle care**: Use a soft cloth to wipe down the handle and grip, and apply a small amount of grip tape or overgrip to maintain a secure hold.\n6. **Avoid exposure to chemicals**: Don't expose your racket to chemicals, such as cleaning products or pesticides, as they can damage the materials.\n7. **Clean the grommets**: Use a small brush or toothbrush to clean out debris from the grommets (the holes where the strings pass through).\n8. **Inspect for damage**: Regularly inspect your racket for signs of damage, such as cracks, dents, or worn-out areas. Address any issues promptly to prevent further damage.\n\nBy following these tips, you'll be able to keep your tennis racket in great condition and ensure it continues to perform well for you.\n\nRemember to also take care of your tennis balls, as they can affect your game too!",
+                    "dia_ids": [
+                        "D28:5",
+                        "D28:6"
+                    ]
+                },
+                {
+                    "memory": "Asks for tips on maintaining and cleaning the tennis racket",
+                    "timestamp": "2023/05/25 (Thu) 21:29",
+                    "score": 0.7,
+                    "original_conversation": "user_f8c5f88b: I'll definitely do those exercises before playing tennis. By the way, I'm really happy with my new tennis racket, which I got from a sports store downtown. It's been performing really well, and I feel like it's improved my game. Do you have any tips on how to maintain and clean my racket?\nassistant_f8c5f88b: Congratulations on your new tennis racket! I'm glad to hear it's been performing well for you.\n\nMaintaining and cleaning your tennis racket is crucial to extend its lifespan and ensure it continues to perform well. Here are some tips to help you keep your racket in top condition:\n\n1. **Clean the racket head**: Use a soft, dry cloth to wipe away dirt, dust, and debris from the racket head after each use. This will prevent dirt from accumulating and affecting the strings.\n2. **String maintenance**: Check your strings regularly for signs of wear, such as fraying or broken strings. Consider restringing your racket every 3-6 months or as needed.\n3. **Avoid extreme temperatures**: Don't leave your racket in a hot car or in freezing temperatures, as this can cause damage to the materials.\n4. **Store your racket properly**: Keep your racket in a protective cover or bag when not in use to prevent scratches and damage.\n5. **Handle care**: Use a soft cloth to wipe down the handle and grip, and apply a small amount of grip tape or overgrip to maintain a secure hold.\n6. **Avoid exposure to chemicals**: Don't expose your racket to chemicals, such as cleaning products or pesticides, as they can damage the materials.\n7. **Clean the grommets**: Use a small brush or toothbrush to clean out debris from the grommets (the holes where the strings pass through).\n8. **Inspect for damage**: Regularly inspect your racket for signs of damage, such as cracks, dents, or worn-out areas. Address any issues promptly to prevent further damage.\n\nBy following these tips, you'll be able to keep your tennis racket in great condition and ensure it continues to perform well for you.\n\nRemember to also take care of your tennis balls, as they can affect your game too!",
+                    "dia_ids": [
+                        "D28:5",
+                        "D28:6"
+                    ]
+                },
+                {
+                    "memory": "Planning to buy new tennis balls this weekend",
+                    "timestamp": "2023/05/25 (Thu) 21:29",
+                    "score": 0.68,
+                    "original_conversation": "user_f8c5f88b: I'm planning to buy new tennis balls this weekend. Do you know any good brands or types of tennis balls that are suitable for recreational players like me?\nassistant_f8c5f88b: As a recreational player, you'll want tennis balls that offer a good balance of quality, durability, and affordability. Here are some popular brands and types of tennis balls that are suitable for recreational players like you:\n\n**Brands:**\n\n1. **Wilson**: Wilson is a well-known and trusted brand in the tennis world. They offer a range of tennis balls, from recreational to professional-level.\n2. **Penn**: Penn is another popular brand that offers high-quality tennis balls at an affordable price.\n3. **Dunlop**: Dunlop is a well-established brand that provides a range of tennis balls, including those suitable for recreational players.\n\n**Types:**\n\n1. **Pressurized tennis balls**: These are the most common type of tennis ball and are suitable for recreational players. They are pressurized to maintain their bounce and are available in various levels of quality.\n2. **Mid-range tennis balls**: These balls offer a good balance of quality and price. They are suitable for recreational players who play regularly but don't need professional-level balls.\n3. **Recreational tennis balls**: These balls are designed specifically for casual players and are often less expensive than mid-range or professional-level balls.\n\n**Features to consider:**\n\n1. **ITF (International Tennis Federation) approval**: Look for tennis balls that are ITF-approved, as they meet the official standards for tennis balls.\n2. **Felt quality**: The felt quality affects the ball's durability and bounce. Look for balls with high-quality felt that can withstand regular play.\n3. **Pressure**: Pressurized tennis balls come in different pressure levels. Recreational players often prefer balls with a lower pressure (around 12.5 psi) for a slightly slower bounce.\n\n**Recommendations:**\n\n1. **Wilson US Open**: A popular choice among recreational players, these balls offer a good balance of quality and price.\n2. **Penn Championship**: Another popular option, these balls are known for their durability and consistent bounce.\n3. **Dunlop ATP**: These balls are designed for recreational players and offer a good balance of quality and price.\n\nWhen buying tennis balls, you can usually find them in cans of three or four balls. As a recreational player, you may not need to buy balls in bulk, but it's often more cost-effective to buy a can of three or four balls.\n\nRemember to check the expiration date or \"dome date\" on the can, as tennis balls do have a limited lifespan. Fresh balls will provide the best performance and bounce.\n\nHope this helps you make an informed decision when buying your new tennis balls!",
+                    "dia_ids": [
+                        "D28:7",
+                        "D28:8"
+                    ]
+                }
+            ],
+            "speaker_2_memories": [
+                {
+                    "memory": "Got new tennis racket from a sports store downtown",
+                    "timestamp": "2023/05/25 (Thu) 21:29",
+                    "score": 0.84,
+                    "original_conversation": "user_f8c5f88b: I'll definitely do those exercises before playing tennis. By the way, I'm really happy with my new tennis racket, which I got from a sports store downtown. It's been performing really well, and I feel like it's improved my game. Do you have any tips on how to maintain and clean my racket?\nassistant_f8c5f88b: Congratulations on your new tennis racket! I'm glad to hear it's been performing well for you.\n\nMaintaining and cleaning your tennis racket is crucial to extend its lifespan and ensure it continues to perform well. Here are some tips to help you keep your racket in top condition:\n\n1. **Clean the racket head**: Use a soft, dry cloth to wipe away dirt, dust, and debris from the racket head after each use. This will prevent dirt from accumulating and affecting the strings.\n2. **String maintenance**: Check your strings regularly for signs of wear, such as fraying or broken strings. Consider restringing your racket every 3-6 months or as needed.\n3. **Avoid extreme temperatures**: Don't leave your racket in a hot car or in freezing temperatures, as this can cause damage to the materials.\n4. **Store your racket properly**: Keep your racket in a protective cover or bag when not in use to prevent scratches and damage.\n5. **Handle care**: Use a soft cloth to wipe down the handle and grip, and apply a small amount of grip tape or overgrip to maintain a secure hold.\n6. **Avoid exposure to chemicals**: Don't expose your racket to chemicals, such as cleaning products or pesticides, as they can damage the materials.\n7. **Clean the grommets**: Use a small brush or toothbrush to clean out debris from the grommets (the holes where the strings pass through).\n8. **Inspect for damage**: Regularly inspect your racket for signs of damage, such as cracks, dents, or worn-out areas. Address any issues promptly to prevent further damage.\n\nBy following these tips, you'll be able to keep your tennis racket in great condition and ensure it continues to perform well for you.\n\nRemember to also take care of your tennis balls, as they can affect your game too!",
+                    "dia_ids": [
+                        "D28:5",
+                        "D28:6"
+                    ]
+                },
+                {
+                    "memory": "Happy with new tennis racket",
+                    "timestamp": "2023/05/25 (Thu) 21:29",
+                    "score": 0.72,
+                    "original_conversation": "user_f8c5f88b: I'll definitely do those exercises before playing tennis. By the way, I'm really happy with my new tennis racket, which I got from a sports store downtown. It's been performing really well, and I feel like it's improved my game. Do you have any tips on how to maintain and clean my racket?\nassistant_f8c5f88b: Congratulations on your new tennis racket! I'm glad to hear it's been performing well for you.\n\nMaintaining and cleaning your tennis racket is crucial to extend its lifespan and ensure it continues to perform well. Here are some tips to help you keep your racket in top condition:\n\n1. **Clean the racket head**: Use a soft, dry cloth to wipe away dirt, dust, and debris from the racket head after each use. This will prevent dirt from accumulating and affecting the strings.\n2. **String maintenance**: Check your strings regularly for signs of wear, such as fraying or broken strings. Consider restringing your racket every 3-6 months or as needed.\n3. **Avoid extreme temperatures**: Don't leave your racket in a hot car or in freezing temperatures, as this can cause damage to the materials.\n4. **Store your racket properly**: Keep your racket in a protective cover or bag when not in use to prevent scratches and damage.\n5. **Handle care**: Use a soft cloth to wipe down the handle and grip, and apply a small amount of grip tape or overgrip to maintain a secure hold.\n6. **Avoid exposure to chemicals**: Don't expose your racket to chemicals, such as cleaning products or pesticides, as they can damage the materials.\n7. **Clean the grommets**: Use a small brush or toothbrush to clean out debris from the grommets (the holes where the strings pass through).\n8. **Inspect for damage**: Regularly inspect your racket for signs of damage, such as cracks, dents, or worn-out areas. Address any issues promptly to prevent further damage.\n\nBy following these tips, you'll be able to keep your tennis racket in great condition and ensure it continues to perform well for you.\n\nRemember to also take care of your tennis balls, as they can affect your game too!",
+                    "dia_ids": [
+                        "D28:5",
+                        "D28:6"
+                    ]
+                },
+                {
+                    "memory": "New tennis racket has been performing well",
+                    "timestamp": "2023/05/25 (Thu) 21:29",
+                    "score": 0.71,
+                    "original_conversation": "user_f8c5f88b: I'll definitely do those exercises before playing tennis. By the way, I'm really happy with my new tennis racket, which I got from a sports store downtown. It's been performing really well, and I feel like it's improved my game. Do you have any tips on how to maintain and clean my racket?\nassistant_f8c5f88b: Congratulations on your new tennis racket! I'm glad to hear it's been performing well for you.\n\nMaintaining and cleaning your tennis racket is crucial to extend its lifespan and ensure it continues to perform well. Here are some tips to help you keep your racket in top condition:\n\n1. **Clean the racket head**: Use a soft, dry cloth to wipe away dirt, dust, and debris from the racket head after each use. This will prevent dirt from accumulating and affecting the strings.\n2. **String maintenance**: Check your strings regularly for signs of wear, such as fraying or broken strings. Consider restringing your racket every 3-6 months or as needed.\n3. **Avoid extreme temperatures**: Don't leave your racket in a hot car or in freezing temperatures, as this can cause damage to the materials.\n4. **Store your racket properly**: Keep your racket in a protective cover or bag when not in use to prevent scratches and damage.\n5. **Handle care**: Use a soft cloth to wipe down the handle and grip, and apply a small amount of grip tape or overgrip to maintain a secure hold.\n6. **Avoid exposure to chemicals**: Don't expose your racket to chemicals, such as cleaning products or pesticides, as they can damage the materials.\n7. **Clean the grommets**: Use a small brush or toothbrush to clean out debris from the grommets (the holes where the strings pass through).\n8. **Inspect for damage**: Regularly inspect your racket for signs of damage, such as cracks, dents, or worn-out areas. Address any issues promptly to prevent further damage.\n\nBy following these tips, you'll be able to keep your tennis racket in great condition and ensure it continues to perform well for you.\n\nRemember to also take care of your tennis balls, as they can affect your game too!",
+                    "dia_ids": [
+                        "D28:5",
+                        "D28:6"
+                    ]
+                },
+                {
+                    "memory": "New tennis racket improved game",
+                    "timestamp": "2023/05/25 (Thu) 21:29",
+                    "score": 0.69,
+                    "original_conversation": "user_f8c5f88b: I'll definitely do those exercises before playing tennis. By the way, I'm really happy with my new tennis racket, which I got from a sports store downtown. It's been performing really well, and I feel like it's improved my game. Do you have any tips on how to maintain and clean my racket?\nassistant_f8c5f88b: Congratulations on your new tennis racket! I'm glad to hear it's been performing well for you.\n\nMaintaining and cleaning your tennis racket is crucial to extend its lifespan and ensure it continues to perform well. Here are some tips to help you keep your racket in top condition:\n\n1. **Clean the racket head**: Use a soft, dry cloth to wipe away dirt, dust, and debris from the racket head after each use. This will prevent dirt from accumulating and affecting the strings.\n2. **String maintenance**: Check your strings regularly for signs of wear, such as fraying or broken strings. Consider restringing your racket every 3-6 months or as needed.\n3. **Avoid extreme temperatures**: Don't leave your racket in a hot car or in freezing temperatures, as this can cause damage to the materials.\n4. **Store your racket properly**: Keep your racket in a protective cover or bag when not in use to prevent scratches and damage.\n5. **Handle care**: Use a soft cloth to wipe down the handle and grip, and apply a small amount of grip tape or overgrip to maintain a secure hold.\n6. **Avoid exposure to chemicals**: Don't expose your racket to chemicals, such as cleaning products or pesticides, as they can damage the materials.\n7. **Clean the grommets**: Use a small brush or toothbrush to clean out debris from the grommets (the holes where the strings pass through).\n8. **Inspect for damage**: Regularly inspect your racket for signs of damage, such as cracks, dents, or worn-out areas. Address any issues promptly to prevent further damage.\n\nBy following these tips, you'll be able to keep your tennis racket in great condition and ensure it continues to perform well for you.\n\nRemember to also take care of your tennis balls, as they can affect your game too!",
+                    "dia_ids": [
+                        "D28:5",
+                        "D28:6"
+                    ]
+                }
+            ],
+            "num_speaker_1_memories": 4,
+            "num_speaker_2_memories": 4,
+            "speaker_1_memory_time": 0.04771113395690918,
+            "speaker_2_memory_time": 0.04129171371459961,
+            "speaker_1_graph_memories": null,
+            "speaker_2_graph_memories": null,
+            "response_time": 0.24711298942565918,
+            "token_usage": {
+                "prompt_tokens": 2429,
+                "completion_tokens": 7,
+                "total_tokens": 2436
+            }
+        }
+    ]
+}

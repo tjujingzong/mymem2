@@ -1,0 +1,242 @@
+{
+    "3": [
+        {
+            "question": "I'm trying to decide whether to buy a NAS device now or wait. What do you think?",
+            "answer": "The user would prefer responses that take into account their current home network storage capacity issues and recent reliance on external hard drives, highlighting the potential benefits of a NAS device in addressing these specific needs. They might not prefer responses that ignore their current storage challenges or fail to consider their recent tech upgrades and priorities. Preferred responses would utilize the user's previous mentions of storage capacity issues and tech investments to inform their decision.",
+            "response": "Answer: Consider your storage needs.",
+            "category": "single-session-preference",
+            "bleu_score": 1.4650378899859784e-05,
+            "f1_score": 0.09999999999999999,
+            "llm_score": 1,
+            "response_time": 0.4497034549713135,
+            "speaker_1_memory_time": 0.04060101509094238,
+            "speaker_2_memory_time": 0.04305386543273926,
+            "token_usage": {
+                "prompt_tokens": 4271,
+                "completion_tokens": 8,
+                "total_tokens": 4279
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 492,
+                "completion_tokens": 8,
+                "total_tokens": 500
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "I'm planning a trip to Denver soon. Any suggestions on what to do there?",
+            "answer": "The user would prefer responses that take into account their previous experience in Denver, specifically their interest in live music and memorable encounter with Brandon Flowers. They might appreciate suggestions that revisit or build upon this experience, such as revisiting the same bar or exploring similar music venues in the area. The user may not prefer general tourist recommendations or activities unrelated to their interest in live music.",
+            "response": "Explore music venues and festivals.",
+            "category": "single-session-preference",
+            "bleu_score": 9.42512299568939e-06,
+            "f1_score": 0.1090909090909091,
+            "llm_score": 1,
+            "response_time": 0.31279683113098145,
+            "speaker_1_memory_time": 0.04154157638549805,
+            "speaker_2_memory_time": 0.044188499450683594,
+            "token_usage": {
+                "prompt_tokens": 2914,
+                "completion_tokens": 7,
+                "total_tokens": 2921
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 481,
+                "completion_tokens": 8,
+                "total_tokens": 489
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "I am planning another theme park weekend; do you have any suggestions?",
+            "answer": "The user would prefer theme park suggestions that cater to their interest in both thrill rides and special events, utilizing their previous experiences at Disneyland, Knott's Berry Farm, Six Flags Magic Mountain, and Universal Studios Hollywood as a reference point. They would also appreciate recommendations that highlight unique food experiences and nighttime shows. The user might not prefer suggestions that focus solely on one aspect of theme parks, such as only thrill rides or only family-friendly attractions, and may not be interested in parks that lack special events or unique dining options.",
+            "response": "Halloween Time, Holiday Season",
+            "category": "single-session-preference",
+            "bleu_score": 7.511333531876605e-10,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.17133378982543945,
+            "speaker_1_memory_time": 0.04472994804382324,
+            "speaker_2_memory_time": 0.04207921028137207,
+            "token_usage": {
+                "prompt_tokens": 1499,
+                "completion_tokens": 7,
+                "total_tokens": 1506
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 508,
+                "completion_tokens": 8,
+                "total_tokens": 516
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "I noticed my bike seems to be performing even better during my Sunday group rides. Could there be a reason for this?",
+            "answer": "The user would prefer responses that reference specific details from their previous interactions, such as the replacement of the bike's chain and cassette, and the use of a new Garmin bike computer. They might prefer explanations that connect these details to the observed improvement in bike performance. The user may not prefer responses that fail to acknowledge these specific details or provide vague, general explanations for the improvement.",
+            "response": "Answer: Bike performance improved.",
+            "category": "single-session-preference",
+            "bleu_score": 5.065046799315355e-06,
+            "f1_score": 0.08,
+            "llm_score": 0,
+            "response_time": 0.10304427146911621,
+            "speaker_1_memory_time": 0.044451236724853516,
+            "speaker_2_memory_time": 0.03961491584777832,
+            "token_usage": {
+                "prompt_tokens": 595,
+                "completion_tokens": 7,
+                "total_tokens": 602
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 489,
+                "completion_tokens": 8,
+                "total_tokens": 497
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "I've been sneezing quite a bit lately. Do you think it might be my living room?",
+            "answer": "The user would prefer responses that consider the potential impact of their cat, Luna, and her shedding on their sneezing, as well as the recent deep clean of the living room and its possible effect on stirring up dust. They might not prefer responses that fail to take into account these specific details previously mentioned, such as generic suggestions or unrelated factors.",
+            "response": "The answer is: **Possibly, due to dust and cat hair.**",
+            "category": "single-session-preference",
+            "bleu_score": 0.020500557563238094,
+            "f1_score": 0.16393442622950818,
+            "llm_score": 1,
+            "response_time": 0.35291528701782227,
+            "speaker_1_memory_time": 0.04500460624694824,
+            "speaker_2_memory_time": 0.04180717468261719,
+            "token_usage": {
+                "prompt_tokens": 2048,
+                "completion_tokens": 17,
+                "total_tokens": 2065
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 491,
+                "completion_tokens": 8,
+                "total_tokens": 499
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "I was thinking of trying a new coffee creamer recipe. Any recommendations?",
+            "answer": "The user would prefer responses that suggest variations on their existing almond milk, vanilla extract, and honey creamer recipe or new ideas that align with their goals of reducing sugar intake and saving money. They might not prefer responses that recommend commercial creamer products or recipes that are high in sugar or expensive.",
+            "response": "**Answer:** Lemon Ginger or Strawberry Cream.",
+            "category": "single-session-preference",
+            "bleu_score": 0.003919624309334852,
+            "f1_score": 0.041666666666666664,
+            "llm_score": 1,
+            "response_time": 0.28873372077941895,
+            "speaker_1_memory_time": 0.4531416893005371,
+            "speaker_2_memory_time": 0.04007434844970703,
+            "token_usage": {
+                "prompt_tokens": 2325,
+                "completion_tokens": 10,
+                "total_tokens": 2335
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 467,
+                "completion_tokens": 8,
+                "total_tokens": 475
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "I'm planning my meal prep next week, any suggestions for new recipes?",
+            "answer": "The user would prefer responses that suggest healthy meal prep recipes, especially those that incorporate quinoa and roasted vegetables, and offer variations in protein sources. They might appreciate suggestions that build upon their existing preferences, such as new twists on chicken Caesar salads or turkey and avocado wraps. The user may not prefer responses that suggest unhealthy or high-calorie meal prep options, or those that deviate significantly from their established healthy eating habits.",
+            "response": "Answer: Healthy recipes online.",
+            "category": "single-session-preference",
+            "bleu_score": 2.2012602649869626e-06,
+            "f1_score": 0.06779661016949153,
+            "llm_score": 1,
+            "response_time": 0.16704916954040527,
+            "speaker_1_memory_time": 0.04185080528259277,
+            "speaker_2_memory_time": 0.04326486587524414,
+            "token_usage": {
+                "prompt_tokens": 1410,
+                "completion_tokens": 7,
+                "total_tokens": 1417
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 489,
+                "completion_tokens": 8,
+                "total_tokens": 497
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "Can you suggest some useful accessories for my phone?",
+            "answer": "The user would prefer suggestions of accessories that are compatible with an iPhone 13 Pro, such as high-quality screen protectors, durable cases, portable power banks, or phone wallet cases. They may not prefer suggestions of accessories that are not compatible with Apple products or do not enhance the functionality or protection of their phone.",
+            "response": "Answer: Phone case and screen protector.",
+            "category": "single-session-preference",
+            "bleu_score": 0.0005637896973665897,
+            "f1_score": 0.09090909090909091,
+            "llm_score": 1,
+            "response_time": 0.12665009498596191,
+            "speaker_1_memory_time": 0.043888092041015625,
+            "speaker_2_memory_time": 0.043588876724243164,
+            "token_usage": {
+                "prompt_tokens": 581,
+                "completion_tokens": 9,
+                "total_tokens": 590
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 466,
+                "completion_tokens": 8,
+                "total_tokens": 474
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "I've got some free time tonight, any documentary recommendations?",
+            "answer": "The user would prefer documentary recommendations that are similar in style and theme to 'Our Planet', 'Free Solo', and 'Tiger King', which they have previously enjoyed. They might not prefer recommendations of documentaries that are vastly different in tone or subject matter from these titles. The preferred response utilizes the user's previously mentioned viewing history to suggest documentaries that cater to their tastes.",
+            "response": "**Answer:** Watch \"Dynasties\" or \"Chasing Coral\".",
+            "category": "single-session-preference",
+            "bleu_score": 0.0035459770562141384,
+            "f1_score": 0.03636363636363636,
+            "llm_score": 1,
+            "response_time": 0.4779670238494873,
+            "speaker_1_memory_time": 0.042349815368652344,
+            "speaker_2_memory_time": 0.042665719985961914,
+            "token_usage": {
+                "prompt_tokens": 3451,
+                "completion_tokens": 16,
+                "total_tokens": 3467
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 485,
+                "completion_tokens": 8,
+                "total_tokens": 493
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "I've been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?",
+            "answer": "The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.",
+            "response": "Yes, attending your high school reunion could be a good idea.",
+            "category": "single-session-preference",
+            "bleu_score": 0.001960161620360015,
+            "f1_score": 0.11940298507462686,
+            "llm_score": 0,
+            "response_time": 0.2520294189453125,
+            "speaker_1_memory_time": 0.0418241024017334,
+            "speaker_2_memory_time": 0.04197263717651367,
+            "token_usage": {
+                "prompt_tokens": 1426,
+                "completion_tokens": 14,
+                "total_tokens": 1440
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 506,
+                "completion_tokens": 11,
+                "total_tokens": 517
+            }
+        }
+    ]
+}

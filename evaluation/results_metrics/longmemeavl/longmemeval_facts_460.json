@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+            "answer": "International Budget Hostel",
+            "response": "International Budget Hostel",
+            "category": "single-session-assistant",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.22495293617248535,
+            "speaker_1_memory_time": 0.40086913108825684,
+            "speaker_2_memory_time": 0.04438281059265137,
+            "token_usage": {
+                "prompt_tokens": 2106,
+                "completion_tokens": 5,
+                "total_tokens": 2111
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 425,
+                "completion_tokens": 8,
+                "total_tokens": 433
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "I'm going back to our previous chat about the Lost Temple of the Djinn one-shot. Can you remind me how many mummies the party will face in the temple?",
+            "answer": "4",
+            "response": "The question is unrelated to the provided memories and original conversations, which discuss transformation, the labyrinth, and ritual themes, not the Lost Temple of the Djinn or mummies. No relevant information is available.",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.5882449150085449,
+            "speaker_1_memory_time": 0.04225778579711914,
+            "speaker_2_memory_time": 0.04200863838195801,
+            "token_usage": {
+                "prompt_tokens": 1256,
+                "completion_tokens": 42,
+                "total_tokens": 1298
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 463,
+                "completion_tokens": 8,
+                "total_tokens": 471
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
+            "answer": "Evolution",
+            "response": "\"Evolution\"",
+            "category": "single-session-assistant",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.13822388648986816,
+            "speaker_1_memory_time": 0.043041229248046875,
+            "speaker_2_memory_time": 0.04337120056152344,
+            "token_usage": {
+                "prompt_tokens": 1342,
+                "completion_tokens": 5,
+                "total_tokens": 1347
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 427,
+                "completion_tokens": 8,
+                "total_tokens": 435
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+            "answer": "Doc Martin",
+            "response": "**Answer:** \"Doc Martin\" show.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.16666666666666669,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.19099998474121094,
+            "speaker_1_memory_time": 0.0446934700012207,
+            "speaker_2_memory_time": 0.04084157943725586,
+            "token_usage": {
+                "prompt_tokens": 1270,
+                "completion_tokens": 10,
+                "total_tokens": 1280
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 445,
+                "completion_tokens": 8,
+                "total_tokens": 453
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "I wanted to follow up on our previous conversation about front-end and back-end development. Can you remind me of the specific back-end programming languages you recommended I learn?",
+            "answer": "I recommended learning Ruby, Python, or PHP as a back-end programming language.",
+            "response": "Answer: Python, SQL, Java, and frameworks like Flask and Django.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.26666666666666666,
+            "f1_score": 0.09523809523809525,
+            "llm_score": 1,
+            "response_time": 0.3944528102874756,
+            "speaker_1_memory_time": 0.04417586326599121,
+            "speaker_2_memory_time": 0.04245615005493164,
+            "token_usage": {
+                "prompt_tokens": 2697,
+                "completion_tokens": 16,
+                "total_tokens": 2713
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 448,
+                "completion_tokens": 8,
+                "total_tokens": 456
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in symptoms of depression, anxiety, and stress?",
+            "answer": "38 subjects",
+            "response": "**Answer:** 120 subjects.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.11111111111111109,
+            "f1_score": 0.4,
+            "llm_score": 0,
+            "response_time": 0.39301323890686035,
+            "speaker_1_memory_time": 0.04330182075500488,
+            "speaker_2_memory_time": 0.042207956314086914,
+            "token_usage": {
+                "prompt_tokens": 3327,
+                "completion_tokens": 10,
+                "total_tokens": 3337
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 449,
+                "completion_tokens": 8,
+                "total_tokens": 457
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "I was looking back at our previous conversation about Native American powwows and I was wondering, which traditional game did you say was often performed by skilled dancers at powwows?",
+            "answer": "Hoop Dance",
+            "response": "The drum and dance competition.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.16666666666666669,
+            "f1_score": 0.28571428571428575,
+            "llm_score": 0,
+            "response_time": 0.21346831321716309,
+            "speaker_1_memory_time": 0.043711185455322266,
+            "speaker_2_memory_time": 0.0411074161529541,
+            "token_usage": {
+                "prompt_tokens": 2062,
+                "completion_tokens": 7,
+                "total_tokens": 2069
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 430,
+                "completion_tokens": 8,
+                "total_tokens": 438
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+            "answer": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+            "response": "**Answer:** No other options were mentioned.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.042784759919382666,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.28227925300598145,
+            "speaker_1_memory_time": 0.04282402992248535,
+            "speaker_2_memory_time": 0.041744232177734375,
+            "token_usage": {
+                "prompt_tokens": 2289,
+                "completion_tokens": 10,
+                "total_tokens": 2299
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 452,
+                "completion_tokens": 8,
+                "total_tokens": 460
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+            "answer": "Transcriptionist.",
+            "response": "Answer: No relevant memories found.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.14285714285714285,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.11536669731140137,
+            "speaker_1_memory_time": 0.04295635223388672,
+            "speaker_2_memory_time": 0.040816545486450195,
+            "token_usage": {
+                "prompt_tokens": 600,
+                "completion_tokens": 8,
+                "total_tokens": 608
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 424,
+                "completion_tokens": 8,
+                "total_tokens": 432
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "I'm planning to go back to the Natural Park of Moncayo mountain in Arag\u00f3n and I was wondering, what was the name of that hiking trail you recommended that takes you through the park's most stunning landscapes and offers panoramic views of the surrounding mountainside?",
+            "answer": "The GR-90 trail.",
+            "response": "GR-90",
+            "category": "single-session-assistant",
+            "bleu_score": 0.049787068367863944,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.14271163940429688,
+            "speaker_1_memory_time": 0.046213388442993164,
+            "speaker_2_memory_time": 0.0413360595703125,
+            "token_usage": {
+                "prompt_tokens": 1495,
+                "completion_tokens": 5,
+                "total_tokens": 1500
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 450,
+                "completion_tokens": 8,
+                "total_tokens": 458
+            }
+        }
+    ]
+}

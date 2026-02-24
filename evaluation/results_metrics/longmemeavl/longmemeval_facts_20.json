@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "What was my previous occupation?",
+            "answer": "Marketing specialist at a small startup",
+            "response": "Answer: Not mentioned in memories.",
+            "category": "single-session-user",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.16864800453186035,
+            "speaker_1_memory_time": 0.44586706161499023,
+            "speaker_2_memory_time": 0.041310787200927734,
+            "token_usage": {
+                "prompt_tokens": 1037,
+                "completion_tokens": 8,
+                "total_tokens": 1045
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "Where did I attend for my study abroad program?",
+            "answer": "University of Melbourne in Australia",
+            "response": "University of Melbourne",
+            "category": "single-session-user",
+            "bleu_score": 0.513417119032592,
+            "f1_score": 0.7499999999999999,
+            "llm_score": 1,
+            "response_time": 0.11525845527648926,
+            "speaker_1_memory_time": 0.04319357872009277,
+            "speaker_2_memory_time": 0.04383730888366699,
+            "token_usage": {
+                "prompt_tokens": 1247,
+                "completion_tokens": 4,
+                "total_tokens": 1251
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What was the discount I got on my first purchase from the new clothing brand?",
+            "answer": "10%",
+            "response": "10% discount",
+            "category": "single-session-user",
+            "bleu_score": 0.6666666666666666,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.3366861343383789,
+            "speaker_1_memory_time": 0.04357552528381348,
+            "speaker_2_memory_time": 0.04056429862976074,
+            "token_usage": {
+                "prompt_tokens": 3469,
+                "completion_tokens": 5,
+                "total_tokens": 3474
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 410,
+                "completion_tokens": 8,
+                "total_tokens": 418
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many playlists do I have on Spotify?",
+            "answer": "20",
+            "response": "20",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.4291846752166748,
+            "speaker_1_memory_time": 0.0423738956451416,
+            "speaker_2_memory_time": 0.04138684272766113,
+            "token_usage": {
+                "prompt_tokens": 4682,
+                "completion_tokens": 3,
+                "total_tokens": 4685
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 401,
+                "completion_tokens": 8,
+                "total_tokens": 409
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "What speed is my new internet plan?",
+            "answer": "500 Mbps",
+            "response": "500 Mbps",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.18285655975341797,
+            "speaker_1_memory_time": 0.0413055419921875,
+            "speaker_2_memory_time": 0.04211235046386719,
+            "token_usage": {
+                "prompt_tokens": 1887,
+                "completion_tokens": 5,
+                "total_tokens": 1892
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "What did I buy for my sister's birthday gift?",
+            "answer": "a yellow dress",
+            "response": "**Answer:** Gifts for sister's birthday",
+            "category": "single-session-user",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.1915149688720703,
+            "speaker_1_memory_time": 0.043735504150390625,
+            "speaker_2_memory_time": 0.043157339096069336,
+            "token_usage": {
+                "prompt_tokens": 1462,
+                "completion_tokens": 9,
+                "total_tokens": 1471
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What was my previous stance on spirituality?",
+            "answer": "A staunch atheist",
+            "response": "**Answer:** Staunch atheism.",
+            "category": "single-session-user",
+            "bleu_score": 0.11111111111111109,
+            "f1_score": 0.3333333333333333,
+            "llm_score": 1,
+            "response_time": 0.2581143379211426,
+            "speaker_1_memory_time": 0.04366612434387207,
+            "speaker_2_memory_time": 0.03930807113647461,
+            "token_usage": {
+                "prompt_tokens": 2149,
+                "completion_tokens": 9,
+                "total_tokens": 2158
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How much did I spend on a designer handbag?",
+            "answer": "$800",
+            "response": "$800",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.18285202980041504,
+            "speaker_1_memory_time": 0.04209446907043457,
+            "speaker_2_memory_time": 0.04152226448059082,
+            "token_usage": {
+                "prompt_tokens": 1872,
+                "completion_tokens": 5,
+                "total_tokens": 1877
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How long did it take me to assemble the IKEA bookshelf?",
+            "answer": "4 hours",
+            "response": "Answer: 4 hours",
+            "category": "single-session-user",
+            "bleu_score": 0.5,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.3286888599395752,
+            "speaker_1_memory_time": 0.04283928871154785,
+            "speaker_2_memory_time": 0.04322481155395508,
+            "token_usage": {
+                "prompt_tokens": 3256,
+                "completion_tokens": 6,
+                "total_tokens": 3262
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many shirts did I pack for my 5-day trip to Costa Rica?",
+            "answer": "7",
+            "response": "Answer: 7 shirts",
+            "category": "single-session-user",
+            "bleu_score": 0.25,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.380734920501709,
+            "speaker_1_memory_time": 0.04338669776916504,
+            "speaker_2_memory_time": 0.04209280014038086,
+            "token_usage": {
+                "prompt_tokens": 3869,
+                "completion_tokens": 6,
+                "total_tokens": 3875
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ]
+}

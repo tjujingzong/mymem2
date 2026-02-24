@@ -1,0 +1,242 @@
+{
+    "7": [
+        {
+            "question": "Where does my sister Emily live?",
+            "answer": "Denver",
+            "response": "Answer: Denver",
+            "category": "single-session-user",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.20407748222351074,
+            "speaker_1_memory_time": 0.041678428649902344,
+            "speaker_2_memory_time": 0.04007077217102051,
+            "token_usage": {
+                "prompt_tokens": 2187,
+                "completion_tokens": 4,
+                "total_tokens": 2191
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 397,
+                "completion_tokens": 8,
+                "total_tokens": 405
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What time do I usually get home from work on weeknights?",
+            "answer": "6:30 pm",
+            "response": "6:30 pm",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.18316292762756348,
+            "speaker_1_memory_time": 0.04183459281921387,
+            "speaker_2_memory_time": 0.04397225379943848,
+            "token_usage": {
+                "prompt_tokens": 1684,
+                "completion_tokens": 6,
+                "total_tokens": 1690
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How long did Alex marinate the BBQ ribs in special sauce?",
+            "answer": "24 hours",
+            "response": "24 hours",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.33332085609436035,
+            "speaker_1_memory_time": 0.043270111083984375,
+            "speaker_2_memory_time": 0.045866966247558594,
+            "token_usage": {
+                "prompt_tokens": 3584,
+                "completion_tokens": 4,
+                "total_tokens": 3588
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "What size is my new Samsung TV?",
+            "answer": "55-inch",
+            "response": "Answer: Not mentioned in memories.",
+            "category": "single-session-user",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.3264937400817871,
+            "speaker_1_memory_time": 0.44399428367614746,
+            "speaker_2_memory_time": 0.04409027099609375,
+            "token_usage": {
+                "prompt_tokens": 2833,
+                "completion_tokens": 8,
+                "total_tokens": 2841
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "What book am I currently reading?",
+            "answer": "The Seven Husbands of Evelyn Hugo",
+            "response": "Answer: No information provided.",
+            "category": "single-session-user",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.09968090057373047,
+            "speaker_1_memory_time": 0.04392194747924805,
+            "speaker_2_memory_time": 0.038789987564086914,
+            "token_usage": {
+                "prompt_tokens": 578,
+                "completion_tokens": 7,
+                "total_tokens": 585
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many skeins of worsted weight yarn did I find in my stash?",
+            "answer": "17",
+            "response": "17",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.5361001491546631,
+            "speaker_1_memory_time": 0.042580604553222656,
+            "speaker_2_memory_time": 0.040083885192871094,
+            "token_usage": {
+                "prompt_tokens": 5797,
+                "completion_tokens": 3,
+                "total_tokens": 5800
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "Who gave me a new stand mixer as a birthday gift?",
+            "answer": "my sister",
+            "response": "Answer: Sister",
+            "category": "single-session-user",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.21800541877746582,
+            "speaker_1_memory_time": 0.043488264083862305,
+            "speaker_2_memory_time": 0.042882442474365234,
+            "token_usage": {
+                "prompt_tokens": 2538,
+                "completion_tokens": 4,
+                "total_tokens": 2542
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 403,
+                "completion_tokens": 8,
+                "total_tokens": 411
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How much time do I dedicate to practicing guitar every day?",
+            "answer": "30 minutes",
+            "response": "30 minutes daily",
+            "category": "single-session-user",
+            "bleu_score": 0.6666666666666666,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.1825850009918213,
+            "speaker_1_memory_time": 0.04337167739868164,
+            "speaker_2_memory_time": 0.042153120040893555,
+            "token_usage": {
+                "prompt_tokens": 1918,
+                "completion_tokens": 5,
+                "total_tokens": 1923
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "What is my ethnicity?",
+            "answer": "A mix of Irish and Italian",
+            "response": "Mixed ethnicity - Irish and Italian",
+            "category": "single-session-user",
+            "bleu_score": 0.5,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.24512195587158203,
+            "speaker_1_memory_time": 0.043443918228149414,
+            "speaker_2_memory_time": 0.042333364486694336,
+            "token_usage": {
+                "prompt_tokens": 2390,
+                "completion_tokens": 7,
+                "total_tokens": 2397
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 403,
+                "completion_tokens": 8,
+                "total_tokens": 411
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many hours did I spend watching documentaries on Netflix last month?",
+            "answer": "10",
+            "response": "10 hours",
+            "category": "single-session-user",
+            "bleu_score": 0.5,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.16900157928466797,
+            "speaker_1_memory_time": 0.04510760307312012,
+            "speaker_2_memory_time": 0.04282069206237793,
+            "token_usage": {
+                "prompt_tokens": 1813,
+                "completion_tokens": 4,
+                "total_tokens": 1817
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ]
+}

@@ -1,0 +1,242 @@
+{
+    "3": [
+        {
+            "question": "How many kitchen items did I replace or fix?",
+            "answer": "I replaced or fixed five items: the kitchen faucet, the kitchen mat, the toaster, the coffee maker, and the kitchen shelves.",
+            "response": "**Answer:** 2 kitchen items.",
+            "category": "multi-session",
+            "bleu_score": 0.07307340962109385,
+            "f1_score": 0.10526315789473685,
+            "llm_score": 0,
+            "response_time": 0.29413676261901855,
+            "speaker_1_memory_time": 0.04324841499328613,
+            "speaker_2_memory_time": 0.0415043830871582,
+            "token_usage": {
+                "prompt_tokens": 2491,
+                "completion_tokens": 9,
+                "total_tokens": 2500
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 429,
+                "completion_tokens": 8,
+                "total_tokens": 437
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What is the total amount of money I earned from selling my products at the markets?",
+            "answer": "$495",
+            "response": "**Answer:** $345",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.24412798881530762,
+            "speaker_1_memory_time": 0.04413866996765137,
+            "speaker_2_memory_time": 0.04074740409851074,
+            "token_usage": {
+                "prompt_tokens": 2086,
+                "completion_tokens": 8,
+                "total_tokens": 2094
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How many days did I spend attending workshops, lectures, and conferences in April?",
+            "answer": "3 days",
+            "response": "0",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.04276609420776367,
+            "speaker_1_memory_time": 0.040663957595825195,
+            "speaker_2_memory_time": 0.04257082939147949,
+            "token_usage": {
+                "prompt_tokens": 587,
+                "completion_tokens": 2,
+                "total_tokens": 589
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How many times did I ride rollercoasters across all the events I attended from July to October?",
+            "answer": "10 times",
+            "response": "**Answer:** 5 times",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.4,
+            "llm_score": 0,
+            "response_time": 0.26890015602111816,
+            "speaker_1_memory_time": 0.044739723205566406,
+            "speaker_2_memory_time": 0.0401453971862793,
+            "token_usage": {
+                "prompt_tokens": 2584,
+                "completion_tokens": 7,
+                "total_tokens": 2591
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 416,
+                "completion_tokens": 8,
+                "total_tokens": 424
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many rare items do I have in total?",
+            "answer": "99",
+            "response": "**Answer:** 104 rare items",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.6969208717346191,
+            "speaker_1_memory_time": 0.041578054428100586,
+            "speaker_2_memory_time": 0.04022860527038574,
+            "token_usage": {
+                "prompt_tokens": 6317,
+                "completion_tokens": 10,
+                "total_tokens": 6327
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many days did I spend participating in faith-related activities in December?",
+            "answer": "3 days.",
+            "response": "**Answer:** 17 days\n\n**Step-by-Step Explanation:**\n\n1. **Identify Relevant Memories:**\n   - The user mentioned: \"I actually just did a Bible study on this same topic at my church a few weeks ago, on December 17th.\"\n   - The assistant confirmed: \"Attended Bible study group on December 17th.\"\n\n2. **Determine the Event:**\n   - The Bible study took place on **December 17th**.\n\n3. **Assess the Duration:**\n   - The question asks about the number of days spent participating in faith-related activities in **December**.\n   - The only specific date mentioned is **December 17th**, and there is no indication of other activities or days spent on faith-related activities.\n\n4. **Conclusion:**\n   - Based on the provided information, only **one day** (December 17th) is explicitly mentioned as a day spent on a faith-related activity. No other days are referenced, so the answer is **17 days** (the day itself).",
+            "category": "multi-session",
+            "bleu_score": 0.014018691588785043,
+            "f1_score": 0.04347826086956522,
+            "llm_score": 0,
+            "response_time": 2.9479422569274902,
+            "speaker_1_memory_time": 0.04244184494018555,
+            "speaker_2_memory_time": 0.042662620544433594,
+            "token_usage": {
+                "prompt_tokens": 2809,
+                "completion_tokens": 223,
+                "total_tokens": 3032
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 624,
+                "completion_tokens": 11,
+                "total_tokens": 635
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many days did I spend in total traveling in Hawaii and in New York City?",
+            "answer": "15 days",
+            "response": "Answer: No information provided.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.24281525611877441,
+            "speaker_1_memory_time": 0.04135417938232422,
+            "speaker_2_memory_time": 0.03949236869812012,
+            "token_usage": {
+                "prompt_tokens": 2230,
+                "completion_tokens": 7,
+                "total_tokens": 2237
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How much total money did I spend on attending workshops in the last four months?",
+            "answer": "$720",
+            "response": "**Answer:** $520",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.4275987148284912,
+            "speaker_1_memory_time": 0.041818857192993164,
+            "speaker_2_memory_time": 0.04120635986328125,
+            "token_usage": {
+                "prompt_tokens": 4110,
+                "completion_tokens": 8,
+                "total_tokens": 4118
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How much money did I raise for charity in total?",
+            "answer": "$3,750",
+            "response": "**Answer:** $2,500",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.5042405128479004,
+            "speaker_1_memory_time": 0.042847633361816406,
+            "speaker_2_memory_time": 0.0425262451171875,
+            "token_usage": {
+                "prompt_tokens": 4566,
+                "completion_tokens": 10,
+                "total_tokens": 4576
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How many bikes did I service or plan to service in March?",
+            "answer": "2",
+            "response": "**Answer:** 1 bike",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.1931464672088623,
+            "speaker_1_memory_time": 0.4558236598968506,
+            "speaker_2_memory_time": 0.04259610176086426,
+            "token_usage": {
+                "prompt_tokens": 1559,
+                "completion_tokens": 7,
+                "total_tokens": 1566
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ]
+}

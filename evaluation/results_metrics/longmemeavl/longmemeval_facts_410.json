@@ -1,0 +1,242 @@
+{
+    "1": [
+        {
+            "question": "How many Instagram followers do I currently have?",
+            "answer": "600",
+            "response": "600",
+            "category": "knowledge-update",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.212418794631958,
+            "speaker_1_memory_time": 0.04294013977050781,
+            "speaker_2_memory_time": 0.0439605712890625,
+            "token_usage": {
+                "prompt_tokens": 2316,
+                "completion_tokens": 4,
+                "total_tokens": 2320
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 403,
+                "completion_tokens": 8,
+                "total_tokens": 411
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many issues of National Geographic have I finished reading?",
+            "answer": "Five",
+            "response": "**Answer:** Five issues.",
+            "category": "knowledge-update",
+            "bleu_score": 0.11111111111111109,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.3127913475036621,
+            "speaker_1_memory_time": 0.041492462158203125,
+            "speaker_2_memory_time": 0.0418853759765625,
+            "token_usage": {
+                "prompt_tokens": 2953,
+                "completion_tokens": 7,
+                "total_tokens": 2960
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 403,
+                "completion_tokens": 8,
+                "total_tokens": 411
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "Where did I get my guitar serviced?",
+            "answer": "The music shop on Main St.",
+            "response": "Answer: Music shop on Main St.",
+            "category": "knowledge-update",
+            "bleu_score": 0.75,
+            "f1_score": 0.8333333333333334,
+            "llm_score": 1,
+            "response_time": 0.34836840629577637,
+            "speaker_1_memory_time": 0.04230809211730957,
+            "speaker_2_memory_time": 0.041817665100097656,
+            "token_usage": {
+                "prompt_tokens": 3059,
+                "completion_tokens": 9,
+                "total_tokens": 3068
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "How many times have I tried making a Negroni at home since my friend Emma showed me how to make it?",
+            "answer": "10",
+            "response": "Answer: 10 times",
+            "category": "knowledge-update",
+            "bleu_score": 0.25,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.39965295791625977,
+            "speaker_1_memory_time": 0.04371452331542969,
+            "speaker_2_memory_time": 0.04254269599914551,
+            "token_usage": {
+                "prompt_tokens": 3841,
+                "completion_tokens": 7,
+                "total_tokens": 3848
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 419,
+                "completion_tokens": 8,
+                "total_tokens": 427
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How long have I had my cat, Luna?",
+            "answer": "9 months",
+            "response": "Answer: About 9 months.",
+            "category": "knowledge-update",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.35369300842285156,
+            "speaker_1_memory_time": 0.4477362632751465,
+            "speaker_2_memory_time": 0.04227852821350098,
+            "token_usage": {
+                "prompt_tokens": 2998,
+                "completion_tokens": 8,
+                "total_tokens": 3006
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How much did I earn at the Downtown Farmers Market on my most recent visit?",
+            "answer": "$420",
+            "response": "420",
+            "category": "knowledge-update",
+            "bleu_score": 0.36787944117144233,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.2902710437774658,
+            "speaker_1_memory_time": 0.04204916954040527,
+            "speaker_2_memory_time": 0.04146242141723633,
+            "token_usage": {
+                "prompt_tokens": 3175,
+                "completion_tokens": 4,
+                "total_tokens": 3179
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 410,
+                "completion_tokens": 8,
+                "total_tokens": 418
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many dozen eggs do we currently have stocked up in our refrigerator?",
+            "answer": "20",
+            "response": "20 dozen eggs",
+            "category": "knowledge-update",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.19860029220581055,
+            "speaker_1_memory_time": 0.042642831802368164,
+            "speaker_2_memory_time": 0.04234814643859863,
+            "token_usage": {
+                "prompt_tokens": 2001,
+                "completion_tokens": 5,
+                "total_tokens": 2006
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "What is my current highest score in Ticket to Ride?",
+            "answer": "132 points",
+            "response": "132 points",
+            "category": "knowledge-update",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.3901252746582031,
+            "speaker_1_memory_time": 0.04181385040283203,
+            "speaker_2_memory_time": 0.04421067237854004,
+            "token_usage": {
+                "prompt_tokens": 4092,
+                "completion_tokens": 5,
+                "total_tokens": 4097
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "Did I finish reading 'The Nightingale' by Kristin Hannah?",
+            "answer": "Yes",
+            "response": "Yes, you finished reading 'The Nightingale'.",
+            "category": "knowledge-update",
+            "bleu_score": 0.11111111111111109,
+            "f1_score": 0.2857142857142857,
+            "llm_score": 1,
+            "response_time": 0.3133828639984131,
+            "speaker_1_memory_time": 0.04165053367614746,
+            "speaker_2_memory_time": 0.040412187576293945,
+            "token_usage": {
+                "prompt_tokens": 2460,
+                "completion_tokens": 12,
+                "total_tokens": 2472
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How many tops have I bought from H&M so far?",
+            "answer": "five",
+            "response": "**Answer:** Five tops.",
+            "category": "knowledge-update",
+            "bleu_score": 0.11111111111111109,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.18443608283996582,
+            "speaker_1_memory_time": 0.044080495834350586,
+            "speaker_2_memory_time": 0.04363656044006348,
+            "token_usage": {
+                "prompt_tokens": 1653,
+                "completion_tokens": 7,
+                "total_tokens": 1660
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ]
+}

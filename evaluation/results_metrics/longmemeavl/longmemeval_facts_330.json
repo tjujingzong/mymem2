@@ -1,0 +1,242 @@
+{
+    "8": [
+        {
+            "question": "How many days before I bought the iPhone 13 Pro did I attend the Holiday Market?",
+            "answer": "7 days. 8 days (including the last day) is also acceptable.",
+            "response": "Answer: 7 days",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.031963930603353785,
+            "f1_score": 0.30769230769230765,
+            "llm_score": 1,
+            "response_time": 0.3542478084564209,
+            "speaker_1_memory_time": 0.04361677169799805,
+            "speaker_2_memory_time": 0.04206347465515137,
+            "token_usage": {
+                "prompt_tokens": 3591,
+                "completion_tokens": 6,
+                "total_tokens": 3597
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 426,
+                "completion_tokens": 8,
+                "total_tokens": 434
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "Which show did I start watching first, 'The Crown' or 'Game of Thrones'?",
+            "answer": "'Game of Thrones'",
+            "response": "Answer: Game of Thrones",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.4,
+            "f1_score": 0.28571428571428575,
+            "llm_score": 1,
+            "response_time": 0.3243997097015381,
+            "speaker_1_memory_time": 0.043280839920043945,
+            "speaker_2_memory_time": 0.04102373123168945,
+            "token_usage": {
+                "prompt_tokens": 3319,
+                "completion_tokens": 6,
+                "total_tokens": 3325
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "Which device did I set up first, the smart thermostat or the mesh network system?",
+            "answer": "Smart thermostat",
+            "response": "Answer: Smart thermostat",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.5,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.28162670135498047,
+            "speaker_1_memory_time": 0.0423736572265625,
+            "speaker_2_memory_time": 0.04068613052368164,
+            "token_usage": {
+                "prompt_tokens": 2875,
+                "completion_tokens": 5,
+                "total_tokens": 2880
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "What was the date on which I attended the first BBQ event in June?",
+            "answer": "June 3rd",
+            "response": "Answer: June 3rd",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.5,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.4026792049407959,
+            "speaker_1_memory_time": 0.04279971122741699,
+            "speaker_2_memory_time": 0.04162001609802246,
+            "token_usage": {
+                "prompt_tokens": 3940,
+                "completion_tokens": 7,
+                "total_tokens": 3947
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 411,
+                "completion_tokens": 8,
+                "total_tokens": 419
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "Which book did I finish reading first, 'The Hate U Give' or 'The Nightingale'?",
+            "answer": "'The Hate U Give'",
+            "response": "The Nightingale",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.3297464847564697,
+            "speaker_1_memory_time": 0.04219675064086914,
+            "speaker_2_memory_time": 0.03919672966003418,
+            "token_usage": {
+                "prompt_tokens": 3339,
+                "completion_tokens": 5,
+                "total_tokens": 3344
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many months ago did I book the Airbnb in San Francisco?",
+            "answer": "Five months ago",
+            "response": "Answer: Three months ago.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.5714285714285715,
+            "llm_score": 0,
+            "response_time": 0.3720686435699463,
+            "speaker_1_memory_time": 0.09800839424133301,
+            "speaker_2_memory_time": 0.04126572608947754,
+            "token_usage": {
+                "prompt_tokens": 3674,
+                "completion_tokens": 7,
+                "total_tokens": 3681
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How long did I take to finish 'The Seven Husbands of Evelyn Hugo' and 'The Nightingale' combined?",
+            "answer": "5.5 weeks",
+            "response": "**Answer:** Two and a half weeks and three weeks.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.06666666666666667,
+            "f1_score": 0.22222222222222224,
+            "llm_score": 1,
+            "response_time": 0.42684221267700195,
+            "speaker_1_memory_time": 0.04270219802856445,
+            "speaker_2_memory_time": 0.04106593132019043,
+            "token_usage": {
+                "prompt_tokens": 3274,
+                "completion_tokens": 13,
+                "total_tokens": 3287
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 428,
+                "completion_tokens": 8,
+                "total_tokens": 436
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many charity events did I participate in before the 'Run for the Cure' event?",
+            "answer": "4",
+            "response": "Answer: One charity event.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.36849403381347656,
+            "speaker_1_memory_time": 0.04283308982849121,
+            "speaker_2_memory_time": 0.04018521308898926,
+            "token_usage": {
+                "prompt_tokens": 3536,
+                "completion_tokens": 7,
+                "total_tokens": 3543
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 411,
+                "completion_tokens": 8,
+                "total_tokens": 419
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How long have I been working before I started my current job at NovaTech?",
+            "answer": "4 years and 9 months",
+            "response": "Answer: 9 years",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.38940039153570244,
+            "f1_score": 0.5,
+            "llm_score": 0,
+            "response_time": 0.4039306640625,
+            "speaker_1_memory_time": 0.040914058685302734,
+            "speaker_2_memory_time": 0.03928732872009277,
+            "token_usage": {
+                "prompt_tokens": 4004,
+                "completion_tokens": 6,
+                "total_tokens": 4010
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "Which task did I complete first, fixing the fence or trimming the goats' hooves?",
+            "answer": "Fixing the fence",
+            "response": "The question asks about the order of completing two tasks: fixing the fence and trimming the goats' hooves. However, none of the provided memories or original conversations mention anything about fixing the fence. The memories and conversations only discuss hoof trimming and not fence repairs. Therefore, there is no evidence to determine which task was completed first. \n\nAnswer: Fence repair not mentioned.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.041666666666666664,
+            "f1_score": 0.1276595744680851,
+            "llm_score": 0,
+            "response_time": 1.0613949298858643,
+            "speaker_1_memory_time": 0.39495372772216797,
+            "speaker_2_memory_time": 0.04332304000854492,
+            "token_usage": {
+                "prompt_tokens": 2261,
+                "completion_tokens": 75,
+                "total_tokens": 2336
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 481,
+                "completion_tokens": 11,
+                "total_tokens": 492
+            }
+        }
+    ]
+}

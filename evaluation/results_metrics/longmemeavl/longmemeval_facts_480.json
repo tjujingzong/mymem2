@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "I wanted to follow up on our previous conversation about mindfulness techniques. You mentioned some great resources for guided imagery exercises, can you remind me of the website that had free exercises like 'The Mountain Meditation' and 'The Body Scan Meditation'?",
+            "answer": "Mindful.org.",
+            "response": "Answer: The website was Insight Timer.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.1253187656402588,
+            "speaker_1_memory_time": 0.3992338180541992,
+            "speaker_2_memory_time": 0.04363274574279785,
+            "token_usage": {
+                "prompt_tokens": 619,
+                "completion_tokens": 9,
+                "total_tokens": 628
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 444,
+                "completion_tokens": 8,
+                "total_tokens": 452
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "Can you remind me what was the average improvement in framerate when using the Hardware-Aware Modular Training (HAMT) agent in the 'To Adapt or Not to Adapt? Real-Time Adaptation for Semantic Segmentation' submission?",
+            "answer": "The average improvement in framerate was approximately 20% when using the Hardware-Aware Modular Training (HAMT) agent.",
+            "response": "Answer: No information provided.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.01616199464406751,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.18302631378173828,
+            "speaker_1_memory_time": 0.0439763069152832,
+            "speaker_2_memory_time": 0.0424046516418457,
+            "token_usage": {
+                "prompt_tokens": 1505,
+                "completion_tokens": 7,
+                "total_tokens": 1512
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 460,
+                "completion_tokens": 8,
+                "total_tokens": 468
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "I was going through our previous conversation about political propaganda and humor, and I was wondering if you could remind me of that Soviet cartoon you mentioned that mocked Western culture?",
+            "answer": "Nu, pogodi!",
+            "response": "No relevant memories found.",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.1083841323852539,
+            "speaker_1_memory_time": 0.04252314567565918,
+            "speaker_2_memory_time": 0.04362368583679199,
+            "token_usage": {
+                "prompt_tokens": 887,
+                "completion_tokens": 6,
+                "total_tokens": 893
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 427,
+                "completion_tokens": 8,
+                "total_tokens": 435
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "I wanted to follow up on our previous conversation about the fusion breakthrough at Lawrence Livermore National Laboratory. Can you remind me who is the President's Chief Advisor for Science and Technology mentioned in the article?",
+            "answer": "Dr. Arati Prabhakar",
+            "response": "Dr. Arati Prabhakar",
+            "category": "single-session-assistant",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.29651379585266113,
+            "speaker_1_memory_time": 0.044162750244140625,
+            "speaker_2_memory_time": 0.04298806190490723,
+            "token_usage": {
+                "prompt_tokens": 2839,
+                "completion_tokens": 9,
+                "total_tokens": 2848
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 442,
+                "completion_tokens": 8,
+                "total_tokens": 450
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "I was going through our previous conversation about making a classic French omelette, and I wanted to confirm - how many eggs did you say we need for the recipe?",
+            "answer": "2-3 eggs",
+            "response": "Answer: 1 dozen eggs",
+            "category": "single-session-assistant",
+            "bleu_score": 0.2,
+            "f1_score": 0.3333333333333333,
+            "llm_score": 0,
+            "response_time": 0.25821995735168457,
+            "speaker_1_memory_time": 0.0444035530090332,
+            "speaker_2_memory_time": 0.0433192253112793,
+            "token_usage": {
+                "prompt_tokens": 2503,
+                "completion_tokens": 7,
+                "total_tokens": 2510
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 431,
+                "completion_tokens": 8,
+                "total_tokens": 439
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "I'm looking back at our previous chess game and I was wondering, what was the move you made after 27. Kg2 Bd5+?",
+            "answer": "28. Kg3",
+            "response": "Rd5+",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.22949814796447754,
+            "speaker_1_memory_time": 0.041080474853515625,
+            "speaker_2_memory_time": 0.043946266174316406,
+            "token_usage": {
+                "prompt_tokens": 2614,
+                "completion_tokens": 5,
+                "total_tokens": 2619
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 425,
+                "completion_tokens": 8,
+                "total_tokens": 433
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "I'm planning another trip to New York City and I was wondering if you could remind me of that vegan eatery you recommended last time, the one with multiple locations throughout the city?",
+            "answer": "By Chloe",
+            "response": "By Chloe",
+            "category": "single-session-assistant",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.1080925464630127,
+            "speaker_1_memory_time": 0.04447793960571289,
+            "speaker_2_memory_time": 0.04450821876525879,
+            "token_usage": {
+                "prompt_tokens": 1274,
+                "completion_tokens": 3,
+                "total_tokens": 1277
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 427,
+                "completion_tokens": 8,
+                "total_tokens": 435
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "I was going through our previous chat. Can you remind me of the name of the last venue you recommended in the list of popular venues in Portland for indie music shows?",
+            "answer": "Revolution Hall",
+            "response": "Answer: No venue was recommended.",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.13263249397277832,
+            "speaker_1_memory_time": 0.04293394088745117,
+            "speaker_2_memory_time": 0.04292702674865723,
+            "token_usage": {
+                "prompt_tokens": 852,
+                "completion_tokens": 8,
+                "total_tokens": 860
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 428,
+                "completion_tokens": 8,
+                "total_tokens": 436
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "I was going through our previous conversation about atmospheric correction methods, and I wanted to confirm - you mentioned that 6S, MAJA, and Sen2Cor are all algorithms for atmospheric correction of remote sensing images. Can you remind me which one is implemented in the SIAC_GEE tool?",
+            "answer": "The 6S algorithm is implemented in the SIAC_GEE tool.",
+            "response": "None of the mentioned algorithms are implemented in SIAC_GEE.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.5,
+            "f1_score": 0.47058823529411764,
+            "llm_score": 0,
+            "response_time": 0.29804134368896484,
+            "speaker_1_memory_time": 0.04577827453613281,
+            "speaker_2_memory_time": 0.04509592056274414,
+            "token_usage": {
+                "prompt_tokens": 1934,
+                "completion_tokens": 14,
+                "total_tokens": 1948
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 471,
+                "completion_tokens": 11,
+                "total_tokens": 482
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "I wanted to follow up on our previous conversation about natural remedies for dark circles under the eyes. You mentioned applying tomato juice mixed with lemon juice, how long did you say I should leave it on for?",
+            "answer": "10 minutes",
+            "response": "The question refers to a specific remedy (tomato juice mixed with lemon juice) and asks about the duration it should be left on. However, none of the provided memories or original conversations mention this specific remedy or the recommended duration for its application. Therefore, there is no direct evidence in the memories to answer the question.\n\nAnswer: Not mentioned in the conversation.",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.915311336517334,
+            "speaker_1_memory_time": 0.04305124282836914,
+            "speaker_2_memory_time": 0.04224681854248047,
+            "token_usage": {
+                "prompt_tokens": 923,
+                "completion_tokens": 73,
+                "total_tokens": 996
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 502,
+                "completion_tokens": 11,
+                "total_tokens": 513
+            }
+        }
+    ]
+}

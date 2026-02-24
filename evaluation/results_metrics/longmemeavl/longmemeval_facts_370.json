@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "Which task did I complete first, fixing the fence or purchasing three cows from Peter?",
+            "answer": "The information provided is not enough. You mentioned fixing the fence but did not mention purchasing cows from Peter.",
+            "response": "**Answer:** Fixed fence first",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.029288570901747406,
+            "f1_score": 0.09523809523809523,
+            "llm_score": 0,
+            "response_time": 0.5836272239685059,
+            "speaker_1_memory_time": 0.39563417434692383,
+            "speaker_2_memory_time": 0.039162397384643555,
+            "token_usage": {
+                "prompt_tokens": 5301,
+                "completion_tokens": 7,
+                "total_tokens": 5308
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 429,
+                "completion_tokens": 8,
+                "total_tokens": 437
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "What was my personal best time in the charity 5K run?",
+            "answer": "25 minutes and 50 seconds (or 25:50)",
+            "response": "25:50",
+            "category": "knowledge-update",
+            "bleu_score": 0.00033546262790251185,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.5749552249908447,
+            "speaker_1_memory_time": 0.042847633361816406,
+            "speaker_2_memory_time": 0.04038858413696289,
+            "token_usage": {
+                "prompt_tokens": 5675,
+                "completion_tokens": 6,
+                "total_tokens": 5681
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 423,
+                "completion_tokens": 8,
+                "total_tokens": 431
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "Which project did I start first, the Ferrari model or the Porsche 991 Turbo S model?",
+            "answer": "The information provided is not enough. You did not mention starting the Porsche 991 Turbo S model.",
+            "response": "The question is about the order in which two projects were started: the Ferrari model and the Porsche 991 Turbo S model. However, based on the provided memories and original conversations, there is no mention of a Porsche 991 Turbo S model at all. The only project mentioned is the Ferrari 288 GTO model.\n\nSince the Porsche 991 Turbo S model is not referenced in any of the memories or conversations, it is not possible to determine which project was started first. Therefore, the answer is:\n\n**Porsche 991 Turbo S model is not mentioned.**",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.12844036697247707,
+            "f1_score": 0.28985507246376807,
+            "llm_score": 1,
+            "response_time": 2.1694281101226807,
+            "speaker_1_memory_time": 0.04208827018737793,
+            "speaker_2_memory_time": 0.04129672050476074,
+            "token_usage": {
+                "prompt_tokens": 6419,
+                "completion_tokens": 125,
+                "total_tokens": 6544
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 551,
+                "completion_tokens": 8,
+                "total_tokens": 559
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How long have I been working before I started my current job at Google?",
+            "answer": "The information provided is not enough. From the information provided, You haven't started working at Google yet.",
+            "response": "The question contains an error. The user has not mentioned working at Google in the provided memories.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.42635729664580696,
+            "f1_score": 0.4137931034482759,
+            "llm_score": 1,
+            "response_time": 0.4874563217163086,
+            "speaker_1_memory_time": 0.09699678421020508,
+            "speaker_2_memory_time": 0.04120492935180664,
+            "token_usage": {
+                "prompt_tokens": 3013,
+                "completion_tokens": 20,
+                "total_tokens": 3033
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 439,
+                "completion_tokens": 8,
+                "total_tokens": 447
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+            "answer": "$400,000",
+            "response": "**Answer:** $400,000",
+            "category": "knowledge-update",
+            "bleu_score": 0.25,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.539785623550415,
+            "speaker_1_memory_time": 0.04259490966796875,
+            "speaker_2_memory_time": 0.040493011474609375,
+            "token_usage": {
+                "prompt_tokens": 4665,
+                "completion_tokens": 12,
+                "total_tokens": 4677
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 423,
+                "completion_tokens": 8,
+                "total_tokens": 431
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How many Korean restaurants have I tried in my city?",
+            "answer": "four",
+            "response": "4",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.10709357261657715,
+            "speaker_1_memory_time": 0.043700456619262695,
+            "speaker_2_memory_time": 0.04326605796813965,
+            "token_usage": {
+                "prompt_tokens": 1513,
+                "completion_tokens": 2,
+                "total_tokens": 1515
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 400,
+                "completion_tokens": 8,
+                "total_tokens": 408
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "Who became a parent first, Tom or Alex?",
+            "answer": "The information provided is not enough. You mentioned Alex becoming a parent in January, but you didn't mention anything about Tom.",
+            "response": "Answer: Alex became a parent first.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.05971648413335981,
+            "f1_score": 0.23076923076923075,
+            "llm_score": 0,
+            "response_time": 0.19298815727233887,
+            "speaker_1_memory_time": 0.04492378234863281,
+            "speaker_2_memory_time": 0.043380022048950195,
+            "token_usage": {
+                "prompt_tokens": 1532,
+                "completion_tokens": 9,
+                "total_tokens": 1541
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 427,
+                "completion_tokens": 8,
+                "total_tokens": 435
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many days before I bought my iPad did I attend the Holiday Market?",
+            "answer": "The information provided is not enough. You mentioned getting the iPhone 13 Pro and attending the market, but you did not mention buying an iPad.",
+            "response": "The question cannot be answered based on the provided information.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.13179856905786336,
+            "f1_score": 0.2,
+            "llm_score": 1,
+            "response_time": 0.33425092697143555,
+            "speaker_1_memory_time": 0.041942596435546875,
+            "speaker_2_memory_time": 0.043203115463256836,
+            "token_usage": {
+                "prompt_tokens": 2599,
+                "completion_tokens": 12,
+                "total_tokens": 2611
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 440,
+                "completion_tokens": 8,
+                "total_tokens": 448
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "Where did Rachel move to after her recent relocation?",
+            "answer": "the suburbs",
+            "response": " suburbs",
+            "category": "knowledge-update",
+            "bleu_score": 0.36787944117144233,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.14432501792907715,
+            "speaker_1_memory_time": 0.043492794036865234,
+            "speaker_2_memory_time": 0.04184889793395996,
+            "token_usage": {
+                "prompt_tokens": 1805,
+                "completion_tokens": 2,
+                "total_tokens": 1807
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 400,
+                "completion_tokens": 8,
+                "total_tokens": 408
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "When did I book the Airbnb in Sacramento?",
+            "answer": "The information provided is not enough. You only mentioned booking Airbnb in San Francisco.",
+            "response": "The memories and original conversations mention booking an Airbnb in San Francisco, not Sacramento. There is no information about booking an Airbnb in Sacramento. \n\nAnswer: No information provided.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.36363636363636365,
+            "f1_score": 0.5714285714285714,
+            "llm_score": 1,
+            "response_time": 0.6700024604797363,
+            "speaker_1_memory_time": 0.043396949768066406,
+            "speaker_2_memory_time": 0.04125022888183594,
+            "token_usage": {
+                "prompt_tokens": 3078,
+                "completion_tokens": 35,
+                "total_tokens": 3113
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 443,
+                "completion_tokens": 11,
+                "total_tokens": 454
+            }
+        }
+    ]
+}

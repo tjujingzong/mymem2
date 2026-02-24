@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "How many autographed football have I added to my collection in the first three months of collection?",
+            "answer": "The information provided is not enough. You mentioned collecting autographed baseball but not football.",
+            "response": "The question asks about autographed **football** additions, but the memories and original conversations only mention **autographed baseballs**. There is no mention of football or any additions related to it.\n\n**Answer:** None",
+            "category": "knowledge-update",
+            "bleu_score": 0.14893617021276595,
+            "f1_score": 0.24390243902439027,
+            "llm_score": 1,
+            "response_time": 0.8456833362579346,
+            "speaker_1_memory_time": 0.3925466537475586,
+            "speaker_2_memory_time": 0.039110660552978516,
+            "token_usage": {
+                "prompt_tokens": 3872,
+                "completion_tokens": 44,
+                "total_tokens": 3916
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 464,
+                "completion_tokens": 8,
+                "total_tokens": 472
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "Where do I currently keep my old sneakers?",
+            "answer": "in a shoe rack in my closet",
+            "response": "Answer: Under the bed",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.43158793449401855,
+            "speaker_1_memory_time": 0.043313026428222656,
+            "speaker_2_memory_time": 0.041604042053222656,
+            "token_usage": {
+                "prompt_tokens": 4345,
+                "completion_tokens": 6,
+                "total_tokens": 4351
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+            "answer": "Roscioli",
+            "response": "**Answer:** Trattoria Da Enzo al 29",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.2934906482696533,
+            "speaker_1_memory_time": 0.04271531105041504,
+            "speaker_2_memory_time": 0.042955875396728516,
+            "token_usage": {
+                "prompt_tokens": 1892,
+                "completion_tokens": 14,
+                "total_tokens": 1906
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 421,
+                "completion_tokens": 8,
+                "total_tokens": 429
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+            "answer": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
+            "response": "Answer: Agent 1",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2681701183319092,
+            "speaker_1_memory_time": 0.04503607749938965,
+            "speaker_2_memory_time": 0.040125370025634766,
+            "token_usage": {
+                "prompt_tokens": 2811,
+                "completion_tokens": 6,
+                "total_tokens": 2817
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 442,
+                "completion_tokens": 8,
+                "total_tokens": 450
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "Before I purchased the gravel bike, do I have other bikes in addition to my mountain bike and my commuter bike?",
+            "answer": "Yes. (You have a road bike too.)",
+            "response": "Yes\n\n**Step-by-Step Explanation:**\n\n1. **Identify the question:** The user is asking if they had other bikes in addition to their mountain bike and commuter bike before purchasing a gravel bike.\n\n2. **Look for relevant memories:**\n   - \"2023/05/28 (Sun) 13:41: User will have four bikes on the trip: road bike, mountain bike, commuter bike, and a new hybrid bike\"\n   - \"2023/05/25 (Thu) 15:36: Using road bike along with mountain bike and commuter bike\"\n   - \"2023/04/29 (Sat) 23:29: Interested in trying new types of rides like gravel or mountain bike rides\"\n\n3. **Analyze the content:**\n   - The user mentions having a road bike, mountain bike, and commuter bike before purchasing a gravel bike.\n   - The memory from 2023/05/25 (Thu) 15:36 explicitly states they are using a road bike along with mountain and commuter bikes.\n   - The memory from 2023/05/28 (Sun) 13:41 confirms they will have four bikes, including a new hybrid bike, which implies they had three bikes (road, mountain, commuter) before the hybrid bike was purchased.\n\n4. **Determine the answer:**\n   - The user had a road bike in addition to their mountain and commuter bikes before purchasing the gravel bike.\n\n**Answer:** Yes",
+            "category": "knowledge-update",
+            "bleu_score": 0.03448275862068965,
+            "f1_score": 0.10309278350515465,
+            "llm_score": 1,
+            "response_time": 4.915753126144409,
+            "speaker_1_memory_time": 0.040453433990478516,
+            "speaker_2_memory_time": 0.03849458694458008,
+            "token_usage": {
+                "prompt_tokens": 7131,
+                "completion_tokens": 334,
+                "total_tokens": 7465
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 751,
+                "completion_tokens": 8,
+                "total_tokens": 759
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+            "answer": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+            "response": "Answer: Delayed coking and hydrotreating.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.13667423885313018,
+            "f1_score": 0.2857142857142857,
+            "llm_score": 0,
+            "response_time": 0.17490935325622559,
+            "speaker_1_memory_time": 0.04268980026245117,
+            "speaker_2_memory_time": 0.04036235809326172,
+            "token_usage": {
+                "prompt_tokens": 606,
+                "completion_tokens": 13,
+                "total_tokens": 619
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 453,
+                "completion_tokens": 8,
+                "total_tokens": 461
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
+            "answer": "The Plesiosaur had a blue scaly body.",
+            "response": "Answer: Blue scaly body.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.47768754038252614,
+            "f1_score": 0.5454545454545454,
+            "llm_score": 1,
+            "response_time": 0.24400734901428223,
+            "speaker_1_memory_time": 0.0423429012298584,
+            "speaker_2_memory_time": 0.04160571098327637,
+            "token_usage": {
+                "prompt_tokens": 2096,
+                "completion_tokens": 8,
+                "total_tokens": 2104
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 440,
+                "completion_tokens": 8,
+                "total_tokens": 448
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How often do I play table tennis with my friends at the local park?",
+            "answer": "The information provided is not enough. You mentioned playing tennis but not table tennis.",
+            "response": "The memories mention weekly tennis sessions with friends, but there is no specific information about how often table tennis is played. Therefore, the answer is:\n\n**Not specified**",
+            "category": "knowledge-update",
+            "bleu_score": 0.2571428571428571,
+            "f1_score": 0.3333333333333333,
+            "llm_score": 1,
+            "response_time": 0.5126771926879883,
+            "speaker_1_memory_time": 0.09467387199401855,
+            "speaker_2_memory_time": 0.03929853439331055,
+            "token_usage": {
+                "prompt_tokens": 1649,
+                "completion_tokens": 34,
+                "total_tokens": 1683
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 448,
+                "completion_tokens": 8,
+                "total_tokens": 456
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
+            "answer": "Miss Bee Providore",
+            "response": "Miss Bee Providore",
+            "category": "single-session-assistant",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.2813093662261963,
+            "speaker_1_memory_time": 0.043848514556884766,
+            "speaker_2_memory_time": 0.04247307777404785,
+            "token_usage": {
+                "prompt_tokens": 2994,
+                "completion_tokens": 5,
+                "total_tokens": 2999
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 432,
+                "completion_tokens": 8,
+                "total_tokens": 440
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+            "answer": "The Sugar Factory at Icon Park.",
+            "response": "The Sugar Factory",
+            "category": "single-session-assistant",
+            "bleu_score": 0.2635971381157267,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.3274521827697754,
+            "speaker_1_memory_time": 0.044348955154418945,
+            "speaker_2_memory_time": 0.04355907440185547,
+            "token_usage": {
+                "prompt_tokens": 3524,
+                "completion_tokens": 4,
+                "total_tokens": 3528
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 427,
+                "completion_tokens": 8,
+                "total_tokens": 435
+            }
+        }
+    ]
+}

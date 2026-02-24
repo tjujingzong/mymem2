@@ -1,0 +1,242 @@
+{
+    "1": [
+        {
+            "question": "How old will Rachel be when I get married?",
+            "answer": "The information provided is not enough. You did not mention how old Rachel is right now, nor when will you get married.",
+            "response": "Answer: Not enough information.",
+            "category": "multi-session",
+            "bleu_score": 0.028095895672850923,
+            "f1_score": 0.2608695652173913,
+            "llm_score": 1,
+            "response_time": 0.3354353904724121,
+            "speaker_1_memory_time": 0.04050612449645996,
+            "speaker_2_memory_time": 0.03909444808959961,
+            "token_usage": {
+                "prompt_tokens": 3149,
+                "completion_tokens": 7,
+                "total_tokens": 3156
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 425,
+                "completion_tokens": 8,
+                "total_tokens": 433
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many days passed between my visit to the Museum of Modern Art (MoMA) and the 'Ancient Civilizations' exhibit at the Metropolitan Museum of Art?",
+            "answer": "7 days. 8 days (including the last day) is also acceptable.",
+            "response": "**Answer:** 7 days",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.1042155049196271,
+            "f1_score": 0.30769230769230765,
+            "llm_score": 1,
+            "response_time": 0.6460857391357422,
+            "speaker_1_memory_time": 0.04168248176574707,
+            "speaker_2_memory_time": 0.041275978088378906,
+            "token_usage": {
+                "prompt_tokens": 6279,
+                "completion_tokens": 7,
+                "total_tokens": 6286
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 441,
+                "completion_tokens": 8,
+                "total_tokens": 449
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many months have passed since I participated in two charity events in a row, on consecutive days?",
+            "answer": "2",
+            "response": "Answer: 3 months",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.30335259437561035,
+            "speaker_1_memory_time": 0.04368305206298828,
+            "speaker_2_memory_time": 0.03851890563964844,
+            "token_usage": {
+                "prompt_tokens": 3017,
+                "completion_tokens": 6,
+                "total_tokens": 3023
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "At which university did I present a poster for my undergrad course research project?",
+            "answer": "The information provided is not enough. You did not mention presenting a poster for your undergrad course research project.",
+            "response": "Answer: Harvard University",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.3371589183807373,
+            "speaker_1_memory_time": 0.45813989639282227,
+            "speaker_2_memory_time": 0.04262113571166992,
+            "token_usage": {
+                "prompt_tokens": 3154,
+                "completion_tokens": 5,
+                "total_tokens": 3159
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 425,
+                "completion_tokens": 8,
+                "total_tokens": 433
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How much will I save by taking the bus from the airport to my hotel instead of a taxi?",
+            "answer": "The information provided is not enough. You did not mention how much will the bus take.",
+            "response": "**Answer:** $50",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.367279052734375,
+            "speaker_1_memory_time": 0.04227638244628906,
+            "speaker_2_memory_time": 0.04148697853088379,
+            "token_usage": {
+                "prompt_tokens": 3721,
+                "completion_tokens": 7,
+                "total_tokens": 3728
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 429,
+                "completion_tokens": 8,
+                "total_tokens": 437
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many months have passed since I last visited a museum with a friend?",
+            "answer": "5",
+            "response": "**Answer:** 3 months",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.20386433601379395,
+            "speaker_1_memory_time": 0.04329848289489746,
+            "speaker_2_memory_time": 0.041760921478271484,
+            "token_usage": {
+                "prompt_tokens": 1844,
+                "completion_tokens": 7,
+                "total_tokens": 1851
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How many days passed between the day I started playing along to my favorite songs on my old keyboard and the day I discovered a bluegrass band?",
+            "answer": "6 days. 7 days (including the last day) is also acceptable.",
+            "response": "The user started playing along to their favorite songs on their old keyboard on **2023/03/25** and discovered a bluegrass band on **2023/03/31**. \n\nTo calculate the number of days between these two dates:\n- From **2023/03/25** to **2023/03/31** is **6 days**.\n\n**Answer:** 6 days.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.09722222222222224,
+            "f1_score": 0.1818181818181818,
+            "llm_score": 1,
+            "response_time": 1.6720716953277588,
+            "speaker_1_memory_time": 0.04644179344177246,
+            "speaker_2_memory_time": 0.04311394691467285,
+            "token_usage": {
+                "prompt_tokens": 5127,
+                "completion_tokens": 99,
+                "total_tokens": 5226
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 528,
+                "completion_tokens": 8,
+                "total_tokens": 536
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "Which three events happened in the order from first to last: the day I helped my friend prepare the nursery, the day I helped my cousin pick out stuff for her baby shower, and the day I ordered a customized phone case for my friend's birthday?",
+            "answer": "First, I helped my friend prepare the nursery, then I helped my cousin pick out stuff for her baby shower, and lastly, I ordered a customized phone case for my friend's birthday.",
+            "response": "The answer is: Helped friend prepare nursery, helped cousin pick out baby shower items, ordered customized phone case.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.3953659755189481,
+            "f1_score": 0.6511627906976744,
+            "llm_score": 1,
+            "response_time": 0.5329298973083496,
+            "speaker_1_memory_time": 0.04494810104370117,
+            "speaker_2_memory_time": 0.04191255569458008,
+            "token_usage": {
+                "prompt_tokens": 3128,
+                "completion_tokens": 24,
+                "total_tokens": 3152
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 497,
+                "completion_tokens": 8,
+                "total_tokens": 505
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "How many weeks ago did I attend the friends and family sale at Nordstrom?",
+            "answer": "2",
+            "response": "To determine how many weeks ago the user attended the friends and family sale at Nordstrom, we need to look at the timestamp provided in the memory. The memory states:\n\n\"2022/11/18 (Fri) 17:03: Attended a friends and family sale at Nordstrom\"\n\nThis indicates that the event occurred on November 18, 2022. To calculate how many weeks ago this was, we need to know the current date. Since the current date is not provided, we will assume the current date is the date of the query, which is not specified. However, if we assume the query is being made in the present day (let's say today is April 18, 2023), we can calculate the number of weeks between November 18, 2022, and April 18, 2023.\n\nFrom November 18, 2022, to April 18, 2023, is exactly 5 months. Since there are approximately 4.33 weeks in a month, we can calculate:\n\n5 months * 4.33 weeks/month \u2248 21.65 weeks\n\nRounding to the nearest whole number, this is approximately 22 weeks.\n\nTherefore, the answer is:\n\n22 weeks ago.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 3.649930715560913,
+            "speaker_1_memory_time": 0.04298043251037598,
+            "speaker_2_memory_time": 0.04025840759277344,
+            "token_usage": {
+                "prompt_tokens": 2430,
+                "completion_tokens": 285,
+                "total_tokens": 2715
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 687,
+                "completion_tokens": 11,
+                "total_tokens": 698
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many weeks ago did I meet up with my aunt and receive the crystal chandelier?",
+            "answer": "4",
+            "response": "The memories do not mention when the user met up with their aunt or received the chandelier, only that it was acquired \"today\" (March 4, 2023). Therefore, the answer is:\n\n**Today**",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.02272727272727273,
+            "f1_score": 0.0689655172413793,
+            "llm_score": 0,
+            "response_time": 0.9129612445831299,
+            "speaker_1_memory_time": 0.04387688636779785,
+            "speaker_2_memory_time": 0.04255962371826172,
+            "token_usage": {
+                "prompt_tokens": 3979,
+                "completion_tokens": 48,
+                "total_tokens": 4027
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 452,
+                "completion_tokens": 11,
+                "total_tokens": 463
+            }
+        }
+    ]
+}

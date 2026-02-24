@@ -1,0 +1,242 @@
+{
+    "6": [
+        {
+            "question": "Who did I meet with during the lunch last Tuesday?",
+            "answer": "Emma",
+            "response": "Emma",
+            "category": "temporal-reasoning",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.12293887138366699,
+            "speaker_1_memory_time": 0.0430145263671875,
+            "speaker_2_memory_time": 0.043570756912231445,
+            "token_usage": {
+                "prompt_tokens": 1626,
+                "completion_tokens": 2,
+                "total_tokens": 1628
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 399,
+                "completion_tokens": 8,
+                "total_tokens": 407
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "Who did I go with to the music event last Saturday?",
+            "answer": "my parents",
+            "response": "**Answer:** a group of friends",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.1856081485748291,
+            "speaker_1_memory_time": 0.45229077339172363,
+            "speaker_2_memory_time": 0.04154372215270996,
+            "token_usage": {
+                "prompt_tokens": 1151,
+                "completion_tokens": 8,
+                "total_tokens": 1159
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "What is the artist that I started to listen to last Friday?",
+            "answer": "a bluegrass band that features a banjo player",
+            "response": "The artist that you started to listen to last Friday is a bluegrass band featuring a banjo player.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.3684210526315789,
+            "f1_score": 0.5217391304347825,
+            "llm_score": 1,
+            "response_time": 0.4185163974761963,
+            "speaker_1_memory_time": 0.04270768165588379,
+            "speaker_2_memory_time": 0.04250502586364746,
+            "token_usage": {
+                "prompt_tokens": 2134,
+                "completion_tokens": 22,
+                "total_tokens": 2156
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 429,
+                "completion_tokens": 8,
+                "total_tokens": 437
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "I mentioned cooking something for my friend a couple of days ago. What was it?",
+            "answer": "a chocolate cake",
+            "response": "Answer: Chocolate cake",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.5,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.5164215564727783,
+            "speaker_1_memory_time": 0.041656494140625,
+            "speaker_2_memory_time": 0.04155564308166504,
+            "token_usage": {
+                "prompt_tokens": 5229,
+                "completion_tokens": 5,
+                "total_tokens": 5234
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 410,
+                "completion_tokens": 8,
+                "total_tokens": 418
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "What was the the life event of one of my relatives that I participated in a week ago?",
+            "answer": "my cousin's wedding",
+            "response": "The answer is: niece's diploma celebration.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.11111111111111109,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.20014572143554688,
+            "speaker_1_memory_time": 0.044385671615600586,
+            "speaker_2_memory_time": 0.039839744567871094,
+            "token_usage": {
+                "prompt_tokens": 1357,
+                "completion_tokens": 10,
+                "total_tokens": 1367
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What was the significant buisiness milestone I mentioned four weeks ago?",
+            "answer": "I signed a contract with my first client.",
+            "response": "The significant business milestone mentioned four weeks ago was signing a contract with the first client.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.35294117647058826,
+            "f1_score": 0.43478260869565216,
+            "llm_score": 1,
+            "response_time": 0.29831600189208984,
+            "speaker_1_memory_time": 0.04414010047912598,
+            "speaker_2_memory_time": 0.0411531925201416,
+            "token_usage": {
+                "prompt_tokens": 1315,
+                "completion_tokens": 18,
+                "total_tokens": 1333
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 424,
+                "completion_tokens": 8,
+                "total_tokens": 432
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "What gardening-related activity did I do two weeks ago?",
+            "answer": "planting 12 new tomato saplings",
+            "response": "The answer is: Attended a gardening workshop.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.25401735305786133,
+            "speaker_1_memory_time": 0.04377579689025879,
+            "speaker_2_memory_time": 0.03922319412231445,
+            "token_usage": {
+                "prompt_tokens": 1802,
+                "completion_tokens": 11,
+                "total_tokens": 1813
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "I mentioned that I participated in an art-related event two weeks ago. Where was that event held at?",
+            "answer": "The Metropolitan Museum of Art.",
+            "response": "None of the memories or original conversations mention an art-related event held two weeks prior to the timestamped memory. Therefore, the location of the event cannot be determined from the provided information.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.08333333333333333,
+            "f1_score": 0.12903225806451613,
+            "llm_score": 1,
+            "response_time": 0.5442671775817871,
+            "speaker_1_memory_time": 0.04284238815307617,
+            "speaker_2_memory_time": 0.039098262786865234,
+            "token_usage": {
+                "prompt_tokens": 1402,
+                "completion_tokens": 38,
+                "total_tokens": 1440
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 448,
+                "completion_tokens": 8,
+                "total_tokens": 456
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "Which bike did I fixed or serviced the past weekend?",
+            "answer": "road bike",
+            "response": "**Answer:** Mountain bike",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.4,
+            "llm_score": 0,
+            "response_time": 0.6478316783905029,
+            "speaker_1_memory_time": 0.04186844825744629,
+            "speaker_2_memory_time": 0.040444374084472656,
+            "token_usage": {
+                "prompt_tokens": 6317,
+                "completion_tokens": 6,
+                "total_tokens": 6323
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "What was the airline that I flied with on Valentine's day?",
+            "answer": "American Airlines",
+            "response": "Answer: American Airlines",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.5,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.20043373107910156,
+            "speaker_1_memory_time": 0.04171872138977051,
+            "speaker_2_memory_time": 0.03974580764770508,
+            "token_usage": {
+                "prompt_tokens": 1996,
+                "completion_tokens": 5,
+                "total_tokens": 2001
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ]
+}

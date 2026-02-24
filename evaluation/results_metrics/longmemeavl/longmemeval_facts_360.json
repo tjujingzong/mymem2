@@ -1,0 +1,242 @@
+{
+    "1": [
+        {
+            "question": "Which event happened first, the narrator losing their phone charger or the narrator receiving their new phone case?",
+            "answer": "Receiving the new phone case",
+            "response": "The narrator lost their phone charger first.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.25,
+            "f1_score": 0.3333333333333333,
+            "llm_score": 1,
+            "response_time": 0.274700403213501,
+            "speaker_1_memory_time": 0.04200339317321777,
+            "speaker_2_memory_time": 0.039421796798706055,
+            "token_usage": {
+                "prompt_tokens": 2415,
+                "completion_tokens": 9,
+                "total_tokens": 2424
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 419,
+                "completion_tokens": 8,
+                "total_tokens": 427
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How many months before my anniversary did Rachel get engaged?",
+            "answer": "2",
+            "response": "Answer: 2 months",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.25,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.4289536476135254,
+            "speaker_1_memory_time": 0.4424889087677002,
+            "speaker_2_memory_time": 0.04030156135559082,
+            "token_usage": {
+                "prompt_tokens": 4357,
+                "completion_tokens": 6,
+                "total_tokens": 4363
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "Who did I meet first, the woman selling jam at the farmer's market or the tourist from Australia?",
+            "answer": "the woman selling jam at the farmer's market",
+            "response": "The woman selling jam at the farmer's market.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.9,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.5604567527770996,
+            "speaker_1_memory_time": 0.03985762596130371,
+            "speaker_2_memory_time": 0.0390625,
+            "token_usage": {
+                "prompt_tokens": 4944,
+                "completion_tokens": 11,
+                "total_tokens": 4955
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 425,
+                "completion_tokens": 8,
+                "total_tokens": 433
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "Which project did I start first, the Ferrari model or the Japanese Zero fighter plane model?",
+            "answer": "Japanese Zero fighter plane model",
+            "response": "Answer: Japanese Zero fighter plane",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.6666666666666666,
+            "f1_score": 0.8000000000000002,
+            "llm_score": 1,
+            "response_time": 0.49086761474609375,
+            "speaker_1_memory_time": 0.04272747039794922,
+            "speaker_2_memory_time": 0.04301023483276367,
+            "token_usage": {
+                "prompt_tokens": 4872,
+                "completion_tokens": 7,
+                "total_tokens": 4879
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 415,
+                "completion_tokens": 8,
+                "total_tokens": 423
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "Which event did I participate in first, the volleyball league or the charity 5K run to raise money for a local children's hospital?",
+            "answer": "volleyball league",
+            "response": "The charity 5K run was participated in first.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.41622233390808105,
+            "speaker_1_memory_time": 0.03977060317993164,
+            "speaker_2_memory_time": 0.03972363471984863,
+            "token_usage": {
+                "prompt_tokens": 3322,
+                "completion_tokens": 12,
+                "total_tokens": 3334
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 426,
+                "completion_tokens": 8,
+                "total_tokens": 434
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "Which gift did I buy first, the necklace for my sister or the photo album for my mom?",
+            "answer": "the photo album for my mom",
+            "response": "The necklace was bought first.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.16666666666666669,
+            "f1_score": 0.1818181818181818,
+            "llm_score": 1,
+            "response_time": 0.24064874649047852,
+            "speaker_1_memory_time": 0.04498600959777832,
+            "speaker_2_memory_time": 0.040773868560791016,
+            "token_usage": {
+                "prompt_tokens": 2241,
+                "completion_tokens": 7,
+                "total_tokens": 2248
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "Which event happened first, my attendance at a cultural festival or the start of my Spanish classes?",
+            "answer": "Spanish classes",
+            "response": "The question cannot be answered.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.15104436874389648,
+            "speaker_1_memory_time": 0.0420079231262207,
+            "speaker_2_memory_time": 0.042278289794921875,
+            "token_usage": {
+                "prompt_tokens": 1129,
+                "completion_tokens": 7,
+                "total_tokens": 1136
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "Which event happened first, the meeting with Rachel or the pride parade?",
+            "answer": "The meeting with Rachel",
+            "response": "The meeting with Rachel happened first.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.5714285714285714,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.2836904525756836,
+            "speaker_1_memory_time": 0.04038214683532715,
+            "speaker_2_memory_time": 0.041779279708862305,
+            "token_usage": {
+                "prompt_tokens": 2554,
+                "completion_tokens": 8,
+                "total_tokens": 2562
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 410,
+                "completion_tokens": 8,
+                "total_tokens": 418
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "Who became a parent first, Rachel or Alex?",
+            "answer": "Alex",
+            "response": "Rachel\n\n**Step-by-Step Explanation:**\n\n1. **Identify the relevant memories:**\n   - Rachel's memory: \"2023/03/17 (Fri) 18:54: Sister-in-law Rachel is doing great with the twins Jackson and Julia\"\n   - Alex's memory: \"2023/03/17 (Fri) 15:27: Cousin Alex received updates about the birth mother\"\n\n2. **Analyze the content:**\n   - Rachel is mentioned as being \"doing great with the twins Jackson and Julia,\" which implies she is a parent (specifically, a mother of twins).\n   - Alex is mentioned as having \"adopted a baby girl from China in January\" and receiving updates about the birth mother, which implies she is also a parent (through adoption).\n\n3. **Determine the timeline:**\n   - Rachel's memory refers to her having twins, which is likely a recent event (as it is mentioned in the same conversation as the Art Studio Party for Olivia, which is a current event).\n   - Alex's memory explicitly states that she adopted a baby girl \"in January,\" which is a specific date in the past.\n\n4. **Compare the timelines:**\n   - Rachel's twins are mentioned in the context of a current event (March 2023), so the twins were likely born in late 2022 or early 2023.\n   - Alex's adoption occurred in January, which is earlier than Rachel's twins being born (assuming the twins were born in late 2022 or early 2023).\n\n5. **Conclusion:**\n   - Rachel became a parent (with twins) more recently than Alex, who became a parent through adoption in January. Therefore, **Rachel became a parent first**.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.0030030030030030025,
+            "f1_score": 0.01612903225806452,
+            "llm_score": 0,
+            "response_time": 4.77157735824585,
+            "speaker_1_memory_time": 0.042244672775268555,
+            "speaker_2_memory_time": 0.041290283203125,
+            "token_usage": {
+                "prompt_tokens": 1788,
+                "completion_tokens": 382,
+                "total_tokens": 2170
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 777,
+                "completion_tokens": 11,
+                "total_tokens": 788
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "How many days had passed between the day I bought a gift for my brother's graduation ceremony and the day I bought a birthday gift for my best friend?",
+            "answer": "7 days. 8 days (including the last day) is also acceptable.",
+            "response": "The question contains a contradiction. The user mentioned buying a gift for their brother's graduation on 3/8, but there is no mention of a birthday gift for a best friend. Therefore, the answer is: **Not applicable**.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.08510638297872339,
+            "f1_score": 0.10256410256410257,
+            "llm_score": 0,
+            "response_time": 0.8875594139099121,
+            "speaker_1_memory_time": 0.04671955108642578,
+            "speaker_2_memory_time": 0.04385042190551758,
+            "token_usage": {
+                "prompt_tokens": 3461,
+                "completion_tokens": 49,
+                "total_tokens": 3510
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 480,
+                "completion_tokens": 11,
+                "total_tokens": 491
+            }
+        }
+    ]
+}

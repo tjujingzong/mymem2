@@ -1,0 +1,242 @@
+{
+    "2": [
+        {
+            "question": "I'm looking back at our previous conversation about the Seco de Cordero recipe from Ancash. You mentioned using a light or medium-bodied beer, but I was wondering if you could remind me what type of beer you specifically recommended?",
+            "answer": "I recommended using a Pilsner or Lager for the recipe.",
+            "response": "Pilsner or lager",
+            "category": "single-session-assistant",
+            "bleu_score": 0.06948345122280154,
+            "f1_score": 0.4615384615384615,
+            "llm_score": 1,
+            "response_time": 0.3372013568878174,
+            "speaker_1_memory_time": 0.04093503952026367,
+            "speaker_2_memory_time": 0.039383888244628906,
+            "token_usage": {
+                "prompt_tokens": 3286,
+                "completion_tokens": 7,
+                "total_tokens": 3293
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 452,
+                "completion_tokens": 8,
+                "total_tokens": 460
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "I'm trying to recall what the designation on my jumpsuit was that helped me find the file number in the records room?",
+            "answer": "The designation on your jumpsuit was 'LIV'.",
+            "response": "LIV",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.10473871231079102,
+            "speaker_1_memory_time": 0.39748430252075195,
+            "speaker_2_memory_time": 0.03980875015258789,
+            "token_usage": {
+                "prompt_tokens": 1092,
+                "completion_tokens": 3,
+                "total_tokens": 1095
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 423,
+                "completion_tokens": 8,
+                "total_tokens": 431
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "I was looking back at our previous conversation about environmentally responsible supply chain practices, and I was wondering if you could remind me of the company you mentioned that's doing a great job with sustainability?",
+            "answer": "Patagonia",
+            "response": "Patagonia",
+            "category": "single-session-assistant",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.13063788414001465,
+            "speaker_1_memory_time": 0.03993701934814453,
+            "speaker_2_memory_time": 0.040665388107299805,
+            "token_usage": {
+                "prompt_tokens": 1470,
+                "completion_tokens": 4,
+                "total_tokens": 1474
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 430,
+                "completion_tokens": 8,
+                "total_tokens": 438
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "I'm going back to our previous conversation about traditional Indian embroidery and tailoring techniques. Can you remind me of the name of that online store based in India that sells traditional Indian fabrics, threads, and embellishments?",
+            "answer": "Nostalgia",
+            "response": "Nostalgia",
+            "category": "single-session-assistant",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.2560567855834961,
+            "speaker_1_memory_time": 0.03989911079406738,
+            "speaker_2_memory_time": 0.042169809341430664,
+            "token_usage": {
+                "prompt_tokens": 2858,
+                "completion_tokens": 5,
+                "total_tokens": 2863
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 437,
+                "completion_tokens": 8,
+                "total_tokens": 445
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "I was looking back at our previous conversation about Caribbean dishes and I was wondering, what was the name of that Jamaican dish you recommended I try with snapper that has fruit in it?",
+            "answer": "Grilled Snapper with Mango Salsa",
+            "response": "Grilled Snapper with Mango Salsa",
+            "category": "single-session-assistant",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.2189342975616455,
+            "speaker_1_memory_time": 0.042537689208984375,
+            "speaker_2_memory_time": 0.04187154769897461,
+            "token_usage": {
+                "prompt_tokens": 1726,
+                "completion_tokens": 9,
+                "total_tokens": 1735
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 440,
+                "completion_tokens": 8,
+                "total_tokens": 448
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "I'm going back to our previous conversation about music theory. You mentioned some online resources for learning music theory. Can you remind me of the website you recommended for free lessons and exercises?",
+            "answer": "MusicTheory.net",
+            "response": "MusicTheory.net",
+            "category": "single-session-assistant",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.11420631408691406,
+            "speaker_1_memory_time": 0.04046750068664551,
+            "speaker_2_memory_time": 0.03883481025695801,
+            "token_usage": {
+                "prompt_tokens": 1239,
+                "completion_tokens": 4,
+                "total_tokens": 1243
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 429,
+                "completion_tokens": 8,
+                "total_tokens": 437
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "I remember you told me to dilute tea tree oil with a carrier oil before applying it to my skin. Can you remind me what the recommended ratio is?",
+            "answer": "The recommended ratio is 1:10, meaning one part tea tree oil to ten parts carrier oil.",
+            "response": "1:10",
+            "category": "single-session-assistant",
+            "bleu_score": 4.139937718785167e-08,
+            "f1_score": 0.125,
+            "llm_score": 1,
+            "response_time": 0.22732019424438477,
+            "speaker_1_memory_time": 0.042519569396972656,
+            "speaker_2_memory_time": 0.04244422912597656,
+            "token_usage": {
+                "prompt_tokens": 2533,
+                "completion_tokens": 5,
+                "total_tokens": 2538
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 444,
+                "completion_tokens": 8,
+                "total_tokens": 452
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "I'm looking back at our previous conversation where you created two sad songs for me. Can you remind me what was the chord progression for the chorus in the second song?",
+            "answer": "C D E F G A B A G F E D C",
+            "response": "**Answer:** No information provided.",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.14882397651672363,
+            "speaker_1_memory_time": 0.03998136520385742,
+            "speaker_2_memory_time": 0.04158592224121094,
+            "token_usage": {
+                "prompt_tokens": 987,
+                "completion_tokens": 8,
+                "total_tokens": 995
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 439,
+                "completion_tokens": 8,
+                "total_tokens": 447
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "I was going through our previous conversation about high-end fashion brands, and I was wondering if you could remind me of the brand that uses wild rubber sourced from the Amazon rainforest?",
+            "answer": "Veja",
+            "response": "Veja",
+            "category": "single-session-assistant",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.1494312286376953,
+            "speaker_1_memory_time": 0.0399775505065918,
+            "speaker_2_memory_time": 0.042971134185791016,
+            "token_usage": {
+                "prompt_tokens": 1811,
+                "completion_tokens": 3,
+                "total_tokens": 1814
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 426,
+                "completion_tokens": 8,
+                "total_tokens": 434
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "I wanted to follow up on our previous conversation about fracking in the Marcellus Shale region. You mentioned that some states require fracking companies to monitor groundwater quality at nearby wells before drilling and for a certain period after drilling is complete. Can you remind me which state you mentioned as an example that has this requirement?",
+            "answer": "Pennsylvania",
+            "response": "The question is about fracking regulations in the Marcellus Shale region, specifically which state requires monitoring groundwater quality before and after drilling. However, the provided memories and original conversations only discuss fishing regulations on Lake Michigan and do not mention anything about fracking, the Marcellus Shale region, or any states with specific fracking requirements.\n\nSince there is no relevant information in the memories or original conversations to answer the question, the answer is:\n\n**No information provided.**",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 1.309250831604004,
+            "speaker_1_memory_time": 0.04082822799682617,
+            "speaker_2_memory_time": 0.04066634178161621,
+            "token_usage": {
+                "prompt_tokens": 2281,
+                "completion_tokens": 94,
+                "total_tokens": 2375
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 542,
+                "completion_tokens": 11,
+                "total_tokens": 553
+            }
+        }
+    ]
+}

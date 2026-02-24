@@ -1,0 +1,242 @@
+{
+    "7": [
+        {
+            "question": "What is the order of the three trips I took in the past three months, from earliest to latest?",
+            "answer": "I went on a day hike to Muir Woods National Monument with my family, then I went on a road trip with friends to Big Sur and Monterey, and finally I started my solo camping trip to Yosemite National Park.",
+            "response": "Answer: No memories provided.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.00034970306968015047,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.10339069366455078,
+            "speaker_1_memory_time": 0.04377174377441406,
+            "speaker_2_memory_time": 0.04315519332885742,
+            "token_usage": {
+                "prompt_tokens": 592,
+                "completion_tokens": 7,
+                "total_tokens": 599
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 455,
+                "completion_tokens": 8,
+                "total_tokens": 463
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many days passed between the day I started watering my herb garden and the day I harvested my first batch of fresh herbs?",
+            "answer": "24 days. 25 days (including the last day) is also acceptable.",
+            "response": "The user started watering the herb garden on 2023/03/22 and harvested the first batch of fresh herbs on 2023/04/15. \n\nTo calculate the number of days between these dates:\n- From March 22 to March 31: 10 days\n- April 1 to April 15: 15 days\n\nTotal days = 10 + 15 = 25\n\nAnswer: 25 days",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.0819672131147541,
+            "f1_score": 0.125,
+            "llm_score": 1,
+            "response_time": 1.737757682800293,
+            "speaker_1_memory_time": 0.0430150032043457,
+            "speaker_2_memory_time": 0.04071760177612305,
+            "token_usage": {
+                "prompt_tokens": 4914,
+                "completion_tokens": 105,
+                "total_tokens": 5019
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 533,
+                "completion_tokens": 8,
+                "total_tokens": 541
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many days had passed since I finished reading 'The Seven Husbands of Evelyn Hugo' when I attended the book reading event at the local library, where the author of 'The Silent Patient' is discussing her latest thriller novel?",
+            "answer": "18 days. 19 days (including the last day) is also acceptable.",
+            "response": "The question cannot be answered based on the provided information.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.12980013051190084,
+            "f1_score": 0.10526315789473685,
+            "llm_score": 1,
+            "response_time": 0.2700660228729248,
+            "speaker_1_memory_time": 0.046964406967163086,
+            "speaker_2_memory_time": 0.04309964179992676,
+            "token_usage": {
+                "prompt_tokens": 1864,
+                "completion_tokens": 12,
+                "total_tokens": 1876
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 461,
+                "completion_tokens": 8,
+                "total_tokens": 469
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many days did I spend on my solo camping trip to Yosemite National Park?",
+            "answer": "2 days. 3 days (including the last day) is also acceptable.",
+            "response": "The memory does not specify the duration of the trip.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.1263898051634325,
+            "f1_score": 0.11111111111111112,
+            "llm_score": 0,
+            "response_time": 0.22342872619628906,
+            "speaker_1_memory_time": 0.043860435485839844,
+            "speaker_2_memory_time": 0.04251813888549805,
+            "token_usage": {
+                "prompt_tokens": 1327,
+                "completion_tokens": 12,
+                "total_tokens": 1339
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 428,
+                "completion_tokens": 8,
+                "total_tokens": 436
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "How many days ago did I buy a smoker?",
+            "answer": "10 days ago. 11 days (including the last day) is also acceptable.",
+            "response": "The answer is: 0 days ago.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.22992465073215146,
+            "f1_score": 0.3529411764705882,
+            "llm_score": 0,
+            "response_time": 0.26994919776916504,
+            "speaker_1_memory_time": 0.04339194297790527,
+            "speaker_2_memory_time": 0.041068315505981445,
+            "token_usage": {
+                "prompt_tokens": 2081,
+                "completion_tokens": 10,
+                "total_tokens": 2091
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 423,
+                "completion_tokens": 8,
+                "total_tokens": 431
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How many weeks ago did I start using the cashback app 'Ibotta'?",
+            "answer": "3 weeks ago",
+            "response": "Answer: 4 weeks ago",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.4,
+            "f1_score": 0.5714285714285715,
+            "llm_score": 0,
+            "response_time": 0.3436319828033447,
+            "speaker_1_memory_time": 0.04326033592224121,
+            "speaker_2_memory_time": 0.04309868812561035,
+            "token_usage": {
+                "prompt_tokens": 3219,
+                "completion_tokens": 7,
+                "total_tokens": 3226
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many days ago did I attend the Maundy Thursday service at the Episcopal Church?",
+            "answer": "4 days.",
+            "response": "Answer: 1 day ago",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.3271465301513672,
+            "speaker_1_memory_time": 0.044004201889038086,
+            "speaker_2_memory_time": 0.04239344596862793,
+            "token_usage": {
+                "prompt_tokens": 3147,
+                "completion_tokens": 7,
+                "total_tokens": 3154
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "Which event happened first, my cousin's wedding or Michael's engagement party?",
+            "answer": "Michael's engagement party",
+            "response": "The answer is: cousin's wedding.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.1870720386505127,
+            "speaker_1_memory_time": 0.4441719055175781,
+            "speaker_2_memory_time": 0.04157376289367676,
+            "token_usage": {
+                "prompt_tokens": 1331,
+                "completion_tokens": 9,
+                "total_tokens": 1340
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many months ago did I attend the Seattle International Film Festival?",
+            "answer": "4 months ago",
+            "response": "The Seattle International Film Festival was attended on 2021/06/01. Assuming today's date is 2023/12/01, the event occurred 2 years and 6 months ago, which is 30 months ago. \n\nAnswer: 30 months ago.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.05128205128205127,
+            "f1_score": 0.14285714285714285,
+            "llm_score": 1,
+            "response_time": 1.0629189014434814,
+            "speaker_1_memory_time": 0.04350733757019043,
+            "speaker_2_memory_time": 0.04267311096191406,
+            "token_usage": {
+                "prompt_tokens": 3010,
+                "completion_tokens": 67,
+                "total_tokens": 3077
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 468,
+                "completion_tokens": 8,
+                "total_tokens": 476
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many days ago did I attend a baking class at a local culinary school when I made my friend's birthday cake?",
+            "answer": "21 days. 22 days (including the last day) is also acceptable.",
+            "response": "The user attended a baking class on 2022/03/21 and made a friend's birthday cake on 2022/04/10. The difference between these dates is 19 days. Therefore, the answer is:\n\n**19 days**",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.15384615384615385,
+            "f1_score": 0.16666666666666669,
+            "llm_score": 0,
+            "response_time": 1.2842726707458496,
+            "speaker_1_memory_time": 0.04196453094482422,
+            "speaker_2_memory_time": 0.04100823402404785,
+            "token_usage": {
+                "prompt_tokens": 5793,
+                "completion_tokens": 61,
+                "total_tokens": 5854
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 487,
+                "completion_tokens": 11,
+                "total_tokens": 498
+            }
+        }
+    ]
+}

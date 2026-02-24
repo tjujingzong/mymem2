@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "How many items of clothing do I need to pick up or return from a store?",
+            "answer": "3",
+            "response": "Answer: Two items.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2454845905303955,
+            "speaker_1_memory_time": 0.3379240036010742,
+            "speaker_2_memory_time": 0.034758806228637695,
+            "token_usage": {
+                "prompt_tokens": 2498,
+                "completion_tokens": 6,
+                "total_tokens": 2504
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many plants did I acquire in the last month?",
+            "answer": "3",
+            "response": "**Answer:** Three plants.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.3662385940551758,
+            "speaker_1_memory_time": 0.04300737380981445,
+            "speaker_2_memory_time": 0.044097900390625,
+            "token_usage": {
+                "prompt_tokens": 3511,
+                "completion_tokens": 7,
+                "total_tokens": 3518
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many model kits have I worked on or bought?",
+            "answer": "I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale not mentioned), Tamiya 1/48 scale Spitfire Mk.V, 1/16 scale German Tiger I tank, 1/72 scale B-29 bomber, and 1/24 scale '69 Camaro.",
+            "response": "Answer: Two model kits.",
+            "category": "multi-session",
+            "bleu_score": 0.00043559465324492005,
+            "f1_score": 0.0975609756097561,
+            "llm_score": 0,
+            "response_time": 0.42970800399780273,
+            "speaker_1_memory_time": 0.04170989990234375,
+            "speaker_2_memory_time": 0.04223299026489258,
+            "token_usage": {
+                "prompt_tokens": 4117,
+                "completion_tokens": 7,
+                "total_tokens": 4124
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 480,
+                "completion_tokens": 8,
+                "total_tokens": 488
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many projects have I led or am currently leading?",
+            "answer": "2",
+            "response": "Answer: One project.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.34188175201416016,
+            "speaker_1_memory_time": 0.09415173530578613,
+            "speaker_2_memory_time": 0.03919410705566406,
+            "token_usage": {
+                "prompt_tokens": 3412,
+                "completion_tokens": 6,
+                "total_tokens": 3418
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 403,
+                "completion_tokens": 8,
+                "total_tokens": 411
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many different doctors did I visit?",
+            "answer": "I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.",
+            "response": "Answer: Three doctors.",
+            "category": "multi-session",
+            "bleu_score": 0.04864805010017438,
+            "f1_score": 0.11764705882352941,
+            "llm_score": 1,
+            "response_time": 0.4871854782104492,
+            "speaker_1_memory_time": 0.04395484924316406,
+            "speaker_2_memory_time": 0.04066157341003418,
+            "token_usage": {
+                "prompt_tokens": 4956,
+                "completion_tokens": 6,
+                "total_tokens": 4962
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many days did I spend on camping trips in the United States this year?",
+            "answer": "8 days.",
+            "response": "Answer: 3 days",
+            "category": "multi-session",
+            "bleu_score": 0.25,
+            "f1_score": 0.4,
+            "llm_score": 0,
+            "response_time": 0.32297635078430176,
+            "speaker_1_memory_time": 0.04125404357910156,
+            "speaker_2_memory_time": 0.04266238212585449,
+            "token_usage": {
+                "prompt_tokens": 3187,
+                "completion_tokens": 6,
+                "total_tokens": 3193
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 410,
+                "completion_tokens": 8,
+                "total_tokens": 418
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How many weeks did it take me to watch all the Marvel Cinematic Universe movies and the main Star Wars films?",
+            "answer": "3.5 weeks",
+            "response": "**Answer:** 2 weeks",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.3333333333333333,
+            "llm_score": 0,
+            "response_time": 0.3448038101196289,
+            "speaker_1_memory_time": 0.042191267013549805,
+            "speaker_2_memory_time": 0.04284167289733887,
+            "token_usage": {
+                "prompt_tokens": 3347,
+                "completion_tokens": 7,
+                "total_tokens": 3354
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 420,
+                "completion_tokens": 8,
+                "total_tokens": 428
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How much total money have I spent on bike-related expenses since the start of the year?",
+            "answer": "$185",
+            "response": "Answer: No information provided.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.3027641773223877,
+            "speaker_1_memory_time": 0.04390835762023926,
+            "speaker_2_memory_time": 0.041285037994384766,
+            "token_usage": {
+                "prompt_tokens": 2859,
+                "completion_tokens": 7,
+                "total_tokens": 2866
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How many hours in total did I spend driving to my three road trip destinations combined?",
+            "answer": "15 hours for getting to the three destinations (or 30 hours for the round trip)",
+            "response": "**Answer:** 19 hours",
+            "category": "multi-session",
+            "bleu_score": 0.040581558419793724,
+            "f1_score": 0.13333333333333333,
+            "llm_score": 1,
+            "response_time": 0.19245004653930664,
+            "speaker_1_memory_time": 0.04241490364074707,
+            "speaker_2_memory_time": 0.04044294357299805,
+            "token_usage": {
+                "prompt_tokens": 1565,
+                "completion_tokens": 8,
+                "total_tokens": 1573
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 430,
+                "completion_tokens": 8,
+                "total_tokens": 438
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What time did I go to bed on the day before I had a doctor's appointment?",
+            "answer": "2 AM",
+            "response": "**Answer:** Not mentioned.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2509133815765381,
+            "speaker_1_memory_time": 0.04217982292175293,
+            "speaker_2_memory_time": 0.043640851974487305,
+            "token_usage": {
+                "prompt_tokens": 2430,
+                "completion_tokens": 7,
+                "total_tokens": 2437
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 412,
+                "completion_tokens": 8,
+                "total_tokens": 420
+            }
+        }
+    ]
+}

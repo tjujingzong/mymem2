@@ -1,0 +1,242 @@
+{
+    "1": [
+        {
+            "question": "What certification did I complete last month?",
+            "answer": "Data Science",
+            "response": "Data Science certification",
+            "category": "single-session-user",
+            "bleu_score": 0.6666666666666666,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.2803986072540283,
+            "speaker_1_memory_time": 0.0430760383605957,
+            "speaker_2_memory_time": 0.04160714149475098,
+            "token_usage": {
+                "prompt_tokens": 2985,
+                "completion_tokens": 4,
+                "total_tokens": 2989
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 399,
+                "completion_tokens": 8,
+                "total_tokens": 407
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many bikes do I own?",
+            "answer": "three",
+            "response": "3",
+            "category": "single-session-user",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.24406695365905762,
+            "speaker_1_memory_time": 0.04362010955810547,
+            "speaker_2_memory_time": 0.04412198066711426,
+            "token_usage": {
+                "prompt_tokens": 2942,
+                "completion_tokens": 2,
+                "total_tokens": 2944
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 396,
+                "completion_tokens": 8,
+                "total_tokens": 404
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How old was I when my grandma gave me the silver necklace?",
+            "answer": "18",
+            "response": "18 years old",
+            "category": "single-session-user",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.1872239112854004,
+            "speaker_1_memory_time": 0.04702448844909668,
+            "speaker_2_memory_time": 0.04140520095825195,
+            "token_usage": {
+                "prompt_tokens": 1922,
+                "completion_tokens": 5,
+                "total_tokens": 1927
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many amateur comedians did I watch perform at the open mic night?",
+            "answer": "10",
+            "response": "10",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.2790346145629883,
+            "speaker_1_memory_time": 0.048371076583862305,
+            "speaker_2_memory_time": 0.044397592544555664,
+            "token_usage": {
+                "prompt_tokens": 3137,
+                "completion_tokens": 3,
+                "total_tokens": 3140
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "What is my preferred gin-to-vermouth ratio for a classic gin martini?",
+            "answer": "3:1",
+            "response": "3:1 ratio with a dash of citrus bitters",
+            "category": "single-session-user",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.2222222222222222,
+            "llm_score": 1,
+            "response_time": 0.3895895481109619,
+            "speaker_1_memory_time": 0.04572606086730957,
+            "speaker_2_memory_time": 0.04588007926940918,
+            "token_usage": {
+                "prompt_tokens": 3287,
+                "completion_tokens": 12,
+                "total_tokens": 3299
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 418,
+                "completion_tokens": 8,
+                "total_tokens": 426
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "What is the name of my cat?",
+            "answer": "Luna",
+            "response": "Luna",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.11436295509338379,
+            "speaker_1_memory_time": 0.04475092887878418,
+            "speaker_2_memory_time": 0.0422971248626709,
+            "token_usage": {
+                "prompt_tokens": 1519,
+                "completion_tokens": 3,
+                "total_tokens": 1522
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 396,
+                "completion_tokens": 8,
+                "total_tokens": 404
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "How much RAM did I upgrade my laptop to?",
+            "answer": "16GB",
+            "response": "16GB",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.41167593002319336,
+            "speaker_1_memory_time": 0.04547262191772461,
+            "speaker_2_memory_time": 0.044386863708496094,
+            "token_usage": {
+                "prompt_tokens": 4565,
+                "completion_tokens": 4,
+                "total_tokens": 4569
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How many largemouth bass did I catch on my fishing trip to Lake Michigan?",
+            "answer": "12",
+            "response": "12",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.3092517852783203,
+            "speaker_1_memory_time": 0.04551196098327637,
+            "speaker_2_memory_time": 0.043372154235839844,
+            "token_usage": {
+                "prompt_tokens": 3497,
+                "completion_tokens": 3,
+                "total_tokens": 3500
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "What brand are my favorite running shoes?",
+            "answer": "Nike",
+            "response": "Answer: Nike",
+            "category": "single-session-user",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.31049489974975586,
+            "speaker_1_memory_time": 0.450437068939209,
+            "speaker_2_memory_time": 0.04418373107910156,
+            "token_usage": {
+                "prompt_tokens": 3027,
+                "completion_tokens": 4,
+                "total_tokens": 3031
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 398,
+                "completion_tokens": 8,
+                "total_tokens": 406
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "What breed is my dog?",
+            "answer": "Golden Retriever",
+            "response": "The question asks about the breed of the dog, and the conversation explicitly mentions \"a Golden Retriever like Max.\" Therefore, the answer is:\n\n**Golden Retriever**",
+            "category": "single-session-user",
+            "bleu_score": 0.057142857142857134,
+            "f1_score": 0.16666666666666669,
+            "llm_score": 1,
+            "response_time": 0.595362663269043,
+            "speaker_1_memory_time": 0.045784711837768555,
+            "speaker_2_memory_time": 0.04770851135253906,
+            "token_usage": {
+                "prompt_tokens": 2153,
+                "completion_tokens": 37,
+                "total_tokens": 2190
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 431,
+                "completion_tokens": 11,
+                "total_tokens": 442
+            }
+        }
+    ]
+}

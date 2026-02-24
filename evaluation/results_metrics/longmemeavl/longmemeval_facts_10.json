@@ -1,0 +1,242 @@
+{
+    "9": [
+        {
+            "question": "Where did I buy my new tennis racket from?",
+            "answer": "the sports store downtown",
+            "response": "**Answer:** sports store downtown",
+            "category": "single-session-user",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.75,
+            "llm_score": 1,
+            "response_time": 0.24711298942565918,
+            "speaker_1_memory_time": 0.04771113395690918,
+            "speaker_2_memory_time": 0.04129171371459961,
+            "token_usage": {
+                "prompt_tokens": 2429,
+                "completion_tokens": 7,
+                "total_tokens": 2436
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "What degree did I graduate with?",
+            "answer": "Business Administration",
+            "response": "Business Administration",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.20479702949523926,
+            "speaker_1_memory_time": 0.442216157913208,
+            "speaker_2_memory_time": 0.04272270202636719,
+            "token_usage": {
+                "prompt_tokens": 1912,
+                "completion_tokens": 3,
+                "total_tokens": 1915
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 397,
+                "completion_tokens": 8,
+                "total_tokens": 405
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What is the name of the playlist I created on Spotify?",
+            "answer": "Summer Vibes",
+            "response": "**Answer:** Summer Vibes",
+            "category": "single-session-user",
+            "bleu_score": 0.25,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.20798349380493164,
+            "speaker_1_memory_time": 0.042031049728393555,
+            "speaker_2_memory_time": 0.0447697639465332,
+            "token_usage": {
+                "prompt_tokens": 1865,
+                "completion_tokens": 7,
+                "total_tokens": 1872
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "Where did I redeem a $5 coupon on coffee creamer?",
+            "answer": "Target",
+            "response": "Target",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.08229541778564453,
+            "speaker_1_memory_time": 0.04227900505065918,
+            "speaker_2_memory_time": 0.040314435958862305,
+            "token_usage": {
+                "prompt_tokens": 1238,
+                "completion_tokens": 2,
+                "total_tokens": 1240
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 401,
+                "completion_tokens": 8,
+                "total_tokens": 409
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "Where do I take yoga classes?",
+            "answer": "Serenity Yoga",
+            "response": "Answer: At the community center.",
+            "category": "single-session-user",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.10849928855895996,
+            "speaker_1_memory_time": 0.04239511489868164,
+            "speaker_2_memory_time": 0.04213404655456543,
+            "token_usage": {
+                "prompt_tokens": 578,
+                "completion_tokens": 8,
+                "total_tokens": 586
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 402,
+                "completion_tokens": 8,
+                "total_tokens": 410
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How long is my daily commute to work?",
+            "answer": "45 minutes each way",
+            "response": "45 minutes each way",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.14169573783874512,
+            "speaker_1_memory_time": 0.0429081916809082,
+            "speaker_2_memory_time": 0.04160451889038086,
+            "token_usage": {
+                "prompt_tokens": 1172,
+                "completion_tokens": 6,
+                "total_tokens": 1178
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "What play did I attend at the local community theater?",
+            "answer": "The Glass Menagerie",
+            "response": "The Glass Menagerie",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.15396571159362793,
+            "speaker_1_memory_time": 0.04169058799743652,
+            "speaker_2_memory_time": 0.041910648345947266,
+            "token_usage": {
+                "prompt_tokens": 1501,
+                "completion_tokens": 6,
+                "total_tokens": 1507
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "What color did I repaint my bedroom walls?",
+            "answer": "a lighter shade of gray",
+            "response": "Answer: Lighter shade of gray",
+            "category": "single-session-user",
+            "bleu_score": 0.6666666666666666,
+            "f1_score": 0.8000000000000002,
+            "llm_score": 1,
+            "response_time": 0.20899462699890137,
+            "speaker_1_memory_time": 0.042948246002197266,
+            "speaker_2_memory_time": 0.04201149940490723,
+            "token_usage": {
+                "prompt_tokens": 1757,
+                "completion_tokens": 8,
+                "total_tokens": 1765
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "When did I volunteer at the local animal shelter's fundraising dinner?",
+            "answer": "February 14th",
+            "response": "Answer: Valentine's Day",
+            "category": "single-session-user",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.34336304664611816,
+            "speaker_1_memory_time": 0.04470419883728027,
+            "speaker_2_memory_time": 0.04137063026428223,
+            "token_usage": {
+                "prompt_tokens": 3355,
+                "completion_tokens": 6,
+                "total_tokens": 3361
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "What was my last name before I changed it?",
+            "answer": "Johnson",
+            "response": "Answer: Johnson",
+            "category": "single-session-user",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.15675568580627441,
+            "speaker_1_memory_time": 0.04206657409667969,
+            "speaker_2_memory_time": 0.04274129867553711,
+            "token_usage": {
+                "prompt_tokens": 1650,
+                "completion_tokens": 4,
+                "total_tokens": 1654
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 400,
+                "completion_tokens": 8,
+                "total_tokens": 408
+            }
+        }
+    ]
+}

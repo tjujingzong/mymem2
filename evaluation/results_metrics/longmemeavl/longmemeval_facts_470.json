@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "I was going through our previous conversation about The Library of Babel, and I wanted to confirm - what did Borges say about the center and circumference of the Library?",
+            "answer": "According to Borges, 'The Library is a sphere whose exact center is any one of its hexagons and whose circumference is inaccessible.'",
+            "response": "Answer: Borges did not mention the Library of Babel's center or circumference.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.2053668476130368,
+            "f1_score": 0.3125,
+            "llm_score": 0,
+            "response_time": 0.48650693893432617,
+            "speaker_1_memory_time": 0.40040016174316406,
+            "speaker_2_memory_time": 0.04143834114074707,
+            "token_usage": {
+                "prompt_tokens": 3270,
+                "completion_tokens": 18,
+                "total_tokens": 3288
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 463,
+                "completion_tokens": 8,
+                "total_tokens": 471
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "I remember you provided a list of 100 prompt parameters that I can specify to influence your output. Can you remind me what was the 27th parameter on that list?",
+            "answer": "The 27th parameter was 'Sound effects (e.g., ambient, diegetic, non-diegetic, etc.)'.",
+            "response": "Answer: No relevant information found.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.02230257790228158,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.20940327644348145,
+            "speaker_1_memory_time": 0.04433083534240723,
+            "speaker_2_memory_time": 0.04126930236816406,
+            "token_usage": {
+                "prompt_tokens": 1691,
+                "completion_tokens": 8,
+                "total_tokens": 1699
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 456,
+                "completion_tokens": 8,
+                "total_tokens": 464
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "I'm looking back at our previous conversation about building a cocktail bar. You recommended five bottles to make the widest variety of gin-based cocktails. Can you remind me what the fifth bottle was?",
+            "answer": "Absinthe",
+            "response": "**Answer:** Campari",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2655024528503418,
+            "speaker_1_memory_time": 0.04351377487182617,
+            "speaker_2_memory_time": 0.044040679931640625,
+            "token_usage": {
+                "prompt_tokens": 2632,
+                "completion_tokens": 6,
+                "total_tokens": 2638
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 432,
+                "completion_tokens": 8,
+                "total_tokens": 440
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "I was going through our previous chat and I wanted to clarify something about the prayer of beginners in Tanqueray's Spiritual Life treatise. Can you remind me which chapter of the second part discusses vocal prayer and meditation?",
+            "answer": "Chapter 4 of Book 1, titled 'Vocal Prayer and Meditation'.",
+            "response": "The answer is: Chapter 3.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.12124938447912854,
+            "f1_score": 0.13333333333333333,
+            "llm_score": 0,
+            "response_time": 0.37223315238952637,
+            "speaker_1_memory_time": 0.04337787628173828,
+            "speaker_2_memory_time": 0.04173159599304199,
+            "token_usage": {
+                "prompt_tokens": 3317,
+                "completion_tokens": 9,
+                "total_tokens": 3326
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 452,
+                "completion_tokens": 8,
+                "total_tokens": 460
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "I'm planning my trip to Speyer again and I wanted to confirm, what's the phone number of the Speyer tourism board that you provided me earlier?",
+            "answer": "+49 (0) 62 32 / 14 23 - 0",
+            "response": "+49 (0) 62 32 / 14 23 - 0",
+            "category": "single-session-assistant",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.3611609935760498,
+            "speaker_1_memory_time": 0.041321516036987305,
+            "speaker_2_memory_time": 0.04062366485595703,
+            "token_usage": {
+                "prompt_tokens": 1430,
+                "completion_tokens": 23,
+                "total_tokens": 1453
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 462,
+                "completion_tokens": 8,
+                "total_tokens": 470
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "I'm planning to visit the Vatican again and I was wondering if you could remind me of the name of that famous deli near the Vatican that serves the best cured meats and cheeses?",
+            "answer": "Roscioli",
+            "response": "None",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.27366042137145996,
+            "speaker_1_memory_time": 0.04201459884643555,
+            "speaker_2_memory_time": 0.043091535568237305,
+            "token_usage": {
+                "prompt_tokens": 3237,
+                "completion_tokens": 2,
+                "total_tokens": 3239
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 427,
+                "completion_tokens": 8,
+                "total_tokens": 435
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "I'm going back to our previous conversation about DIY home decor projects using recycled materials. Can you remind me what sealant you recommended for the newspaper flower vase?",
+            "answer": "Mod Podge or another sealant",
+            "response": "Answer: Mod Podge sealant.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.5,
+            "f1_score": 0.6666666666666665,
+            "llm_score": 1,
+            "response_time": 0.12792325019836426,
+            "speaker_1_memory_time": 0.04304027557373047,
+            "speaker_2_memory_time": 0.0440516471862793,
+            "token_usage": {
+                "prompt_tokens": 603,
+                "completion_tokens": 9,
+                "total_tokens": 612
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 432,
+                "completion_tokens": 8,
+                "total_tokens": 440
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "I was thinking about our previous conversation about data privacy and security. You mentioned that companies use two-factor authentication to enhance security. Can you remind me what kind of two-factor authentication methods you were referring to?",
+            "answer": "I mentioned biometric authentication or one-time passwords (OTP) as examples of two-factor authentication methods.",
+            "response": "Answer: SMS codes and apps.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.03423586234882512,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.14902424812316895,
+            "speaker_1_memory_time": 0.042339324951171875,
+            "speaker_2_memory_time": 0.04106855392456055,
+            "token_usage": {
+                "prompt_tokens": 1032,
+                "completion_tokens": 8,
+                "total_tokens": 1040
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 452,
+                "completion_tokens": 8,
+                "total_tokens": 460
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "I'm going back to our previous conversation about the grant aim page on molecular subtypes and endometrial cancer. Can you remind me what were the three objectives we outlined for the project?",
+            "answer": "The three objectives were: 1) to identify molecular subtypes of endometrial cancer, 2) to investigate their clinical and biological significance, and 3) to develop biomarkers for early detection and prognosis.",
+            "response": "Answer: Three objectives were outlined.",
+            "category": "single-session-assistant",
+            "bleu_score": 0.009831276237893144,
+            "f1_score": 0.12903225806451613,
+            "llm_score": 0,
+            "response_time": 0.11091279983520508,
+            "speaker_1_memory_time": 0.041864871978759766,
+            "speaker_2_memory_time": 0.04230856895446777,
+            "token_usage": {
+                "prompt_tokens": 609,
+                "completion_tokens": 8,
+                "total_tokens": 617
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 473,
+                "completion_tokens": 8,
+                "total_tokens": 481
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "I was going through our previous conversation about the impact of the political climate in Catalonia on its literature and music. Can you remind me of the example you gave of a Spanish-Catalan singer-songwriter who supports unity between Catalonia and Spain?",
+            "answer": "Manolo Garc\u00eda",
+            "response": "Marina Rossell",
+            "category": "single-session-assistant",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.11696386337280273,
+            "speaker_1_memory_time": 0.046022891998291016,
+            "speaker_2_memory_time": 0.04023623466491699,
+            "token_usage": {
+                "prompt_tokens": 1094,
+                "completion_tokens": 5,
+                "total_tokens": 1099
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 440,
+                "completion_tokens": 8,
+                "total_tokens": 448
+            }
+        }
+    ]
+}

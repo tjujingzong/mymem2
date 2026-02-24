@@ -15,11 +15,6 @@ USE_SENTENCE_MODE="${USE_SENTENCE_MODE:-0}"
 # - 默认 0；设为 1 则启用
 USE_HYBRID_MODE="${USE_HYBRID_MODE:-0}"
 
-# 输出文件夹
-OUTPUT_SEARCH="results_search"
-OUTPUT_METRICS="results_metrics"
-OUTPUT_SCORES="results_scores"
-
 # 从指定步骤开始运行（1-4）
 # 用法示例：
 #   bash run_once.sh --from_step 2
@@ -35,13 +30,21 @@ if ! [[ "$FROM_STEP" =~ ^[1-4]$ ]]; then
     exit 1
 fi
 
+# 输出文件夹
+OUTPUT_SEARCH="results_search/longmemeavl"
+OUTPUT_METRICS="results_metrics/longmemeavl"
+OUTPUT_SCORES="results_scores/longmemeavl"
+
 # MEM0_VECTOR_PATH（向量存储路径）
-VECTOR_PATH="/root/ljz/mymem2/evaluation/local_mem2/faiss_8b-short"
+VECTOR_PATH="/root/ljz/mymem2/evaluation/local_longmemeval/10"
+
+# 数据集路径（默认保持 locomo10.json 不变；如需 longmemeval 请覆盖该变量）
+DATASET_PATH="${DATASET_PATH:-dataset/longmemeavl/longmemeval_as_locomo_10.json}"
 
 # 输出文件名配置
-SEARCH_FILENAME="mem0_results_top_10-8b-short.json"
-METRICS_FILENAME="evaluation_metrics_run-8b-short.json"
-SCORES_FILENAME="scores_output_run-8b-short.txt"
+SEARCH_FILENAME="longmemeval_facts_10.json"
+METRICS_FILENAME="longmemeval_facts_10.json"
+SCORES_FILENAME="longmemeval_facts_10.txt"
 
 # run_experiments.py 参数配置
 TECHNIQUE_TYPE="mem0"
@@ -68,7 +71,7 @@ echo ""
 if [ "$FROM_STEP" -le 1 ]; then
     echo "[步骤1] 执行: python run_experiments.py --technique_type ${TECHNIQUE_TYPE} --method add"
     echo "环境变量: MEM0_VECTOR_PATH=$VECTOR_PATH"
-    MEM0_VECTOR_PATH="$VECTOR_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method add
+    MEM0_VECTOR_PATH="$VECTOR_PATH" DATASET_PATH="$DATASET_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method add --data_path "$DATASET_PATH"
     if [ $? -eq 0 ]; then
         echo "✓ 步骤1完成"
     else
@@ -88,7 +91,7 @@ if [ "$FROM_STEP" -le 2 ]; then
     
     echo "[步骤2] 执行: python run_experiments.py --technique_type ${TECHNIQUE_TYPE} --method search --top_k ${TOP_K} --output_folder ${OUTPUT_SEARCH}/"
     echo "环境变量: MEM0_VECTOR_PATH=$VECTOR_PATH"
-    MEM0_VECTOR_PATH="$VECTOR_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method search --top_k "$TOP_K" --output_folder "${OUTPUT_SEARCH}/"
+    MEM0_VECTOR_PATH="$VECTOR_PATH" DATASET_PATH="$DATASET_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method search --top_k "$TOP_K" --output_folder "${OUTPUT_SEARCH}/" --data_path "$DATASET_PATH"
     if [ $? -eq 0 ]; then
         echo "✓ 步骤2完成"
         # 重命名输出文件以区分不同运行
@@ -120,9 +123,9 @@ if [ "$FROM_STEP" -le 3 ]; then
     fi
 
     if [ "$USE_LLM_DYNAMIC_EVAL" = "1" ] || [ "$USE_LLM_DYNAMIC_EVAL" = "true" ] || [ "$USE_LLM_DYNAMIC_EVAL" = "TRUE" ]; then
-        echo "[步骤3] 执行: python llm_evals.py --input_file ${SEARCH_OUTPUT_FILE} --output_file ${METRICS_OUTPUT_FILE}"
-        echo "启用 LLM 动态评估（按需指针回溯原文）。如需指定评估模型，可设置 EVAL_MODEL；如需指定数据集，可设置 EVAL_DATASET_FILE。"
-        python llm_evals.py --input_file "$SEARCH_OUTPUT_FILE" --output_file "$METRICS_OUTPUT_FILE"
+        echo "[步骤3] 执行: python llm_evals.py --input_file ${SEARCH_OUTPUT_FILE} --output_file ${METRICS_OUTPUT_FILE} --dataset_file ${DATASET_PATH}"
+        echo "启用 LLM 动态评估（按需指针回溯原文）。如需指定评估模型，可设置 EVAL_MODEL。"
+        python llm_evals.py --input_file "$SEARCH_OUTPUT_FILE" --output_file "$METRICS_OUTPUT_FILE" --dataset_file "$DATASET_PATH"
     else
         echo "[步骤3] 执行: python evals.py --input_file ${SEARCH_OUTPUT_FILE} --output_file ${METRICS_OUTPUT_FILE}"
         python evals.py --input_file "$SEARCH_OUTPUT_FILE" --output_file "$METRICS_OUTPUT_FILE"
@@ -168,4 +171,3 @@ echo "  - Search结果: ${SEARCH_OUTPUT_FILE}"
 echo "  - Metrics结果: ${METRICS_OUTPUT_FILE}"
 echo "  - Scores结果: ${SCORES_OUTPUT_FILE}"
 echo "=========================================="
-

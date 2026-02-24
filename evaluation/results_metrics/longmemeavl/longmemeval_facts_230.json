@@ -1,0 +1,242 @@
+{
+    "2": [
+        {
+            "question": "What is the total number of siblings I have?",
+            "answer": "4",
+            "response": "**Answer:** 4 siblings",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.3836708068847656,
+            "speaker_1_memory_time": 0.04299521446228027,
+            "speaker_2_memory_time": 0.038964271545410156,
+            "token_usage": {
+                "prompt_tokens": 3725,
+                "completion_tokens": 7,
+                "total_tokens": 3732
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How much earlier do I wake up on Fridays compared to other weekdays?",
+            "answer": "30 minutes",
+            "response": "Answer: 1 hour earlier",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.13736224174499512,
+            "speaker_1_memory_time": 0.04045867919921875,
+            "speaker_2_memory_time": 0.040682315826416016,
+            "token_usage": {
+                "prompt_tokens": 1131,
+                "completion_tokens": 7,
+                "total_tokens": 1138
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 410,
+                "completion_tokens": 8,
+                "total_tokens": 418
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How many pages do I have left to read in 'Sapiens'?",
+            "answer": "The information provided is not enough. You did not mention how many paged do you have left to read in 'Sapiens'.",
+            "response": "**Answer:** 0 pages left to read.",
+            "category": "multi-session",
+            "bleu_score": 0.12262648039048077,
+            "f1_score": 0.23999999999999996,
+            "llm_score": 0,
+            "response_time": 0.39896249771118164,
+            "speaker_1_memory_time": 0.042127370834350586,
+            "speaker_2_memory_time": 0.0428926944732666,
+            "token_usage": {
+                "prompt_tokens": 3447,
+                "completion_tokens": 11,
+                "total_tokens": 3458
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 437,
+                "completion_tokens": 8,
+                "total_tokens": 445
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many fun runs did I miss in March due to work commitments?",
+            "answer": "2",
+            "response": "**Answer:** 1",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.4746584892272949,
+            "speaker_1_memory_time": 0.04268240928649902,
+            "speaker_2_memory_time": 0.040184736251831055,
+            "token_usage": {
+                "prompt_tokens": 4785,
+                "completion_tokens": 6,
+                "total_tokens": 4791
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How much discount will I get on my next purchase at FreshMart?",
+            "answer": "$5",
+            "response": "**Answer:** $5 discount",
+            "category": "multi-session",
+            "bleu_score": 0.2222222222222222,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.1910388469696045,
+            "speaker_1_memory_time": 0.04284167289733887,
+            "speaker_2_memory_time": 0.04102730751037598,
+            "token_usage": {
+                "prompt_tokens": 1679,
+                "completion_tokens": 7,
+                "total_tokens": 1686
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How many minutes did I exceed my target time by in the marathon?",
+            "answer": "12",
+            "response": "**Answer:** 22 minutes",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.35189270973205566,
+            "speaker_1_memory_time": 0.4519338607788086,
+            "speaker_2_memory_time": 0.04237103462219238,
+            "token_usage": {
+                "prompt_tokens": 2899,
+                "completion_tokens": 8,
+                "total_tokens": 2907
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 410,
+                "completion_tokens": 8,
+                "total_tokens": 418
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How much have I made from selling eggs this month?",
+            "answer": "$120",
+            "response": "**Answer:** $1200",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.5458855628967285,
+            "speaker_1_memory_time": 0.04186367988586426,
+            "speaker_2_memory_time": 0.041200876235961914,
+            "token_usage": {
+                "prompt_tokens": 5006,
+                "completion_tokens": 9,
+                "total_tokens": 5015
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What is the total cost of my recently purchased headphones and the iPad?",
+            "answer": "The information provided is not enough. You mentioned purchasing a headphone, but you did not mention the iPad.",
+            "response": "The question asks for the total cost of the recently purchased headphones and the iPad. However, there is no mention of an iPad in the provided memories or original conversations. The only information available is about the Sony WH-1000XM4 headphones costing $378. Since the cost of the iPad is not provided, it is not possible to calculate the total cost.\n\nAnswer: No information on iPad cost.",
+            "category": "multi-session",
+            "bleu_score": 0.15999999999999998,
+            "f1_score": 0.2545454545454546,
+            "llm_score": 1,
+            "response_time": 1.2575500011444092,
+            "speaker_1_memory_time": 0.04159212112426758,
+            "speaker_2_memory_time": 0.04055070877075195,
+            "token_usage": {
+                "prompt_tokens": 2825,
+                "completion_tokens": 85,
+                "total_tokens": 2910
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 503,
+                "completion_tokens": 8,
+                "total_tokens": 511
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "What was the page count of the two novels I finished in January and March?",
+            "answer": "856",
+            "response": "The question asks about the page count of two novels finished in January and March. However, the memories and original conversations only mention a 416-page novel and \"The Power\" (341 pages), both of which were read in December and not in January or March. There is no information about novels read in January or March. Therefore, the answer is:\n\n**No information available.**",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 1.139829397201538,
+            "speaker_1_memory_time": 0.041481971740722656,
+            "speaker_2_memory_time": 0.03928494453430176,
+            "token_usage": {
+                "prompt_tokens": 2235,
+                "completion_tokens": 82,
+                "total_tokens": 2317
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 486,
+                "completion_tokens": 11,
+                "total_tokens": 497
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many plants did I initially plant for tomatoes and chili peppers?",
+            "answer": "The information provided is not enough. You mentioned planting 5 plants for tomatoes but you did not mention chili peppers.",
+            "response": "The memories mention planting 5 tomato plants, but there is no information about chili peppers. Therefore, the answer is:\n\n5 tomato plants.",
+            "category": "multi-session",
+            "bleu_score": 0.4444444444444444,
+            "f1_score": 0.5555555555555556,
+            "llm_score": 1,
+            "response_time": 0.4874718189239502,
+            "speaker_1_memory_time": 0.04219222068786621,
+            "speaker_2_memory_time": 0.039224863052368164,
+            "token_usage": {
+                "prompt_tokens": 1974,
+                "completion_tokens": 29,
+                "total_tokens": 2003
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 448,
+                "completion_tokens": 11,
+                "total_tokens": 459
+            }
+        }
+    ]
+}

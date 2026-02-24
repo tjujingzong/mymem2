@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "How many days did I spend in total traveling in Hawaii and in Seattle?",
+            "answer": "The information provided is not enough. You mentioned traveling for 10 days in Hawaii but did not mention abything about the trip to Seattle.",
+            "response": "Answer: No information provided.",
+            "category": "multi-session",
+            "bleu_score": 0.017836996673626204,
+            "f1_score": 0.15384615384615385,
+            "llm_score": 1,
+            "response_time": 0.2501857280731201,
+            "speaker_1_memory_time": 0.443406343460083,
+            "speaker_2_memory_time": 0.04053020477294922,
+            "token_usage": {
+                "prompt_tokens": 2232,
+                "completion_tokens": 7,
+                "total_tokens": 2239
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 434,
+                "completion_tokens": 8,
+                "total_tokens": 442
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many years in total did I spend in formal education from high school to the completion of my Master's degree?",
+            "answer": "The information provided is not enough. You mentioned 4 years in high school (2010-2014), 2 years at PCC (2014-2016), and 4 years at UCLA (2016-2020). But you didn't mention the number of years you spend getting the Master's degree",
+            "response": "Answer: 14 years",
+            "category": "multi-session",
+            "bleu_score": 1.9723312068000557e-06,
+            "f1_score": 0.0606060606060606,
+            "llm_score": 0,
+            "response_time": 0.36495208740234375,
+            "speaker_1_memory_time": 0.042281389236450195,
+            "speaker_2_memory_time": 0.039891958236694336,
+            "token_usage": {
+                "prompt_tokens": 3572,
+                "completion_tokens": 7,
+                "total_tokens": 3579
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 491,
+                "completion_tokens": 8,
+                "total_tokens": 499
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "Can you suggest some activities that I can do in the evening?",
+            "answer": "The user would prefer suggestions that involve relaxing activities that can be done in the evening, preferably before 9:30 pm. They would not prefer suggestions that involve using their phone or watching TV, as these activities have been affecting their sleep quality.",
+            "response": "**Answer:** Take a boat ride or nature walk.",
+            "category": "single-session-preference",
+            "bleu_score": 0.014528770329175262,
+            "f1_score": 0.04878048780487805,
+            "llm_score": 0,
+            "response_time": 0.24399948120117188,
+            "speaker_1_memory_time": 0.042906761169433594,
+            "speaker_2_memory_time": 0.04161238670349121,
+            "token_usage": {
+                "prompt_tokens": 1575,
+                "completion_tokens": 12,
+                "total_tokens": 1587
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 458,
+                "completion_tokens": 8,
+                "total_tokens": 466
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "Can you suggest some accessories that would complement my current photography setup?",
+            "answer": "The user would prefer suggestions of Sony-compatible accessories or high-quality photography gear that can enhance their photography experience. They may not prefer suggestions of other brands' equipment or low-quality gear.",
+            "response": "Answer: No specific accessories mentioned.",
+            "category": "single-session-preference",
+            "bleu_score": 0.0069636697352227425,
+            "f1_score": 0.06896551724137931,
+            "llm_score": 0,
+            "response_time": 0.14445161819458008,
+            "speaker_1_memory_time": 0.040802955627441406,
+            "speaker_2_memory_time": 0.03906393051147461,
+            "token_usage": {
+                "prompt_tokens": 979,
+                "completion_tokens": 8,
+                "total_tokens": 987
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 440,
+                "completion_tokens": 8,
+                "total_tokens": 448
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "Can you recommend a show or movie for me to watch tonight?",
+            "answer": "The user would prefer recommendations for stand-up comedy specials on Netflix, especially those that are known for their storytelling. They may not prefer recommendations for other genres or platforms.",
+            "response": "I don't have specific recommendations.",
+            "category": "single-session-preference",
+            "bleu_score": 0.00803304564256344,
+            "f1_score": 0.06666666666666667,
+            "llm_score": 1,
+            "response_time": 0.11476874351501465,
+            "speaker_1_memory_time": 0.04230833053588867,
+            "speaker_2_memory_time": 0.04376411437988281,
+            "token_usage": {
+                "prompt_tokens": 584,
+                "completion_tokens": 8,
+                "total_tokens": 592
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 437,
+                "completion_tokens": 8,
+                "total_tokens": 445
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "Can you recommend some recent publications or conferences that I might find interesting?",
+            "answer": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+            "response": "ICML, NeurIPS, CVPR, ICLR, ICCV",
+            "category": "single-session-preference",
+            "bleu_score": 0.00391454281900712,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.43175745010375977,
+            "speaker_1_memory_time": 0.04026222229003906,
+            "speaker_2_memory_time": 0.03955841064453125,
+            "token_usage": {
+                "prompt_tokens": 2985,
+                "completion_tokens": 16,
+                "total_tokens": 3001
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 463,
+                "completion_tokens": 8,
+                "total_tokens": 471
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "Can you recommend some interesting cultural events happening around me this weekend?",
+            "answer": "The user would prefer responses that suggest cultural events where they can practice their language skills, particularly Spanish and French. They would also appreciate if the event has a focus on language learning resources. They would not prefer events that do not provide opportunities for language practice or cultural exchange.",
+            "response": "**Answer:** Check local event calendars.",
+            "category": "single-session-preference",
+            "bleu_score": 0.0036470414514039326,
+            "f1_score": 0.047619047619047616,
+            "llm_score": 0,
+            "response_time": 0.245863676071167,
+            "speaker_1_memory_time": 0.04227113723754883,
+            "speaker_2_memory_time": 0.041712045669555664,
+            "token_usage": {
+                "prompt_tokens": 1996,
+                "completion_tokens": 9,
+                "total_tokens": 2005
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 459,
+                "completion_tokens": 8,
+                "total_tokens": 467
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "My kitchen's becoming a bit of a mess again. Any tips for keeping it clean?",
+            "answer": "The user would prefer responses that acknowledge and build upon their existing efforts to organize their kitchen, such as utilizing their new utensil holder to keep countertops clutter-free. They would also appreciate tips that address their concern for maintaining their granite surface, particularly around the sink area. Preferred responses would provide practical and actionable steps to maintain cleanliness, leveraging the user's current tools and setup. They might not prefer generic or vague suggestions that do not take into account their specific kitchen setup or concerns.",
+            "response": "Answer: Clean utensil holder regularly.",
+            "category": "single-session-preference",
+            "bleu_score": 1.9788154574394907e-06,
+            "f1_score": 0.058823529411764705,
+            "llm_score": 1,
+            "response_time": 0.34650444984436035,
+            "speaker_1_memory_time": 0.044991493225097656,
+            "speaker_2_memory_time": 0.04259777069091797,
+            "token_usage": {
+                "prompt_tokens": 3021,
+                "completion_tokens": 9,
+                "total_tokens": 3030
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 505,
+                "completion_tokens": 8,
+                "total_tokens": 513
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "Can you recommend some resources where I can learn more about video editing?",
+            "answer": "The user would prefer responses that suggest resources specifically tailored to Adobe Premiere Pro, especially those that delve into its advanced settings. They might not prefer general video editing resources or resources related to other video editing software.",
+            "response": "Adobe Premiere Pro's official documentation and tutorials, YouTube channels like Premiere Bro, Video Copilot, and Adobe Creative Cloud, online courses on platforms like Udemy, LinkedIn Learning, and Skillshare, and Premiere Pro communities and forums, such as Reddit's r/premierepro and Adobe's Premiere Pro forum.",
+            "category": "single-session-preference",
+            "bleu_score": 0.10909090909090911,
+            "f1_score": 0.12698412698412698,
+            "llm_score": 1,
+            "response_time": 0.9128484725952148,
+            "speaker_1_memory_time": 0.04015851020812988,
+            "speaker_2_memory_time": 0.04305863380432129,
+            "token_usage": {
+                "prompt_tokens": 2087,
+                "completion_tokens": 63,
+                "total_tokens": 2150
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 501,
+                "completion_tokens": 8,
+                "total_tokens": 509
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "Can you suggest a hotel for my upcoming trip to Miami?",
+            "answer": "The user would prefer suggestions of hotels in Miami that offer great views, possibly of the ocean or the city skyline, and have unique features such as a rooftop pool or a hot tub on the balcony. They may not prefer suggestions of basic or budget hotels without these features.",
+            "response": "No relevant memories found.",
+            "category": "single-session-preference",
+            "bleu_score": 1.109031988643539e-05,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.08737587928771973,
+            "speaker_1_memory_time": 0.040331125259399414,
+            "speaker_2_memory_time": 0.04210662841796875,
+            "token_usage": {
+                "prompt_tokens": 583,
+                "completion_tokens": 6,
+                "total_tokens": 589
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 455,
+                "completion_tokens": 11,
+                "total_tokens": 466
+            }
+        }
+    ]
+}

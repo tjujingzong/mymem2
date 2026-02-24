@@ -1,0 +1,242 @@
+{
+    "1": [
+        {
+            "question": "What is the total number of online courses I've completed?",
+            "answer": "20",
+            "response": "12",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.3348658084869385,
+            "speaker_1_memory_time": 0.09395575523376465,
+            "speaker_2_memory_time": 0.04318714141845703,
+            "token_usage": {
+                "prompt_tokens": 3719,
+                "completion_tokens": 3,
+                "total_tokens": 3722
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "What is the total weight of the new feed I purchased in the past two months?",
+            "answer": "70 pounds",
+            "response": "The total weight of the new feed purchased in the past two months is not mentioned in the memories.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.41629815101623535,
+            "speaker_1_memory_time": 0.039917707443237305,
+            "speaker_2_memory_time": 0.03877449035644531,
+            "token_usage": {
+                "prompt_tokens": 2403,
+                "completion_tokens": 21,
+                "total_tokens": 2424
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 426,
+                "completion_tokens": 8,
+                "total_tokens": 434
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many years will I be when my friend Rachel gets married?",
+            "answer": "33",
+            "response": "The answer is: **Next year**.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.303067684173584,
+            "speaker_1_memory_time": 0.03832364082336426,
+            "speaker_2_memory_time": 0.03820061683654785,
+            "token_usage": {
+                "prompt_tokens": 2460,
+                "completion_tokens": 10,
+                "total_tokens": 2470
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 410,
+                "completion_tokens": 8,
+                "total_tokens": 418
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How much more miles per gallon was my car getting a few months ago compared to now?",
+            "answer": "2",
+            "response": "**Answer:** 2 miles per gallon more",
+            "category": "multi-session",
+            "bleu_score": 0.0909090909090909,
+            "f1_score": 0.2857142857142857,
+            "llm_score": 1,
+            "response_time": 0.41197705268859863,
+            "speaker_1_memory_time": 0.39806318283081055,
+            "speaker_2_memory_time": 0.04215812683105469,
+            "token_usage": {
+                "prompt_tokens": 3698,
+                "completion_tokens": 10,
+                "total_tokens": 3708
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 415,
+                "completion_tokens": 8,
+                "total_tokens": 423
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What percentage of leadership positions do women hold in the my company?",
+            "answer": "20%",
+            "response": "20%",
+            "category": "multi-session",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.3880953788757324,
+            "speaker_1_memory_time": 0.039560556411743164,
+            "speaker_2_memory_time": 0.03961658477783203,
+            "token_usage": {
+                "prompt_tokens": 4255,
+                "completion_tokens": 4,
+                "total_tokens": 4259
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How much did I spend on gifts for my sister?",
+            "answer": "$300",
+            "response": "**Answer:** $200 for the necklace, $100 for the gift card.",
+            "category": "multi-session",
+            "bleu_score": 0.05263157894736841,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.554720401763916,
+            "speaker_1_memory_time": 0.042250871658325195,
+            "speaker_2_memory_time": 0.038483381271362305,
+            "token_usage": {
+                "prompt_tokens": 3755,
+                "completion_tokens": 21,
+                "total_tokens": 3776
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 420,
+                "completion_tokens": 8,
+                "total_tokens": 428
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How much faster did I finish the 5K run compared to my previous year's time?",
+            "answer": "10 minutes",
+            "response": "**Answer:** 10 minutes faster",
+            "category": "multi-session",
+            "bleu_score": 0.2222222222222222,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.5453305244445801,
+            "speaker_1_memory_time": 0.0384979248046875,
+            "speaker_2_memory_time": 0.037793874740600586,
+            "token_usage": {
+                "prompt_tokens": 5069,
+                "completion_tokens": 9,
+                "total_tokens": 5078
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "What time did I reach the clinic on Monday?",
+            "answer": "9:00 AM",
+            "response": "**Answer:** 7 AM",
+            "category": "multi-session",
+            "bleu_score": 0.12500000000000003,
+            "f1_score": 0.4,
+            "llm_score": 1,
+            "response_time": 0.3180885314941406,
+            "speaker_1_memory_time": 0.041608333587646484,
+            "speaker_2_memory_time": 0.039421796798706055,
+            "token_usage": {
+                "prompt_tokens": 3136,
+                "completion_tokens": 7,
+                "total_tokens": 3143
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many dinner parties have I attended in the past month?",
+            "answer": "three",
+            "response": "The memories do not mention any specific number of dinner parties attended in the past month. Therefore, the answer is: \"No information provided.\"",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.4944026470184326,
+            "speaker_1_memory_time": 0.04274129867553711,
+            "speaker_2_memory_time": 0.04224133491516113,
+            "token_usage": {
+                "prompt_tokens": 2082,
+                "completion_tokens": 29,
+                "total_tokens": 2111
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 426,
+                "completion_tokens": 8,
+                "total_tokens": 434
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How much did I save on the Jimmy Choo heels?",
+            "answer": "$300",
+            "response": "Answer: $300",
+            "category": "multi-session",
+            "bleu_score": 0.5,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.44948697090148926,
+            "speaker_1_memory_time": 0.03837180137634277,
+            "speaker_2_memory_time": 0.0405726432800293,
+            "token_usage": {
+                "prompt_tokens": 4431,
+                "completion_tokens": 7,
+                "total_tokens": 4438
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ]
+}

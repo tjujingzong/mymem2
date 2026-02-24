@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "How many days before the team meeting I was preparing for did I attend the workshop on 'Effective Communication in the Workplace'?",
+            "answer": "7 days. 8 days (including the last day) is also acceptable.",
+            "response": "**Answer:** 3 days",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.05210775245981356,
+            "f1_score": 0.15384615384615383,
+            "llm_score": 0,
+            "response_time": 0.35208773612976074,
+            "speaker_1_memory_time": 0.397719144821167,
+            "speaker_2_memory_time": 0.03970837593078613,
+            "token_usage": {
+                "prompt_tokens": 3524,
+                "completion_tokens": 7,
+                "total_tokens": 3531
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 433,
+                "completion_tokens": 8,
+                "total_tokens": 441
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many days did it take for me to find a house I loved after starting to work with Rachel?",
+            "answer": "14 days. 15 days (including the last day) is also acceptable.",
+            "response": "To determine how many days it took to find a house loved after starting to work with Rachel, we need to identify the key dates from the memories and original conversations.\n\n1. **Start date with Rachel**: The user mentioned starting to work with Rachel on **February 15th**.\n2. **Date of seeing the house**: The user mentioned seeing a house on **March 1st**.\n\nNow, we calculate the number of days between these two dates:\n\n- From **February 15th to February 28th**: 13 days (including February 15th)\n- From **March 1st**: 1 day\n\nAdding these together: **13 + 1 = 14 days**\n\nThus, it took **14 days** to find a house they loved after starting to work with Rachel.\n\n**Answer: 14 days**",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.0574712643678161,
+            "f1_score": 0.09999999999999999,
+            "llm_score": 1,
+            "response_time": 2.4255244731903076,
+            "speaker_1_memory_time": 0.04385232925415039,
+            "speaker_2_memory_time": 0.04139590263366699,
+            "token_usage": {
+                "prompt_tokens": 2814,
+                "completion_tokens": 180,
+                "total_tokens": 2994
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 603,
+                "completion_tokens": 8,
+                "total_tokens": 611
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many days before the 'Rack Fest' did I participate in the 'Turbocharged Tuesdays' event?",
+            "answer": "4 days.",
+            "response": "To determine how many days before the \"Rack Fest\" the user participated in the \"Turbocharged Tuesdays\" event, we need to look at the dates mentioned in the memories.\n\n- The \"Turbocharged Tuesdays\" event took place on **June 14th**.\n- The \"Rack Fest\" event took place on **June 18th**.\n\nNow, we calculate the number of days between these two dates:\n\n- June 14th to June 18th is a span of **4 days**.\n\nTherefore, the user participated in the \"Turbocharged Tuesdays\" event **4 days before** the \"Rack Fest\".\n\n**Answer:** 4 days",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.022900763358778622,
+            "f1_score": 0.07843137254901959,
+            "llm_score": 1,
+            "response_time": 2.348768949508667,
+            "speaker_1_memory_time": 0.043879032135009766,
+            "speaker_2_memory_time": 0.041315317153930664,
+            "token_usage": {
+                "prompt_tokens": 5880,
+                "completion_tokens": 145,
+                "total_tokens": 6025
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 557,
+                "completion_tokens": 8,
+                "total_tokens": 565
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "Which event happened first, the purchase of the coffee maker or the malfunction of the stand mixer?",
+            "answer": "The malfunction of the stand mixer",
+            "response": "The purchase of the coffee maker happened first.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.3333333333333333,
+            "llm_score": 0,
+            "response_time": 0.2618722915649414,
+            "speaker_1_memory_time": 0.04442310333251953,
+            "speaker_2_memory_time": 0.0390162467956543,
+            "token_usage": {
+                "prompt_tokens": 1983,
+                "completion_tokens": 10,
+                "total_tokens": 1993
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 419,
+                "completion_tokens": 8,
+                "total_tokens": 427
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "Which pair of shoes did I clean last month?",
+            "answer": "white Adidas sneakers",
+            "response": "Answer: White Adidas sneakers",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.6,
+            "f1_score": 0.8571428571428571,
+            "llm_score": 1,
+            "response_time": 0.42958688735961914,
+            "speaker_1_memory_time": 0.04342198371887207,
+            "speaker_2_memory_time": 0.04134654998779297,
+            "token_usage": {
+                "prompt_tokens": 4234,
+                "completion_tokens": 6,
+                "total_tokens": 4240
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "How many days had passed between the Hindu festival of Holi and the Sunday mass at St. Mary's Church?",
+            "answer": "21 days. 22 days (including the last day) is also acceptable.",
+            "response": "To determine the number of days between the Hindu festival of Holi and the Sunday mass at St. Mary's Church, we need to identify the specific dates of these events from the provided memories.\n\n1. **Holi Celebration**: The user attended the Holi celebration at the local temple on **February 26th**.\n2. **Sunday Mass**: The user attended Sunday mass at St. Mary's Church on **March 19th**.\n\nNow, we calculate the number of days between February 26th and March 19th:\n\n- From **February 26th to February 29th**: 3 days (including February 26th)\n- From **March 1st to March 19th**: 19 days\n\nAdding these together:  \n3 (days in February) + 19 (days in March) = **22 days**\n\nThus, **22 days** had passed between the Holi celebration and the Sunday mass at St. Mary's Church.\n\n**Answer:** 22 days.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.045918367346938785,
+            "f1_score": 0.09756097560975609,
+            "llm_score": 1,
+            "response_time": 2.9855971336364746,
+            "speaker_1_memory_time": 0.042522430419921875,
+            "speaker_2_memory_time": 0.0417478084564209,
+            "token_usage": {
+                "prompt_tokens": 3568,
+                "completion_tokens": 218,
+                "total_tokens": 3786
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 643,
+                "completion_tokens": 8,
+                "total_tokens": 651
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many days had passed between the Sunday mass at St. Mary's Church and the Ash Wednesday service at the cathedral?",
+            "answer": "30 days. 31 days (including the last day) is also acceptable.",
+            "response": "To determine the number of days between the Sunday mass at St. Mary's Church and the Ash Wednesday service at the cathedral, we need to analyze the timestamps provided in the memories.\n\n1. **Sunday mass at St. Mary's Church**: The memory states that this event occurred on **January 2nd**.\n2. **Ash Wednesday service at the cathedral**: The memory states that this event occurred on **February 1st**.\n\nNow, we calculate the number of days between January 2nd and February 1st:\n\n- January has 31 days.\n- From January 2nd to January 31st is **29 days**.\n- Adding the 1st of February gives us **29 + 1 = 30 days**.\n\nThus, **30 days** had passed between the Sunday mass at St. Mary's Church and the Ash Wednesday service at the cathedral.\n\n**Answer:** 30 days.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.043478260869565216,
+            "f1_score": 0.12820512820512822,
+            "llm_score": 1,
+            "response_time": 2.620741128921509,
+            "speaker_1_memory_time": 0.04440736770629883,
+            "speaker_2_memory_time": 0.041757822036743164,
+            "token_usage": {
+                "prompt_tokens": 3000,
+                "completion_tokens": 194,
+                "total_tokens": 3194
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 620,
+                "completion_tokens": 8,
+                "total_tokens": 628
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "Which seeds were started first, the tomatoes or the marigolds?",
+            "answer": "Tomatoes",
+            "response": "Answer: Marigold seeds were started first.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.4044179916381836,
+            "speaker_1_memory_time": 0.09802532196044922,
+            "speaker_2_memory_time": 0.04082083702087402,
+            "token_usage": {
+                "prompt_tokens": 3411,
+                "completion_tokens": 11,
+                "total_tokens": 3422
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 411,
+                "completion_tokens": 8,
+                "total_tokens": 419
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "Which item did I purchase first, the dog bed for Max or the training pads for Luna?",
+            "answer": "Training pads for Luna",
+            "response": "The dog bed for Max was purchased first.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.11111111111111109,
+            "f1_score": 0.16666666666666666,
+            "llm_score": 0,
+            "response_time": 0.6653146743774414,
+            "speaker_1_memory_time": 0.043787240982055664,
+            "speaker_2_memory_time": 0.04259300231933594,
+            "token_usage": {
+                "prompt_tokens": 6045,
+                "completion_tokens": 10,
+                "total_tokens": 6055
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many days had passed between the 'Walk for Hunger' event and the 'Coastal Cleanup' event?",
+            "answer": "14 days. 8 days (including the last day) is also acceptable.",
+            "response": "To determine the number of days between the \"Walk for Hunger\" event and the \"Coastal Cleanup\" event, we need to identify the specific dates of these events from the provided memories and original conversations.\n\n1. **\"Walk for Hunger\" event**: The user mentioned participating in the \"Walk for Hunger\" 5K walk on **February 21st**.\n2. **\"Coastal Cleanup\" event**: The user mentioned volunteering at the Coastal Cleanup event on **March 7th**.\n\nNow, we calculate the number of days between February 21st and March 7th:\n\n- From **February 21st to February 28th**: 7 days (including February 21st)\n- From **March 1st to March 7th**: 7 days (including March 7th)\n\nTotal days = 7 (February) + 7 (March) = **14 days**\n\nAnswer: 14 days.",
+            "category": "temporal-reasoning",
+            "bleu_score": 0.05000000000000001,
+            "f1_score": 0.10126582278481013,
+            "llm_score": 1,
+            "response_time": 2.727574110031128,
+            "speaker_1_memory_time": 0.04225516319274902,
+            "speaker_2_memory_time": 0.03893280029296875,
+            "token_usage": {
+                "prompt_tokens": 3117,
+                "completion_tokens": 201,
+                "total_tokens": 3318
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 625,
+                "completion_tokens": 8,
+                "total_tokens": 633
+            }
+        }
+    ]
+}

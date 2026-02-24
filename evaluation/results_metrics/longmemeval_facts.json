@@ -1,0 +1,26 @@
+{
+    "0": [
+        {
+            "question": "What degree did I graduate with?",
+            "answer": "Business Administration",
+            "response": "Business Administration",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.5530905723571777,
+            "speaker_1_memory_time": 0.4427306652069092,
+            "speaker_2_memory_time": 0.038773536682128906,
+            "token_usage": {
+                "prompt_tokens": 5702,
+                "completion_tokens": 3,
+                "total_tokens": 5705
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 397,
+                "completion_tokens": 8,
+                "total_tokens": 405
+            }
+        }
+    ]
+}

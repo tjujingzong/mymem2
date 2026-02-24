@@ -1,0 +1,242 @@
+{
+    "1": [
+        {
+            "question": "Where did I attend my cousin's wedding?",
+            "answer": "The Grand Ballroom",
+            "response": "Grand Ballroom",
+            "category": "single-session-user",
+            "bleu_score": 0.6065306597126334,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.1516115665435791,
+            "speaker_1_memory_time": 0.09695696830749512,
+            "speaker_2_memory_time": 0.03987526893615723,
+            "token_usage": {
+                "prompt_tokens": 1750,
+                "completion_tokens": 4,
+                "total_tokens": 1754
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 402,
+                "completion_tokens": 8,
+                "total_tokens": 410
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "Where did I complete my Bachelor's degree in Computer Science?",
+            "answer": "University of California, Los Angeles (UCLA)",
+            "response": "Answer: UCLA",
+            "category": "single-session-user",
+            "bleu_score": 0.045111761078870896,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.3319401741027832,
+            "speaker_1_memory_time": 0.041261911392211914,
+            "speaker_2_memory_time": 0.04167938232421875,
+            "token_usage": {
+                "prompt_tokens": 3498,
+                "completion_tokens": 4,
+                "total_tokens": 3502
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 410,
+                "completion_tokens": 8,
+                "total_tokens": 418
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "Who did I have a conversation with about destiny?",
+            "answer": "Sarah",
+            "response": "Sarah",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.28858113288879395,
+            "speaker_1_memory_time": 0.04357004165649414,
+            "speaker_2_memory_time": 0.040610551834106445,
+            "token_usage": {
+                "prompt_tokens": 3340,
+                "completion_tokens": 2,
+                "total_tokens": 3342
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 398,
+                "completion_tokens": 8,
+                "total_tokens": 406
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What type of cocktail recipe did I try last weekend?",
+            "answer": "lavender gin fizz",
+            "response": "The answer is: Lavender gin fizz.",
+            "category": "single-session-user",
+            "bleu_score": 0.375,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.6507692337036133,
+            "speaker_1_memory_time": 0.042612552642822266,
+            "speaker_2_memory_time": 0.04030919075012207,
+            "token_usage": {
+                "prompt_tokens": 5927,
+                "completion_tokens": 10,
+                "total_tokens": 5937
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "Where did I buy my new bookshelf from?",
+            "answer": "IKEA",
+            "response": "IKEA",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.18576669692993164,
+            "speaker_1_memory_time": 0.042081356048583984,
+            "speaker_2_memory_time": 0.043398380279541016,
+            "token_usage": {
+                "prompt_tokens": 2255,
+                "completion_tokens": 3,
+                "total_tokens": 2258
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 400,
+                "completion_tokens": 8,
+                "total_tokens": 408
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "What type of rice is my favorite?",
+            "answer": "Japanese short-grain rice",
+            "response": "Answer: Japanese short-grain rice",
+            "category": "single-session-user",
+            "bleu_score": 0.6,
+            "f1_score": 0.8571428571428571,
+            "llm_score": 1,
+            "response_time": 0.3620157241821289,
+            "speaker_1_memory_time": 0.04236578941345215,
+            "speaker_2_memory_time": 0.041170358657836914,
+            "token_usage": {
+                "prompt_tokens": 3337,
+                "completion_tokens": 8,
+                "total_tokens": 3345
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "What time do I stop checking work emails and messages?",
+            "answer": "7 pm",
+            "response": "7 pm",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.17995691299438477,
+            "speaker_1_memory_time": 0.042320966720581055,
+            "speaker_2_memory_time": 0.03935980796813965,
+            "token_usage": {
+                "prompt_tokens": 2044,
+                "completion_tokens": 3,
+                "total_tokens": 2047
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 403,
+                "completion_tokens": 8,
+                "total_tokens": 411
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How long did it take to move to the new apartment?",
+            "answer": "5 hours",
+            "response": "5 hours",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.16144299507141113,
+            "speaker_1_memory_time": 0.04230451583862305,
+            "speaker_2_memory_time": 0.04148077964782715,
+            "token_usage": {
+                "prompt_tokens": 2082,
+                "completion_tokens": 3,
+                "total_tokens": 2085
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "How many copies of my favorite artist's debut album were released worldwide?",
+            "answer": "500",
+            "response": "500",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.27973437309265137,
+            "speaker_1_memory_time": 0.04354119300842285,
+            "speaker_2_memory_time": 0.03938746452331543,
+            "token_usage": {
+                "prompt_tokens": 3006,
+                "completion_tokens": 4,
+                "total_tokens": 3010
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How much is the painting of a sunset worth in terms of the amount I paid for it?",
+            "answer": "The painting is worth triple what I paid for it.",
+            "response": "**Answer:** Triple the original price.",
+            "category": "single-session-user",
+            "bleu_score": 0.2727272727272727,
+            "f1_score": 0.26666666666666666,
+            "llm_score": 1,
+            "response_time": 0.33002805709838867,
+            "speaker_1_memory_time": 0.3910210132598877,
+            "speaker_2_memory_time": 0.04208874702453613,
+            "token_usage": {
+                "prompt_tokens": 2844,
+                "completion_tokens": 9,
+                "total_tokens": 2853
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 422,
+                "completion_tokens": 8,
+                "total_tokens": 430
+            }
+        }
+    ]
+}

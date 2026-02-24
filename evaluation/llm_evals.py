@@ -299,8 +299,8 @@ def main():
     parser.add_argument(
         "--dataset_file",
         type=str,
-        default=os.getenv("EVAL_DATASET_FILE", "dataset/locomo10.json"),
-        help="Original dataset file to load evidence snippets (default: dataset/locomo10.json or env EVAL_DATASET_FILE)",
+        default=os.getenv("EVAL_DATASET_FILE", os.getenv("DATASET_PATH", "dataset/locomo10.json")),
+        help="Original dataset file to load evidence snippets (default: dataset/locomo10.json or env EVAL_DATASET_FILE/DATASET_PATH)",
     )
     parser.add_argument("--max_workers", type=int, default=5, help="Maximum number of worker threads")
     args = parser.parse_args()

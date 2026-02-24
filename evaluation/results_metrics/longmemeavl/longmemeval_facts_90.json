@@ -1,0 +1,242 @@
+{
+    "5": [
+        {
+            "question": "How many hours have I spent playing games in total?",
+            "answer": "140 hours",
+            "response": "Answer: 70 hours",
+            "category": "multi-session",
+            "bleu_score": 0.25,
+            "f1_score": 0.4,
+            "llm_score": 0,
+            "response_time": 0.4788026809692383,
+            "speaker_1_memory_time": 0.04378533363342285,
+            "speaker_2_memory_time": 0.04180645942687988,
+            "token_usage": {
+                "prompt_tokens": 4661,
+                "completion_tokens": 7,
+                "total_tokens": 4668
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How many babies were born to friends and family members in the last few months?",
+            "answer": "5",
+            "response": "**Answer:** Three babies were born.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.37949657440185547,
+            "speaker_1_memory_time": 0.04430890083312988,
+            "speaker_2_memory_time": 0.04279732704162598,
+            "token_usage": {
+                "prompt_tokens": 3338,
+                "completion_tokens": 9,
+                "total_tokens": 3347
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 411,
+                "completion_tokens": 8,
+                "total_tokens": 419
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "How many times did I bake something in the past two weeks?",
+            "answer": "4",
+            "response": "**Answer:** 2 times",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.18213725090026855,
+            "speaker_1_memory_time": 0.04343128204345703,
+            "speaker_2_memory_time": 0.04247570037841797,
+            "token_usage": {
+                "prompt_tokens": 1581,
+                "completion_tokens": 7,
+                "total_tokens": 1588
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How many days did I take social media breaks in total?",
+            "answer": "17 days",
+            "response": "Answer: 17 days",
+            "category": "multi-session",
+            "bleu_score": 0.5,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.5197622776031494,
+            "speaker_1_memory_time": 0.04452657699584961,
+            "speaker_2_memory_time": 0.03890061378479004,
+            "token_usage": {
+                "prompt_tokens": 4983,
+                "completion_tokens": 7,
+                "total_tokens": 4990
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 8,
+                "total_tokens": 416
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many pieces of furniture did I buy, assemble, sell, or fix in the past few months?",
+            "answer": "4",
+            "response": "Answer: No information provided.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.10256147384643555,
+            "speaker_1_memory_time": 0.04245901107788086,
+            "speaker_2_memory_time": 0.039299726486206055,
+            "token_usage": {
+                "prompt_tokens": 592,
+                "completion_tokens": 7,
+                "total_tokens": 599
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How many different types of citrus fruits have I used in my cocktail recipes?",
+            "answer": "3",
+            "response": "Answer: 5 types of citrus fruits.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.13588619232177734,
+            "speaker_1_memory_time": 0.4461696147918701,
+            "speaker_2_memory_time": 0.039895057678222656,
+            "token_usage": {
+                "prompt_tokens": 586,
+                "completion_tokens": 10,
+                "total_tokens": 596
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 411,
+                "completion_tokens": 8,
+                "total_tokens": 419
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many weddings have I attended in this year?",
+            "answer": "I attended three weddings. The couples were Rachel and Mike, Emily and Sarah, and Jen and Tom.",
+            "response": "Answer: Two weddings.",
+            "category": "multi-session",
+            "bleu_score": 0.016304881591346486,
+            "f1_score": 0.11764705882352941,
+            "llm_score": 1,
+            "response_time": 0.4281899929046631,
+            "speaker_1_memory_time": 0.041533708572387695,
+            "speaker_2_memory_time": 0.04137873649597168,
+            "token_usage": {
+                "prompt_tokens": 4188,
+                "completion_tokens": 6,
+                "total_tokens": 4194
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 420,
+                "completion_tokens": 8,
+                "total_tokens": 428
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "How many movie festivals that I attended?",
+            "answer": "I attended four movie festivals.",
+            "response": "**Answer:** One movie festival.",
+            "category": "multi-session",
+            "bleu_score": 0.2,
+            "f1_score": 0.22222222222222224,
+            "llm_score": 0,
+            "response_time": 0.2621023654937744,
+            "speaker_1_memory_time": 0.042064666748046875,
+            "speaker_2_memory_time": 0.04034733772277832,
+            "token_usage": {
+                "prompt_tokens": 2279,
+                "completion_tokens": 8,
+                "total_tokens": 2287
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many tanks do I currently have, including the one I set up for my friend's kid?",
+            "answer": "3",
+            "response": "**Answer:** 2 tanks",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.5639405250549316,
+            "speaker_1_memory_time": 0.04284548759460449,
+            "speaker_2_memory_time": 0.03857088088989258,
+            "token_usage": {
+                "prompt_tokens": 5360,
+                "completion_tokens": 7,
+                "total_tokens": 5367
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What is the total amount I spent on luxury items in the past few months?",
+            "answer": "$2,500",
+            "response": "**Answer:** No specific total amount mentioned.",
+            "category": "multi-session",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 1,
+            "response_time": 0.4401097297668457,
+            "speaker_1_memory_time": 0.04166150093078613,
+            "speaker_2_memory_time": 0.03938007354736328,
+            "token_usage": {
+                "prompt_tokens": 3874,
+                "completion_tokens": 10,
+                "total_tokens": 3884
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 416,
+                "completion_tokens": 8,
+                "total_tokens": 424
+            }
+        }
+    ]
+}

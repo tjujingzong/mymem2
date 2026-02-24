@@ -1,0 +1,242 @@
+{
+    "1": [
+        {
+            "question": "How many free night's stays can I redeem at any Hilton property with my accumulated points?",
+            "answer": "Two",
+            "response": "**Answer:** Two free night's stays.",
+            "category": "knowledge-update",
+            "bleu_score": 0.08333333333333333,
+            "f1_score": 0.33333333333333337,
+            "llm_score": 1,
+            "response_time": 0.3924293518066406,
+            "speaker_1_memory_time": 0.042704105377197266,
+            "speaker_2_memory_time": 0.042351484298706055,
+            "token_usage": {
+                "prompt_tokens": 3477,
+                "completion_tokens": 10,
+                "total_tokens": 3487
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 413,
+                "completion_tokens": 8,
+                "total_tokens": 421
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How many projects have I completed since starting painting classes?",
+            "answer": "5",
+            "response": "Answer: 5 projects completed.",
+            "category": "knowledge-update",
+            "bleu_score": 0.16666666666666669,
+            "f1_score": 0.4,
+            "llm_score": 1,
+            "response_time": 0.37889981269836426,
+            "speaker_1_memory_time": 0.04343748092651367,
+            "speaker_2_memory_time": 0.04107260704040527,
+            "token_usage": {
+                "prompt_tokens": 3477,
+                "completion_tokens": 8,
+                "total_tokens": 3485
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How many largemouth bass did I catch with Alex on the earlier fishing trip to Lake Michigan before the 7/22 trip?",
+            "answer": "7",
+            "response": "The answer is: 9 largemouth bass.",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2490694522857666,
+            "speaker_1_memory_time": 0.04545235633850098,
+            "speaker_2_memory_time": 0.04293656349182129,
+            "token_usage": {
+                "prompt_tokens": 1806,
+                "completion_tokens": 11,
+                "total_tokens": 1817
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 424,
+                "completion_tokens": 8,
+                "total_tokens": 432
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What is my current record in the recreational volleyball league?",
+            "answer": "5-2",
+            "response": "3-2",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.20607519149780273,
+            "speaker_1_memory_time": 0.04372906684875488,
+            "speaker_2_memory_time": 0.04245710372924805,
+            "token_usage": {
+                "prompt_tokens": 2248,
+                "completion_tokens": 4,
+                "total_tokens": 2252
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What time do I wake up on Saturday mornings?",
+            "answer": "7:30 am",
+            "response": "Answer: 7:30 am",
+            "category": "knowledge-update",
+            "bleu_score": 0.5,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.36502575874328613,
+            "speaker_1_memory_time": 0.040273427963256836,
+            "speaker_2_memory_time": 0.042670488357543945,
+            "token_usage": {
+                "prompt_tokens": 3270,
+                "completion_tokens": 9,
+                "total_tokens": 3279
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 410,
+                "completion_tokens": 8,
+                "total_tokens": 418
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many followers do I have on Instagram now?",
+            "answer": "1300",
+            "response": "Answer: 1300 followers.",
+            "category": "knowledge-update",
+            "bleu_score": 0.2,
+            "f1_score": 0.5,
+            "llm_score": 1,
+            "response_time": 0.2585639953613281,
+            "speaker_1_memory_time": 0.04196882247924805,
+            "speaker_2_memory_time": 0.04385972023010254,
+            "token_usage": {
+                "prompt_tokens": 1900,
+                "completion_tokens": 10,
+                "total_tokens": 1910
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How many pre-1920 American coins do I have in my collection?",
+            "answer": "38",
+            "response": "37",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.49288153648376465,
+            "speaker_1_memory_time": 0.3538360595703125,
+            "speaker_2_memory_time": 0.03425931930541992,
+            "token_usage": {
+                "prompt_tokens": 5368,
+                "completion_tokens": 3,
+                "total_tokens": 5371
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "What was my previous goal for my Apex Legends level before I updated my goal?",
+            "answer": "level 100",
+            "response": "**Answer:** Reach level 100 before end of year.",
+            "category": "knowledge-update",
+            "bleu_score": 0.14285714285714285,
+            "f1_score": 0.4,
+            "llm_score": 1,
+            "response_time": 0.566826581954956,
+            "speaker_1_memory_time": 0.043355703353881836,
+            "speaker_2_memory_time": 0.040607452392578125,
+            "token_usage": {
+                "prompt_tokens": 4696,
+                "completion_tokens": 15,
+                "total_tokens": 4711
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 420,
+                "completion_tokens": 8,
+                "total_tokens": 428
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How much weight have I lost since I started going to the gym consistently?",
+            "answer": "10 pounds",
+            "response": "10 pounds",
+            "category": "knowledge-update",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.26799917221069336,
+            "speaker_1_memory_time": 0.09646463394165039,
+            "speaker_2_memory_time": 0.042899370193481445,
+            "token_usage": {
+                "prompt_tokens": 2821,
+                "completion_tokens": 4,
+                "total_tokens": 2825
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 409,
+                "completion_tokens": 8,
+                "total_tokens": 417
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "What type of vehicle model am I currently working on?",
+            "answer": "Ford F-150 pickup truck",
+            "response": "Answer: Ford F-150 pickup truck",
+            "category": "knowledge-update",
+            "bleu_score": 0.6666666666666666,
+            "f1_score": 0.888888888888889,
+            "llm_score": 1,
+            "response_time": 0.5347509384155273,
+            "speaker_1_memory_time": 0.04280805587768555,
+            "speaker_2_memory_time": 0.04083585739135742,
+            "token_usage": {
+                "prompt_tokens": 4698,
+                "completion_tokens": 11,
+                "total_tokens": 4709
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 415,
+                "completion_tokens": 8,
+                "total_tokens": 423
+            }
+        }
+    ]
+}

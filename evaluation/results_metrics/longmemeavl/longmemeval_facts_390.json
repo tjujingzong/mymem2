@@ -1,0 +1,242 @@
+{
+    "1": [
+        {
+            "question": "How many stars do I need to reach the gold level on my Starbucks Rewards app?",
+            "answer": "120",
+            "response": "**Answer:** 300 stars",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.35280489921569824,
+            "speaker_1_memory_time": 0.04396700859069824,
+            "speaker_2_memory_time": 0.041916847229003906,
+            "token_usage": {
+                "prompt_tokens": 3213,
+                "completion_tokens": 9,
+                "total_tokens": 3222
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 415,
+                "completion_tokens": 8,
+                "total_tokens": 423
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "How many sessions of the bereavement support group did I attend?",
+            "answer": "five",
+            "response": "**Answer:** One session.",
+            "category": "knowledge-update",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.27039027214050293,
+            "speaker_1_memory_time": 0.042946815490722656,
+            "speaker_2_memory_time": 0.04500770568847656,
+            "token_usage": {
+                "prompt_tokens": 2486,
+                "completion_tokens": 7,
+                "total_tokens": 2493
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "How many MCU films did I watch in the last 3 months?",
+            "answer": "5",
+            "response": "**Answer:** 5",
+            "category": "knowledge-update",
+            "bleu_score": 0.14285714285714285,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.30770421028137207,
+            "speaker_1_memory_time": 0.04411816596984863,
+            "speaker_2_memory_time": 0.0449678897857666,
+            "token_usage": {
+                "prompt_tokens": 3179,
+                "completion_tokens": 6,
+                "total_tokens": 3185
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "0": [
+        {
+            "question": "How many titles are currently on my to-watch list?",
+            "answer": "25",
+            "response": "25",
+            "category": "knowledge-update",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.3377087116241455,
+            "speaker_1_memory_time": 0.4462161064147949,
+            "speaker_2_memory_time": 0.04052996635437012,
+            "token_usage": {
+                "prompt_tokens": 3478,
+                "completion_tokens": 3,
+                "total_tokens": 3481
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 403,
+                "completion_tokens": 8,
+                "total_tokens": 411
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "How long have I been using my Fitbit Charge 3?",
+            "answer": "9 months",
+            "response": "Answer: 9 months",
+            "category": "knowledge-update",
+            "bleu_score": 0.5,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.466749906539917,
+            "speaker_1_memory_time": 0.042784690856933594,
+            "speaker_2_memory_time": 0.043382883071899414,
+            "token_usage": {
+                "prompt_tokens": 4737,
+                "completion_tokens": 6,
+                "total_tokens": 4743
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "What company is Rachel, an old colleague from my previous company, currently working at?",
+            "answer": "TechCorp",
+            "response": "TechCorp",
+            "category": "knowledge-update",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.22617506980895996,
+            "speaker_1_memory_time": 0.04440188407897949,
+            "speaker_2_memory_time": 0.04204273223876953,
+            "token_usage": {
+                "prompt_tokens": 2618,
+                "completion_tokens": 3,
+                "total_tokens": 2621
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 407,
+                "completion_tokens": 8,
+                "total_tokens": 415
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How many of Emma's recipes have I tried out?",
+            "answer": "3",
+            "response": "**Answer:** 3",
+            "category": "knowledge-update",
+            "bleu_score": 0.14285714285714285,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.263683557510376,
+            "speaker_1_memory_time": 0.0445561408996582,
+            "speaker_2_memory_time": 0.04275822639465332,
+            "token_usage": {
+                "prompt_tokens": 2692,
+                "completion_tokens": 6,
+                "total_tokens": 2698
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 404,
+                "completion_tokens": 8,
+                "total_tokens": 412
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?",
+            "answer": "You switched to less water (5 ounces) per tablespoon of coffee.",
+            "response": "Answer: More water per tablespoon.",
+            "category": "knowledge-update",
+            "bleu_score": 0.21021682352653848,
+            "f1_score": 0.37499999999999994,
+            "llm_score": 0,
+            "response_time": 0.40224599838256836,
+            "speaker_1_memory_time": 0.045430898666381836,
+            "speaker_2_memory_time": 0.043413639068603516,
+            "token_usage": {
+                "prompt_tokens": 3710,
+                "completion_tokens": 8,
+                "total_tokens": 3718
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 430,
+                "completion_tokens": 8,
+                "total_tokens": 438
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What type of camera lens did I purchase most recently?",
+            "answer": "a 70-200mm zoom lens",
+            "response": "50mm prime lens",
+            "category": "knowledge-update",
+            "bleu_score": 0.23884377019126307,
+            "f1_score": 0.28571428571428575,
+            "llm_score": 0,
+            "response_time": 0.6054470539093018,
+            "speaker_1_memory_time": 0.04529619216918945,
+            "speaker_2_memory_time": 0.044539690017700195,
+            "token_usage": {
+                "prompt_tokens": 5948,
+                "completion_tokens": 6,
+                "total_tokens": 5954
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 414,
+                "completion_tokens": 8,
+                "total_tokens": 422
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How often do I see my therapist, Dr. Smith?",
+            "answer": "every week",
+            "response": "**Answer:** Every week.",
+            "category": "knowledge-update",
+            "bleu_score": 0.2222222222222222,
+            "f1_score": 0.8,
+            "llm_score": 1,
+            "response_time": 0.4646294116973877,
+            "speaker_1_memory_time": 0.04518485069274902,
+            "speaker_2_memory_time": 0.0443270206451416,
+            "token_usage": {
+                "prompt_tokens": 4695,
+                "completion_tokens": 7,
+                "total_tokens": 4702
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ]
+}

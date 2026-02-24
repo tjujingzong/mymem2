@@ -1,0 +1,242 @@
+{
+    "0": [
+        {
+            "question": "What brand of shampoo do I currently use?",
+            "answer": "Trader Joe's",
+            "response": "Trader Joe's",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.21321916580200195,
+            "speaker_1_memory_time": 0.44107580184936523,
+            "speaker_2_memory_time": 0.04006338119506836,
+            "token_usage": {
+                "prompt_tokens": 1914,
+                "completion_tokens": 4,
+                "total_tokens": 1918
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 401,
+                "completion_tokens": 8,
+                "total_tokens": 409
+            }
+        }
+    ],
+    "1": [
+        {
+            "question": "What health issue did I initially think was just a cold?",
+            "answer": "bronchitis",
+            "response": "Answer: Bronchitis",
+            "category": "single-session-user",
+            "bleu_score": 0.3333333333333333,
+            "f1_score": 0.6666666666666666,
+            "llm_score": 1,
+            "response_time": 0.38030314445495605,
+            "speaker_1_memory_time": 0.04323291778564453,
+            "speaker_2_memory_time": 0.04435873031616211,
+            "token_usage": {
+                "prompt_tokens": 3737,
+                "completion_tokens": 6,
+                "total_tokens": 3743
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 406,
+                "completion_tokens": 8,
+                "total_tokens": 414
+            }
+        }
+    ],
+    "9": [
+        {
+            "question": "What did my dad gave me as a birthday gift?",
+            "answer": "You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.",
+            "response": "Answer: Silver necklace with pendant",
+            "category": "single-session-user",
+            "bleu_score": 0,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.1677722930908203,
+            "speaker_1_memory_time": 0.04264688491821289,
+            "speaker_2_memory_time": 0.04216504096984863,
+            "token_usage": {
+                "prompt_tokens": 1480,
+                "completion_tokens": 7,
+                "total_tokens": 1487
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 424,
+                "completion_tokens": 8,
+                "total_tokens": 432
+            }
+        }
+    ],
+    "5": [
+        {
+            "question": "How long have I been collecting vintage films?",
+            "answer": "You did not mention this information. You mentioned collecting vintage cameras but not vintage films.",
+            "response": "The answer is: Three months.",
+            "category": "single-session-user",
+            "bleu_score": 0.03423586234882512,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.23999476432800293,
+            "speaker_1_memory_time": 0.0418245792388916,
+            "speaker_2_memory_time": 0.04222416877746582,
+            "token_usage": {
+                "prompt_tokens": 2114,
+                "completion_tokens": 8,
+                "total_tokens": 2122
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 417,
+                "completion_tokens": 8,
+                "total_tokens": 425
+            }
+        }
+    ],
+    "4": [
+        {
+            "question": "What is the name of my hamster?",
+            "answer": "You did not mention this information. You mentioned your cat Luna but not your hamster.",
+            "response": "The memories and original conversations only mention a cat named Luna. There is no information about a hamster. \n\nAnswer: No information provided.",
+            "category": "single-session-user",
+            "bleu_score": 0.2692307692307693,
+            "f1_score": 0.3225806451612903,
+            "llm_score": 1,
+            "response_time": 0.4075748920440674,
+            "speaker_1_memory_time": 0.041567325592041016,
+            "speaker_2_memory_time": 0.0435028076171875,
+            "token_usage": {
+                "prompt_tokens": 1108,
+                "completion_tokens": 29,
+                "total_tokens": 1137
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 439,
+                "completion_tokens": 8,
+                "total_tokens": 447
+            }
+        }
+    ],
+    "2": [
+        {
+            "question": "Where did I meet Sophia?",
+            "answer": "a coffee shop in the city",
+            "response": "Coffee Shop (City)",
+            "category": "single-session-user",
+            "bleu_score": 0.49123845184678916,
+            "f1_score": 0.4444444444444444,
+            "llm_score": 1,
+            "response_time": 0.15029215812683105,
+            "speaker_1_memory_time": 0.04515647888183594,
+            "speaker_2_memory_time": 0.0407412052154541,
+            "token_usage": {
+                "prompt_tokens": 1313,
+                "completion_tokens": 6,
+                "total_tokens": 1319
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 402,
+                "completion_tokens": 8,
+                "total_tokens": 410
+            }
+        }
+    ],
+    "6": [
+        {
+            "question": "What did I bake for my uncle's birthday party?",
+            "answer": "You did not mention this information. You mentioned baking for your niece's birthday party but not your uncle's",
+            "response": "The answer is: lemon blueberry cake.",
+            "category": "single-session-user",
+            "bleu_score": 0.024613959400524264,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.2703213691711426,
+            "speaker_1_memory_time": 0.042052268981933594,
+            "speaker_2_memory_time": 0.04192066192626953,
+            "token_usage": {
+                "prompt_tokens": 2071,
+                "completion_tokens": 10,
+                "total_tokens": 2081
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 426,
+                "completion_tokens": 8,
+                "total_tokens": 434
+            }
+        }
+    ],
+    "7": [
+        {
+            "question": "How long was I in Korea for?",
+            "answer": "You did not mention this information. You mentioned staying in Japan, but not in Korea.",
+            "response": "Answer: Two weeks.",
+            "category": "single-session-user",
+            "bleu_score": 0.014854715642866776,
+            "f1_score": 0.0,
+            "llm_score": 0,
+            "response_time": 0.48157763481140137,
+            "speaker_1_memory_time": 0.04396820068359375,
+            "speaker_2_memory_time": 0.04097580909729004,
+            "token_usage": {
+                "prompt_tokens": 4845,
+                "completion_tokens": 6,
+                "total_tokens": 4851
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 415,
+                "completion_tokens": 8,
+                "total_tokens": 423
+            }
+        }
+    ],
+    "3": [
+        {
+            "question": "What game did I finally beat last weekend?",
+            "answer": "Dark Souls 3 DLC",
+            "response": "Dark Souls 3 DLC",
+            "category": "single-session-user",
+            "bleu_score": 1.0,
+            "f1_score": 1.0,
+            "llm_score": 1,
+            "response_time": 0.15014886856079102,
+            "speaker_1_memory_time": 0.041875600814819336,
+            "speaker_2_memory_time": 0.041402578353881836,
+            "token_usage": {
+                "prompt_tokens": 1280,
+                "completion_tokens": 6,
+                "total_tokens": 1286
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 405,
+                "completion_tokens": 8,
+                "total_tokens": 413
+            }
+        }
+    ],
+    "8": [
+        {
+            "question": "How much time do I dedicate to practicing violin every day?",
+            "answer": "You did not mention this information. You mentioned practing guitar everyday, but not violin.",
+            "response": "The memories and original conversations provided do not mention anything about practicing the violin. The user and assistant only discuss guitar practice and meditation. Therefore, there is no information to determine how much time is dedicated to practicing the violin. \n\nAnswer: No information provided.",
+            "category": "single-session-user",
+            "bleu_score": 0.15999999999999998,
+            "f1_score": 0.22727272727272727,
+            "llm_score": 1,
+            "response_time": 0.7888870239257812,
+            "speaker_1_memory_time": 0.043276309967041016,
+            "speaker_2_memory_time": 0.04321599006652832,
+            "token_usage": {
+                "prompt_tokens": 2221,
+                "completion_tokens": 52,
+                "total_tokens": 2273
+            },
+            "llm_judge_token_usage": {
+                "prompt_tokens": 465,
+                "completion_tokens": 8,
+                "total_tokens": 473
+            }
+        }
+    ]
+}
