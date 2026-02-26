@@ -132,9 +132,13 @@ class OpenAILLM(LLMBase):
             
         if response_format:
             params["response_format"] = response_format
-        if tools:  # TODO: Remove tools if no issues found with new memory addition logic
+        if tools:
+            # 始终向后端传递 tools。对于支持 OpenAI 工具调用规范的实现（包括 vLLM+Qwen3），
+            # 这可以正常触发 function calling；具体是否使用由后端自行决定。
             params["tools"] = tools
-            params["tool_choice"] = tool_choice
+            # 默认使用 "auto" 行为；只有在调用方显式指定非 auto 时才传递 tool_choice。
+            if tool_choice and tool_choice != "auto":
+                params["tool_choice"] = tool_choice
         response = self.client.chat.completions.create(**params)
         parsed_response = self._parse_response(response, tools)
         if self.config.response_callback:

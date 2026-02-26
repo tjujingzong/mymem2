@@ -1,6 +1,7 @@
 import logging
+import json
 
-from mem0.memory.utils import format_entities, sanitize_relationship_for_cypher
+from mem0.memory.utils import format_entities, sanitize_relationship_for_cypher, extract_json
 
 try:
     from langchain_neo4j import Neo4jGraph
@@ -30,10 +31,11 @@ class MemoryGraph:
     def __init__(self, config):
         self.config = config
         self.graph = Neo4jGraph(
-            self.config.graph_store.config.url,
-            self.config.graph_store.config.username,
-            self.config.graph_store.config.password,
-            self.config.graph_store.config.database,
+            url=self.config.graph_store.config.url,
+            username=self.config.graph_store.config.username,
+            password=self.config.graph_store.config.password,
+            token=None,
+            database=self.config.graph_store.config.database,
             refresh_schema=False,
             driver_config={"notifications_min_severity": "OFF"},
         )
@@ -263,6 +265,53 @@ class MemoryGraph:
         entities = []
         if extracted_entities.get("tool_calls"):
             entities = extracted_entities["tool_calls"][0].get("arguments", {}).get("entities", [])
+
+        # Fallback: if the LLM didn't trigger any tool calls (common when the backend
+        # ignores tools), try a second pass asking it to return a JSON object directly.
+        if not entities:
+            try:
+                # Re‑use the same system content, but make the expected JSON explicit
+                fallback_system = (
+                    system_content
+                    + "\n\nYou MUST respond with a pure JSON object of the form "
+                    + '{"entities":[{"source":"...","relationship":"...","destination":"..."}]} '
+                    + "and nothing else."
+                )
+                if self.config.graph_store.custom_prompt:
+                    fallback_messages = [
+                        {"role": "system", "content": fallback_system},
+                        {"role": "user", "content": data},
+                    ]
+                else:
+                    fallback_messages = [
+                        {"role": "system", "content": fallback_system},
+                        {
+                            "role": "user",
+                            "content": f"List of entities: {list(entity_type_map.keys())}. \n\nText: {data}",
+                        },
+                    ]
+
+                raw_response = self.llm.generate_response(
+                    messages=fallback_messages,
+                    response_format={"type": "json_object"},
+                    tools=None,
+                )
+
+                # Our LLM wrappers return a plain string when tools=None; extract JSON safely.
+                if isinstance(raw_response, str):
+                    json_str = extract_json(raw_response)
+                    if json_str:
+                        parsed = json.loads(json_str)
+                    else:
+                        parsed = {}
+                elif isinstance(raw_response, dict):
+                    parsed = raw_response
+                else:
+                    parsed = {}
+
+                entities = parsed.get("entities", []) or []
+            except Exception as e:
+                logger.exception(f"Fallback relation extraction failed: {e}")
 
         entities = self._remove_spaces_from_entities(entities)
         logger.debug(f"Extracted entities: {entities}")

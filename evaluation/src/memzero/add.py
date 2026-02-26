@@ -13,6 +13,7 @@ from mem0.configs.base import MemoryConfig
 from mem0.embeddings.configs import EmbedderConfig
 from mem0.llms.configs import LlmConfig
 from mem0.vector_stores.configs import VectorStoreConfig
+from mem0.graphs.configs import GraphStoreConfig, Neo4jConfig
 
 load_dotenv()
 
@@ -76,10 +77,38 @@ def _build_local_memory():
             embed_model = embed_model[1:-1]
         embed_model = embed_model.strip()
 
-    llm_provider = os.getenv("MEM0_LLM_PROVIDER", "deepseek")
+    llm_provider = os.getenv("MEM0_LLM_PROVIDER", "openai")
     llm_model = os.getenv("MEM0_LLM_MODEL", os.getenv("MODEL", "deepseek-chat"))
     llm_api_key = os.getenv("DEEPSEEK_API_KEY") or os.getenv("OPENAI_API_KEY")
     llm_base_url = os.getenv("OPENAI_BASE_URL", "https://api.deepseek.com")
+
+    # Neo4j 图存储配置（本地模式可选开启）
+    enable_graph_store = str(os.getenv("ENABLE_GRAPH_STORE", "0")).lower() in ("1", "true", "yes")
+    neo4j_url = os.getenv("NEO4J_URL") or os.getenv("NEO4J_URI") or "bolt://localhost:7687"
+    neo4j_username = os.getenv("NEO4J_USERNAME", "neo4j")
+    neo4j_password = os.getenv("NEO4J_PASSWORD")
+    neo4j_database = os.getenv("NEO4J_DATABASE")
+
+    graph_store_cfg = None
+    if enable_graph_store:
+        graph_store_cfg = GraphStoreConfig(
+            provider="neo4j",
+            config=Neo4jConfig(
+                url=neo4j_url,
+                username=neo4j_username,
+                password=neo4j_password,
+                database=neo4j_database,
+            ),
+            # 图谱侧可能也需要 LLM 用于实体抽取/查询
+            llm=LlmConfig(
+                provider=llm_provider,
+                config={
+                    "model": llm_model,
+                    "api_key": llm_api_key,
+                    "openai_base_url": llm_base_url,
+                },
+            ),
+        )
 
     memory_cfg = MemoryConfig(
         vector_store=VectorStoreConfig(
@@ -103,11 +132,10 @@ def _build_local_memory():
             config={
                 "model": llm_model,
                 "api_key": llm_api_key,
-                "deepseek_base_url": llm_base_url,
+                "openai_base_url": llm_base_url,
             },
         ),
-        # 测试：删除自定义 prompt，使用 mem0 默认的 prompt
-        # custom_fact_extraction_prompt=custom_instructions,
+        graph_store=graph_store_cfg or GraphStoreConfig(),
     )
     
     # 打印embedding模型参数

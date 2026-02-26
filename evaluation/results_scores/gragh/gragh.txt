@@ -1,0 +1,24 @@
+Mean Scores Per Category:
+          bleu_score  f1_score  ...  llm_judge_completion_tokens  count
+category                        ...                                    
+1             0.1428    0.2141  ...                       8.0426    282
+2             0.2581    0.3550  ...                       8.1682    321
+3             0.1023    0.1644  ...                       8.0938     96
+4             0.2220    0.2712  ...                       8.0642    841
+
+[4 rows x 13 columns]
+
+Overall Mean Scores:
+bleu_score                        0.2076
+f1_score                          0.2716
+llm_score                         0.5701
+response_time                     0.3771
+speaker_1_memory_time             1.7311
+speaker_2_memory_time             1.7353
+total_tokens                   1215.3429
+prompt_tokens                  1190.2955
+completion_tokens                25.0474
+llm_judge_total_tokens          436.8455
+llm_judge_prompt_tokens         428.7617
+llm_judge_completion_tokens       8.0838
+dtype: float64

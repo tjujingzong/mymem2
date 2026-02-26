@@ -47,3 +47,18 @@ USE_HYBRID_MODE=1 bash run_once.sh
   --output evaluation/dataset/FirstAgentDataHighLevel_as_locomo.json
 
 python3 evaluation/summarize_scores.py
+
+python evaluation/run_experiments.py --technique_type mem0 --method add --is_graph
+
+bash evaluation/run_once.sh --from_step 2
+
+docker run -d --name neo4j -p 7474:7474 -p 7687:7687 -e NEO4J_AUTH=neo4j/password123 neo4j:latest
+
+
+export MEM0_LOCAL_MODE=1
+export ENABLE_GRAPH_STORE=1
+
+export NEO4J_URL=bolt://localhost:7687
+export NEO4J_USERNAME=neo4j
+export NEO4J_PASSWORD=password123
+export NEO4J_DATABASE=neo4j

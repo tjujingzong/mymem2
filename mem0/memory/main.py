@@ -1339,6 +1339,9 @@ class Memory(MemoryBase):
     def _delete_memory(self, memory_id):
         logger.info(f"Deleting memory with {memory_id=}")
         existing_memory = self.vector_store.get(vector_id=memory_id)
+        if existing_memory is None:
+            logger.warning(f"Memory with {memory_id=} not found in vector store.")
+            return memory_id
         prev_value = existing_memory.payload.get("data", "")
         self.vector_store.delete(vector_id=memory_id)
         self.db.add_history(

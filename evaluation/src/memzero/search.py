@@ -18,6 +18,7 @@ from mem0.configs.base import MemoryConfig
 from mem0.embeddings.configs import EmbedderConfig
 from mem0.llms.configs import LlmConfig
 from mem0.vector_stores.configs import VectorStoreConfig
+from mem0.graphs.configs import GraphStoreConfig, Neo4jConfig
 
 load_dotenv()
 
@@ -59,6 +60,33 @@ class MemorySearch:
             llm_api_key = os.getenv("DEEPSEEK_API_KEY") or os.getenv("OPENAI_API_KEY")
             llm_base_url = os.getenv("OPENAI_BASE_URL", "https://api.deepseek.com")
 
+            # Neo4j 图存储配置（本地模式可选开启，不影响原有非图流程）
+            enable_graph_store = str(os.getenv("ENABLE_GRAPH_STORE", "0")).lower() in ("1", "true", "yes")
+            neo4j_url = os.getenv("NEO4J_URL") or os.getenv("NEO4J_URI") or "bolt://localhost:7687"
+            neo4j_username = os.getenv("NEO4J_USERNAME", "neo4j")
+            neo4j_password = os.getenv("NEO4J_PASSWORD")
+            neo4j_database = os.getenv("NEO4J_DATABASE")
+
+            graph_store_cfg = None
+            if enable_graph_store:
+                graph_store_cfg = GraphStoreConfig(
+                    provider="neo4j",
+                    config=Neo4jConfig(
+                        url=neo4j_url,
+                        username=neo4j_username,
+                        password=neo4j_password,
+                        database=neo4j_database,
+                    ),
+                    llm=LlmConfig(
+                        provider=llm_provider,
+                        config={
+                            "model": llm_model,
+                            "api_key": llm_api_key,
+                            "openai_base_url": llm_base_url,
+                        },
+                    ),
+                )
+
             memory_cfg = MemoryConfig(
                 vector_store=VectorStoreConfig(
                     provider=vector_provider,
@@ -81,9 +109,10 @@ class MemorySearch:
                     config={
                         "model": llm_model,
                         "api_key": llm_api_key,
-                        "deepseek_base_url": llm_base_url,
+                        "openai_base_url": llm_base_url,
                     },
                 ),
+                graph_store=graph_store_cfg or GraphStoreConfig(),
             )
             
             # 打印embedding模型参数
@@ -146,6 +175,11 @@ class MemorySearch:
 
         # 是否启用两阶段按需加载原文（默认关闭，保持旧行为不变）
         self.qa_two_stage = str(os.getenv("MEM0_QA_TWO_STAGE", "0")).lower() in ("1", "true", "yes")
+
+        # 图模式下，为了公平评估记忆能力，只使用 memory + graph_memory，不再把原始对话拼进 QA prompt
+        if self.is_graph:
+            self.include_original_conversations = False
+            self.qa_two_stage = False
 
         # 确保输出目录存在
         output_dir = os.path.dirname(self.output_path)
@@ -230,12 +264,42 @@ class MemorySearch:
         retries = 0
         # mem0 v2 要求 filters 非空，这里强制携带 user_id 过滤，避免 400
         filters = {"user_id": user_id}
+        # 本地模式图搜索：当启用了 Neo4j graph_store 时允许；否则保持旧行为不变
         if self.is_graph and self.use_local:
-            raise ValueError("本地模式暂不支持图搜索，请关闭 --is_graph 或使用远程 Mem0。")
+            enable_graph_store = str(os.getenv("ENABLE_GRAPH_STORE", "0")).lower() in ("1", "true", "yes")
+            if not enable_graph_store:
+                raise ValueError("本地模式暂不支持图搜索：请设置 ENABLE_GRAPH_STORE=1 并配置 NEO4J_URL/NEO4J_USERNAME/NEO4J_PASSWORD，或关闭 --is_graph。")
         while retries < max_retries:
             try:
                 if self.use_local:
-                    memories = self.mem0_client.search(query, user_id=user_id, filters=filters, limit=self.top_k)
+                    # 本地模式图搜索：本地 Memory.search() 不支持 enable_graph/output_format 参数
+                    # 我们需要手动从其内部的 graph 实例中获取关系（如果启用了的话）
+                    search_results = self.mem0_client.search(query, user_id=user_id, filters=filters, limit=self.top_k)
+
+                    # 兼容本地 Memory.search 返回格式：可能是 list，也可能是 dict（例如 {"results": [...], ...}）
+                    if isinstance(search_results, dict) and "results" in search_results:
+                        search_results_list = search_results.get("results", [])
+                    else:
+                        search_results_list = search_results
+                    
+                    if self.is_graph:
+                        # 构造兼容的返回结构
+                        memories = {
+                            "results": search_results_list,
+                            "relations": []
+                        }
+                        # 尝试从 graph_memory 中获取关系
+                        try:
+                            if hasattr(self.mem0_client, "graph") and self.mem0_client.graph:
+                                graph_results = self.mem0_client.graph.search(query, filters=filters)
+                                if isinstance(graph_results, dict) and "relations" in graph_results:
+                                    memories["relations"] = graph_results["relations"]
+                                elif isinstance(graph_results, list):
+                                    memories["relations"] = graph_results
+                        except Exception as ge:
+                            print(f"警告：本地图搜索失败: {ge}")
+                    else:
+                        memories = search_results
                 else:
                     if self.is_graph:
                         print("Searching with graph")
@@ -302,7 +366,9 @@ class MemorySearch:
         else:
             semantic_memories = []
             for memory in memories["results"]:
-                metadata = memory.get("metadata", {})
+                # 兼容：results 可能是 dict 列表，也可能是 str 列表
+                memory_dict = memory if isinstance(memory, dict) else {"memory": str(memory)}
+                metadata = memory_dict.get("metadata", {})
                 
                 # 获取dia_ids并获取原始对话
                 dia_ids = metadata.get("dia_ids", [])
@@ -311,9 +377,9 @@ class MemorySearch:
                     original_conversation = self._get_conversation_by_dia_ids(dia_ids, conversation_idx)
                 
                 memory_item = {
-                    "memory": memory["memory"],
+                    "memory": memory_dict.get("memory", str(memory)),
                     "timestamp": metadata.get("timestamp", ""),
-                    "score": round(memory.get("score", 0), 2),
+                    "score": round(memory_dict.get("score", 0), 2) if isinstance(memory_dict.get("score"), (int, float)) else None,
                 }
                 
                 # 如果有原始对话，添加到结果中
@@ -323,9 +389,16 @@ class MemorySearch:
                 
                 semantic_memories.append(memory_item)
             
+            relations = memories.get("relations", []) if isinstance(memories, dict) else []
             graph_memories = [
-                {"source": relation["source"], "relationship": relation["relationship"], "target": relation["target"]}
-                for relation in memories["relations"]
+                {
+                    "source": relation.get("source", ""),
+                    "relationship": relation.get("relationship", ""),
+                    # mem0 graph_search 返回的是 "destination" 字段；向后兼容同时支持 "target"
+                    "target": relation.get("target") or relation.get("destination", ""),
+                }
+                for relation in relations
+                if isinstance(relation, dict)
             ]
         return semantic_memories, graph_memories, end_time - start_time
 

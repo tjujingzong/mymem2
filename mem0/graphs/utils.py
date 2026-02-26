@@ -34,10 +34,18 @@ Provide a list of update instructions, each specifying the source, target, and t
 
 EXTRACT_RELATIONS_PROMPT = """
 
-You are an advanced algorithm designed to extract structured information from text to construct knowledge graphs. Your goal is to capture comprehensive and accurate information. Follow these key principles:
+You are an advanced algorithm designed to extract structured information from text to construct knowledge graphs. 
+Your goal is to capture comprehensive and accurate information **by calling the provided tool**.
 
+Important:
+- You MUST respond **only** by calling the tool `establish_relationships` (or `establish_relations` for structured calls).
+- Do NOT answer in natural language.
+- If there are explicit relationships in the text, you MUST include **all** of them in the tool call.
+- If and only if there are absolutely no explicit relationships, still call the tool with an empty `entities` array.
+
+General principles:
 1. Extract only explicitly stated information from the text.
-2. Establish relationships among the entities provided.
+2. Establish relationships among the entities provided (or the entities listed for you).
 3. Use "USER_ID" as the source entity for any self-references (e.g., "I," "me," "my," etc.) in user messages.
 CUSTOM_PROMPT
 
@@ -50,7 +58,11 @@ Entity Consistency:
     - Ensure that relationships are coherent and logically align with the context of the message.
     - Maintain consistent naming for entities across the extracted data.
 
-Strive to construct a coherent and easily understandable knowledge graph by establishing all the relationships among the entities and adherence to the user’s context.
+Output format via tool call:
+- Always call the tool with a JSON object of the form:
+  { "entities": [ { "source": "...", "relationship": "...", "destination": "..." }, ... ] }
+
+Strive to construct a coherent and easily understandable knowledge graph by establishing all the relationships among the entities and adhering to the user’s context.
 
 Adhere strictly to these guidelines to ensure high-quality knowledge graph extraction."""
 
