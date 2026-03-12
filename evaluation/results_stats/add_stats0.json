@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-03-08T16:00:44",
+  "finished_at": "2026-03-08T17:16:54",
+  "phase": "add",
+  "token_usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "time_usage": {
+    "add_calls": 6022,
+    "total_elapsed_seconds": 69218.47023,
+    "avg_elapsed_seconds_per_call": 11.494266
+  },
+  "crud_counts": {
+    "create": 9452,
+    "read": 0,
+    "update": 0,
+    "delete": 128,
+    "search": 0
+  }
+}

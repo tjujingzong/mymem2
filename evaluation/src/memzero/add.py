@@ -3,6 +3,8 @@ import os
 import re
 import threading
 import time
+import sqlite3
+from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 
 from dotenv import load_dotenv
@@ -154,7 +156,7 @@ def _build_local_memory():
 
 
 class MemoryADD:
-    def __init__(self, data_path=None, batch_size=2, is_graph=False, use_sentence_mode=False):
+    def __init__(self, data_path=None, batch_size=2, is_graph=False, use_sentence_mode=False, use_simple_mode=False):
         self.use_local = _use_local_memory()
         if self.use_local:
             self.mem0_client = _build_local_memory()
@@ -181,7 +183,29 @@ class MemoryADD:
         self.data = None
         self.is_graph = is_graph
         self.use_sentence_mode = use_sentence_mode
+        self.use_simple_mode = use_simple_mode
+
+        # 统计信息（token / 调用耗时）
+        self.stats_lock = threading.Lock()
+        self.stats = {
+            "started_at": datetime.now().isoformat(timespec="seconds"),
+            "add_calls": 0,
+            "total_elapsed_seconds": 0.0,
+            # 旧口径：从 add 返回值中提取 usage（很多 provider 下会是 0）
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 0,
+            # 新口径（与 search 一致）：从底层 chat.completions 原始响应 usage 统计
+            "llm_prompt_tokens": 0,
+            "llm_completion_tokens": 0,
+            "llm_total_tokens": 0,
+            # 严格按返回事件名统计，不预设字段、不臆造 CRUD 分类
+            "crud_counts": {},
+        }
         
+        if self.use_local:
+            self._install_llm_usage_hook()
+
         if data_path:
             self.load_data()
 
@@ -205,15 +229,171 @@ class MemoryADD:
         sentences = [p.strip() for p in parts if p and p.strip()]
         return sentences
 
+    def _extract_usage_from_raw_response(self, response):
+        """从 OpenAI 兼容 raw response 中提取 usage（与 search 口径一致）。"""
+        def _to_int(v):
+            try:
+                return int(v or 0)
+            except Exception:
+                return 0
+
+        usage = getattr(response, "usage", None)
+        if usage is None:
+            return 0, 0, 0
+
+        prompt_tokens = _to_int(getattr(usage, "prompt_tokens", 0))
+        completion_tokens = _to_int(getattr(usage, "completion_tokens", 0))
+        total_tokens = _to_int(getattr(usage, "total_tokens", 0))
+        if total_tokens == 0 and (prompt_tokens > 0 or completion_tokens > 0):
+            total_tokens = prompt_tokens + completion_tokens
+        return prompt_tokens, completion_tokens, total_tokens
+
+    def _install_llm_usage_hook(self):
+        """
+        在本地 Memory 模式下，hook 底层 chat.completions.create，
+        统计 raw response usage（search 同口径）。
+        """
+        try:
+            llm = getattr(self.mem0_client, "llm", None)
+            client = getattr(llm, "client", None)
+            chat = getattr(client, "chat", None)
+            completions = getattr(chat, "completions", None)
+            create_fn = getattr(completions, "create", None)
+
+            if create_fn is None:
+                print("[ADD STATS] 未安装 llm usage hook：未找到 chat.completions.create")
+                return
+
+            # 避免重复安装
+            if getattr(create_fn, "_mem0_usage_hook_installed", False):
+                return
+
+            def _wrapped_create(*args, **kwargs):
+                response = create_fn(*args, **kwargs)
+                p, c, t = self._extract_usage_from_raw_response(response)
+                if p or c or t:
+                    with self.stats_lock:
+                        self.stats["llm_prompt_tokens"] += p
+                        self.stats["llm_completion_tokens"] += c
+                        self.stats["llm_total_tokens"] += t
+                return response
+
+            setattr(_wrapped_create, "_mem0_usage_hook_installed", True)
+            completions.create = _wrapped_create
+            print("[ADD STATS] 已安装 llm usage hook（raw response usage）")
+        except Exception as e:
+            print(f"[ADD STATS] 安装 llm usage hook 失败: {e}")
+
+    def _collect_history_action_counts(self, history_db_path):
+        """从 mem0 history.db 聚合真实动作计数（ADD/UPDATE/DELETE）。"""
+        counts = {}
+        if not history_db_path or not os.path.exists(history_db_path):
+            return counts
+
+        conn = None
+        try:
+            conn = sqlite3.connect(history_db_path)
+            cur = conn.cursor()
+            cur.execute("SELECT action, COUNT(*) FROM history GROUP BY action")
+            rows = cur.fetchall() or []
+            for action, cnt in rows:
+                if action is None:
+                    continue
+                key = str(action).strip().upper()
+                if not key:
+                    continue
+                counts[key] = int(cnt or 0)
+        except Exception as e:
+            print(f"[ADD STATS] 读取 history.db 失败: {e}")
+        finally:
+            if conn is not None:
+                try:
+                    conn.close()
+                except Exception:
+                    pass
+
+        return counts
+
+    def _extract_token_usage(self, result):
+        """尽量从不同返回结构中提取 token 使用量，避免递归重复累计。"""
+        def _to_int(v):
+            try:
+                return int(v or 0)
+            except Exception:
+                return 0
+
+        prompt_tokens = 0
+        completion_tokens = 0
+        total_tokens = 0
+
+        # 优先级1：顶层 usage（最常见且最可靠）
+        if isinstance(result, dict):
+            usage = result.get("usage")
+            if isinstance(usage, dict):
+                prompt_tokens = _to_int(usage.get("prompt_tokens"))
+                completion_tokens = _to_int(usage.get("completion_tokens"))
+                total_tokens = _to_int(usage.get("total_tokens"))
+
+            # 优先级2：顶层扁平字段（部分 provider 兼容字段）
+            if prompt_tokens == 0:
+                prompt_tokens = _to_int(result.get("prompt_tokens"))
+            if completion_tokens == 0:
+                completion_tokens = _to_int(result.get("completion_tokens"))
+            if total_tokens == 0:
+                total_tokens = _to_int(result.get("total_tokens"))
+
+            # 优先级3：data[i].usage（避免全量递归造成重复统计）
+            data = result.get("data")
+            if isinstance(data, list) and (prompt_tokens == 0 and completion_tokens == 0 and total_tokens == 0):
+                for item in data:
+                    if not isinstance(item, dict):
+                        continue
+                    u = item.get("usage")
+                    if isinstance(u, dict):
+                        prompt_tokens += _to_int(u.get("prompt_tokens"))
+                        completion_tokens += _to_int(u.get("completion_tokens"))
+                        total_tokens += _to_int(u.get("total_tokens"))
+
+        if total_tokens == 0 and (prompt_tokens > 0 or completion_tokens > 0):
+            total_tokens = prompt_tokens + completion_tokens
+
+        return prompt_tokens, completion_tokens, total_tokens
+
+    def _record_add_stats(self, elapsed_seconds, result):
+        prompt_tokens, completion_tokens, total_tokens = self._extract_token_usage(result)
+        with self.stats_lock:
+            self.stats["add_calls"] += 1
+            self.stats["total_elapsed_seconds"] += float(elapsed_seconds)
+            self.stats["prompt_tokens"] += prompt_tokens
+            self.stats["completion_tokens"] += completion_tokens
+            self.stats["total_tokens"] += total_tokens
+
+            # 事件统计：严格按返回中的 event 原值聚合，不做 CRUD 语义映射
+            def _walk_events(node):
+                if isinstance(node, dict):
+                    event = node.get("event")
+                    if event is not None:
+                        event_key = str(event).strip().upper()
+                        if event_key:
+                            self.stats["crud_counts"][event_key] = self.stats["crud_counts"].get(event_key, 0) + 1
+                    for v in node.values():
+                        _walk_events(v)
+                elif isinstance(node, list):
+                    for item in node:
+                        _walk_events(item)
+
+            _walk_events(result)
+
     def add_memory(self, user_id, message, metadata, dia_ids=None, retries=3):
-        # 如果有dia_id列表，将其添加到metadata中
-        if dia_ids:
+        # 最简单模式：不写入 dia_ids（不保存对话ID）
+        if (not self.use_simple_mode) and dia_ids:
             if metadata is None:
                 metadata = {}
             metadata["dia_ids"] = dia_ids
         
         for attempt in range(retries):
             try:
+                start_time = time.perf_counter()
                 if self.use_local:
                     result = self.mem0_client.add(message, user_id=user_id, metadata=metadata, infer=(not self.use_sentence_mode))
                 else:
@@ -225,6 +405,8 @@ class MemoryADD:
                         enable_graph=self.is_graph,
                         infer=(not self.use_sentence_mode),
                     )
+                elapsed = time.perf_counter() - start_time
+                self._record_add_stats(elapsed, result)
                 return result
             except Exception as e:
                 if attempt < retries - 1:
@@ -268,7 +450,7 @@ class MemoryADD:
 
                     for sent in sentences:
                         per_meta = {"timestamp": timestamp, "role": role, "sentence_mode": True, "sentence_idx": sentence_idx}
-                        if dia_ids:
+                        if dia_ids and (not self.use_simple_mode):
                             per_meta["dia_ids"] = dia_ids
                         self.add_memory(speaker, sent, metadata=per_meta, dia_ids=dia_ids)
                         sentence_idx += 1
@@ -278,7 +460,7 @@ class MemoryADD:
                     speaker, 
                     batch_messages, 
                     metadata={"timestamp": timestamp},
-                    dia_ids=dia_ids
+                    dia_ids=None if self.use_simple_mode else dia_ids
                 )
 
             # 每 10 个 batch 打印一次 LLM / mem0 返回结果，便于 debug，
@@ -303,6 +485,9 @@ class MemoryADD:
         # delete all memories for the two users
         self.mem0_client.delete_all(user_id=speaker_a_user_id)
         self.mem0_client.delete_all(user_id=speaker_b_user_id)
+        # delete_all 不一定返回逐条事件，这里单独记为 API 层面的 DELETE_ALL 次数
+        with self.stats_lock:
+            self.stats["crud_counts"]["DELETE_ALL"] = self.stats["crud_counts"].get("DELETE_ALL", 0) + 2
 
         for key in conversation.keys():
             if key in ["speaker_a", "speaker_b"] or "date" in key or "timestamp" in key:
@@ -350,3 +535,82 @@ class MemoryADD:
 
             for future in futures:
                 future.result()
+
+        # add 阶段全局统计输出 + 写入文件
+        with self.stats_lock:
+            self.stats["finished_at"] = datetime.now().isoformat(timespec="seconds")
+            calls = self.stats["add_calls"]
+            elapsed = self.stats["total_elapsed_seconds"]
+            llm_prompt_tokens = self.stats.get("llm_prompt_tokens", 0)
+            llm_completion_tokens = self.stats.get("llm_completion_tokens", 0)
+            llm_total_tokens = self.stats.get("llm_total_tokens", 0)
+            crud_counts = dict(self.stats.get("crud_counts", {}))
+
+        avg_latency = (elapsed / calls) if calls > 0 else 0.0
+
+        # mem0 默认 history.db 路径（与向量库 faiss 无关）
+        history_db_path = None
+        try:
+            history_db_path = getattr(self.mem0_client.config, "history_db_path", None)
+        except Exception:
+            history_db_path = None
+
+        # 从 history.db 获取真实动作统计（ADD/UPDATE/DELETE）
+        history_action_counts = self._collect_history_action_counts(history_db_path)
+
+        llm_avg_prompt_tokens_per_add_call = (llm_prompt_tokens / calls) if calls > 0 else 0.0
+        llm_avg_completion_tokens_per_add_call = (llm_completion_tokens / calls) if calls > 0 else 0.0
+        llm_avg_total_tokens_per_add_call = (llm_total_tokens / calls) if calls > 0 else 0.0
+
+        stats_output = {
+            "started_at": self.stats.get("started_at"),
+            "finished_at": self.stats.get("finished_at"),
+            "phase": "add",
+            "llm_token_usage": {
+                "total": {
+                    "prompt_tokens": llm_prompt_tokens,
+                    "completion_tokens": llm_completion_tokens,
+                    "total_tokens": llm_total_tokens,
+                },
+                "avg_per_add_call": {
+                    "prompt_tokens": round(llm_avg_prompt_tokens_per_add_call, 6),
+                    "completion_tokens": round(llm_avg_completion_tokens_per_add_call, 6),
+                    "total_tokens": round(llm_avg_total_tokens_per_add_call, 6),
+                },
+            },
+            "time_usage": {
+                "add_calls": calls,
+                "total_elapsed_seconds": round(elapsed, 6),
+                "avg_elapsed_seconds_per_call": round(avg_latency, 6),
+            },
+            "crud_counts": crud_counts,
+            "history_crud_counts": history_action_counts,
+            "history_db": {
+                "path": history_db_path,
+                "exists": bool(history_db_path and os.path.exists(history_db_path)),
+            },
+        }
+
+        stats_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "results_stats")
+        os.makedirs(stats_dir, exist_ok=True)
+        stats_file = os.path.join(stats_dir, "add_stats.json")
+        with open(stats_file, "w", encoding="utf-8") as f:
+            json.dump(stats_output, f, ensure_ascii=False, indent=2)
+
+        print("=" * 80)
+        print("[ADD STATS] Token / Time / Event Summary")
+        print(f"  add 调用次数: {calls}")
+        print(f"  累计耗时(秒): {elapsed:.3f}")
+        print(f"  平均每次耗时(秒): {avg_latency:.3f}")
+        print(f"  prompt_tokens(raw llm, total): {llm_prompt_tokens}")
+        print(f"  completion_tokens(raw llm, total): {llm_completion_tokens}")
+        print(f"  total_tokens(raw llm, total): {llm_total_tokens}")
+        print(f"  prompt_tokens(raw llm, avg/add_call): {llm_avg_prompt_tokens_per_add_call:.6f}")
+        print(f"  completion_tokens(raw llm, avg/add_call): {llm_avg_completion_tokens_per_add_call:.6f}")
+        print(f"  total_tokens(raw llm, avg/add_call): {llm_avg_total_tokens_per_add_call:.6f}")
+        print(f"  事件统计(event->count): {crud_counts}")
+        print(f"  历史动作统计(history.db): {history_action_counts}")
+        print(f"  history.db 路径: {history_db_path}")
+        print(f"  history.db 是否存在: {bool(history_db_path and os.path.exists(history_db_path))}")
+        print(f"  统计文件: {stats_file}")
+        print("=" * 80)

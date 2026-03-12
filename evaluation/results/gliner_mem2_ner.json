@@ -1,0 +1,695 @@
+[
+  {
+    "user_id": "Evan_8",
+    "doc_id": "c2433f1f-4bb9-4b26-9e4d-4f89cb1ba182",
+    "text": "Evan suggests swapping soda for flavored seltzer water",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9500779509544373
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "8a88212b-8453-4038-8fa4-f67730ed6427",
+    "text": "Evan suggests replacing candy with dark chocolate with high cocoa content",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9452871084213257
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "98a6a4fa-1380-4033-b2b0-41a6e2946831",
+    "text": "Evan is here for Sam",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9604052901268005
+      },
+      {
+        "start": 17,
+        "end": 20,
+        "text": "Sam",
+        "label": "person",
+        "score": 0.7881616950035095
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "002f84ed-9814-45e1-aa2e-7b57a64b383a",
+    "text": "They are supporting each other on health journeys",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "They",
+        "label": "person",
+        "score": 0.6919147968292236
+      },
+      {
+        "start": 34,
+        "end": 49,
+        "text": "health journeys",
+        "label": "event",
+        "score": 0.6075640916824341
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "41541204-881f-4a8e-bddb-a6b606b3253d",
+    "text": "Sam is up for trying and making tiny changes",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "Sam",
+        "label": "person",
+        "score": 0.9518376588821411
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "77986058-31c7-4ca6-99aa-2e346988244f",
+    "text": "Evan is here for Sam and wants to rock workouts to reach goals",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9577375650405884
+      },
+      {
+        "start": 17,
+        "end": 20,
+        "text": "Sam",
+        "label": "person",
+        "score": 0.8568074703216553
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "afcc17f4-827f-4a99-b8f4-5553a5bb4ad1",
+    "text": "Evan mentions exercise clears the mind",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9486796855926514
+      },
+      {
+        "start": 14,
+        "end": 22,
+        "text": "exercise",
+        "label": "event",
+        "score": 0.6175464391708374
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "b703a704-05b3-4db9-ab94-ed3a31ea0204",
+    "text": "Coming from the shop",
+    "entities": [
+      {
+        "start": 16,
+        "end": 20,
+        "text": "shop",
+        "label": "location",
+        "score": 0.554454505443573
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "69905b9b-73ba-406e-a9fc-c86fface6caf",
+    "text": "Had a frustrating issue at the supermarket",
+    "entities": [
+      {
+        "start": 31,
+        "end": 42,
+        "text": "supermarket",
+        "label": "location",
+        "score": 0.7979249358177185
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "e03fb232-34eb-42e8-9bd8-3a4cdff0eb32",
+    "text": "Self-checkout machines were all broken",
+    "entities": [
+      {
+        "start": 0,
+        "end": 22,
+        "text": "Self-checkout machines",
+        "label": "location",
+        "score": 0.5420085787773132
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "50da1332-81a8-40c1-97ee-f953d5f64484",
+    "text": "Mood is terrible now",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "44090c5b-0f77-4436-96d2-5ba945181845",
+    "text": "Sam's friends were mocking his weight last Friday",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "Sam",
+        "label": "person",
+        "score": 0.9534940719604492
+      },
+      {
+        "start": 38,
+        "end": 49,
+        "text": "last Friday",
+        "label": "date",
+        "score": 0.8244795799255371
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "a4b7501f-1a12-40ea-b969-516515ec98fc",
+    "text": "Sam realized he needs to make changes",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "Sam",
+        "label": "person",
+        "score": 0.9555546641349792
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "24c666bd-8c8b-442f-a6e8-10bbbe1db082",
+    "text": "Struggled with health a few years ago but stuck with it",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "48f598cf-7da7-4da1-9813-60c6cb03849c",
+    "text": "Gym membership card",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "Gym",
+        "label": "location",
+        "score": 0.5577623248100281
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "95cb0e72-deea-4ca7-b440-aeea9b88b8d9",
+    "text": "Health involves exercise, diet, and lifestyle changes",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "531c75c9-d117-4308-ad3e-74993cb1b330",
+    "text": "Made dietary changes by cutting down on sugary snacks and eating more veggies and fruit",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "faa1e1b6-9366-47bf-a89b-b9f99101ce4c",
+    "text": "Asked if the assistant has considered any changes",
+    "entities": [
+      {
+        "start": 13,
+        "end": 22,
+        "text": "assistant",
+        "label": "person",
+        "score": 0.6251747608184814
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "1997cfe4-eb5d-4d67-a018-ecfd95189d75",
+    "text": "Reducing soda and candy intake",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "415c2d59-3751-4e94-a933-c28156c319e2",
+    "text": "Trying flavored seltzer water as an alternative to soda",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "b89b472d-f944-47b4-b7d6-35fcde4e4784",
+    "text": "Cannot stop thinking about a new mystery novel",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "a0d70d0e-9abc-494a-9f98-fbf27cd8db8e",
+    "text": "Prefers low-calorie snacks",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "4664a020-b93f-4c3c-89e9-3e2b7e1af9dc",
+    "text": "Likes flavored seltzer with air-popped popcorn or fruit",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "c3bfcd62-bcc1-4880-8a5f-6126bb9c7332",
+    "text": "Reading 'The Great Gatsby'",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "6e909093-ed0f-4e69-8f23-f768ea15e823",
+    "text": "Starting tomorrow, will go to the gym and exercise regularly",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "text": "Starting tomorrow",
+        "label": "date",
+        "score": 0.8993112444877625
+      },
+      {
+        "start": 34,
+        "end": 37,
+        "text": "gym",
+        "label": "location",
+        "score": 0.774831235408783
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "8174c417-ddc4-4963-af1d-1b4e8c72c3d6",
+    "text": "Last week went on a trip to Canada",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "text": "Last week",
+        "label": "date",
+        "score": 0.9475868940353394
+      },
+      {
+        "start": 28,
+        "end": 34,
+        "text": "Canada",
+        "label": "location",
+        "score": 0.9044477343559265
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "1e52c715-3fd6-4b72-ae01-912a61480562",
+    "text": "Met an awesome Canadian woman",
+    "entities": [
+      {
+        "start": 15,
+        "end": 29,
+        "text": "Canadian woman",
+        "label": "person",
+        "score": 0.6158734560012817
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "7acc6005-f818-4615-906b-5f148cdd46fb",
+    "text": "Being with her makes him feel alive",
+    "entities": [
+      {
+        "start": 11,
+        "end": 14,
+        "text": "her",
+        "label": "person",
+        "score": 0.7076697945594788
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "3f54d8f2-320a-43e9-814f-164aa0580666",
+    "text": "Evan mentions that every moment with Sam is fun and energizing",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9387481808662415
+      },
+      {
+        "start": 37,
+        "end": 40,
+        "text": "Sam",
+        "label": "person",
+        "score": 0.8795099258422852
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "b7a1dc65-39d9-4bab-9cba-ebe69e2bbb76",
+    "text": "Evan refers to dealing with health issues",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9317587018013
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "253b8114-c5b2-4262-8751-a33892ce8311",
+    "text": "Evan mentions that life has thrown something new for him",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9669208526611328
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "2a4f7a3c-1378-4815-97f7-7e7eac4cac8d",
+    "text": "Dealing with health issues has been tough",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "707e81f0-1803-48ee-b2f1-8276cd9f72c8",
+    "text": "Appreciate the good moments more",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "46449954-e35e-426a-9a1a-cf0354ac2b94",
+    "text": "These are the ones who bring lots of joy even through the hard times",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "48d96830-0a8e-4ba1-b697-168309b90bc9",
+    "text": "Evan has been working on a healthy road for two years",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9720512628555298
+      },
+      {
+        "start": 27,
+        "end": 39,
+        "text": "healthy road",
+        "label": "location",
+        "score": 0.7954542636871338
+      },
+      {
+        "start": 44,
+        "end": 53,
+        "text": "two years",
+        "label": "time",
+        "score": 0.6924849152565002
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "18f166c1-ec34-4f12-9ab5-847f05bcb7d6",
+    "text": "Evan mentions there have been ups and downs in his journey",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9614486694335938
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "a29b301b-e6b1-448a-b4be-c7db244f603a",
+    "text": "Evan's family motivates him to stay healthy",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9463788866996765
+      },
+      {
+        "start": 7,
+        "end": 13,
+        "text": "family",
+        "label": "organization",
+        "score": 0.5350040197372437
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "6d27827e-5430-4fd7-b0a8-591e19ba88e2",
+    "text": "Evan's family helps with his health goals",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9393455982208252
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "880396f7-e1bd-411f-b057-455f6e12d2a8",
+    "text": "Evan's family tracks his progress and serves as a constant reminder to keep going",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9180641174316406
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "590881c0-64bb-4ddb-89f8-e935d9723113",
+    "text": "Evan finds a visual reminder motivating",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9561957716941833
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "d9d56edd-2ac4-43b7-93b6-095f4528b432",
+    "text": "Motivated by a thirst for adventure on interesting hikes",
+    "entities": []
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "6219edda-4cd5-49a2-aebd-f8e4200609a3",
+    "text": "Evan got it because it symbolizes strength and resilience",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9487512111663818
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "a7027fcd-6ef8-4f97-aab8-96dbf241a98d",
+    "text": "Taking care of it motivates Evan to keep going through tough times",
+    "entities": [
+      {
+        "start": 28,
+        "end": 32,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9708649516105652
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "8240d39b-1abe-4b8b-9b8e-d59dc6c7d502",
+    "text": "Evan got back from a vacation with his new SO in Canada",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9625983834266663
+      },
+      {
+        "start": 49,
+        "end": 55,
+        "text": "Canada",
+        "label": "location",
+        "score": 0.8937855958938599
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "4a122a02-7db5-4169-8c7c-d65905a70a47",
+    "text": "Evan tried hiking and biking during the vacation",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9569785594940186
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "a22f38ba-aca1-48a8-b074-0bb1e3d40d8d",
+    "text": "Evan loved exploring the outdoors with his new SO",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9664789438247681
+      },
+      {
+        "start": 25,
+        "end": 33,
+        "text": "outdoors",
+        "label": "location",
+        "score": 0.6484997868537903
+      },
+      {
+        "start": 47,
+        "end": 49,
+        "text": "SO",
+        "label": "organization",
+        "score": 0.523928701877594
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "b5b496da-1c5f-4457-a974-aa0c837f9754",
+    "text": "Sam mentioned health challenges",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "Sam",
+        "label": "person",
+        "score": 0.938240647315979
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "8f9db4fc-eed1-43ce-bf44-01e401ab20db",
+    "text": "Sam: It's actually a quote that's been helping me stay motivated. It reminds me that progress is more important than perfection. Taking small steps towards a healthier life is still progress",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "Sam",
+        "label": "person",
+        "score": 0.974075973033905
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "606bab6b-9944-479e-9744-b7dd69d44da4",
+    "text": "Evan asked Sam for the quote about progress over perfection",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Evan",
+        "label": "person",
+        "score": 0.9282335638999939
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "text": "Sam",
+        "label": "person",
+        "score": 0.9453850984573364
+      }
+    ]
+  },
+  {
+    "user_id": "Evan_8",
+    "doc_id": "3856611d-0a43-4fc1-b598-eb0fda5e35db",
+    "text": "Sam shared the quote: 'Don't fear it, just take the first step. It's been helping me move forward to healthier habits!'",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "Sam",
+        "label": "person",
+        "score": 0.9731769561767578
+      }
+    ]
+  }
+]

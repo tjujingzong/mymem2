@@ -21,6 +21,8 @@ from src.zep.search import ZepSearch
 USE_SENTENCE_MODE = str(os.getenv("USE_SENTENCE_MODE", "0")).lower() in ("1", "true", "yes")
 # Hybrid-Sentence 模式：facts 检索 + 对话内短句再检索
 USE_HYBRID_MODE = str(os.getenv("USE_HYBRID_MODE", "0")).lower() in ("1", "true", "yes")
+# 最简单模式：只使用 memory，不写入/回溯对话ID，不做RRF重排
+USE_SIMPLE_MODE = str(os.getenv("USE_SIMPLE_MODE", "0")).lower() in ("1", "true", "yes")
 
 
 class Experiment:
@@ -64,7 +66,12 @@ def main():
     if args.technique_type == "mem0":
         data_path = args.data_path
         if args.method == "add":
-            memory_manager = MemoryADD(data_path=data_path, is_graph=args.is_graph, use_sentence_mode=USE_SENTENCE_MODE)
+            memory_manager = MemoryADD(
+                data_path=data_path,
+                is_graph=args.is_graph,
+                use_sentence_mode=USE_SENTENCE_MODE,
+                use_simple_mode=USE_SIMPLE_MODE,
+            )
             memory_manager.process_all_conversations()
         elif args.method == "search":
             output_file_path = os.path.join(
@@ -89,6 +96,7 @@ def main():
                 include_original_conversations=include_original,
                 use_sentence_mode=USE_SENTENCE_MODE,
                 use_hybrid_mode=USE_HYBRID_MODE,
+                use_simple_mode=USE_SIMPLE_MODE,
             )
             memory_searcher.process_data_file(data_path)
     elif args.technique_type == "rag":

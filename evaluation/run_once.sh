@@ -15,40 +15,89 @@ USE_SENTENCE_MODE="${USE_SENTENCE_MODE:-0}"
 # - 默认 0；设为 1 则启用
 USE_HYBRID_MODE="${USE_HYBRID_MODE:-0}"
 
-# 从指定步骤开始运行（1-4）
-# 用法示例：
-#   bash run_once.sh --from_step 2
-# 或环境变量：
-#   FROM_STEP=2 bash run_once.sh
+# 是否启用最简单模式（不写入/回溯对话ID、不拼原文、不做RRF重排，仅依赖memory）
+# - 默认 0；设为 1 则启用
+USE_SIMPLE_MODE="${USE_SIMPLE_MODE:-0}"
+
+# 步骤控制：
+# 1) 从指定步骤开始运行（1-4）
+#    用法示例：bash run_once.sh --from_step 2
+# 2) 只运行指定步骤（1-4）
+#    用法示例：bash run_once.sh --only_step 3
+# 环境变量也支持：FROM_STEP / ONLY_STEP
 FROM_STEP="${FROM_STEP:-1}"
-if [ "$1" = "--from_step" ] && [ -n "$2" ]; then
-    FROM_STEP="$2"
-fi
+ONLY_STEP="${ONLY_STEP:-}"
+
+while [ $# -gt 0 ]; do
+    case "$1" in
+        --from_step)
+            if [ -z "$2" ]; then
+                echo "✗ 参数错误：--from_step 需要一个 1-4 的值"
+                exit 1
+            fi
+            FROM_STEP="$2"
+            shift 2
+            ;;
+        --only_step)
+            if [ -z "$2" ]; then
+                echo "✗ 参数错误：--only_step 需要一个 1-4 的值"
+                exit 1
+            fi
+            ONLY_STEP="$2"
+            shift 2
+            ;;
+        *)
+            echo "✗ 未知参数: $1"
+            echo "用法: bash run_once.sh [--from_step N] [--only_step N]"
+            exit 1
+            ;;
+    esac
+done
 
 if ! [[ "$FROM_STEP" =~ ^[1-4]$ ]]; then
     echo "✗ 参数错误：FROM_STEP 必须是 1-4，当前为: $FROM_STEP"
     exit 1
 fi
 
+if [ -n "$ONLY_STEP" ] && ! [[ "$ONLY_STEP" =~ ^[1-4]$ ]]; then
+    echo "✗ 参数错误：ONLY_STEP 必须是 1-4，当前为: $ONLY_STEP"
+    exit 1
+fi
+
+if [ -n "$ONLY_STEP" ] && [ "$FROM_STEP" != "1" ]; then
+    echo "! 提示：同时设置了 FROM_STEP 和 ONLY_STEP，将优先按 ONLY_STEP 执行。"
+fi
+
+should_run_step() {
+    local step="$1"
+    if [ -n "$ONLY_STEP" ]; then
+        [ "$step" -eq "$ONLY_STEP" ]
+    else
+        [ "$FROM_STEP" -le "$step" ]
+    fi
+}
+
 # 输出文件夹
-OUTPUT_SEARCH="results_search/longmemeavl"
-OUTPUT_METRICS="results_metrics/longmemeavl"
-OUTPUT_SCORES="results_scores/longmemeavl"
+OUTPUT_SEARCH="results_search"
+OUTPUT_METRICS="results_metrics"
+OUTPUT_SCORES="results_scores"
 
 # MEM0_VECTOR_PATH（向量存储路径）
-VECTOR_PATH="/root/ljz/mymem2/evaluation/local_longmemeval/10"
+VECTOR_PATH="/root/ljz/mymem2/evaluation/local_mem2/index2"
 
 # 数据集路径（默认保持 locomo10.json 不变；如需 longmemeval 请覆盖该变量）
-DATASET_PATH="${DATASET_PATH:-dataset/longmemeavl/longmemeval_as_locomo_10.json}"
+DATASET_PATH="${DATASET_PATH:-dataset/locomo10.json}"
 
 # 输出文件名配置
-SEARCH_FILENAME="longmemeval_facts_10.json"
-METRICS_FILENAME="longmemeval_facts_10.json"
-SCORES_FILENAME="longmemeval_facts_10.txt"
+SEARCH_FILENAME="index-simple.json"
+METRICS_FILENAME="index-simple.json"
+SCORES_FILENAME="index-simple.txt"
 
 # run_experiments.py 参数配置
 TECHNIQUE_TYPE="mem0"
 TOP_K=10
+# NER 重排时先取 3 倍候选，再回排 top_k
+NER_RRF_MULTIPLIER=3
 
 # ==========================================
 # 脚本执行部分
@@ -68,11 +117,10 @@ echo "使用 MEM0_VECTOR_PATH: $VECTOR_PATH"
 echo ""
 
 # 步骤1: 运行实验 - add方法（使用对应的 MEM0_VECTOR_PATH）
-if [ "$FROM_STEP" -le 1 ]; then
+if should_run_step 1; then
     echo "[步骤1] 执行: python run_experiments.py --technique_type ${TECHNIQUE_TYPE} --method add"
     echo "环境变量: MEM0_VECTOR_PATH=$VECTOR_PATH"
-    MEM0_VECTOR_PATH="$VECTOR_PATH" DATASET_PATH="$DATASET_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method add --data_path "$DATASET_PATH"
-    if [ $? -eq 0 ]; then
+    if MEM0_VECTOR_PATH="$VECTOR_PATH" DATASET_PATH="$DATASET_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" USE_SIMPLE_MODE="$USE_SIMPLE_MODE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method add --data_path "$DATASET_PATH"; then
         echo "✓ 步骤1完成"
     else
         echo "✗ 步骤1失败"
@@ -80,18 +128,22 @@ if [ "$FROM_STEP" -le 1 ]; then
     fi
     echo ""
 else
-    echo "[跳过步骤1] FROM_STEP=$FROM_STEP"
+    echo "[跳过步骤1] 当前仅执行步骤: ${ONLY_STEP:-从${FROM_STEP}开始}"
     echo ""
 fi
 
 # 步骤2: 运行实验 - search方法（使用对应的 MEM0_VECTOR_PATH，输出到 results_search/）
-if [ "$FROM_STEP" -le 2 ]; then
+if should_run_step 2; then
     # 预先定义输出文件路径
     SEARCH_OUTPUT_FILE="${OUTPUT_SEARCH}/${SEARCH_FILENAME}"
-    
+
     echo "[步骤2] 执行: python run_experiments.py --technique_type ${TECHNIQUE_TYPE} --method search --top_k ${TOP_K} --output_folder ${OUTPUT_SEARCH}/"
     echo "环境变量: MEM0_VECTOR_PATH=$VECTOR_PATH"
-    MEM0_VECTOR_PATH="$VECTOR_PATH" DATASET_PATH="$DATASET_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method search --top_k "$TOP_K" --output_folder "${OUTPUT_SEARCH}/" --data_path "$DATASET_PATH"
+    MEM0_VECTOR_PATH="$VECTOR_PATH" DATASET_PATH="$DATASET_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" USE_SIMPLE_MODE="$USE_SIMPLE_MODE" \
+    MEM0_NER_RRF_FUSION=1 MEM0_NER_RRF_MULTIPLIER="$NER_RRF_MULTIPLIER" \
+    MEM0_NER_MODEL_PATH="/root/ljz/mymem2/models/gliner_small-v2.1" \
+    MEM0_NER_ENCODER_PATH="/root/ljz/mymem2/models/deberta-v3-small" \
+    python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method search --top_k "$TOP_K" --output_folder "${OUTPUT_SEARCH}/" --data_path "$DATASET_PATH"
     if [ $? -eq 0 ]; then
         echo "✓ 步骤2完成"
         # 重命名输出文件以区分不同运行
@@ -105,7 +157,7 @@ if [ "$FROM_STEP" -le 2 ]; then
     fi
     echo ""
 else
-    echo "[跳过步骤2] FROM_STEP=$FROM_STEP"
+    echo "[跳过步骤2] 当前仅执行步骤: ${ONLY_STEP:-从${FROM_STEP}开始}"
     echo ""
 fi
 
@@ -115,7 +167,7 @@ METRICS_OUTPUT_FILE="${OUTPUT_METRICS}/${METRICS_FILENAME}"
 SCORES_OUTPUT_FILE="${OUTPUT_SCORES}/${SCORES_FILENAME}"
 
 # 步骤3: 运行评估（输出到 results_metrics/）
-if [ "$FROM_STEP" -le 3 ]; then
+if should_run_step 3; then
     if [ ! -f "$SEARCH_OUTPUT_FILE" ]; then
         echo "✗ 找不到搜索结果文件: $SEARCH_OUTPUT_FILE"
         echo "  你选择从步骤3开始运行，但步骤3依赖步骤2的输出。"
@@ -138,12 +190,12 @@ if [ "$FROM_STEP" -le 3 ]; then
     fi
     echo ""
 else
-    echo "[跳过步骤3] FROM_STEP=$FROM_STEP"
+    echo "[跳过步骤3] 当前仅执行步骤: ${ONLY_STEP:-从${FROM_STEP}开始}"
     echo ""
 fi
 
 # 步骤4: 生成分数（输出到 results_scores/）
-if [ "$FROM_STEP" -le 4 ]; then
+if should_run_step 4; then
     if [ ! -f "$METRICS_OUTPUT_FILE" ]; then
         echo "✗ 找不到评估结果文件: $METRICS_OUTPUT_FILE"
         echo "  你选择从步骤4开始运行，但步骤4依赖步骤3的输出。"
@@ -160,7 +212,7 @@ if [ "$FROM_STEP" -le 4 ]; then
     fi
     echo ""
 else
-    echo "[跳过步骤4] FROM_STEP=$FROM_STEP"
+    echo "[跳过步骤4] 当前仅执行步骤: ${ONLY_STEP:-从${FROM_STEP}开始}"
     echo ""
 fi
 

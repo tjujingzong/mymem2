@@ -4,8 +4,11 @@ import time
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
+import math
 import re
 import numpy as np
+
+from gliner import GLiNER
 
 from dotenv import load_dotenv
 from jinja2 import Template
@@ -34,6 +37,7 @@ class MemorySearch:
         include_original_conversations=None,
         use_sentence_mode=False,
         use_hybrid_mode=False,
+        use_simple_mode=False,
     ):
         self.use_local = str(os.getenv("MEM0_LOCAL_MODE", "0")).lower() in ("1", "true", "yes")
         if self.use_local:
@@ -156,6 +160,7 @@ class MemorySearch:
         self.sentence_stats = {"total_sentences": 0, "num_messages": 0}
         self.is_graph = is_graph
         self.use_hybrid_mode = use_hybrid_mode
+        self.use_simple_mode = use_simple_mode
 
         if self.use_sentence_mode and self.is_graph:
             raise ValueError("短句模式不支持图搜索，请关闭 --is_graph。")
@@ -176,6 +181,11 @@ class MemorySearch:
         # 是否启用两阶段按需加载原文（默认关闭，保持旧行为不变）
         self.qa_two_stage = str(os.getenv("MEM0_QA_TWO_STAGE", "0")).lower() in ("1", "true", "yes")
 
+        # 最简单模式：强制不拼原文、关闭两阶段
+        if self.use_simple_mode:
+            self.include_original_conversations = False
+            self.qa_two_stage = False
+
         # 图模式下，为了公平评估记忆能力，只使用 memory + graph_memory，不再把原始对话拼进 QA prompt
         if self.is_graph:
             self.include_original_conversations = False
@@ -191,9 +201,9 @@ class MemorySearch:
         else:
             self.ANSWER_PROMPT = ANSWER_PROMPT
         
-        # 加载原始数据文件，用于根据dia_id查找对话内容
+        # 加载原始数据文件，用于根据dia_id查找对话内容（最简单模式下跳过）
         self.original_data = None
-        if data_path and os.path.exists(data_path):
+        if (not self.use_simple_mode) and data_path and os.path.exists(data_path):
             try:
                 with open(data_path, "r", encoding="utf-8") as f:
                     self.original_data = json.load(f)
@@ -201,7 +211,37 @@ class MemorySearch:
             except Exception as e:
                 print(f"加载原始数据文件失败: {e}")
                 self.original_data = None
-    
+
+        # 是否启用“记忆指针化 + NER”的 RRF 融合检索策略（默认关闭保证兼容性）
+        # 开启方式：MEM0_NER_RRF_FUSION=1（或 true/yes）
+        self.use_ner_rrf_fusion = (
+            str(os.getenv("MEM0_NER_RRF_FUSION", "0")).lower() in ("1", "true", "yes")
+        )
+        if self.use_simple_mode:
+            self.use_ner_rrf_fusion = False
+        # RRF 中的常数 k，可通过环境变量调整，默认 60
+        try:
+            self.rrf_k = int(os.getenv("MEM0_RRF_K", "60"))
+        except ValueError:
+            self.rrf_k = 60
+
+        # NER 模型（本地离线）
+        self.ner_model = None
+        if self.use_ner_rrf_fusion:
+            ner_model_path = os.getenv("MEM0_NER_MODEL_PATH", "/root/ljz/mymem2/models/gliner_small-v2.1")
+            ner_encoder_path = os.getenv("MEM0_NER_ENCODER_PATH", "/root/ljz/mymem2/models/deberta-v3-small")
+            ner_labels = os.getenv("MEM0_NER_LABELS", "person,organization,location,date,time,event")
+            ner_threshold = float(os.getenv("MEM0_NER_THRESHOLD", "0.5"))
+            self.ner_labels = [s.strip() for s in ner_labels.split(",") if s.strip()]
+            self.ner_threshold = ner_threshold
+
+            # 强制离线 + 本地模型
+            os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
+            os.environ.setdefault("HF_HUB_OFFLINE", "1")
+
+            self._maybe_override_gliner_encoder(ner_model_path, ner_encoder_path)
+            self.ner_model = GLiNER.from_pretrained(ner_model_path, local_files_only=True)
+
     def _rank_sentences_by_query(self, query: str, sentences: list[str]):
         """Rank sentences by cosine similarity using the same embedding model as mem0."""
         if not sentences:
@@ -259,6 +299,177 @@ class MemorySearch:
             return "\n".join(conversation_texts)
         return None
 
+    # ========= NER + RRF 融合（指针化原文级别） =========
+    def _maybe_override_gliner_encoder(self, model_dir: str, encoder_model_path: str) -> None:
+        config_path = os.path.join(model_dir, "gliner_config.json")
+        if not os.path.exists(config_path):
+            return
+        try:
+            with open(config_path, "r", encoding="utf-8") as f:
+                config = json.load(f)
+        except Exception:
+            return
+
+        if config.get("model_name") == encoder_model_path:
+            return
+
+        config["model_name"] = encoder_model_path
+        try:
+            with open(config_path, "w", encoding="utf-8") as f:
+                json.dump(config, f, ensure_ascii=False, indent=2)
+        except Exception:
+            return
+
+    def _extract_ner_entities(self, text: str) -> set[str]:
+        if not text or not self.ner_model:
+            return set()
+        try:
+            entities = self.ner_model.predict_entities(
+                text,
+                labels=self.ner_labels,
+                threshold=self.ner_threshold,
+            )
+        except Exception:
+            return set()
+
+        ent_set = set()
+        for ent in entities or []:
+            label = str(ent.get("label", "")).strip().lower()
+            name = str(ent.get("text", "")).strip().lower()
+            if not label or not name:
+                continue
+            ent_set.add(f"{label}:{name}")
+        return ent_set
+
+    def _tokenize_text(self, text: str):
+        """简单分词：按非字母数字字符切分，统一转小写。"""
+        if not text:
+            return []
+        return re.findall(r"\w+", str(text).lower())
+
+    def _is_time_like_token(self, token: str) -> bool:
+        """粗略判断是否为时间相关 token，用于对时间关键词加权。"""
+        if not token:
+            return False
+        # 包含四位数字（年份等）
+        if re.search(r"\d{4}", token):
+            return True
+        # 英文常见时间词
+        time_words_en = {
+            "yesterday",
+            "today",
+            "tomorrow",
+            "tonight",
+            "morning",
+            "afternoon",
+            "evening",
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday",
+            "sunday",
+            "jan",
+            "feb",
+            "mar",
+            "apr",
+            "may",
+            "jun",
+            "jul",
+            "aug",
+            "sep",
+            "oct",
+            "nov",
+            "dec",
+        }
+        if token in time_words_en:
+            return True
+        # 中文时间词
+        if any(ch in token for ch in ["年", "月", "日", "号", "昨天", "今天", "明天"]):
+            return True
+        return False
+
+    def _ner_overlap_scores(self, query: str, docs: list[str]) -> list[float]:
+        """基于 query 与文档的实体重叠，计算 NER 得分。"""
+        if not docs:
+            return []
+
+        q_ents = self._extract_ner_entities(query)
+        if not q_ents:
+            return [0.0 for _ in docs]
+
+        scores = []
+        for doc in docs:
+            d_ents = self._extract_ner_entities(doc)
+            if not d_ents:
+                scores.append(0.0)
+                continue
+            inter = q_ents & d_ents
+            scores.append(len(inter) / max(len(q_ents), 1))
+        return scores
+
+    def _apply_rrf_fusion(self, query: str, semantic_memories: list[dict]) -> list[dict]:
+        """
+        对基于 embedding 的排序结果，引入“指针化原文片段”的 NER 检索，
+        然后使用 RRF (Reciprocal Rank Fusion) 做多检索器融合。
+
+        - 排序 1：Mem0 的语义检索结果（当前顺序即 rank）
+        - 排序 2：在 pointer 回溯得到的 original_conversation / memory 上做 NER 重叠排序
+        """
+        if not semantic_memories or not query or not self.use_ner_rrf_fusion:
+            return semantic_memories
+
+        num = len(semantic_memories)
+        # 语义排序：当前顺序视为 rank（从 1 开始）
+        semantic_ranks = {idx: idx + 1 for idx in range(num)}
+
+        # 为每条记忆构造用于关键词检索的文本：
+        # 优先使用 pointer 回溯得到的原始对话 original_conversation，其次才用 summary memory
+        docs = []
+        for item in semantic_memories:
+            doc_text = item.get("original_conversation") or item.get("memory", "")
+            docs.append(str(doc_text))
+
+        ner_scores = self._ner_overlap_scores(query, docs)
+
+        # 按 NER 得分从高到低给出排名（只对得分>0的项设定 rank）
+        sorted_by_ner = sorted(
+            [(idx, score) for idx, score in enumerate(ner_scores)], key=lambda x: x[1], reverse=True
+        )
+        ner_ranks = {}
+        rank_pos = 1
+        for idx, score in sorted_by_ner:
+            if score <= 0:
+                break
+            ner_ranks[idx] = rank_pos
+            rank_pos += 1
+
+        k_const = self.rrf_k
+        default_rank = num + 1
+
+        fused_scores = {}
+        for idx in range(num):
+            r_sem = semantic_ranks.get(idx, default_rank)
+            r_ner = ner_ranks.get(idx, default_rank)
+            fused_scores[idx] = 1.0 / (k_const + r_sem) + 1.0 / (k_const + r_ner)
+
+        # 按 fused score 从大到小排序，并裁剪到 top_k
+        sorted_indices = sorted(range(num), key=lambda i: fused_scores[i], reverse=True)
+        top_n = min(self.top_k, len(sorted_indices))
+
+        fused_memories = []
+        for rank_idx, mem_idx in enumerate(sorted_indices[:top_n]):
+            item = semantic_memories[mem_idx].copy()
+            # 额外记录多检索器信息（不影响原有字段使用）
+            item["semantic_rank"] = semantic_ranks.get(mem_idx)
+            item["ner_score"] = float(ner_scores[mem_idx])
+            item["rrf_score"] = float(fused_scores[mem_idx])
+            item["fused_rank"] = rank_idx + 1
+            fused_memories.append(item)
+
+        return fused_memories
+
     def search_memory(self, user_id, query, conversation_idx=None, max_retries=3, retry_delay=1):
         start_time = time.time()
         retries = 0
@@ -274,7 +485,9 @@ class MemorySearch:
                 if self.use_local:
                     # 本地模式图搜索：本地 Memory.search() 不支持 enable_graph/output_format 参数
                     # 我们需要手动从其内部的 graph 实例中获取关系（如果启用了的话）
-                    search_results = self.mem0_client.search(query, user_id=user_id, filters=filters, limit=self.top_k)
+                    ner_multiplier = int(os.getenv("MEM0_NER_RRF_MULTIPLIER", "3"))
+                    search_limit = self.top_k * ner_multiplier if self.use_ner_rrf_fusion else self.top_k
+                    search_results = self.mem0_client.search(query, user_id=user_id, filters=filters, limit=search_limit)
 
                     # 兼容本地 Memory.search 返回格式：可能是 list，也可能是 dict（例如 {"results": [...], ...}）
                     if isinstance(search_results, dict) and "results" in search_results:
@@ -337,17 +550,18 @@ class MemorySearch:
                 memories_list = memories["results"]
             else:
                 memories_list = memories
-
             semantic_memories = []
             for memory in memories_list:
                 memory_dict = memory if isinstance(memory, dict) else {"memory": str(memory)}
                 metadata = memory_dict.get("metadata", {})
                 
-                # 获取dia_ids并获取原始对话
-                dia_ids = metadata.get("dia_ids", [])
+                # 获取dia_ids并获取原始对话（最简单模式下跳过）
+                dia_ids = []
                 original_conversation = None
-                if dia_ids and conversation_idx is not None:
-                    original_conversation = self._get_conversation_by_dia_ids(dia_ids, conversation_idx)
+                if not self.use_simple_mode:
+                    dia_ids = metadata.get("dia_ids", [])
+                    if dia_ids and conversation_idx is not None:
+                        original_conversation = self._get_conversation_by_dia_ids(dia_ids, conversation_idx)
                 
                 memory_item = {
                     "memory": memory_dict.get("memory", str(memory)),
@@ -359,9 +573,13 @@ class MemorySearch:
                 if original_conversation:
                     memory_item["original_conversation"] = original_conversation
                     memory_item["dia_ids"] = dia_ids
-                
+
                 semantic_memories.append(memory_item)
-            
+
+            # 在非图模式下，如果开启了指针化 NER RRF 融合，则在此对语义检索结果重排序
+            if self.use_ner_rrf_fusion:
+                semantic_memories = self._apply_rrf_fusion(query, semantic_memories)
+
             graph_memories = None
         else:
             semantic_memories = []
@@ -370,11 +588,13 @@ class MemorySearch:
                 memory_dict = memory if isinstance(memory, dict) else {"memory": str(memory)}
                 metadata = memory_dict.get("metadata", {})
                 
-                # 获取dia_ids并获取原始对话
-                dia_ids = metadata.get("dia_ids", [])
+                # 获取dia_ids并获取原始对话（最简单模式下跳过）
+                dia_ids = []
                 original_conversation = None
-                if dia_ids and conversation_idx is not None:
-                    original_conversation = self._get_conversation_by_dia_ids(dia_ids, conversation_idx)
+                if not self.use_simple_mode:
+                    dia_ids = metadata.get("dia_ids", [])
+                    if dia_ids and conversation_idx is not None:
+                        original_conversation = self._get_conversation_by_dia_ids(dia_ids, conversation_idx)
                 
                 memory_item = {
                     "memory": memory_dict.get("memory", str(memory)),
