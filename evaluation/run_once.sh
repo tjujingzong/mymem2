@@ -89,15 +89,17 @@ VECTOR_PATH="/root/ljz/mymem2/evaluation/local_mem2/index2"
 DATASET_PATH="${DATASET_PATH:-dataset/locomo10.json}"
 
 # 输出文件名配置
-SEARCH_FILENAME="index-simple.json"
-METRICS_FILENAME="index-simple.json"
-SCORES_FILENAME="index-simple.txt"
+SEARCH_FILENAME="index-short-sentence.json"
+METRICS_FILENAME="index-short-sentence.json"
+SCORES_FILENAME="index-short-sentence.txt"
 
 # run_experiments.py 参数配置
 TECHNIQUE_TYPE="mem0"
 TOP_K=10
-# NER 重排时先取 3 倍候选，再回排 top_k
-NER_RRF_MULTIPLIER=3
+# NER+RRF 融合开关（默认开启，保持当前行为；设为0可关闭）
+MEM0_NER_RRF_FUSION="${MEM0_NER_RRF_FUSION:-1}"
+# NER 重排时先取 N 倍候选，再回排 top_k（仅在融合开启时生效）
+NER_RRF_MULTIPLIER="${MEM0_NER_RRF_MULTIPLIER:-3}"
 
 # ==========================================
 # 脚本执行部分
@@ -138,9 +140,9 @@ if should_run_step 2; then
     SEARCH_OUTPUT_FILE="${OUTPUT_SEARCH}/${SEARCH_FILENAME}"
 
     echo "[步骤2] 执行: python run_experiments.py --technique_type ${TECHNIQUE_TYPE} --method search --top_k ${TOP_K} --output_folder ${OUTPUT_SEARCH}/"
-    echo "环境变量: MEM0_VECTOR_PATH=$VECTOR_PATH"
+    echo "环境变量: MEM0_VECTOR_PATH=$VECTOR_PATH, MEM0_NER_RRF_FUSION=$MEM0_NER_RRF_FUSION"
     MEM0_VECTOR_PATH="$VECTOR_PATH" DATASET_PATH="$DATASET_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" USE_SIMPLE_MODE="$USE_SIMPLE_MODE" \
-    MEM0_NER_RRF_FUSION=1 MEM0_NER_RRF_MULTIPLIER="$NER_RRF_MULTIPLIER" \
+    MEM0_NER_RRF_FUSION="$MEM0_NER_RRF_FUSION" MEM0_NER_RRF_MULTIPLIER="$NER_RRF_MULTIPLIER" \
     MEM0_NER_MODEL_PATH="/root/ljz/mymem2/models/gliner_small-v2.1" \
     MEM0_NER_ENCODER_PATH="/root/ljz/mymem2/models/deberta-v3-small" \
     python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method search --top_k "$TOP_K" --output_folder "${OUTPUT_SEARCH}/" --data_path "$DATASET_PATH"

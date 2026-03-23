@@ -64,6 +64,16 @@ class MemorySearch:
             llm_api_key = os.getenv("DEEPSEEK_API_KEY") or os.getenv("OPENAI_API_KEY")
             llm_base_url = os.getenv("OPENAI_BASE_URL", "https://api.deepseek.com")
 
+            llm_config = {
+                "model": llm_model,
+                "api_key": llm_api_key,
+            }
+            # deepseek provider 需要 deepseek_base_url；openai provider 需要 openai_base_url
+            if str(llm_provider).lower() == "deepseek":
+                llm_config["deepseek_base_url"] = llm_base_url
+            else:
+                llm_config["openai_base_url"] = llm_base_url
+
             # Neo4j 图存储配置（本地模式可选开启，不影响原有非图流程）
             enable_graph_store = str(os.getenv("ENABLE_GRAPH_STORE", "0")).lower() in ("1", "true", "yes")
             neo4j_url = os.getenv("NEO4J_URL") or os.getenv("NEO4J_URI") or "bolt://localhost:7687"
@@ -83,11 +93,7 @@ class MemorySearch:
                     ),
                     llm=LlmConfig(
                         provider=llm_provider,
-                        config={
-                            "model": llm_model,
-                            "api_key": llm_api_key,
-                            "openai_base_url": llm_base_url,
-                        },
+                        config=llm_config,
                     ),
                 )
 
@@ -110,11 +116,7 @@ class MemorySearch:
                 ),
                 llm=LlmConfig(
                     provider=llm_provider,
-                    config={
-                        "model": llm_model,
-                        "api_key": llm_api_key,
-                        "openai_base_url": llm_base_url,
-                    },
+                    config=llm_config,
                 ),
                 graph_store=graph_store_cfg or GraphStoreConfig(),
             )

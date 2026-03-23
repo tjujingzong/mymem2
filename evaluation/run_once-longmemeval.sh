@@ -15,6 +15,14 @@ USE_SENTENCE_MODE="${USE_SENTENCE_MODE:-0}"
 # - 默认 0；设为 1 则启用
 USE_HYBRID_MODE="${USE_HYBRID_MODE:-0}"
 
+# mem0 add 阶段 batch size（每次提取多少条消息）
+# - 默认 2；可通过环境变量覆盖，例如设为 8 表示约提升到原来的 4 倍
+MEM0_ADD_BATCH_SIZE="${MEM0_ADD_BATCH_SIZE:-2}"
+
+# 是否启用最简单模式（只使用 memory，不写入/回溯对话ID，不做RRF重排）
+# - 默认 0；设为 1 则启用
+USE_SIMPLE_MODE="${USE_SIMPLE_MODE:-0}"
+
 # 从指定步骤开始运行（1-4）
 # 用法示例：
 #   bash run_once2.sh --from_step 2
@@ -31,16 +39,16 @@ if ! [[ "$FROM_STEP" =~ ^[1-4]$ ]]; then
 fi
 
 # 输出文件夹
-OUTPUT_SEARCH="results_search/longmemeavl"
-OUTPUT_METRICS="results_metrics/longmemeavl"
-OUTPUT_SCORES="results_scores/longmemeavl"
+OUTPUT_SEARCH="results_search/longmemeavl-index-size2"
+OUTPUT_METRICS="results_metrics/longmemeavl-index-size2"
+OUTPUT_SCORES="results_scores/longmemeavl-index-size2"
 
 # 批量运行配置：SUFFIX_LIST 表示要跑哪些后缀（如 10,20,...,500）
 # - 可覆盖：SUFFIX_LIST="10 20 30" bash run_once2.sh
-SUFFIX_LIST="${SUFFIX_LIST:-"$(seq 490 10 500)"}"
+SUFFIX_LIST="${SUFFIX_LIST:-"$(seq 10 10 500)"}"
 
 # MEM0_VECTOR_PATH（向量存储路径）根目录（每个后缀会拼到该目录下）
-VECTOR_BASE_PATH="${VECTOR_BASE_PATH:-/root/ljz/mymem2/evaluation/local_longmemeval}"
+VECTOR_BASE_PATH="${VECTOR_BASE_PATH:-/root/ljz/mymem2/evaluation/local_longmemeval-index-size8}"
 
 # 数据集根目录（每个后缀会拼到该目录下）
 DATASET_BASE_DIR="${DATASET_BASE_DIR:-dataset/longmemeval}"
@@ -92,7 +100,7 @@ run_one_suffix() {
     if [ "$FROM_STEP" -le 1 ]; then
         echo "[步骤1] 执行: python run_experiments.py --technique_type ${TECHNIQUE_TYPE} --method add"
         echo "环境变量: MEM0_VECTOR_PATH=$VECTOR_PATH"
-        MEM0_VECTOR_PATH="$VECTOR_PATH" DATASET_PATH="$DATASET_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method add --data_path "$DATASET_PATH"
+        MEM0_VECTOR_PATH="$VECTOR_PATH" DATASET_PATH="$DATASET_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" USE_SIMPLE_MODE="$USE_SIMPLE_MODE" MEM0_ADD_BATCH_SIZE="$MEM0_ADD_BATCH_SIZE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method add --data_path "$DATASET_PATH" --add_batch_size "$MEM0_ADD_BATCH_SIZE"
         if [ $? -eq 0 ]; then
             echo "✓ 步骤1完成"
         else
@@ -112,7 +120,7 @@ run_one_suffix() {
 
         echo "[步骤2] 执行: python run_experiments.py --technique_type ${TECHNIQUE_TYPE} --method search --top_k ${TOP_K} --output_folder ${OUTPUT_SEARCH}/"
         echo "环境变量: MEM0_VECTOR_PATH=$VECTOR_PATH"
-        MEM0_VECTOR_PATH="$VECTOR_PATH" DATASET_PATH="$DATASET_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method search --top_k "$TOP_K" --output_folder "${OUTPUT_SEARCH}/" --data_path "$DATASET_PATH"
+        MEM0_VECTOR_PATH="$VECTOR_PATH" DATASET_PATH="$DATASET_PATH" USE_SENTENCE_MODE="$USE_SENTENCE_MODE" USE_HYBRID_MODE="$USE_HYBRID_MODE" USE_SIMPLE_MODE="$USE_SIMPLE_MODE" python run_experiments.py --technique_type "$TECHNIQUE_TYPE" --method search --top_k "$TOP_K" --output_folder "${OUTPUT_SEARCH}/" --data_path "$DATASET_PATH"
         if [ $? -eq 0 ]; then
             echo "✓ 步骤2完成"
             # 重命名输出文件以区分不同运行

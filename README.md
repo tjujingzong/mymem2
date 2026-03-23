@@ -82,3 +82,5 @@ MEM0_KEYWORD_RRF_FUSION=1 bash evaluation/run_once.sh
 
 
 MEM0_FAISS_PER_USER_INDEX=1 time bash run_once.sh --only_step 1
+
+USE_HYBRID_MODE=1 MEM0_LOCAL_MODE=1 MEM0_FAISS_PER_USER_INDEX=1 MEM0_ADD_BATCH_SIZE=8 bash evaluation/run_once-longmemeval.sh --from_step 2

@@ -1,0 +1,32 @@
+{
+  "started_at": "2026-03-22T16:48:39",
+  "finished_at": "2026-03-22T17:12:28",
+  "phase": "add",
+  "llm_token_usage": {
+    "total": {
+      "prompt_tokens": 6215937,
+      "completion_tokens": 754246,
+      "total_tokens": 6970183
+    },
+    "avg_per_add_call": {
+      "prompt_tokens": 3580.608871,
+      "completion_tokens": 434.473502,
+      "total_tokens": 4015.082373
+    }
+  },
+  "time_usage": {
+    "add_calls": 1736,
+    "total_elapsed_seconds": 22468.137669,
+    "avg_elapsed_seconds_per_call": 12.942476
+  },
+  "crud_counts": {
+    "DELETE_ALL": 20,
+    "ADD": 5468,
+    "DELETE": 37
+  },
+  "history_crud_counts": {},
+  "history_db": {
+    "path": "/root/.mem0/history.db",
+    "exists": true
+  }
+}

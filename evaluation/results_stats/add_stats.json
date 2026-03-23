@@ -1,28 +1,28 @@
 {
-  "started_at": "2026-03-09T23:24:29",
-  "finished_at": "2026-03-10T00:42:44",
+  "started_at": "2026-03-23T12:58:54",
+  "finished_at": "2026-03-23T13:21:58",
   "phase": "add",
   "llm_token_usage": {
     "total": {
-      "prompt_tokens": 13777222,
-      "completion_tokens": 2447059,
-      "total_tokens": 16224281
+      "prompt_tokens": 6055233,
+      "completion_tokens": 739619,
+      "total_tokens": 6794852
     },
     "avg_per_add_call": {
-      "prompt_tokens": 2287.815012,
-      "completion_tokens": 406.353205,
-      "total_tokens": 2694.168217
+      "prompt_tokens": 3737.798148,
+      "completion_tokens": 456.554938,
+      "total_tokens": 4194.353086
     }
   },
   "time_usage": {
-    "add_calls": 6022,
-    "total_elapsed_seconds": 69999.77569,
-    "avg_elapsed_seconds_per_call": 11.624008
+    "add_calls": 1620,
+    "total_elapsed_seconds": 21906.643398,
+    "avg_elapsed_seconds_per_call": 13.522619
   },
   "crud_counts": {
     "DELETE_ALL": 20,
-    "ADD": 9478,
-    "DELETE": 109
+    "ADD": 5488,
+    "DELETE": 31
   },
   "history_crud_counts": {},
   "history_db": {

@@ -4,3 +4,4 @@ models/
 local_**
 *.log
 dataset/
+longmemeavl**

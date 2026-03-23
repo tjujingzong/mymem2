@@ -102,7 +102,7 @@ def summarize_scores(directory: str):
 
 
 if __name__ == "__main__":
-    target_dir = "/root/ljz/mymem2/evaluation/results_scores/longmemeavl"
+    target_dir = "/root/ljz/mymem2/evaluation/results_scores/longmemeavl-simple"
     if os.path.exists(target_dir):
         summarize_scores(target_dir)
     else:

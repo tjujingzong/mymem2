@@ -1,8 +1,7 @@
-import argparse
 import json
 import os
 import pickle
-from typing import Any, Dict, Iterable, List, Optional
+from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 from gliner import GLiNER
 
@@ -93,77 +92,141 @@ def run_ner(
     return results
 
 
+def load_queries_from_dataset(query_file: str) -> List[Dict[str, Any]]:
+    if not os.path.exists(query_file):
+        raise FileNotFoundError(f"未找到 query 文件: {query_file}")
+
+    with open(query_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    if not isinstance(data, list):
+        raise ValueError("query 数据格式异常：期望 JSON 数组")
+
+    queries: List[Dict[str, Any]] = []
+    qid = 0
+    for conv_idx, item in enumerate(data):
+        if not isinstance(item, dict):
+            continue
+        qa_list = item.get("qa", [])
+        if not isinstance(qa_list, list):
+            continue
+
+        for qa_idx, qa in enumerate(qa_list):
+            if not isinstance(qa, dict):
+                continue
+            text = qa.get("question") or qa.get("query") or qa.get("text")
+            if not isinstance(text, str) or not text.strip():
+                continue
+
+            qid += 1
+            queries.append(
+                {
+                    "id": f"conv{conv_idx}_qa{qa_idx}_{qid}",
+                    "text": text.strip(),
+                    "raw": qa,
+                }
+            )
+
+    return queries
+
+
+def run_ner_on_queries(
+    queries: Iterable[Dict[str, Any]],
+    model_name_or_path: str,
+    labels: List[str],
+    threshold: float,
+    limit: int,
+    local_files_only: bool,
+    encoder_model_path: Optional[str],
+) -> List[Dict[str, Any]]:
+    _maybe_override_encoder(model_name_or_path, encoder_model_path)
+    model = GLiNER.from_pretrained(model_name_or_path, local_files_only=local_files_only)
+
+    results: List[Dict[str, Any]] = []
+    for i, q in enumerate(queries):
+        if limit > 0 and i >= limit:
+            break
+
+        text = q["text"]
+        entities = model.predict_entities(text, labels, threshold=threshold)
+
+        results.append(
+            {
+                "id": q["id"],
+                "text": text,
+                "entities": entities,
+            }
+        )
+
+    return results
+
+
+def calc_avg_entity_count(records: Iterable[Dict[str, Any]]) -> Tuple[float, int]:
+    records_list = list(records)
+    if not records_list:
+        return 0.0, 0
+
+    total_entities = 0
+    for r in records_list:
+        ents = r.get("entities", [])
+        total_entities += len(ents) if isinstance(ents, list) else 0
+
+    count = len(records_list)
+    return total_entities / count, count
+
+
 def main() -> None:
-    parser = argparse.ArgumentParser(description="对 local_mem2/index 的 memory 做 GLiNER NER")
-    parser.add_argument(
-        "--index-dir",
-        default="/root/ljz/mymem2/evaluation/local_mem2/index",
-        help="包含 mem0_user_indices.pkl 的目录",
-    )
-    parser.add_argument(
-        "--model",
-        default="/root/ljz/mymem2/models/gliner_small-v2.1",
-        help="GLiNER 模型名或本地模型目录",
-    )
-    parser.add_argument(
-        "--local-only",
-        action="store_true",
-        help="仅从本地加载模型，不访问网络（离线场景建议开启）",
-    )
-    parser.add_argument(
-        "--labels",
-        nargs="+",
-        default=["person", "organization", "location", "date", "time", "event"],
-        help="要抽取的实体类型",
-    )
-    parser.add_argument(
-        "--encoder-model",
-        default="/root/ljz/mymem2/models/deberta-v3-small",
-        help="GLiNER 内部编码器（deberta-v3-small）本地路径",
-    )
-    parser.add_argument(
-        "--hf-home",
-        default="/root/ljz/mymem2/models/hf_cache",
-        help="HuggingFace 缓存目录（离线加载用）",
-    )
-    parser.add_argument(
-        "--offline",
-        action="store_true",
-        help="启用离线模式（会设置 TRANSFORMERS_OFFLINE/HF_HUB_OFFLINE）",
-    )
-    parser.add_argument("--threshold", type=float, default=0.5, help="实体置信度阈值")
-    parser.add_argument("--limit", type=int, default=50, help="最多处理多少条 memory，-1 表示全部")
-    parser.add_argument(
-        "--output",
-        default="",
-        help="可选，输出 JSON 文件路径；不传则只打印到终端",
-    )
+    INDEX_DIR = "/root/ljz/mymem2/evaluation/local_mem2/index"
+    MODEL_PATH = "/root/ljz/mymem2/models/gliner_small-v2.1"
+    LOCAL_ONLY = True
+    LABELS = ["person", "organization", "location", "date", "time", "event"]
+    ENCODER_MODEL_PATH = "/root/ljz/mymem2/models/deberta-v3-small"
+    HF_HOME = "/root/ljz/mymem2/models/hf_cache"
+    OFFLINE = True
+    THRESHOLD = 0.5
+    MEMORY_LIMIT = 0  # 0 表示全部
+    QUERY_FILE = "/root/ljz/mymem2/evaluation/dataset/locomo10.json"
+    QUERY_LIMIT = 0  # 0 表示全部
+    OUTPUT_FILE = "/root/ljz/mymem2/evaluation/results/gliner_mem2_ner.json"
 
-    args = parser.parse_args()
-
-    if args.offline:
+    if OFFLINE:
         os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
         os.environ.setdefault("HF_HUB_OFFLINE", "1")
-    os.environ.setdefault("HF_HOME", args.hf_home)
+    os.environ.setdefault("HF_HOME", HF_HOME)
 
-    memories = load_memories_from_index(args.index_dir)
-    print(f"[INFO] 从 {args.index_dir} 读取到 {len(memories)} 条 memory")
-
-    limit = args.limit
-    if limit == -1:
-        limit = 0
+    memories = load_memories_from_index(INDEX_DIR)
+    print(f"[INFO] 从 {INDEX_DIR} 读取到 {len(memories)} 条 memory")
 
     results = run_ner(
         memories=memories,
-        model_name_or_path=args.model,
-        labels=args.labels,
-        threshold=args.threshold,
-        limit=limit,
-        local_files_only=args.local_only,
-        encoder_model_path=args.encoder_model,
+        model_name_or_path=MODEL_PATH,
+        labels=LABELS,
+        threshold=THRESHOLD,
+        limit=MEMORY_LIMIT,
+        local_files_only=LOCAL_ONLY,
+        encoder_model_path=ENCODER_MODEL_PATH,
     )
 
+    mem_avg, mem_count = calc_avg_entity_count(results)
     print(f"[INFO] 完成 NER，共处理 {len(results)} 条 memory")
+    print(f"[STATS] memory 平均实体数量: {mem_avg:.4f} (samples={mem_count})")
+
+    queries = load_queries_from_dataset(QUERY_FILE)
+    print(f"[INFO] 从 {QUERY_FILE} 读取到 {len(queries)} 条 query")
+
+    query_results = run_ner_on_queries(
+        queries=queries,
+        model_name_or_path=MODEL_PATH,
+        labels=LABELS,
+        threshold=THRESHOLD,
+        limit=QUERY_LIMIT,
+        local_files_only=LOCAL_ONLY,
+        encoder_model_path=ENCODER_MODEL_PATH,
+    )
+    query_avg, query_count = calc_avg_entity_count(query_results)
+    print(f"[INFO] 完成 query NER，共处理 {len(query_results)} 条 query")
+    print(f"[STATS] query 平均实体数量: {query_avg:.4f} (samples={query_count})")
+
     for r in results[:10]:
         print("=" * 80)
         print(f"user_id: {r['user_id']} | doc_id: {r['doc_id']}")
@@ -171,10 +234,22 @@ def main() -> None:
         print("entities:")
         print(json.dumps(r["entities"], ensure_ascii=False, indent=2))
 
-    if args.output:
-        with open(args.output, "w", encoding="utf-8") as f:
-            json.dump(results, f, ensure_ascii=False, indent=2)
-        print(f"[INFO] 结果已写入: {args.output}")
+    output_payload: Dict[str, Any] = {
+        "memory": {
+            "results": results,
+            "avg_entity_count": mem_avg,
+            "sample_count": mem_count,
+        },
+        "query": {
+            "results": query_results,
+            "avg_entity_count": query_avg,
+            "sample_count": query_count,
+        },
+    }
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(output_payload, f, ensure_ascii=False, indent=2)
+    print(f"[INFO] 结果已写入: {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":

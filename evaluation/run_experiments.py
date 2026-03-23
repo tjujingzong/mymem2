@@ -46,6 +46,12 @@ def main():
     parser.add_argument("--is_graph", action="store_true", default=False, help="Whether to use graph-based search")
     parser.add_argument("--num_chunks", type=int, default=1, help="Number of chunks to process")
     parser.add_argument(
+        "--add_batch_size",
+        type=int,
+        default=int(os.getenv("MEM0_ADD_BATCH_SIZE", "2")),
+        help="Batch size for mem0 add phase (number of messages per add call). Can also set MEM0_ADD_BATCH_SIZE.",
+    )
+    parser.add_argument(
         "--include_original_conversations",
         type=str,
         default=os.getenv("MEM0_INCLUDE_ORIGINAL_CONVERSATIONS", "1"),
@@ -68,6 +74,7 @@ def main():
         if args.method == "add":
             memory_manager = MemoryADD(
                 data_path=data_path,
+                batch_size=args.add_batch_size,
                 is_graph=args.is_graph,
                 use_sentence_mode=USE_SENTENCE_MODE,
                 use_simple_mode=USE_SIMPLE_MODE,
